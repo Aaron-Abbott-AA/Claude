@@ -1,0 +1,7 @@
+Xi reduced on the curve (mod 2): x**14*(x + 1)*(x**3 + x + 1)*(x**3 + x**2 + 1)*(x**21 + x**7 + 1)*(x**21 + x**14 + 1)
+  x=w^1: g(u)=U0U1U2 != 0: True; all six Xi(u,v_zeta)=0: True
+  x=w^2: g(u)=U0U1U2 != 0: True; all six Xi(u,v_zeta)=0: True
+  x=w^3: g(u)=U0U1U2 != 0: True; all six Xi(u,v_zeta)=0: True
+  x=w^5: g(u)=U0U1U2 != 0: True; all six Xi(u,v_zeta)=0: True
+  x=w^8: g(u)=U0U1U2 != 0: True; all six Xi(u,v_zeta)=0: True
+checked 5 points with x in mu_49 \ mu_7 over GF(2^21); full clusters at 5

@@ -1,0 +1,34 @@
+== (a) Prop 3.1/Cor 3.2: a_max(d')/d' with a_max=8h/625-d'+X-rho ==
+  n=256: max a_max/d' over r<=64,Q<=2^14,S<=2^12, all 7 d' = 0.700886 (exact 588535/839702); violations: 0
+  n=512: min a_max/d' = 2.2806  (>1 means constant-T (K) not excluded by Prop 3.1)
+  coefficient 2048/625+1/(2r) < 4 for r>=4: True; at r=4: 3.4018E vs 4E-4 (E>=2^15)
+  for comparison 2a_max/d' at r=4,Q=128,S=64,n=256,d'=2E-2: 1.4000 (>=1, so R18-T Prop 4.2 does not apply)
+
+== (b) D1 = d'-E-(a-m) at m=E, d'=2E-2, Q=128, S=64 ==
+  r=4  n=256: D1/E = 0.6000
+  r=4  n=512: D1/E = -2.6768
+  r=8  n=256: D1/E = 0.6616
+  r=8  n=512: D1/E = -2.6152
+  r=16 n=256: D1/E = 0.6924
+  r=16 n=512: D1/E = -2.5844
+  r=4  n=256: D1>0 needs m > 0.4000E, i.e. rho*qq > that
+  r=8  n=256: D1>0 needs m > 0.3384E, i.e. rho*qq > that
+  r=16 n=256: D1>0 needs m > 0.3076E, i.e. rho*qq > that
+
+== (c) Prop 5.2 example: r=16, Q=128, n=256, qq=E/16, (4.1)+N4 margin = bound/q - 1551/4000 ==
+  S=64 d'=-2+2E: tau_hi=85692 (<=d'-E: True); margin(1)=-0.00386, margin(tau_hi)=-0.30862; non-closed tau-interval: None
+  S=64 d'=+4+2E: tau_hi=85691 (<=d'-E: True); margin(1)=-0.00388, margin(tau_hi)=-0.30863; non-closed tau-interval: None
+  S=256 d'=-2+2E: tau_hi=342865 (<=d'-E: True); margin(1)=-0.00378, margin(tau_hi)=-0.30861; non-closed tau-interval: None
+  S=256 d'=+4+2E: tau_hi=342864 (<=d'-E: True); margin(1)=-0.00378, margin(tau_hi)=-0.30861; non-closed tau-interval: None
+
+== (d) Lemma 2.1(iii): projective invariance of E-sparsity level ==
+  E=8, a=8: xi=t*w^7 has level 1; after the swap t<->w it is [0, 0, 0, 0, 0, 0, 0, 1, 0] -> level 7; Lemma 2.1(iii) predicts <= 1 + (a mod E) = 1
+  random: 72/200 general Mobius changes violate s->s+(a mod E); affine changes violating s->s: 0/200
+
+== (e) Lemma 2.1(i),(ii), Prop 2.2: random tests over GF(2^10), E=8 ==
+  tests=150: Lemma 2.1(i) violations 0; Prop 2.2 violations 0; Lemma 2.1(ii) criterion mismatches 0
+
+== (f) r=4, n=2Q beyond the grid: qq=E/8 closed (mode all) and qq=E/16 ==
+  Q=2^15: qq=E/4 closed True, E/8 closed True, E/16 closed False
+  Q=2^17: qq=E/4 closed True, E/8 closed True, E/16 closed False
+  Q=2^19: qq=E/4 closed True, E/8 closed True, E/16 closed False

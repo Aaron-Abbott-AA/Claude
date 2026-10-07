@@ -1,0 +1,5 @@
+points (U0=1, U2!=0): 4221
+Xi via M(v_zeta) equals Xi via M(u)^[8] at all (u,zeta): True
+six residual points distinct and != u at every u: True
+histogram N_Xi: {np.int64(0): 4214, np.int64(6): 7}
+u with N_Xi=6 (x,y as ints): [(0, 1), (0, 1970), (0, 1971), (0, 2676), (0, 2677), (0, 3526), (0, 3527)]
