@@ -32,6 +32,13 @@ No file whose name contains "DZ" was opened. A DZ-CLOUD-HANDOFF zip was uploaded
 7. **R19 v2.1** (`notes/R19_CORRESPONDENCE_ROUTE_v2_1.md`) — applies RC-1..8. It is final. No statement, proof step or number changed; RC-5 fills two missing table cells.
 8. **A306 draft** (`A306_draft/`) — packet kit for PRIMARY (R18-T v2.1 and R19 v2.1, each with its audit and revision check, plus scripts). **NOT delivered**: the local HYP session must poll, acknowledge, build and place it (see `A306_draft/README.md`).
 
+9. **R20 owner v1** (`notes/HYP_M2_ROUND20_owner_v1.md`, scripts in `notes/R20_owner_scripts/`) — **UNAUDITED owner draft**; the independent audit is IN PROGRESS. Do not send it to PRIMARY before the audit. What it claims, all inside (𝒦):
+   - Frobenius reduction on the subline gives no ≈a/E bound. Negative results: Prop 2.2, Prop 2.3, Example 2.4.
+   - Prop 3.1: constant T in (𝒦) forces a>=d′, which would close constant-T (R2) at n=256 for every D.
+   - Lemma 4.2 / Thm 5.1: a per-point bound with no τ_0 restriction, at n=256.
+   - Prop 5.2: uses the N4 inequality.
+   - Lower 𝔮-thresholds for non-constant T: r=4 2E/Q (n=256) and nE/(16Q) (n>=512); r=8 2E/Q, 32E/Q, 64E/Q (n=256, 512, 1024); r=16 8E/Q.
+
 ## Statuses (R19 v2.1)
 - Prop 1.1, Prop 1.2 (F_E-subline), Lemma 1.4, Lemma 1.5 (with the cusp-tangent exception) and Example 1.6: PROVED.
 - Lemma 1.1: PROVED for m(w)<E; OPEN for m(w)>=E.
@@ -56,6 +63,7 @@ No file whose name contains "DZ" was opened. A DZ-CLOUD-HANDOFF zip was uploaded
 Not linked. No A306 has been delivered; the packet kit is in A306_draft/. The pending-ACK file named by the user is not present in the bundle.
 
 ## Hashes (sha256)
+361c929170381d83a82dd1baa4741a6025b3f9054838e024a641fce1d2ddcbf6  notes/HYP_M2_ROUND20_owner_v1.md
 419b99c61b7d1d4333aa3ee64b283ba22dc9e60c7a39f1fa88c5684a93bf201b  notes/R18T_TWIST_NOTE_v2.md
 65ba7f0bdffda18145365625e13d138c4e66b70015100fe0dbe0ff33e25b41ed  notes/R18T_TWIST_NOTE_v2_1.md
 215b9925a4e042c4b449a587e45e898613349a58d799a87b454991e31555c8cd  notes/R19_CORRESPONDENCE_ROUTE_v2.md

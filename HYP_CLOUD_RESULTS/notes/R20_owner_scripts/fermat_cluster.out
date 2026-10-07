@@ -1,0 +1,3 @@
+affine points of Gamma(GF(2^12)) with U0=1, U2!=0: 4221
+incidence u^[8].e(v_zeta)=0 for all: True;  Xi(u,v_zeta) independent of zeta for all u: True
+histogram of N_Xi(u) (number of the 6 residual points with Xi=0): {0: 4214, 6: 7}
