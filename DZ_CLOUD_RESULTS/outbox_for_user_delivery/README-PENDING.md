@@ -32,3 +32,8 @@ Review chains:
 - Codex files in DZ/to_claude/ newer than 15:13:17Z on 7 Oct: unread and un-ACKed.
 - Any reply to EE: unknown.
 - PRIMARY's G23O review: status unknown.
+
+---
+Note added by the parent cloud session (2026-10-07):
+- The referee confirmed that PTH v2.2 differs from v2.1 only at line 143 (see the addendum in DIFFCHECK-PTH-v2.1-20261007.md, sha256 c2501b3d…).
+- Cosmetic: the v2.2 title and HOLD line still read "v2.1", and its change log has no v2.2 row. This changes no content. If you want, correct these header lines in the local session before delivering EH, then regenerate EH's MANIFEST.

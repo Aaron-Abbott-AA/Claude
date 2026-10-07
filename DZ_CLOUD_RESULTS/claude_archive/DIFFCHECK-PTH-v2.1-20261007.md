@@ -62,3 +62,15 @@ There are no other textual changes. §§0–2, PTH (i)–(iii), GO (a)–(e) and
 - The source directory listing.
 
 Nothing else was read. No HYP or 3PP directories, no uploads, no other scratchpads, and no git were used. No computations were needed.
+
+## Addendum (20:40Z): v2.2 confirmation — **CONFIRMED**
+- **What was checked.** `src/PTH-POINTWISE-TWISTED-HALFFIELD-NOTE-20261007-v2.2.md`, sha256 `9ecf61da099317b96706f0cd63cc136c34699520fe19bbbe83058f19baf2c484`.
+- **Diff v2.1 → v2.2.** Exactly one changed line, l.143 (§4A Consequence (i)). No other byte differs.
+- **The replacement matches the D-1 text above word for word.** The only addition is the provenance tag "[v2.2: DIFFCHECK]". D-1 is resolved.
+- **The outbox copy is byte-identical.** `DZ_CLOUD_RESULTS/outbox_for_user_delivery/to_codex/PTH-POINTWISE-TWISTED-HALFFIELD-NOTE-20261007-v2.2.md` matches under `cmp`, with the same sha256 `9ecf61da…f2c484`.
+- **Cosmetic observation; no action needed.** Because only the one line was changed, as instructed:
+  - the title still reads "owner note v2.1";
+  - the AUDIT STATUS block still says "HOLD until the coordinator's short diff check";
+  - the §9 change log has no v2.2 row.
+  - The coordinator may want to note this in the delivery packet.
+- **Files read for this addendum:** the v2.1 and v2.2 notes in `src/` (by diff only), and the outbox copy (by sha256 and cmp only).
