@@ -1,0 +1,4 @@
+(1) cells=380  j-range violations=0  bound>Q^2/2 violations=0  worst deg/(Q^2/2)=0.250000 at (rho,g,a*)=(40, 43, 18)
+(2) range cells=78 gate-pass=51 gate-fail=27 sufficient-vs-stabiliser mismatches=0
+    first gate failures: [(10, 15), (14, 21), (16, 24), (18, 27), (20, 30), (22, 31), (22, 33), (24, 36)]
+    listed in v2 present: [True, True, True, True, True]
