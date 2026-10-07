@@ -1,4 +1,4 @@
-# Outbox: pending items (updated 7 Oct 2026, 20:57Z, by the DZ cloud session)
+# Outbox: pending items (updated 7 Oct 2026, 21:21Z, by the DZ cloud session)
 
 The cloud container is not linked to the Mac and cannot reach `CODEX_CLAUDE_EXCHANGE/DZ/`. **Nothing has been delivered.**
 
@@ -10,12 +10,14 @@ The cloud container is not linked to the Mac and cannot reach `CODEX_CLAUDE_EXCH
 | **EG_20261007T1948Z** (TCR) | `EG_20261007T1948Z.md`, `TCR-TERMINAL-CONSTANT-ROOT-NOTE-20261007-v2.1.md`, `AUDIT-TCR-TERMINAL-CONSTANT-ROOT-20261007.md`, `REVISION-CHECK-TCR-v2-20261007.md`, `hassecheck_v2.py.txt`, `hassecheck_v2.log` | `MANIFEST_EG_20261007T1948Z.tsv` |
 | **EH_20261007T2036Z** (PTH) | `EH_20261007T2036Z.md`, `PTH-POINTWISE-TWISTED-HALFFIELD-NOTE-20261007-v2.2.md`, `AUDIT-PTH-POINTWISE-TWISTED-HALFFIELD-20261007.md`, `REVISION-CHECK-PTH-v2-20261007.md`, `DIFFCHECK-PTH-v2.1-20261007.md`, `pthcheck.py.txt`, `pthcheck.log`, `gocells.py.txt`, `gocells.log` | `MANIFEST_EH_20261007T2036Z.tsv` |
 | **EI_20261007T2056Z** (GX) | `EI_20261007T2056Z.md`, `GX-GLOBAL-TWIST-EXCLUSION-NOTE-20261007-v2.1.md`, `AUDIT-GX-GLOBAL-TWIST-EXCLUSION-20261007.md`, `REVISION-CHECK-GX-v2-20261007.md`, `gxcells.py.txt`, `gxcells.log` | `MANIFEST_EI_20261007T2056Z.tsv` |
+| **EJ_20261007T2120Z** (KB) — **PENDING DIFF-CHECK, do NOT deliver yet** | `EJ_20261007T2120Z.md`, `KB-KUMMER-BINOMIAL-GATE-NOTE-20261007-v2.1.md`, `AUDIT-KB-KUMMER-BINOMIAL-GATE-20261007.md`, `REVISION-CHECK-KB-v2-20261007.md` | `MANIFEST_EJ_20261007T2120Z.tsv` |
 
 Review chains:
 - **RBL:** audit PASS-with-fixes, then revision check PASS, then v2.1.
 - **TCR:** audit PASS-with-fixes, then revision check PASS, then v2.1.
 - **PTH:** audit PASS-with-fixes, then revision check PASS-with-fixes, then v2.1, then a diff check asking for one line, which v2.2 makes.
 - **GX:** audit PASS-with-fixes, then revision check PASS, then v2.1 (RC items applied; HOLD lifted).
+- **KB:** audit PASS-with-fixes, then revision check PASS-with-fixes (RC-1 blocking, wording), then v2.1. **A referee diff check is outstanding; EJ is PENDING DIFF-CHECK.** The coordinator will flip it to READY.
 
 ## Steps only the local session (on the device) can do, before delivery
 1. **`date -u`.** Then re-list `DZ/to_claude/` and find every file newer than **15:13:17Z on 7 Oct 2026**. These are unread.
