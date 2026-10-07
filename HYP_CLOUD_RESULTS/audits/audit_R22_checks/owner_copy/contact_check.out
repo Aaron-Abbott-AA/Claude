@@ -1,0 +1,7 @@
+R22 contact_check: Fermat sigma1 model over GF(2^8)
+  E=8: affine points with x0*y0!=0: 254; predicted e_u=E+1: 0; Hensel-checked: 64; orders -> counts {8: 64}; e_u in {E,E+1} and (E+1 <=> y_1^[E].e(u)=0): True
+  E=16: affine points with x0*y0!=0: 0; predicted e_u=E+1: 0; Hensel-checked: 0; orders -> counts {}; e_u in {E,E+1} and (E+1 <=> y_1^[E].e(u)=0): True
+  E=32: affine points with x0*y0!=0: 254; predicted e_u=E+1: 0; Hensel-checked: 64; orders -> counts {32: 64}; e_u in {E,E+1} and (E+1 <=> y_1^[E].e(u)=0): True
+R22 contact_check: Fermat sigma1 model over GF(2^12)
+  E=8: affine points with x0*y0!=0: 4214; predicted e_u=E+1: 0; Hensel-checked: 61; orders -> counts {8: 61}; e_u in {E,E+1} and (E+1 <=> y_1^[E].e(u)=0): True
+  E=16: affine points with x0*y0!=0: 7200; predicted e_u=E+1: 450; Hensel-checked: 511; orders -> counts {16: 61, 17: 450}; e_u in {E,E+1} and (E+1 <=> y_1^[E].e(u)=0): True

@@ -1,0 +1,25 @@
+referee numerics_indep: exact Fractions; target 1551/4000 = 0.38775
+== V1 (owner normalisation: a<8h/625, d'=2E+4): rows=1728
+  4.1    max=0.04609438 at (r,Q,S,n,d'-2E)=(4, 128, 64, 256, 4)  <1551/4000: True  margin=0.341656
+  4.2    max=0.09297183 at (r,Q,S,n,d'-2E)=(4, 128, 64, 256, 4)  <1551/4000: True  margin=0.294778
+  5.3i   max=0.14770305 at (r,Q,S,n,d'-2E)=(4, 128, 64, 256, 4)  <1551/4000: True  margin=0.240047
+  5.3ii  max=0.10430527 at (r,Q,S,n,d'-2E)=(4, 128, 64, 256, 4)  <1551/4000: True  margin=0.283445
+  5.5cl  max=0.06873226 at (r,Q,S,n,d'-2E)=(4, 128, 64, 256, 4)  <1551/4000: True  margin=0.319018
+  5.5pe  max=0.04919416 at (r,Q,S,n,d'-2E)=(4, 128, 64, 256, 4)  <1551/4000: True  margin=0.338556
+== V2 (a=8h/625+X-rho-d', worst d' in [2E-2,2E+4]): rows=12096
+  4.1    max=0.04562519 at (r,Q,S,n,d'-2E)=(4, 128, 64, 256, -2)  <1551/4000: True  margin=0.342125
+  4.2    max=0.08263433 at (r,Q,S,n,d'-2E)=(128, 16384, 64, 32768, 4)  <1551/4000: True  margin=0.305116
+  5.3i   max=0.13387798 at (r,Q,S,n,d'-2E)=(4, 16384, 8192, 32768, 4)  <1551/4000: True  margin=0.253872
+  5.3ii  max=0.08964217 at (r,Q,S,n,d'-2E)=(4, 128, 8192, 256, -2)  <1551/4000: True  margin=0.298108
+  5.5cl  max=0.06873226 at (r,Q,S,n,d'-2E)=(4, 128, 64, 256, -2)  <1551/4000: True  margin=0.319018
+  5.5pe  max=0.04919416 at (r,Q,S,n,d'-2E)=(4, 128, 64, 256, -2)  <1551/4000: True  margin=0.338556
+== corner (4,128,64,256), V1:
+  4.1    33259609702489/721554505728000 = 0.0460943829; owner fraction equal: True; printed decimal 0.046095 (Cor 4.1 text) / 0.046094 (table)
+  4.2    3194487655227/34359738368000 = 0.0929718271; owner fraction equal: True; printed decimal 0.092972
+  5.3i   32480243592761/219902325555200 = 0.1477030473; owner fraction equal: True; printed decimal 0.147703
+  5.3ii  114684856407837/1099511627776000 = 0.1043052693; owner fraction equal: True; printed decimal 0.104305
+  5.5cl  75571916082327/1099511627776000 = 0.0687322573; owner fraction equal: True; printed decimal 0.068732
+  5.5pe  27044774933549/549755813888000 = 0.0491941590; owner fraction equal: True; printed decimal 0.049194
+== term-wise monotonicity along grid edges: 146640 comparisons, violations: 0
+== Cor 5.4 thresholds: 1551/4000 - max(5.3i) = 0.240047; 1551/4000 - max(5.3ii) = 0.283445
+== Cor 4.1 slope term / FNAO line term at corner: d'/(X-rho) = 16.2550 (~4r)

@@ -1,0 +1,29 @@
+R22 toy_vector_FN: GF(2^8), seed 20261007
+=== (A) constant first layer satisfying the slope equation (hypotheses of Thm 3.1) ===
+{'label': 'A: constant layer', 'rho': 1, 'X': 4, 'eF': 3, 'nu': None, 'ord_s': inf, 'fn_solvable': True, 'unknowns': 238, 'equations': 99, 'slope': 0, 'kappa_c_dot_u_rho_zero': True, 'identity_star': True, 'dim_hom': 193, 'has_particular': True, 'sample_orders_of_Cc_b_rho': [3, 3, 3, 3, 3, 3, 3, 3], 'nonzero_samples': 8, 'congruence_mod_tX': True}
+  Thm 3.1 (order >= X-rho and exact congruence mod t^X): True | X-rho = 3 | min observed order = 3 | nonzero C_c b^[rho] samples: 8
+{'label': 'A: constant layer', 'rho': 2, 'X': 4, 'eF': 3, 'nu': None, 'ord_s': inf, 'fn_solvable': True, 'unknowns': 182, 'equations': 87, 'slope': 0, 'kappa_c_dot_u_rho_zero': True, 'identity_star': True, 'dim_hom': 146, 'has_particular': True, 'sample_orders_of_Cc_b_rho': [2, 2, 2, 2, 2, 2, 2, 2], 'nonzero_samples': 8, 'congruence_mod_tX': True}
+  Thm 3.1 (order >= X-rho and exact congruence mod t^X): True | X-rho = 2 | min observed order = 2 | nonzero C_c b^[rho] samples: 8
+{'label': 'A: constant layer', 'rho': 1, 'X': 8, 'eF': 3, 'nu': None, 'ord_s': inf, 'fn_solvable': True, 'unknowns': 378, 'equations': 153, 'slope': 0, 'kappa_c_dot_u_rho_zero': True, 'identity_star': True, 'dim_hom': 301, 'has_particular': True, 'sample_orders_of_Cc_b_rho': [7, 7, 7, 7, 7, 7, 7, 7], 'nonzero_samples': 8, 'congruence_mod_tX': True}
+  Thm 3.1 (order >= X-rho and exact congruence mod t^X): True | X-rho = 7 | min observed order = 7 | nonzero C_c b^[rho] samples: 8
+{'label': 'A: constant layer', 'rho': 2, 'X': 8, 'eF': 3, 'nu': None, 'ord_s': inf, 'fn_solvable': True, 'unknowns': 378, 'equations': 153, 'slope': 0, 'kappa_c_dot_u_rho_zero': True, 'identity_star': True, 'dim_hom': 302, 'has_particular': True, 'sample_orders_of_Cc_b_rho': [6, 6, 6, 6, 6, 6, 6, 6], 'nonzero_samples': 8, 'congruence_mod_tX': True}
+  Thm 3.1 (order >= X-rho and exact congruence mod t^X): True | X-rho = 6 | min observed order = 6 | nonzero C_c b^[rho] samples: 8
+{'label': 'A: constant layer', 'rho': 4, 'X': 8, 'eF': 3, 'nu': None, 'ord_s': inf, 'fn_solvable': True, 'unknowns': 378, 'equations': 153, 'slope': 0, 'kappa_c_dot_u_rho_zero': True, 'identity_star': True, 'dim_hom': 304, 'has_particular': True, 'sample_orders_of_Cc_b_rho': [4, 4, 4, 4, 4, 4, 4, 4], 'nonzero_samples': 8, 'congruence_mod_tX': True}
+  Thm 3.1 (order >= X-rho and exact congruence mod t^X): True | X-rho = 4 | min observed order = 4 | nonzero C_c b^[rho] samples: 8
+ALL (A) cases OK: True
+=== (B) control: constant layer violating the slope equation (expect FN unsolvable) ===
+{'label': 'B: slope eq. fails', 'rho': 1, 'X': 4, 'eF': 3, 'nu': None, 'ord_s': 0, 'fn_solvable': False, 'unknowns': 238, 'equations': 99, 'slope': 87, 'kappa_c_dot_u_rho_zero': False, 'identity_star': True, 'dim_hom': 0, 'has_particular': False, 'sample_orders_of_Cc_b_rho': [], 'nonzero_samples': 0, 'congruence_mod_tX': True}
+  identity (*) holds: True | FN solvable: False
+{'label': 'B: slope eq. fails', 'rho': 2, 'X': 4, 'eF': 3, 'nu': None, 'ord_s': 0, 'fn_solvable': False, 'unknowns': 182, 'equations': 87, 'slope': 51, 'kappa_c_dot_u_rho_zero': False, 'identity_star': True, 'dim_hom': 0, 'has_particular': False, 'sample_orders_of_Cc_b_rho': [], 'nonzero_samples': 0, 'congruence_mod_tX': True}
+  identity (*) holds: True | FN solvable: False
+=== (C) control: NON-constant layer A(t)=A0+t^nu A1 (Thm 3.1 general form) ===
+    F(t)=t^eF (local model, so that a polynomial S is the local S of the note)
+    predicted: solvable only if ord s >= eF-X; then ord C_c b^[rho] >= min(X-rho, X+ord s-eF)
+{'label': 'C: non-constant layer', 'rho': 1, 'X': 4, 'eF': 5, 'nu': 1, 'ord_s': 1, 'fn_solvable': True, 'unknowns': 238, 'equations': 90, 'slope': 0, 'kappa_c_dot_u_rho_zero': False, 'identity_star': True, 'dim_hom': 193, 'has_particular': True, 'sample_orders_of_Cc_b_rho': [0, 0, 0, 0, 0, 0, 0, 0], 'nonzero_samples': 8, 'congruence_mod_tX': True}
+  predicted solvable: True | solvable: True | predicted lower bound: 0 | min observed: 0 | general congruence mod t^X: True
+{'label': 'C: non-constant layer', 'rho': 1, 'X': 4, 'eF': 5, 'nu': 2, 'ord_s': 2, 'fn_solvable': True, 'unknowns': 238, 'equations': 90, 'slope': 0, 'kappa_c_dot_u_rho_zero': False, 'identity_star': True, 'dim_hom': 193, 'has_particular': True, 'sample_orders_of_Cc_b_rho': [1, 1, 1, 1, 1, 1, 1, 1], 'nonzero_samples': 8, 'congruence_mod_tX': True}
+  predicted solvable: True | solvable: True | predicted lower bound: 1 | min observed: 1 | general congruence mod t^X: True
+{'label': 'C: non-constant layer', 'rho': 1, 'X': 4, 'eF': 7, 'nu': 1, 'ord_s': 1, 'fn_solvable': False, 'unknowns': 238, 'equations': 96, 'slope': 0, 'kappa_c_dot_u_rho_zero': False, 'identity_star': True, 'dim_hom': 0, 'has_particular': False, 'sample_orders_of_Cc_b_rho': [], 'nonzero_samples': 0, 'congruence_mod_tX': True}
+  predicted solvable: False | solvable: False | predicted lower bound: -2 | min observed: None | general congruence mod t^X: True
+{'label': 'C: non-constant layer', 'rho': 2, 'X': 8, 'eF': 9, 'nu': 2, 'ord_s': 2, 'fn_solvable': True, 'unknowns': 378, 'equations': 156, 'slope': 0, 'kappa_c_dot_u_rho_zero': False, 'identity_star': True, 'dim_hom': 302, 'has_particular': True, 'sample_orders_of_Cc_b_rho': [1, 1, 1, 1, 1, 1, 1, 1], 'nonzero_samples': 8, 'congruence_mod_tX': True}
+  predicted solvable: True | solvable: True | predicted lower bound: 1 | min observed: 1 | general congruence mod t^X: True
