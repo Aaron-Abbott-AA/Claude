@@ -1,0 +1,13 @@
+conic Y0Y2+Y1^2   D=1 a=2: (P_D==0, (K), FNAM2 & F|Delta, F not| C, normal form, a>=d') -> all True
+conic Y0Y2+Y1^2   D=1 a=3: (P_D==0, (K), FNAM2 & F|Delta, F not| C, normal form, a>=d') -> all True
+conic Y0Y2+Y1^2   D=1 a=4: (P_D==0, (K), FNAM2 & F|Delta, F not| C, normal form, a>=d') -> all True
+conic Y0Y2+Y1^2   D=2 a=2: (P_D==0, (K), FNAM2 & F|Delta, F not| C, normal form, a>=d') -> all True
+conic Y0Y2+Y1^2   D=2 a=3: (P_D==0, (K), FNAM2 & F|Delta, F not| C, normal form, a>=d') -> all True
+conic Y0Y2+Y1^2   D=2 a=4: (P_D==0, (K), FNAM2 & F|Delta, F not| C, normal form, a>=d') -> all True
+Fermat cubic      D=1 a=3: (P_D==0, (K), FNAM2 & F|Delta, F not| C, normal form, a>=d') -> all True
+Fermat cubic      D=1 a=4: (P_D==0, (K), FNAM2 & F|Delta, F not| C, normal form, a>=d') -> all True
+Fermat cubic      D=1 a=5: (P_D==0, (K), FNAM2 & F|Delta, F not| C, normal form, a>=d') -> all True
+Fermat cubic      D=2 a=3: (P_D==0, (K), FNAM2 & F|Delta, F not| C, normal form, a>=d') -> all True
+Fermat cubic      D=2 a=4: (P_D==0, (K), FNAM2 & F|Delta, F not| C, normal form, a>=d') -> all True
+Fermat cubic      D=2 a=5: (P_D==0, (K), FNAM2 & F|Delta, F not| C, normal form, a>=d') -> all True
+control (D=1, h random, F=Fermat cubic, a=4): (K) holds in 0 of 3; P_D==0 in 3 of 3
