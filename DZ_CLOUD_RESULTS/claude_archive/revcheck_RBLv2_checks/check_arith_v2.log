@@ -1,0 +1,3 @@
+cells (even rho 6..400, g in [rho+3,2rho]): 39798
+RD(c) reachable states checked: 405858
+failures: none

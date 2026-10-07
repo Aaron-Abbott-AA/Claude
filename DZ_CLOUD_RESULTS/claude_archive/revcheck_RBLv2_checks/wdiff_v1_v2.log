@@ -1,0 +1,466 @@
+[replace] -: as in HFA1;
+       +: while staying nonzero;
+[replace] -: reduces
+       +: reduces, modulo named inputs,
+[replace] -: note,
+       +: note v2,
+[insert] -: 
+       +: 19:06Z; v1
+[insert] -: 
+       +: [v2: FIX-1, FIX-3]
+[replace] -: STATUS:
+       +: STATUS (v2).** - v1 (sha256 c5f5b805…a34cfe) was independently audited (AUDIT-RBL-RATIONAL-BRANCH-LIFT-20261007.md, 18:29–19:05Z). Verdict: **PASS-with-fixes** (3 substantive and 8 minor FIX items). - This v2 applies all eleven. Each change is marked [v2: FIX-n]. - The v2 revision itself has
+[replace] -: INDEPENDENTLY AUDITED.** This cloud session had no subagent tool, so only an owner self-check (§7) was done. Per the standing rules, nothing here may be sent
+       +: yet been re-checked by a referee. **HOLD**: do not send
+[replace] -: before an independent agent audit.
+       +: until it is.
+[replace] -: [A]:**
+       +: [A].** -
+[replace] -: §1 (real
+       +: §1: real
+[replace] -: degrees), EBR (Lemma
+       +: degrees. - EBR: Lemma
+[insert] -: 
+       +: and
+[replace] -: a*),
+       +: a*. - The
+[replace] -: §3)
+       +: §3),
+[replace] -: G1–G4, WG
+       +: G1–G4. - WG,
+[replace] -: there ("a
+       +: in HFD §3: "a
+[replace] -: 3u(e_w+1)"), RR
+       +: 3u(e_w+1)". - RR,
+[replace] -: ("derivative
+       +: in IDEAS §305: "derivative
+[replace] -: subspaces").
+       +: subspaces". - **The WG and RR statements are [A] via the HFD/IDEAS summary readings only.** Those documents record that only Codex summaries of WG/RR were read, not the proofs. [v2: FIX-10]
+[insert] -: 
+       +: -
+[insert] -: 
+       +: is
+[insert] -: 
+       +: and
+[insert] -: 
+       +: -
+[replace] -: =
+       +: is the
+[insert] -: 
+       +: -
+[replace] -: =
+       +: is the
+[insert] -: 
+       +: -
+[insert] -: 
+       +: **Statement.**
+[replace] -: defect (minimal
+       +: defect, i.e. the minimal
+[replace] -: D(w^Q)), with
+       +: D(w^Q), and suppose
+[insert] -: 
+       +: 1.
+[insert] -: 
+       +: 2.
+[delete] -: degree-≤a
+       +: 
+[insert] -: 
+       +: of degree ≤ a
+[replace] -: relation.
+       +: relation (C_r, C̄_r). 3. Write the specialisation as λ(C_r, C̄_r). Then D_α = (λ/λ̄)C̄_α.
+[replace] -: **Consequence.**
+       +: **Consequence [H].**
+[replace] -: NO
+       +: no
+[replace] -: extract the
+       +: take its
+[replace] -: structure itself.
+       +: structure. This is an interpretation of the lemma, not a theorem. [v2: FIX-8]
+[insert] -: 
+       +: **Setting.**
+[replace] -: even,
+       +: even with
+[replace] -: m/2,
+       +: m/2. Let
+[insert] -: 
+       +: be
+[replace] -: 1. **Pointwise defect
+       +: **1. Pointwise defect.** [v2: FIX-4] - V_α is degenerate (dimension ρ−1) exactly when α ∈ U∖{0}. Otherwise dim V_α = ρ. - **Defect
+[replace] -: EVERY α ∈ F_q.**
+       +: every non-degenerate α.**
+[insert] -: 
+       +: -
+[replace] -: Δ_α(τ+ᾱ):
+       +: Δ_α(τ+ᾱ);
+[insert] -: 
+       +: -
+[insert] -: 
+       +: -
+[replace] -: 2. **Generic
+       +: - **Exact values.** - For α ∈ F_Q∖U, V_α ⊂ F_Q, so a(V_α) = 0. - For α ∉ F_Q, a(V_α) = 1 exactly. Suppose a(V_α) = 0, i.e. V_α ⊂ λF_Q. Then two independent elements satisfy u₁²+αu₁ = r(u₂²+αu₂) with r ∈ F_Q, so α(u₁+ru₂) = u₁²+ru₂². Either α ∈ F_Q, or u₁ = ru₂; the latter gives r² = r, so u₁ = u₂, a contradiction. (Proof from the audit.) **2. Generic
+[insert] -: 
+       +: -
+[replace] -: F_q(X),
+       +: F_q(X) we have
+[replace] -: u, and the
+       +: u. The
+[replace] -: For ρ ≥ 4
+       +: - **The generic defect is exactly 1.** [v2: FIX-4] A degree-0 generic relation would specialise to a(V_α) = 0 at all but finitely many α. That contradicts a(V_α) = 1 for all α ∉ F_Q. - Hence
+[delete] -: degree-1
+       +: 
+[insert] -: 
+       +: of degree ≤ 1
+[replace] -: line (a
+       +: line, by the HFD count with d₁
+[replace] -: ρ/2).
+       +: d₂ = ρ−1. -
+[insert] -: 
+       +: (the leading coefficients are monic)
+[replace] -: 3. **C(W)
+       +: **3. C(W)
+[insert] -: 
+       +: -
+[insert] -: 
+       +: -
+[replace] -: (u₁/u₂)²
+       +: (u₁/u₂)⁴
+[replace] -: 1,
+       +: (u₁/u₂)²,
+[replace] -: 4. **The
+       +: **4. The
+[replace] -: all the hypotheses
+       +: every hypothesis
+[replace] -: everywhere;
+       +: at every non-degenerate α;
+[replace] -: family;
+       +: family: RR excludes
+[delete] -: is excluded by RR
+       +: 
+[replace] -: input. See §5.
+       +: input; see §5–§6.
+[replace] -: -I`):
+       +: -I`; the auditor reproduced it byte for byte with seeds 1, 2, 3).
+[insert] -: 
+       +: random
+[insert] -: 
+       +: observed
+[delete] -: always
+       +: 
+[insert] -: 
+       +: in every sample
+[delete] -: always
+       +: 
+[insert] -: 
+       +: in every sample
+[delete] -: always
+       +: 
+[insert] -: 
+       +: in every sample
+[insert] -: 
+       +: "1 in every sample" is a sampling effect: F_Q has density 1/Q, so random α almost never lies in it, and the defect-0 set α ∈ F_Q∖U was not hit. [v2: FIX-4] - The auditor's exhaustive check at m = 12 confirmed the exact values in item 1. -
+[replace] -: more
+       +: further
+[replace] -: gave a
+       +: was
+[delete] -: V_α
+       +: 
+[replace] -: **Control:** a
+       +: **Control.** A
+[replace] -: and
+       +: *generically*; seed 1 at m = 20 showed one sporadic α with defect ρ/2−1. Its
+[insert] -: 
+       +: is
+[insert] -: 
+       +: there is
+[insert] -: 
+       +: degree-1 bivariate
+[insert] -: 
+       +: [v2: FIX-9]
+[insert] -: 
+       +: **Statement.**
+[replace] -: This is a polynomial of
+       +: It has
+[replace] -: A
+       +: By Schwartz–Zippel, a
+[replace] -: F_Q² (Schwartz–Zippel).
+       +: F_Q².
+[insert] -: 
+       +: The map
+[replace] -: because
+       +: since
+[insert] -: 
+       +: -
+[replace] -: x+ωy.
+       +: x+ωy and Y = x+ω̄y. Explicitly x = (ω̄X+ωY)/(ω+ω̄) and y = (X+Y)/(ω+ω̄), so ι(x) = x and ι(y) = y. [v2: FIX-11]
+[replace] -: relation
+       +: relation,
+[replace] -: a
+       +: a,
+[replace] -: ιγ),
+       +: ιγ)
+[replace] -: w_i^{(Q)}(Y)^{2^e}]_{e≤a} (ρ′
+       +: w_i^{(Q)}(Y)^{2^e}]_{e≤a}, a ρ′
+[replace] -: (2a+2)).
+       +: (2a+2) matrix.
+[replace] -: (α,ᾱ),
+       +: (α,ᾱ) with
+[replace] -: it
+       +: this map
+[delete] -: and
+       +: 
+[replace] -: 0 because
+       +: 0, since
+[replace] -: If
+       +: Suppose
+[replace] -: 0 (hence
+       +: 0, hence
+[replace] -: 0),
+       +: 0. - Then
+[replace] -: embedding and
+       +: embedding, so it
+[replace] -: so
+       +: and
+[replace] -: Pair-relation
+       +: The pair-relation
+[replace] -: Only right division
+       +: [v2: FIX-6] - Division with remainder A = PB + R (B on the right) exists
+[replace] -: L₂{τ}
+       +: L₂{τ}, because the needed leading coefficient lc(A)/lc(B)^{2^{n−k}} always exists (n−k
+[replace] -: needed (leading coefficient a/b^{2^k} always exists), so L₂{τ} is left Euclidean.
+       +: the degree difference).
+[replace] -: The relation module is free of rank 2 and has a
+       +: This gives
+[replace] -: basis
+       +: forms,
+[replace] -: columns. So
+       +: columns, for left submodules. - Frobenius-twisting a leading row preserves its pivot position, so
+[replace] -: holds, and
+       +: holds. Hence
+[delete] -: degree-≤L
+       +: 
+[insert] -: 
+       +: of degree ≤ L
+[replace] -: this
+       +: the
+[replace] -: range.** For
+       +: range (arithmetic) [P].** Take
+[replace] -: R/4 (and
+       +: R/4, and
+[replace] -: KR²/2):
+       +: KR²/2.
+[insert] -: 
+       +: Then
+[replace] -: is EXACTLY the
+       +: range **contains** EBR's
+[insert] -: 
+       +: a*, since
+[replace] -: of EBR, so
+       +: ≤ ρ/2−2. [v2: FIX-7] - **Application to the arc [COND on (B1a), (B1b)]:
+[replace] -: cell.
+       +: cell PROVIDED** [v2: FIX-2]:
+[replace] -: For weight K
+       +: **(B1a)** B1 is monic over F_q[X], so that in
+[insert] -: 
+       +: rational branch its roots are polynomials of degree ≤ u = R/4; and - **(B1b)** at every original nonfocus α, B1's root space is ρ-dimensional and a Frobenius twist of V_α, so that its defect is ≤ a(V_α). - Both are [A]-pending from Codex. If B1's root space were only a ρ′-dimensional subspace of V_α, RB would need a ≤ ρ′/2−2, which can fail. - **Weight K.** The
+[replace] -: ρ+3 (check:
+       +: ρ+3;
+[replace] -: ρ/2−1).
+       +: ρ/2−1. The auditor checked this over 39,800 cells.
+[replace] -: G2: RR for the descended square-root families, and HFA1's terminal BWG step]
+       +: G2 + G5 + (B1a)–(B1b)] [v2: FIX-1, FIX-2]
+[insert] -: 
+       +: -
+[replace] -: descendant (gap
+       +: descendant. This is gap
+[replace] -: use).
+       +: use. -
+[replace] -: (a)
+       +: **(a)**
+[replace] -: (b)
+       +: **(b)**
+[replace] -: (c) Iterating (√W₀
+       +: **(c) Replaced.** [v2: FIX-1] Iterate W ↦ √W₀. Here √W₀
+[replace] -: u/2
+       +: (current degree)/2
+[replace] -: W₀)
+       +: W₀,
+[replace] -: losing
+       +: RB(ii) applies to it by pure algebra, with no further TSZ. Each step either: - keeps the dimension (W₀ = W) while the degree halves; or - loses
+[replace] -: per
+       +: while the
+[replace] -: drop, we reach a bivariate-defect-0 family of
+       +: drops by ≥ 1. Hence **every descendant is nonzero, with
+[replace] -: 4. - (d) Bivariate
+       +: 4**, and the inequality a_i ≤ ρ_i/2−2 is preserved. **If
+[replace] -: means
+       +: is ever reached, (d) applies.** - Nothing in RB, RD or RR forces a defect drop. - Abstract example (from the audit): the constant family {u²+βu : u ∈ U} with β ∉ F_Q has degree 0 ≤ u, defect 1 at every α, and RR-rank 0. It is its own square-root descendant up to Frobenius twist, and it never reaches defect 0. - **(d)** Suppose defect 0 is reached. Then
+[replace] -: (η
+       +: with η
+[replace] -: F_q[X],
+       +: F_q[X] and
+[replace] -: F_Q).
+       +: F_Q.
+[delete] -: exactly
+       +: 
+[replace] -: structure, and
+       +: structure. -
+[replace] -: step (rank
+       +: step, since the rank
+[replace] -: 4).
+       +: 4.
+[replace] -: HFA1 to
+       +: HFA1. - **(e) Termination:
+[replace] -: BWG contradiction.
+       +: named condition G5.** [v2: FIX-1] - **G5:** HFA1's terminal step (weight bookkeeping + BWG) excludes a nonzero rational descended family at the terminal weight *irrespective of its defect*; or positive-defect terminal families are excluded by other arc input. - Without G5, RB+RD give only (c): a nonzero descendant of dimension ≥ 4 persists at every weight.
+[insert] -: 
+       +: [v2: FIX-5]
+[insert] -: 
+       +: -
+[insert] -: 
+       +: does not vanish identically on W; otherwise γ₀w′ ≡ 0, i.e. W₀ = W. - The relation (γ,ιγ) does vanish on all of W, so ℓ
+[replace] -: nonzero
+       +: not an L₂-multiple of (γ,ιγ). - Both vanish
+[replace] -: X_W := span_{L₂} x(W), while (γ,ιγ) vanishes there. So ℓ and (γ,ιγ) are
+       +: W₀, which therefore carries
+[replace] -: a₂ on W₀.
+       +: a₂.
+[replace] -: inequality
+       +: dimension drops only at defect drops, by ≤ 2 each. So ρ_i ≥ ρ′−2(a₂−a_i) ≥ ρ′−2a₂, and
+[replace] -: preserved: ρ drops by ≤ 2 when a drops by ≥ 1.
+       +: preserved.
+[replace] -: ι-fixed means
+       +: Being ι-fixed,
+[insert] -: 
+       +: [v2: FIX-1, FIX-2] -
+[insert] -: 
+       +: is [P]. - RD is [COND on G2
+[replace] -: RD remove G1 **in
+       +: G5 + (B1a)–(B1b)]. - In
+[replace] -: branch**
+       +: branch
+[replace] -: rational). This is CONDITIONAL only on G2, which PHFG already needed.
+       +: rational), RB+RD reduce the structured branch to the terminal question G5.
+[insert] -: 
+       +: - RB+RD do NOT by themselves remove G1 in the rational branch.
+[replace] -: the
+       +: an
+[replace] -: G1′
+       +: G1′, modulo named inputs
+[insert] -: 
+       +: [v2: FIX-3]
+[replace] -: handled
+       +: reduced to G5
+[replace] -: G2).
+       +: G2, (B1a)–(B1b)). With u = R/4,
+[replace] -: 1 (u = R/4).
+       +: 1.
+[insert] -: 
+       +: size
+[replace] -: (mod G2) excludes the family.
+       +: hand over to G5.
+[replace] -: G2.**
+       +: G2 + G4 + G5 + [A] B1 identification (B1a)–(B1b).** [v2: FIX-3] - G4 is the geometric irreducibility needed for WG (HFD §3).
+[replace] -: ~K·Q·2^{a+1}
+       +: about K·Q·2^{a+1}
+[insert] -: 
+       +: -
+[replace] -: shows
+       +: suggests
+[replace] -: ~Q
+       +: about Q
+[replace] -: intrinsic (coefficients
+       +: intrinsic, since the coefficients
+[replace] -: X^Q).
+       +: X^Q. This is a single example. [H]
+[replace] -: Q/4, and
+       +: Q/4;
+[replace] -: u). The coefficients do not.
+       +: u), not the coefficients.
+[replace] -: fails too.**
+       +: fails.**
+[insert] -: 
+       +: -
+[insert] -: 
+       +: -
+[insert] -: 
+       +: -
+[replace] -: route.**
+       +: route: the
+[replace] -: D·A^{(Q)} (deg
+       +: D·A^{(Q)}, deg
+[replace] -: a).
+       +: a.**
+[replace] -: It comes from
+       +: This rests on
+[replace] -: count and
+       +: count, which
+[replace] -: not
+       +: NOT
+[replace] -: in this note.
+       +: here.
+[insert] -: 
+       +: the
+[insert] -: 
+       +: The auditor checked these.
+[replace] -: (NOT an independent audit)
+       +: (v1, updated)
+[replace] -: Δ(τ+ᾱ):**
+       +: Δ(τ+ᾱ).** - The
+[insert] -: 
+       +: are
+[replace] -: sides;
+       +: sides, and the
+[insert] -: 
+       +: are
+[insert] -: 
+       +: -
+[replace] -: numerically (C2:
+       +: numerically: C2,
+[replace] -: 24).
+       +: 24. The auditor's T1–T7 also passed.
+[replace] -: **TSZ:**
+       +: **TSZ.** The
+[delete] -: the values
+       +: 
+[replace] -: lie in
+       +: ∈
+[replace] -: **RB(i):** the minors' degrees are
+       +: **RB(i).** The minors have
+[replace] -: u·Σ_{e≤a}2^e. The
+       +: u·Σ_{e≤a}2^e, and the
+[replace] -: **RB(iii):** weak
+       +: **RB(iii).** [v2: FIX-6] Weak
+[insert] -: 
+       +: forms
+[replace] -: uses
+       +: use
+[replace] -: right division.
+       +: division with remainder with B on the right.
+[replace] -: **RD(b):** the two relations are independent as vectors in L₂^{2a₂+2}
+       +: **RD(b).** [v2: FIX-5] ℓ is not an L₂-multiple of (γ,ιγ),
+[replace] -: they differ
+       +: ℓ does not vanish identically
+[replace] -: x(W).
+       +: W while (γ,ιγ) does.
+[replace] -: **Points to audit.**
+       +: **Audit points.**
+[replace] -: versus
+       +: against
+[replace] -: v for each cell.
+       +: v: PASS (auditor, 39,800 cells).
+[delete] -: Whether the WG family B1's radical at α has defect ≤ a(V_α). This holds if it is a Frobenius twist of a subspace of V_α. [A] needed from Codex: what
+       +: 
+[replace] -: is.
+       +: identification: now named (B1a)–(B1b), [A]-pending.
+[delete] -: RD's reliance on
+       +: 
+[replace] -: descendants (G2).
+       +: descendants: G2.
+[replace] -: In RB(iii), whether "dimension
+       +: F₂-independence over L₂ follows from dimension
+[replace] -: N" implies F₂-independence over L₂. It does: an F₂-dependence over L₂ would specialise
+       +: N. ## 8. Change log v1 → v2 | FIX | Where | Change | |---|---|---| | FIX-1 | §5(c)–(e), Status, title | RD(c) restated: nonzero descendants with dim ≥ ρ′−2a₂. The abstract stalling example added. New named condition G5. | | FIX-2 | §4 Numerical range, §5 header and Status | Application conditional on (B1a)–(B1b). Status: G2 + G5 + (B1a)–(B1b). | | FIX-3 | §6, title | G1 ⇐ G1′ + G2 + G4 + G5 + B1 identification. | | FIX-4 | §2 items 1–2, table | Degenerate α excluded. Defect 0 on F_Q∖U, exactly 1 off F_Q. Generic defect exactly 1. "Always 1" relabelled as sampling. | | FIX-5 | §5(b) proof, §7 |
+[replace] -: one. Script: `toycheck.py`
+       +: "contains". | | FIX-8 | §1 Consequence | Labelled [H]. | | FIX-9 | §2 control row | "Generically" ρ/2, sporadic ρ/2−1 noted; "no degree-1 bivariate relation". | | FIX-10 | Inputs | WG/RR marked [A] via summary readings. | | FIX-11 | §4 Setting | Y = x+ω̄y, with explicit x, y. | Scripts: - `scripts/toycheck.py`
+[replace] -: `toycheck.log`.
+       +: `scripts/toycheck.log`. - The auditor's checks are in `audit_RBL_checks/`.

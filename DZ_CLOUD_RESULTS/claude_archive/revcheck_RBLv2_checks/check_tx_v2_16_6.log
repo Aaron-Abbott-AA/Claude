@@ -1,0 +1,5 @@
+m=16 rho=6 seed=3 |U|=64 |F_Q\U|=192
+(A) alpha in F_Q, exhaustive (256): counts [(('0', 0), 1), (('FQ\\U', 0), 192), (('U\\0', 'deg'), 63)]; mismatches 0
+(B) alpha not in F_Q, random 300: defect counts {1: 300}; prediction all = 1
+(C) Gamma(tau+al)=Delta(tau+albar) on 50 random (al,x): failures 0
+(D) constant family, beta notin F_Q: defect at sqrt-steps k=0..16: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; form {s^2+beta^(1/2^k)s} matches: True; dims all rho: True
