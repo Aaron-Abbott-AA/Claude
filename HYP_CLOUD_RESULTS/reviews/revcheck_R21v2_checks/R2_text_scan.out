@@ -1,0 +1,66 @@
+== FIX-1 "cannot be excluded": v1 lines [64]; v2 hits 0
+== FIX-1 "every algebraic identity": v1 lines [149]; v2 hits 0
+== FIX-1 "all/every available identit": v1 lines [77, 135]; v2 hits 0
+== FIX-1 "every identity used": v1 lines [54]; v2 hits 0
+== FIX-1 FNAL/TSY mentions (inspect): v1 lines [64, 93, 149, 159, 221]; v2 hits 10
+   v2:73: So no argument that uses only these **C-level consequences** can exclude (𝒦) with constant T, D∈{1,2}, a>=d' on 𝔉_D. The consequences are FNAM2, own-line divisi
+   v2:74: - [v2: FIX-1] Whether 𝔉_D **lifts to original data** is **OPEN**. Lifting means original P, R with global alignment and G5 whose FNAL quotient factors through T
+   v2:113: - ℓ_u|G_{c(u)} (FNAM3/TSYC).
+   v2:177: - own-line divisibility ℓ_u|G_c (the content of FNAL2/TSYC/FNAM3);
+   v2:183: - **OPEN:** whether 𝔉_D lifts to original data. That means original P, R with global alignment and G5 whose FNAL quotient factors through TSY with C=C̃, togethe
+   v2:189: - A second option is G5 (det A≢0, used in FNAM2's proof). The rank-one-plus-scalar structure of 𝔉_D on Γ' may contradict it after lifting through TSY/FNAL.
+   v2:207: **Lemma 3.2 (own-point defect; PROVED, conditional on R14.1, R18-T Lemma 1.2, FNAM3/TSYC (for G_{c(u)}(z(u))=0), R18-T Lemma 3.1 (u^[E]·e(u)=0), and R18 §5 (deg
+   v2:255: 1. **𝔉_D versus the F·S layer.** Write the order->=E own-line identity of R16 §5 for C_c=L^{−t}(hΩ+μ⊗z^⊥)(Bc), in which every pencil member is a scalar times a 
+   v2:284: | Cor. 2.4 (no exclusion of constant (𝒦), D∈{1,2}, a>=d' from the C-level identities) | PROVED (C-level only) [v2: FIX-1]; lift to original data (FNAL/TSY/G5) O
+   v2:287: | Lemma 3.2 (own-point defect: 𝔡(u)∥(α^X,β^X); dichotomy (𝒦_ψ)⊇(𝒦) vs few zeros) | PROVED (R14.1, R18-T Lemma 1.2, FNAM3/TSYC, R18 §5); bound <0.1103q COMPUTED 
+== FIX-3 "Before this note": v1 lines [80]; v2 hits 0
+== FIX-3 "any n": v1 lines [80]; v2 hits 0
+== FIX-4 "0.1102q" / "<=0.1102": v1 lines [67, 74, 180, 189]; v2 hits 1
+   v2:210: - (iii) **Dichotomy.** 𝔡≡0 iff (𝒦_ψ): k_12≡0 and k_11=ψ·k_22. Otherwise at most 2deg ψ+2ad'+2ρ·deg[T] good u have 𝔡(u)=0. With ρ·deg[T]<=Nd+ρd (R18 §5), this is
+== FIX-4 "0.11q": v1 lines [206]; v2 hits 0
+== FIX-5 "⊋": v1 lines [67]; v2 hits 0
+== FIX-5 "cannot produce": v1 lines [68]; v2 hits 0
+== FIX-5 "unavailable"/"no per-point": v1 lines [78, 193, 226]; v2 hits 3
+   v2:81: - That a per-point bound below a+mb(u) is unavailable by any residual route is only HEURISTIC.
+   v2:92: - (b): no new closed range. The residual data outside (𝒦) carry no per-point information beyond ℓ_u|G_c (Lemma 3.1). The R20 order mechanism fails off Z(𝔡) (Cor
+   v2:260: 3. **(R1) outside (𝒦_ψ).** Cor. 3.3 shows that per-point residual bounds are unavailable. Progress needs either a cheap way to use 𝔡(u)∥(α^X,β^X) at good points
+== FIX-6 "Since B is constant": v1 lines [141]; v2 hits 0
+== N4 "c_1c_2≠0": v1 lines [169]; v2 hits 1
+   v2:199: **Lemma 3.1 (own-line shape; residual data carry nothing new; PROVED).** Let u be good. [v2: N4] The v1 hypothesis c_1c_2≠0 is unnecessary: if c_1=0, take η=V_1
+== N6 defect "κ(u)" / "κ²" / "Z(κ)": v1 lines [65, 66, 67, 68, 74, 78, 177, 178, 179, 180, 184, 186, 189, 226, 236, 252, 253]; v2 hits 1
+   v2:13: - [v2: N6] The own-point defect vector, called κ(u) in v1, is renamed 𝔡(u). This avoids a clash with the scalar κ_u (c^[Q]=κ_uB(u)c) and with R19's count κ(u).
+
+== [v2: ...] tags and their v2 lines
+   FIX-1: [63, 74, 91, 159, 175, 250, 283, 284]
+   FIX-2: [60, 154, 282]
+   FIX-3: [94, 247]
+   FIX-4: [78, 88, 210, 219, 237, 287]
+   FIX-5: [78, 80, 211, 219, 221, 287, 288]
+   FIX-6: [165, 283]
+   N1: [264, 271]
+   N2: [85, 125]
+   N3: [87]
+   N4: [199]
+   N5: [207, 287]
+   N6: [13]
+   N7: [168]
+   N8: [233, 289]
+   N9: [25]
+   N10: [160]
+   N11: [157]
+   N12: [123]
+   audit note: [169]
+   missing tags: []
+
+== label words per line in v2 status table (§6)
+   Prop. 2.1 (classification of P_D≡0 for a constant twist)               -> ['PROVED', 'COMPUTED']
+   Cor. 2.2 (constant D∈{1,2}: excluded unless C̃∈𝔉_D)                    -> ['PROVED']
+   Prop. 2.3 (𝔉_D satisfies the C-level identities: (𝒦) iff F\            -> ['PROVED', 'COMPUTED']
+   Cor. 2.4 (no exclusion of constant (𝒦), D∈{1,2}, a>=d' from the C-leve -> ['PROVED', 'OPEN']
+   Remark 2.5 (F·S layer or G5 as the exclusion route)                    -> ['HEURISTIC']
+   Lemma 3.1 (own-line shape; residual vanishing implied)                 -> ['PROVED']
+   Lemma 3.2 (own-point defect: 𝔡(u)∥(α^X,β^X); dichotomy (𝒦_ψ)⊇(𝒦) vs fe -> ['PROVED', 'COMPUTED']
+   Cor. 3.3 (R20 order-at-z(u) mechanism gives order 0 off Z(𝔡))          -> ['PROVED', 'HEURISTIC']
+   Remark 3.4 ((𝒦_ψ) defect identity)                                     -> ['PROVED', 'HEURISTIC', 'OPEN']
+   Remark 3.5 (cost ≈X·deg ψ)                                             -> ['HEURISTIC']
+   𝔉_1, 𝔉_2 (constant, D∈{1,2}); (R1); (𝒦_ψ)∖(𝒦); (R2) ranges left by R20 -> ['OPEN']

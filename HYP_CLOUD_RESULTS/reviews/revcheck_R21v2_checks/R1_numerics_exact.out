@@ -1,0 +1,24 @@
+corner D=1: 7451214389181/171798691840000 0.04337177605589968
+corner D=2: 8122364470431/171798691840000 0.04727838369104429
+[OK] D=1 corner == audit 7451214389181/171798691840000
+[OK] D=2 corner == audit 8122364470431/171798691840000
+[OK] D=1 corner rounds to 0.0433718
+[OK] D=2 corner rounds to 0.0472784
+[OK] corners <= note's 0.04338 / 0.04728
+[OK] corners < 1551/4000 = 0.38775 (margin > 0.34)
+D-lane corners (S=QD): 0.04334526301612641 0.047238345912529255  [D=2 at S=Q=128 would be 0.04725169183187972 ]
+[OK] D-lane D=1 corner rounds to 0.0433453
+[OK] D-lane D=2 corner: nearest 7-digit value is 0.0472383 (note/audit print 0.0472384, a valid upper bound)
+[OK] FIX-2 termwise formula == raw (N d+(D+2)(E+1)d+(Q+1)a+6d_def+7)/q at 201 points, D=1,2
+[OK] count: every term non-increasing in r,Q,S,n (sympy, sign of derivative numerators)
+[OK] negative control: the sign test rejects increasing terms (n, Q/(rS), E/n)
+[OK] kappa^2 bound: termwise split equals raw
+[OK] kappa^2 bound: every term non-increasing in r,Q,S,n
+[OK] grid rows = 1260 == 1260
+[OK] grid max == corner (D=1, D=2)
+kappa^2 corner: 946909077437/8589934592000 0.1102347249906743
+[OK] grid kappa^2 max == corner == 946909077437/8589934592000
+[OK] kappa^2 corner > 0.1102 (v1 statement false) and <= 0.110235 < 0.1103
+[OK] with d'<=2E+1: 0.1102324
+[OK] 3000 random non-dyadic strip points: none exceeds the corner values
+ALL OK

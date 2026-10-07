@@ -1,0 +1,207 @@
+1c1
+< # HYP M>=2, round 21 (owner v1): constant twists with D∈{1,2} reduce to two explicit families; the own-point defect outside (𝒦)
+---
+> # HYP M>=2, round 21 (owner v2): constant twists with D∈{1,2} reduce to two explicit families; the own-point defect outside (𝒦)
+5c5,14
+< **Version.** v1 owner draft. Not yet audited.
+---
+> **Version history.**
+> - v1: owner draft.
+> - v1 independently audited (`AUDIT_HYP_M2_ROUND21_20261007.md`): **PASS-with-fixes**.
+>   - Prop. 2.1 and Cor. 2.2 survive in full. Prop. 2.1 was independently confirmed in original coordinates with Frobenius-twisted constants over GF(2^4) and GF(2^8). The Cor. 2.2 numbers were reproduced exactly.
+>   - Main fix: Prop. 2.3/Cor. 2.4/summary item 3 overclaimed (FIX-1).
+>   - Further fixes FIX-2..6 and minor notes N1–N12.
+> - **v2 (this file)** applies FIX-1..6 and N1–N12, marked "[v2: FIX-n]" / "[v2: Nn]".
+>   - The only number changed is the one the audit asked for: deg 𝔡²/q <0.1103q (FIX-4).
+>   - [v2: N6] The own-point defect vector, called κ(u) in v1, is renamed 𝔡(u). This avoids a clash with the scalar κ_u (c^[Q]=κ_uB(u)c) and with R19's count κ(u).
+>   - Script headers are corrected in new copies `*_v2.py`. The originals are kept, and all v2 outputs are byte-identical to v1's.
+16c25
+< - PRIMARY FNAO (§2 slope set, §3 count), FNAP (§2 iteration, (1)–(2), §4), FNAM (FNAM2, FNAM3), FNAN, as reviewed (PASS / PASS-with-fixes). All PRIMARY results remain PRIMARY's. In particular, the count used in Cor. 2.2 is PRIMARY's FNAO §3 / FNAP (2), unchanged.
+---
+> - PRIMARY FNAO (§2 slope set, §3 count), FNAP (§2 iteration, (1)–(2), §4), FNAM (FNAM2, FNAM3), FNAN, as reviewed (PASS / PASS-with-fixes). [v2: N9] The FNAO/FNAP files still carry "independent review PENDING" headers. Their acceptance is recorded in the PRIMARY 13:01 message and in R18-T §1 (Claude review PASS-with-fixes). All PRIMARY results remain PRIMARY's. In particular, the count used in Cor. 2.2 is PRIMARY's FNAO §3 / FNAP (2), unchanged.
+51c60
+<    - the bound/q is <=0.0473 (COMPUTED exactly over 1260 parameter rows).
+---
+>    - the bound/q is <=0.0473 (COMPUTED exactly over 1260 parameter rows). [v2: FIX-2] Each term of bound/q is non-increasing in r, Q, S and n, so the supremum over the whole strip is the corner value at (4,128,64,256). "At every strip scale" is therefore PROVED, not only computed on the grid.
+54c63
+< 3. **The families satisfy every identity used so far (Prop. 2.3; precise negative result for (a)).** On 𝔉_D:
+---
+> 3. **The families satisfy the C-level identities used so far (Prop. 2.3; precise negative result for (a), restated in v2) [v2: FIX-1].** On 𝔉_D:
+64,68c73,81
+<    So (𝒦) with constant T, D∈{1,2}, a>=d' **cannot be excluded** by FNAL/TSY/TSYC/FNAM/FNAM2/FNAP, own-line divisibility, the R19/R20 residual machinery, or R20 Prop. 3.1-type divisibility. An exclusion needs input that sees C beyond P_D (HEURISTIC, §2.5).
+< 4. **Own-point defect outside (𝒦) (Lemma 3.2).** Put κ(u):=k_{c(u)}(u)=𝒞_{c(u)}(u)B(u)c(u).
+<    - At every good u, κ(u)∥(α^X,β^X)(u) (or κ(u)=0).
+<    - Either κ≡0, which defines a new class (𝒦_ψ) ⊋ (𝒦): k_12≡0 and k_11=ψk_22. Or κ(u)≠0 at all good u except at most 2deg ψ+2ad'+2ρ·deg[T] (<=0.1102q, COMPUTED).
+< 5. **Negative for (b) (Cor. 3.3).** At every good u off Z(κ), V_u(z(u))=κ_uκ(u)≠0. So the R20 line-restriction mechanism (an order->=m zero of ξ^ω_u at z(u)) gives order 0 for every row ω except one. Outside (𝒦_ψ) the residual route therefore cannot produce a per-point bound below the trivial a+mb(u).
+---
+>    So no argument that uses only these **C-level consequences** can exclude (𝒦) with constant T, D∈{1,2}, a>=d' on 𝔉_D. The consequences are FNAM2, own-line divisibility (the content of FNAL2/TSYC/FNAM3), (𝒦), F|Δ, the R19 normal form, R20 Prop. 3.1 and the R19/R20 residual machinery.
+>    - [v2: FIX-1] Whether 𝔉_D **lifts to original data** is **OPEN**. Lifting means original P, R with global alignment and G5 whose FNAL quotient factors through TSY with C=C̃. It also involves FNAL's forgotten span(f^[X]) component and R16's full vector own-line identity.
+>    - That lift is where an exclusion may come from (HEURISTIC, Remark 2.5).
+> 4. **Own-point defect outside (𝒦) (Lemma 3.2).** Put 𝔡(u):=k_{c(u)}(u)=𝒞_{c(u)}(u)B(u)c(u).
+>    - At every good u, 𝔡(u)∥(α^X,β^X)(u) (or 𝔡(u)=0).
+>    - Either 𝔡≡0, which defines a class (𝒦_ψ) ⊇ (𝒦) [v2: FIX-5: strictness is not shown]: k_12≡0 and k_11=ψk_22. Or 𝔡(u)≠0 at all good u except at most 2deg ψ+2ad'+2ρ·deg[T] (<0.1103q [v2: FIX-4], COMPUTED).
+> 5. **Negative for (b) (Cor. 3.3).** At every good u off Z(𝔡), V_u(z(u))=κ_u𝔡(u)≠0.
+>    - [v2: FIX-5] So the R20 order-at-z(u) mechanism (Lemmas 4.1–4.2) gives order 0 for every ω∦c^[T], and nothing for ω∥c^[T] (where ξ^ω_u=G|_{ℓ_u}≡0).
+>    - That a per-point bound below a+mb(u) is unavailable by any residual route is only HEURISTIC.
+72,74c85,88
+< - `classify_PD.out`: the kernel of the P_D coefficient map equals the claimed family exactly (dimensions 4·dim_a, 3·dim_a, 2·dim_a for D=1, 2, 4/8), for a=0..4.
+< - `family_check.out`: random members over GF(2) on a conic and on the Fermat cubic satisfy all six identities of Prop. 2.3, in 36/36 cases. A negative control (h not divisible by F) fails (𝒦) as expected.
+< - `numerics_R21.out`: the FNAP-count bound for D∈{1,2} is <=0.0473 over 1260 rows; deg κ²/q<=0.1102.
+---
+> - `classify_PD.out`: the kernel of the P_D coefficient map equals the claimed family exactly (dimensions 4·dim_a, 3·dim_a, 2·dim_a for D=1, 2, 4/8), for a=0..4. [v2: N2] The map preserves Y-monomials, so the a=0 case already proves the kernel statement for every a.
+> - `family_check.out`: random members over GF(2) on a conic and on the Fermat cubic satisfy all six C-level identities of Prop. 2.3, in 36/36 cases. A negative control (h not divisible by F) fails (𝒦) as expected.
+>   - [v2: N3] Here B, L∈GL_2(F_2), so the Frobenius twist in K=LB^[D] is not exercised. The audit repeated the test over GF(16) with a genuine twist (36/36, and a wrong-twist control fails).
+> - `numerics_R21.out`: the FNAP-count bound for D∈{1,2} is <=0.0473 over 1260 rows; deg 𝔡²/q<=0.110235<0.1103 [v2: FIX-4].
+77,78c91,92
+< - (a) is not closed for the families 𝔉_1, 𝔉_2, and they are consistent with every available identity (Prop. 2.3). No count is possible from G, because G≡0.
+< - (b): no new closed range. The residual data outside (𝒦) carry no per-point information beyond ℓ_u|G_c (Lemma 3.1). The R20 order mechanism fails off Z(κ) (Cor. 3.3). Exploiting κ(u)∥(α^X,β^X) costs ≈X·deg ψ (HEURISTIC).
+---
+> - (a) is not closed for the families 𝔉_1, 𝔉_2. They are consistent with every **C-level** identity used so far (Prop. 2.3); their lift to original data is OPEN [v2: FIX-1]. No count is possible from G, because G≡0.
+> - (b): no new closed range. The residual data outside (𝒦) carry no per-point information beyond ℓ_u|G_c (Lemma 3.1). The R20 order mechanism fails off Z(𝔡) (Cor. 3.3). Exploiting 𝔡(u)∥(α^X,β^X) costs ≈X·deg ψ (HEURISTIC).
+80c94,100
+< **Newly closed (PROVED, numbers COMPUTED).** Constant-twist models with D∈{1,2}, in (R2) (inside (𝒦), any n, in particular a>=d') and in (R3) (outside (𝒦)), **except** the two explicit families 𝔉_1, 𝔉_2. Before this note, the whole D∈{1,2} constant lane was open: FNAP §4 shows P_D can vanish, but it does not classify when.
+---
+> **Newly closed (PROVED, numbers COMPUTED) [v2: FIX-3].**
+> - **Prior state.** R20 v2.1 Cor. 3.2 had already closed constant (𝒦) at n=256 for every D.
+> - **New here.** Constant-twist models with D∈{1,2} and C̃∉𝔉_D (equivalently P_D≢0) are excluded:
+>   - in (R2) for n>=512 (a>=d');
+>   - in (R3), outside (𝒦), for every n in the strip.
+> - **What remains.** 𝔉_D∩{F|h} with a>=d' inside (𝒦), and 𝔉_D∩{F∤h} outside it. The families are parametrised by the twist data (L, B).
+> - FNAP §4 shows that P_D can vanish; Prop. 2.1 classifies exactly when.
+103c123
+< - (D>=4) C̃(z)=μ(Y)⊗z^⊥.
+---
+> - (D>=4) C̃(z)=μ(Y)⊗z^⊥. [v2: N12] Step 1 needs only D>=3; D>=4 is written because D is a power of 2.
+105c125
+< In each case the parameters are unique. Moreover
+---
+> In each case the parameters are unique. [v2: N2] The statement holds over every field of characteristic 2 and for every a. The proof uses only that k[z,Y] is a UFD. Moreover
+133c153,157
+< - **Numerics.** With N<16h/625, a<8h/625, d=E+2 and d_def<=q/1000, the right side over q is at most 0.04338 (D=1) and 0.04728 (D=2). This holds over r∈{4,…,64}, Q∈{2^7,…,2^14}, S∈{2^6,…,2^12} and all dyadic 256<=n<4Q (`numerics_R21.out`). ∎
+---
+> - **Numerics.** With N<16h/625, a<8h/625, d=E+2 and d_def<=q/1000, the right side over q is at most 0.04338 (D=1) and 0.04728 (D=2). This holds over r∈{4,…,64}, Q∈{2^7,…,2^14}, S∈{2^6,…,2^12} and all dyadic 256<=n<4Q (`numerics_R21.out`).
+> - **[v2: FIX-2] Whole strip.** Write the bound over q term by term:
+>   (16/625)(1+2/E) + (D+2)/n·(1+1/E)(1+2/E) + 8(Q+1)/(625rQS) + 6/1000 + 7/q.
+>   Each term is non-increasing in r, Q, S and n (E=rQS, q=nE²). So the supremum over the whole strip (r>=4, Q>=128, S>=64, n>=256) is the value at (4,128,64,256), namely 0.0433718 (D=1) and 0.0472784 (D=2).
+>   - [v2: N11] The grid includes S<Q, which is not in the D-lane (S=Q^jD>=Q). It is therefore conservative. On the true lane the audit finds 0.0433453 and 0.0472384. ∎
+135,136c159,160
+< **Proposition 2.3 (the families 𝔉_D satisfy all available identities; PROVED; COMPUTED check `family_check.out`).** Let D∈{1,2} and C_c(Y):=L^{−t}C̃(Bc) with C̃∈𝔉_D. Then:
+< - (i) **(𝒦) holds iff F|h (resp. F|h').** For a constant twist, (𝒦) is C_c(Z)Bc=0 on Γ', i.e. F|L^{−t}q. Here q=h·z^⊥ (resp. h'·z^{⊥[2]}), whose second factor has coprime entries z_2, z_1 in k[c]. In particular, (𝒦) on 𝔉_D forces a>=deg h>=d' (R20 Prop. 3.1).
+---
+> **Proposition 2.3 (the families 𝔉_D satisfy the C-level identities used in R18-T–R20; PROVED; COMPUTED check `family_check.out`) [v2: FIX-1].** Let D∈{1,2} and C_c(Y):=L^{−t}C̃(Bc) with C̃∈𝔉_D. Then:
+> - (i) **(𝒦) holds iff F|h (resp. F|h').** For a constant twist, (𝒦) is C_c(Z)Bc=0 on Γ', i.e. F|L^{−t}q. Here q=h·z^⊥ (resp. h'·z^{⊥[2]}), whose second factor has coprime entries z_2, z_1 in k[c]. In particular, (𝒦) on 𝔉_D forces a=deg_Y h>=d', with h≢0 by FNAM2 [v2: N10] (R20 Prop. 3.1).
+141,142c165,169
+< - (vi) **The residual machinery is vacuous.** Since B is constant, Ξ≡0 (R19 Cor. 3.2: G=κ_uΠ_1Ξ≡0). The R20 per-point bounds therefore say nothing.
+< - (vii) **No iterated divisibility is forced.** W_c:=C_cBc/F=L^{−t}(h/F)(Bc)^⊥ (D=1). So F|W_c iff F²|h, and h is free beyond F|h.
+---
+> - (vi) **The residual machinery is vacuous.** [v2: FIX-6] Since [B] is constant (B=λ^ρB_0), Ξ(u,v)=det(B(v)c,B(u)c)≡0 (R19 Cor. 3.2: G=κ_uΠ_1Ξ≡0).
+>   - Ξ≡0 makes N_Ξ(u) maximal, so on its own it would push u into 𝔅 via R20 Lemma 4.2.
+>   - The R20 line bound is vacuous on 𝔉_D∩(𝒦) because a>=d'. Then a−m>=d'−E>=#residual places, and Lemma 4.2 says nothing.
+> - (vii) **No iterated divisibility is forced.** W_c:=C_cBc/F=L^{−t}(h/F)(Bc)^⊥ (D=1), and W_c=L^{−t}(h'/F)(Bc)^{⊥[2]} (D=2) [v2: N7]. So F|W_c iff F²|h (resp. F²|h'), and h is free beyond F|h.
+>   - [v2: audit note] R19's reduction divides by F^k. On 𝔉_D with F|h and F|μ the reduced pencil is again in 𝔉_D, so the family is closed under the reduction.
+148,154c175,184
+< **Corollary 2.4 (answer to target (a); PROVED negative result).** Consider (𝒦) with constant T, D∈{1,2}. Every such model with a>=d' and P_D≢0 is excluded (Cor. 2.2). Every model with P_D≡0 lies in 𝔉_D with F|h. These models satisfy:
+< - every algebraic identity of FNAL/TSY/TSYC/FNAM/FNAM2;
+< - (𝒦) and the R19 normal form;
+< - own-line divisibility;
+< - R20 Prop. 3.1 and Lemma 4.3's input F|Δ.
+< 
+< Hence no argument built only from these inputs can exclude them. This is a theorem about the listed identities, not a claim that the models exist: G5, PRIM, the point count and the higher own-line layers are not checked.
+---
+> **Corollary 2.4 (answer to target (a); PROVED negative result at the C-level) [v2: FIX-1 restated].** Consider (𝒦) with constant T, D∈{1,2}. Every such model with a>=d' and P_D≢0 is excluded (Cor. 2.2). Every model with P_D≡0 lies in 𝔉_D with F|h. Such C-pencils satisfy the C-level consequences used in R18-T–R20:
+> - FNAM2 (Δ≢0);
+> - own-line divisibility ℓ_u|G_c (the content of FNAL2/TSYC/FNAM3);
+> - (𝒦)⟺F|h, F|Δ and the R19 normal form;
+> - R20 Prop. 3.1;
+> - the R19/R20 residual machinery.
+> 
+> Hence no argument using **only these consequences** excludes 𝔉_D.
+> - **OPEN:** whether 𝔉_D lifts to original data. That means original P, R with global alignment and G5 whose FNAL quotient factors through TSY with C=C̃, together with FNAL's forgotten span(f^[X]) component (FNAL §4: FNAL2 is necessary, not sufficient) and R16's full vector own-line identity.
+> - This is a statement about the listed C-level identities, not a claim that the models exist. G5, PRIM, the point count and the higher own-line layers are not checked. Remark 2.5 is consistent with this: the lift is the proposed exclusion route.
+169c199
+< **Lemma 3.1 (own-line shape; residual data carry nothing new; PROVED).** Let u be good with c_1c_2≠0. Then ℓ_u|G_{c(u)} holds iff
+---
+> **Lemma 3.1 (own-line shape; residual data carry nothing new; PROVED).** Let u be good. [v2: N4] The v1 hypothesis c_1c_2≠0 is unnecessary: if c_1=0, take η=V_1/c_2^T, and symmetrically. Then ℓ_u|G_{c(u)} holds iff
+177,181c207,211
+< **Lemma 3.2 (own-point defect; PROVED, conditional on R14.1 and R18-T Lemma 1.2).** Put κ(u):=k_{c(u)}(u)=β(u)k_11(u)+√(αβ)(u)k_12(u)+α(u)k_22(u).
+< - (i) At every good u, c(u)^[T]·κ(u)=0. Equivalently, κ(u)=0 or κ(u)∥(α^X,β^X)(u).
+< - (ii) The section κ²:=β̃²k_11^{[2]}+α̃β̃k_12^{[2]}+α̃²k_22^{[2]} (componentwise squares; α̃,β̃ as in R20 Lemma 4.3) has degree 2deg ψ+2ad'+2ρ·deg[T].
+< - (iii) **Dichotomy.** κ≡0 iff (𝒦_ψ): k_12≡0 and k_11=ψ·k_22. Otherwise at most 2deg ψ+2ad'+2ρ·deg[T] good u have κ(u)=0. With ρ·deg[T]<=Nd+ρd (R18 §5), this is <=0.1102q on the grid (`numerics_R21.out`).
+< - (iv) (𝒦)⊂(𝒦_ψ), with equality iff k_22≡0.
+---
+> **Lemma 3.2 (own-point defect; PROVED, conditional on R14.1, R18-T Lemma 1.2, FNAM3/TSYC (for G_{c(u)}(z(u))=0), R18-T Lemma 3.1 (u^[E]·e(u)=0), and R18 §5 (deg[T]<=Nd/ρ+d) [v2: N5]).** Put 𝔡(u):=k_{c(u)}(u)=β(u)k_11(u)+√(αβ)(u)k_12(u)+α(u)k_22(u).
+> - (i) At every good u, c(u)^[T]·𝔡(u)=0. Equivalently, 𝔡(u)=0 or 𝔡(u)∥(α^X,β^X)(u).
+> - (ii) The section 𝔡²:=β̃²k_11^{[2]}+α̃β̃k_12^{[2]}+α̃²k_22^{[2]} (componentwise squares; α̃,β̃ as in R20 Lemma 4.3) has degree 2deg ψ+2ad'+2ρ·deg[T].
+> - (iii) **Dichotomy.** 𝔡≡0 iff (𝒦_ψ): k_12≡0 and k_11=ψ·k_22. Otherwise at most 2deg ψ+2ad'+2ρ·deg[T] good u have 𝔡(u)=0. With ρ·deg[T]<=Nd+ρd (R18 §5), this is <=0.110235q<0.1103q on the grid (`numerics_R21.out`) [v2: FIX-4: v1 said <=0.1102q, but the exact maximum is 0.11023472]. By the same monotonicity as in Cor. 2.2, this is also the whole-strip supremum (audit).
+> - (iv) (𝒦)⊆(𝒦_ψ), with equality iff k_22≡0. Whether (𝒦_ψ)∖(𝒦) is nonempty, even formally, is not shown [v2: FIX-5].
+184c214
+< - **(i)** z(u)∈ℓ_u, so G_{c(u)}(z(u))=0. With c^[Q]=κ_uB(u)c (good u), G_c(z(u))=κ_uc^[T]·𝒞_c(u)B(u)c=κ_uc^[T]·κ(u). Also c^[T]=(β^X,α^X) projectively (c=(√β:√α), T=2X), and in characteristic 2 x·y=0 iff y∥x^⊥.
+---
+> - **(i)** z(u)∈ℓ_u, so G_{c(u)}(z(u))=0. With c^[Q]=κ_uB(u)c (good u), G_c(z(u))=κ_uc^[T]·𝒞_c(u)B(u)c=κ_uc^[T]·𝔡(u). Also c^[T]=(β^X,α^X) projectively (c=(√β:√α), T=2X), and in characteristic 2 x·y=0 iff y∥x^⊥.
+186c216
+< - **(iii)** Normalise by a fixed section and divide by β̃: κ/β=k_11+√ψk_12+ψk_22, with k_ij∈K⊕K (vectors over K). Since √ψ∉K (R14.1), 1 and √ψ are K-independent, so κ≡0 iff k_12=0 and k_11=ψk_22. If κ≢0, some component of κ² is a nonzero section, and its zeros contain {κ(u)=0}.
+---
+> - **(iii)** Normalise by a fixed section and divide by β̃: 𝔡/β=k_11+√ψk_12+ψk_22, with k_ij∈K⊕K (vectors over K). Since √ψ∉K (R14.1), 1 and √ψ are K-independent, so 𝔡≡0 iff k_12=0 and k_11=ψk_22. If 𝔡≢0, some component of 𝔡² is a nonzero section, and its zeros contain {𝔡(u)=0}.
+189c219
+< **Corollary 3.3 (the R20 order mechanism fails outside (𝒦_ψ); PROVED negative result).** Let u be good with κ(u)≠0 (all but <=0.1102q good u when κ≢0). Then V_u(z(u))=κ_uκ(u)≠0. So for every ω∈k² with ω·κ(u)≠0 (all ω except one projective direction), ξ^ω_u(z(u))≠0, i.e. ξ^ω_u has order 0 at z(u).
+---
+> **Corollary 3.3 (the R20 order mechanism fails outside (𝒦_ψ); PROVED negative result, scope restricted in v2) [v2: FIX-5].** Let u be good with 𝔡(u)≠0 (all but <0.1103q good u when 𝔡≢0 [v2: FIX-4]). Then V_u(z(u))=κ_u𝔡(u)≠0. So for every ω∈k² with ω·𝔡(u)≠0 (all ω except one projective direction), ξ^ω_u(z(u))≠0, i.e. ξ^ω_u has order 0 at z(u).
+191,193c221,224
+< Consequences:
+< - R20's line-restriction bound, whose gain is exactly the order m at z(u) (R20 Lemma 4.2), degenerates to the trivial count <=a+mb(u) for any comparison factor.
+< - Outside (𝒦_ψ), no per-point bound of R20 type is available.
+---
+> Consequences [v2: FIX-5]:
+> - The R20 order-at-z(u) mechanism (Lemmas 4.1–4.2) yields order 0 for every ω∦c^[T], and nothing for ω∥c^[T] (there ξ^ω_u=G|_{ℓ_u}≡0), at all good u off Z(𝔡).
+> - Outside (𝒦), R20's (1.1)/Ξ factorisation does not exist, so no "comparison factor" is defined.
+> - That **no** per-point residual bound below a+mb(u) exists outside (𝒦_ψ) is HEURISTIC. v1 stated it as part of the PROVED result.
+202c233
+< - Along Γ at y=u, V_u(z(y)) has order >=min(ρ𝔮, ord_uk_22+e_ψ(u)), which is generically 1. So the R20 order mechanism yields only m=1 there.
+---
+> - (HEURISTIC) [v2: N8] Along Γ at y=u, V_u(z(y)) has order >=min(ρ𝔮, ord_uk_22+e_ψ(u)), which is generically 1. So the R20 order mechanism yields only m=1 there. This needs β(u)≠0, a common local frame for B(u)+B(y) (as in R18-T Prop. 4.1(iii)) and non-cuspidal u for R20 Lemma 4.1. The m=1 conclusion is a generic claim.
+206,207c237,238
+< - Lemma 3.2(i) is a cheap section κ (<=0.11q) constrained by the expensive relation κ_1β^X=κ_2α^X. Its zero count as a section costs ≈X·deg ψ≫q.
+< - Rewriting x^X=y as y^{q/X}=x on F_q-points costs (q/X)·deg κ, which is worse.
+---
+> - Lemma 3.2(i) is a cheap section 𝔡 (<0.1103q [v2: FIX-4]) constrained by the expensive relation 𝔡_1β^X=𝔡_2α^X. Its zero count as a section costs ≈X·deg ψ≫q.
+> - Rewriting x^X=y as y^{q/X}=x on F_q-points costs (q/X)·deg 𝔡, which is worse.
+216c247,250
+< - **Constant twist, D∈{1,2}** (in (R2) with a>=d', and in (R3)): only the families 𝔉_1, 𝔉_2 of Prop. 2.1 remain. Inside (𝒦) this requires F|h; outside, F∤h.
+---
+> - **Constant twist, D∈{1,2}** [v2: FIX-3]:
+>   - (R2) at n=256 was already closed by R20 Cor. 3.2.
+>   - In (R2) with n>=512 (a>=d') and in (R3), only the families 𝔉_1, 𝔉_2 of Prop. 2.1 remain: F|h inside (𝒦), F∤h outside.
+>   - Their lift to original data is OPEN [v2: FIX-1].
+226c260
+< 3. **(R1) outside (𝒦_ψ).** Cor. 3.3 shows that per-point residual bounds are unavailable. Progress needs either a cheap way to use κ(u)∥(α^X,β^X) at good points (a Frobenius-twisted Stöhr–Voloch count on Γ for the pair (ψ,κ_1/κ_2)), or input beyond the second layer.
+---
+> 3. **(R1) outside (𝒦_ψ).** Cor. 3.3 shows that per-point residual bounds are unavailable. Progress needs either a cheap way to use 𝔡(u)∥(α^X,β^X) at good points (a Frobenius-twisted Stöhr–Voloch count on Γ for the pair (ψ,𝔡_1/𝔡_2)), or input beyond the second layer.
+230c264
+< ## 5. Computations (`scripts/`, all `python3 -I`, single process, each < 10 s)
+---
+> ## 5. Computations (`scripts/` in the owner directory, delivered to the audit as `owner_scripts/` [v2: N1]; all `python3 -I`, single process, each < 10 s)
+236c270,271
+< | `numerics_R21.py` → `.out` | exact Fractions: the FNAP count for D∈{1,2} (Cor. 2.2); deg κ²/q (Lemma 3.2) | max bound/q = 0.043372 (D=1), 0.047278 (D=2) < 0.38775 over 1260 rows; max deg κ²/q = 0.110235 |
+---
+> | `numerics_R21.py` → `.out` | exact Fractions: the FNAP count for D∈{1,2} (Cor. 2.2); deg 𝔡²/q (Lemma 3.2) | max bound/q = 0.043372 (D=1), 0.047278 (D=2) < 0.38775 over 1260 rows; max deg 𝔡²/q = 0.110235 (<0.1103) |
+> | `classify_PD_v2.py`, `family_check_v2.py`, `numerics_R21_v2.py` → `*_v2.out` [v2: N1] | header-corrected copies (section numbers Prop. 2.1/2.3, Cor. 2.2, Lemma 3.2; the GF(2)-only twist caveat) | outputs byte-identical to v1's (`cmp`) |
+247,249c282,284
+< | Cor. 2.2 (constant D∈{1,2}: excluded unless C̃∈𝔉_D) | PROVED, conditional on PRIMARY's FNAO/FNAP count; numbers COMPUTED |
+< | Prop. 2.3 (𝔉_D satisfies (𝒦) iff F\|h, FNAM2, F\|Δ, normal form, vacuous own-line and residual conditions) | PROVED; COMPUTED (36/36 plus control) |
+< | Cor. 2.4 (no exclusion of constant (𝒦), D∈{1,2}, a>=d' from the listed identities) | PROVED (relative to the listed identities) |
+---
+> | Cor. 2.2 (constant D∈{1,2}: excluded unless C̃∈𝔉_D) | PROVED, conditional on PRIMARY's FNAO/FNAP count; whole strip by monotonicity [v2: FIX-2] |
+> | Prop. 2.3 (𝔉_D satisfies the C-level identities: (𝒦) iff F\|h, FNAM2, F\|Δ, normal form, vacuous own-line and residual conditions) | PROVED; COMPUTED (36/36 plus control; GF(16) by the audit) [v2: FIX-1, FIX-6] |
+> | Cor. 2.4 (no exclusion of constant (𝒦), D∈{1,2}, a>=d' from the C-level identities) | PROVED (C-level only) [v2: FIX-1]; lift to original data (FNAL/TSY/G5) OPEN |
+252,254c287,289
+< | Lemma 3.2 (own-point defect: κ(u)∥(α^X,β^X); dichotomy (𝒦_ψ) vs few zeros) | PROVED (R14.1, R18-T Lemma 1.2); bound COMPUTED |
+< | Cor. 3.3 (R20 order mechanism gives order 0 off Z(κ)) | PROVED (negative) |
+< | Remark 3.4 ((𝒦_ψ) defect identity) | PROVED identity; usefulness OPEN |
+---
+> | Lemma 3.2 (own-point defect: 𝔡(u)∥(α^X,β^X); dichotomy (𝒦_ψ)⊇(𝒦) vs few zeros) | PROVED (R14.1, R18-T Lemma 1.2, FNAM3/TSYC, R18 §5); bound <0.1103q COMPUTED [v2: FIX-4, FIX-5, N5] |
+> | Cor. 3.3 (R20 order-at-z(u) mechanism gives order 0 off Z(𝔡)) | PROVED (negative, for that mechanism only); "no residual per-point bound at all" HEURISTIC [v2: FIX-5] |
+> | Remark 3.4 ((𝒦_ψ) defect identity) | PROVED identity; the m=1 order claim HEURISTIC [v2: N8]; usefulness OPEN |
+258c293
+< Dependencies: R20 v2.1, R19 v2.1, R18-T v2.1 (audited, revision-checked); PRIMARY FNAO/FNAP/FNAM/FNAN (reviewed). This note is an unaudited owner v1. No manuscript was edited. The classification of hyperovals is not claimed complete.
+---
+> Dependencies: R20 v2.1, R19 v2.1, R18-T v2.1 (audited, revision-checked); PRIMARY FNAO/FNAP/FNAM/FNAN (reviewed). v1 was independently audited (PASS-with-fixes); v2 applies FIX-1..6 and N1–N12 and has not been revision-checked. No manuscript was edited. The classification of hyperovals is not claimed complete.
