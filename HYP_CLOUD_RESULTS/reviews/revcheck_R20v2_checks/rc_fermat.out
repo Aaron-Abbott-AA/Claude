@@ -1,0 +1,12 @@
+(1) symbolic over F_2: Xi(u,v_zeta) mod (s^2-(1+b)) = b**9 + b**2 ; equals b^2(1+b^7): True
+(2) affine points of Gamma(GF(2^21)) with U0=1, U2!=0: 2095345  [3.4s]
+    Xi independent of zeta at all points: True;  Xi == x^14(1+x^49) at all points: True
+    full fibres (all six Xi=0): 301;  with g=0: 7;  with g!=0: 294
+    full fibres with g!=0 have x in mu_49\mu_7: True;  #points with x in mu_49\mu_7: 294
+(4) points with some v_zeta == u: 294; with exactly one: 294; coincide with full fibres with g!=0: True
+    colliding zeta equals x^-7 at all collision points: True
+(3) histogram of j(u)=ord_u e^*(l_u) over all 2095345 points: {8: 2095044, 9: 294, 14: 7}
+    on g!=0: j(u) values [8, 9];  {g!=0, j(u)>E} == {some v_zeta=u}: True;  {g!=0, j(u)>E} == {g!=0 and full fibre}: True;  j(u)=E+1 there: True
+    among g!=0 points with j(u)=E: full fibres = 0
+    (g=0 points x=0: P=T^14 because G contains the line U1=0 -- not a j(u) computation; value [14])
+done [30.0s]

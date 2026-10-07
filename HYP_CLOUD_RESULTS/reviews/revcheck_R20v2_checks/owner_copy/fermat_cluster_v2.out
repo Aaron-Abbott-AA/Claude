@@ -1,0 +1,7 @@
+Part A, GF(2^12): histogram of N_Xi(u): {0: 4214, 6: 7}
+  full clusters (U1, g=U0U1U2) as integers: [(0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0)]
+  all full clusters degenerate (U1=0, g=0): True
+Part B, GF(2^21): Xi(u,v_zeta) == x^14(1+x^49) for all zeta at 20/20 random points
+  x in mu_49\mu_7 (|.|=42), one point u per x: 42 points; g(u)!=0: 42; all six Xi=0: 42
+  exactly one residual v_zeta equal to u (so j(u)>E): 42/42; with zeta=x^-7: 42/42
+  => in this toy every full cluster is degenerate: g=0 (Part A) or a residual point collides with u (Part B).

@@ -1,0 +1,25 @@
+(a) Cor. 3.2: max a_max/d' at n=256 over owner grid (Q without 8192, S in {64,256}), and with Q=8192
+   owner grid: max a_max/d' (n=256) = 0.700669 (<1: True);  min a_max/d' (n=512) = 2.2921
+   with 8192: max a_max/d' (n=256) = 0.700669 (<1: True);  min a_max/d' (n=512) = 2.2921
+   printed supremum (2048/625+1/8-2)/2 = 0.700900
+   exact inequality 3.2768E+E/(2r)-Q/2<4E-4 on test set: True
+(b) D_1/E at n=256 with m=E (Q=1024,S=64, d'=2E-2) and at n=512
+   r=4 n=256: D_1/E = 0.6001
+   r=4 n=512: D_1/E = -2.6767
+   r=8 n=256: D_1/E = 0.6617
+   r=8 n=512: D_1/E = -2.6151
+   r=16 n=256: D_1/E = 0.6924
+   r=16 n=512: D_1/E = -2.5844
+(c) Prop. 5.2 margin, r=16, Q=128, n=256, qq=E/16, S=64: (4.1)+N4 bound/q - 1551/4000
+   d'=2E-2: tau_hi=85692 lim=85692 margin(1)=-0.00386 margin(lim)=-0.30862
+   d'=2E-1: tau_hi=85692 lim=85692 margin(1)=-0.00387 margin(lim)=-0.30862
+   d'=2E+0: tau_hi=85692 lim=85692 margin(1)=-0.00387 margin(lim)=-0.30863
+   d'=2E+1: tau_hi=85692 lim=85692 margin(1)=-0.00387 margin(lim)=-0.30863
+   d'=2E+2: tau_hi=85692 lim=85692 margin(1)=-0.00388 margin(lim)=-0.30863
+   d'=2E+3: tau_hi=85691 lim=85691 margin(1)=-0.00388 margin(lim)=-0.30862
+   d'=2E+4: tau_hi=85691 lim=85691 margin(1)=-0.00388 margin(lim)=-0.30863
+(d) Lemma 2.1(iii) v2: affine invariance of the level s; Mobius counterexample t*w^7
+   affine changes: 0/300 raise the level (expected 0)
+   counterexample: level(t)= 1, level(t^7)= 7
+(e) Prop. 2.2 FIX-5 wording: a-m <= s+K  <=>  s >= a-m-K (so reduction strictly better iff s <= a-m-K-1)
+   0 counterexamples

@@ -1,0 +1,14 @@
+E=8 Fermat sigma1, GF(2^12), d'=14, residual points per u: 6
+a=10  N=4   k=0: (contact, dim sol, A|l_u==0 for all sampled, min order of A|l_u at z(u)) per trial: [(8, 62, False, 4), (8, 62, False, 4), (8, 62, False, 4)] | prediction: order>=4, A|l_u==0 iff k>a-min(N,E)=6
+a=10  N=8   k=0: (contact, dim sol, A|l_u==0 for all sampled, min order of A|l_u at z(u)) per trial: [(8, 58, False, 8), (8, 58, False, 8), (8, 58, False, 8)] | prediction: order>=8, A|l_u==0 iff k>a-min(N,E)=2
+a=12  N=8   k=0: (contact, dim sol, A|l_u==0 for all sampled, min order of A|l_u at z(u)) per trial: [(8, 83, False, 8), (8, 83, False, 8), (8, 83, False, 8)] | prediction: order>=8, A|l_u==0 iff k>a-min(N,E)=4
+a=12  N=16  k=0: (contact, dim sol, A|l_u==0 for all sampled, min order of A|l_u at z(u)) per trial: [(8, 75, False, 8), (8, 75, False, 8), (8, 75, False, 8)] | prediction: order>=8, A|l_u==0 iff k>a-min(N,E)=4
+a=12  N=24  k=0: (contact, dim sol, A|l_u==0 for all sampled, min order of A|l_u at z(u)) per trial: [(8, 67, False, 8), (8, 67, False, 8), (8, 67, False, 8)] | prediction: order>=8, A|l_u==0 iff k>a-min(N,E)=4
+a=13  N=16  k=0: (contact, dim sol, A|l_u==0 for all sampled, min order of A|l_u at z(u)) per trial: [(8, 89, False, 8), (8, 89, False, 8), (8, 89, False, 8)] | prediction: order>=8, A|l_u==0 iff k>a-min(N,E)=5
+a=12  N=8   k=4: (contact, dim sol, A|l_u==0 for all sampled, min order of A|l_u at z(u)) per trial: [(8, 79, False, 8), (8, 79, False, 8), (8, 79, False, 8)] | prediction: order>=8, A|l_u==0 iff k>a-min(N,E)=4
+a=12  N=8   k=5: (contact, dim sol, A|l_u==0 for all sampled, min order of A|l_u at z(u)) per trial: [(8, 78, True, None), (8, 78, True, None), (8, 78, True, None)] | prediction: order>=8, A|l_u==0 iff k>a-min(N,E)=4
+a=12  N=8   k=6: (contact, dim sol, A|l_u==0 for all sampled, min order of A|l_u at z(u)) per trial: [(8, 78, True, None), (8, 78, True, None), (8, 78, True, None)] | prediction: order>=8, A|l_u==0 iff k>a-min(N,E)=4
+a=13  N=8   k=5: (contact, dim sol, A|l_u==0 for all sampled, min order of A|l_u at z(u)) per trial: [(8, 92, False, 8), (8, 92, False, 8), (8, 92, False, 8)] | prediction: order>=8, A|l_u==0 iff k>a-min(N,E)=5
+a=13  N=8   k=6: (contact, dim sol, A|l_u==0 for all sampled, min order of A|l_u at z(u)) per trial: [(8, 91, True, None), (8, 91, True, None), (8, 91, True, None)] | prediction: order>=8, A|l_u==0 iff k>a-min(N,E)=5
+a=12  N=16  k=4: (contact, dim sol, A|l_u==0 for all sampled, min order of A|l_u at z(u)) per trial: [(8, 71, False, 8), (8, 71, False, 8), (8, 71, False, 8)] | prediction: order>=8, A|l_u==0 iff k>a-min(N,E)=4
+a=12  N=16  k=5: (contact, dim sol, A|l_u==0 for all sampled, min order of A|l_u at z(u)) per trial: [(8, 70, True, None), (8, 70, True, None), (8, 70, True, None)] | prediction: order>=8, A|l_u==0 iff k>a-min(N,E)=4
