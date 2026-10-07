@@ -1,0 +1,6 @@
+(a) z=(1,t^2,t^3): lim z x z' = [0, 1, 0], meets with mult 2; true tangent (0,0,1) mult 3
+(b) random branches E=4,8: I_w(l_w)>=E in 80/80; among m<E: l_w = branch tangent in 74/74
+(c) E=4 toy: v=(1,t,0), z=(t^E,1,1+t^(E+1)): incidence ok; m=4, I(l_w)=4, tangent [0, 1, 1] has I=5 -> l_w not tangent
+(c) E=8 toy: v=(1,t,0), z=(t^E,1,1+t^(E+1)): incidence ok; m=8, I(l_w)=8, tangent [0, 1, 1] has I=9 -> l_w not tangent
+(d) Pi_1 = lam * pi^X identity: 20/20
+(e) row-gcd of [C_P|C_R] = lam*p'_i and gcd of all entries = lam (Z(lam) = common zeros): 38/38

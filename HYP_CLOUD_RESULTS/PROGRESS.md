@@ -24,7 +24,22 @@ No file whose name contains "DZ" was opened. A DZ-CLOUD-HANDOFF zip was uploaded
    - No headline claim breaks, and all Cor. 4.2 thresholds stand. Every number was reproduced independently.
    - FIX-1 (Thm 4.1 Step 3, the Z(λ) places) and FIX-2 (Lemma 1.1(i) at singular branches) are substantive. Neither changes a number.
    - FIX-3..8: labels, understatements, wording and citations.
-5. **R19 v2** (`notes/R19_CORRESPONDENCE_ROUTE_v2.md`) — applies FIX-1..8 and N1–N8. Revision check (fresh referee): IN PROGRESS.
+5. **R19 v2** (`notes/R19_CORRESPONDENCE_ROUTE_v2.md`) — applies FIX-1..8 and N1–N8.
+6. **Revision check of R19 v2** (`reviews/REVISION_CHECK_HYP_M2_ROUND19_V2_20261007.md`; checks in `reviews/revcheck_R19v2_checks/`). Verdict: **PASS-with-fixes**.
+   - FIX-1 and FIX-2 were re-derived.
+   - All Cor. 4.2 numbers were recomputed from v2's (4.1) and are unchanged.
+   - Eight minor items RC-1..8 were raised.
+7. **R19 v2.1** (`notes/R19_CORRESPONDENCE_ROUTE_v2_1.md`) — applies RC-1..8. It is final. No statement, proof step or number changed; RC-5 fills two missing table cells.
+8. **A306 draft** (`A306_draft/`) — packet kit for PRIMARY (R18-T v2.1 and R19 v2.1, each with its audit and revision check, plus scripts). **NOT delivered**: the local HYP session must poll, acknowledge, build and place it (see `A306_draft/README.md`).
+
+## Statuses (R19 v2.1)
+- Prop 1.1, Prop 1.2 (F_E-subline), Lemma 1.4, Lemma 1.5 (with the cusp-tangent exception) and Example 1.6: PROVED.
+- Lemma 1.1: PROVED for m(w)<E; OPEN for m(w)>=E.
+- Thm 2.1, Cor 2.2 (invariance ⇒ T constant): PROVED.
+- Lemma 3.0, Lemma 3.1 (𝒦 normal form), Cor 3.2, Prop 3.3 (ρ·deg[T]<=a·d'), Prop 3.4 and Lemma 3.5: PROVED.
+- Thm 4.1: PROVED, with the repairs. Cor 4.2: COMPUTED exactly and reproduced independently twice. (𝒦) with non-constant T is closed for r=4 at 𝔮>=E/4, for r=8 at n<=512 with 𝔮>=nE/(16Q) or nE/(4Q), and for r=16 at n=256 with 𝔮>=512E/Q.
+- Prop 5.1(ii) and the 5.2 degree counts: PROVED. Prop 5.1(i) and "the route cannot improve (R1)": HEURISTIC.
+- Arithmetic monodromy transitive: COMPUTED for E=8 and 16; not decided for E=32.
 
 ## Statuses (R18-T v2.1)
 - Lemma 1.1, Lemma 1.2, Lemma 2.1 and Lemma 2.1A (Γ'⊃Bs(f)): PROVED.
@@ -38,11 +53,22 @@ No file whose name contains "DZ" was opened. A DZ-CLOUD-HANDOFF zip was uploaded
 - Carried over: R17 v2.1 and R18 v2.1 were audited, revision-checked and sent as A305.
 
 ## Mailbox
-Not linked. No A306 has been delivered. The pending-ACK file named by the user is not present in the bundle.
+Not linked. No A306 has been delivered; the packet kit is in A306_draft/. The pending-ACK file named by the user is not present in the bundle.
 
 ## Hashes (sha256)
 419b99c61b7d1d4333aa3ee64b283ba22dc9e60c7a39f1fa88c5684a93bf201b  notes/R18T_TWIST_NOTE_v2.md
 65ba7f0bdffda18145365625e13d138c4e66b70015100fe0dbe0ff33e25b41ed  notes/R18T_TWIST_NOTE_v2_1.md
 215b9925a4e042c4b449a587e45e898613349a58d799a87b454991e31555c8cd  notes/R19_CORRESPONDENCE_ROUTE_v2.md
+465496ba78a7c5704139fd938ac0f3bc5316b949731e20ac545ed0219a576be1  notes/R19_CORRESPONDENCE_ROUTE_v2_1.md
 63ea9f4bb675a8d6c808ad9f7a2700dc6f4aa9dc6db8a1cab05577244e3c4fcf  reviews/REVISION_CHECK_HYP_M2_ROUND18T_V2_20261007.md
+1edc8e8d73872b99d845d0514d05f8440325ea59acc74c6875b066147893d909  reviews/REVISION_CHECK_HYP_M2_ROUND19_V2_20261007.md
 f3013a20c4df2acc5f8972a29300e26a28832c262bd589814b7c3f515aa3e35c  audits/AUDIT_HYP_M2_ROUND19_20261007.md
+bb192fc85e963433ed4a24779770e96b674cf3bb6817b0daf51aa482bcf5d35a  A306_draft/src/M2_ROUND18T_AUDIT_OF_V1.md
+65ba7f0bdffda18145365625e13d138c4e66b70015100fe0dbe0ff33e25b41ed  A306_draft/src/M2_ROUND18T_NONCONSTANT_TWIST_REDUCED_COVER_KERNEL_ALIGNED_v2_1.md
+63ea9f4bb675a8d6c808ad9f7a2700dc6f4aa9dc6db8a1cab05577244e3c4fcf  A306_draft/src/M2_ROUND18T_REVISION_CHECK_OF_V2.md
+f3013a20c4df2acc5f8972a29300e26a28832c262bd589814b7c3f515aa3e35c  A306_draft/src/M2_ROUND19_AUDIT_OF_V1.md
+465496ba78a7c5704139fd938ac0f3bc5316b949731e20ac545ed0219a576be1  A306_draft/src/M2_ROUND19_OWN_LINE_CORRESPONDENCE_KERNEL_ALIGNED_COUNT_v2_1.md
+1edc8e8d73872b99d845d0514d05f8440325ea59acc74c6875b066147893d909  A306_draft/src/M2_ROUND19_REVISION_CHECK_OF_V2.md
+76828abcfd5dce535ce3df3a1f4a37522ed8918a5043c5a9f3b8db82e7e2805a  A306_draft/src/message_template.md
+f621ebbda9be9b86507ffe48f4320089129bad2404d722a41457499ee6177789  A306_draft/src/scripts_audit_checks.tar.xz
+8db929b026b651161c982efef1c1433afd06ebaf0a3cf2403074056544fc310f  A306_draft/build_A306.py

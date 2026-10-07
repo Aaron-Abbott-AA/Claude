@@ -1,0 +1,216 @@
+1c1
+< # HYP M>=2, round 19: the own-line correspondence — structure, invariance forces constancy, and a count for the kernel-aligned case
+---
+> # HYP M>=2, round 19 (v2): the own-line correspondence — structure, invariance forces constancy, and a count for the kernel-aligned case
+3c3,8
+< 7 October 2026. Claude HYP(2) research note for session_012ij7YN37LGpSS88rmUGQ7E. This is the R18-T §6 follow-up: develop the "residual intersection / correspondence" route. Owner draft; independent audit pending. Scripts and outputs are in this directory. No file whose name contains "DZ" was opened. Nothing under any `src/` directory was executed (the PRIMARY `.md` sources were read only).
+---
+> 7 October 2026. Claude HYP(2) research note for session_012ij7YN37LGpSS88rmUGQ7E. This is the R18-T §6 follow-up: develop the "residual intersection / correspondence" route.
+> 
+> **Version history.**
+> - v1: owner draft.
+> - v1 independently audited (`AUDIT_HYP_M2_ROUND19_20261007.md`): **PASS-with-fixes**. No headline claim breaks and all Cor. 4.2 thresholds stand. There are two substantive proof repairs (FIX-1, FIX-2), neither of which changes a printed number, plus label, statement and wording fixes (FIX-3..8) and minor notes N1–N8.
+> - **v2 (this file)** applies FIX-1..8 and N1–N8. Changes are marked "[v2: FIX-n]" or "[v2: Nn]". Scripts and outputs are in this directory. No file whose name contains "DZ" was opened. Nothing under any `src/` directory was executed (the PRIMARY `.md` sources were read only).
+6c11
+< - R18-T (`r18_T/NOTE_TWIST_CONSTANCY.md`, owner draft under audit). Used: Lemma 1.1, Lemma 1.2 (first layer), Prop. 4.1, Prop. 4.2.
+---
+> - R18-T v2.1 (`R18T_TWIST_NOTE_v2_1.md`): audited PASS-with-fixes, revision-checked, fixes applied [v2: FIX-7]. Used: Lemma 1.1, Lemma 1.2 (first layer), Lemma 2.1A (Γ'⊃Bs(f)), Prop. 4.1, Prop. 4.2.
+12c17
+< - **PROVED**: full proof given here (owner proof, not yet audited). It is conditional on the inputs it names.
+---
+> - **PROVED**: full proof given here (owner proof; v1 independently audited, v2 revision check pending). It is conditional on the inputs it names.
+22c27
+< - 𝒞_•:=C_•(e(U)), the restrictions to Γ'.
+---
+> - 𝒞_•:=C_•(z), formed with the **morphism** z:Γ̃→Γ' (the normalised e), i.e. sections of z^*O(a), of degree a·d'. Not formed with the raw polynomial e(U): that would vanish at every point of Bs(e)∩Γ̃, which is nonempty [v2: FIX-1].
+39c44
+<    - **Transversality (Lemma 1.5).** Residual intersections are transversal except at cuspidal branches of Γ'.
+---
+>    - **Transversality (Lemma 1.5).** Residual intersections are transversal except at cuspidal branches of Γ'. [v2: FIX-2] One exception: the branch tangent at a cusp w of multiplicity m(w)>=E is not determined (at most one u per such w), and it is charged separately in (4.1).
+53,54c58,59
+<    - Summing over good points gives an explicit bound that **excludes (𝒦) with non-constant T** in a range where τ_0=deg[T]/𝔮 is at most ≈0.43E (r=4) or ≈0.16–0.48E (r=8, n<=512). With the (𝒦) height bound, this holds when 𝔮 is at least a fixed fraction of E (Cor. 4.2, exact numerics):
+<      - r=4: 𝔮>=nE/(8Q) suffices for n>=512 (better at n=256). Since dyadic n<=2Q, **𝔮>=E/4 suffices throughout the strip**.
+---
+>    - Summing over good points (with the v2 repairs FIX-1/FIX-2, which change no number) gives an explicit bound that **excludes (𝒦) with non-constant T** in a range where τ_0=deg[T]/𝔮 is at most ≈0.43E (r=4) or ≈0.16–0.48E (r=8, n<=512). With the (𝒦) height bound, this holds when 𝔮 is at least a fixed fraction of E (Cor. 4.2, exact numerics):
+>      - r=4: 𝔮>=nE/(8Q) suffices for n>=512 (better at n=256). Since dyadic n<=2Q, **𝔮>=E/4 suffices throughout the strip**. [v2: FIX-5] The margin is uniform: as n=2Q→∞ the (𝒦)-height/E tends to 0.4096 and τ_max/E to 0.42496. This was verified up to Q=16384, and at n=2Q up to Q=2^19 (audit c1).
+56c61
+<      - r=16: only n=256 with Q>=1024 (𝔮>=E/2).
+---
+>      - r=16 [v2: FIX-5]: only n=256, with 𝔮>=512E/Q for Q>=512 (E at Q=512, E/2 at 1024, …, E/32 at 16384).
+61c66
+< - **Random centres σ1(BU).** The residual polynomial always has the 4-term support {E+1,E,1,0}. Its factorisation patterns over F_{2^m} are those of projective polynomials (e.g. 1+2+6, 9 and 1+1+1+3+3 for E=8), so the arithmetic monodromy is transitive.
+---
+> - **Random centres σ1(BU).** The residual polynomial always has the 4-term support {E+1,E,1,0}. Its factorisation patterns over F_{2^m} are those of projective polynomials (e.g. 1+2+6, 9 and 1+1+1+3+3 for E=8). [v2: FIX-3(a)] The arithmetic monodromy is transitive for E=8 (an irreducible specialisation) and for E=16 (cycle-type combinatorics, audit c2(e)). It is not decided for E=32.
+66,67c71,72
+< - **(R1) (outside 𝒦).** The residual route gives **no** B(u)–B(v) relation. Per point u, G_{c(u)}|_{Γ'} has degree a·d'>d'−E, so vanishing at the residual points is never contradictory. On 𝒵', every section encoding the residual vanishing contains the factor c^[Q] or the linear pencil coordinate c. Neither is an E-th power, so the section pays a factor E on the v-side. The residual route cannot improve R18-T's X·deg[T] cost there (§5; PROVED as a cost statement, and HEURISTIC as a statement about the method).
+< - **(R2)** remains open for small 𝔮 (τ_0 comparable to E) and for r>=16 (and r=8 with n>=1024). In these ranges the p-term 2r·a·d' of the count already exceeds the budget.
+---
+> - **(R1) (outside 𝒦).** The residual route gives **no** B(u)–B(v) relation. Per point u, G_{c(u)}|_{Γ'} has degree a·d'>d'−E, so vanishing at the residual points is never contradictory. On 𝒵', every section encoding the residual vanishing contains the factor c^[Q] or the linear pencil coordinate c. Neither is an E-th power, so the section pays a factor E on the v-side. [v2: FIX-4] The degree counts of §5 are PROVED. The claim that the residual route cannot improve R18-T's X·deg[T] cost there is HEURISTIC.
+> - **(R2)** remains open for small 𝔮 (τ_0 comparable to E), for r>=16 except n=256, and for r=8 with n>=1024. In these ranges the p-term 2r·a·d' of the count already exceeds the budget.
+83c88
+< - The map (u,y)↦(u,v) with v:=f(y^[E]) (so y=e(v)^{[1/E]} projectively) is a bijection 𝒵'→𝒵 on points.
+---
+> - The map (u,y)↦(u,v) with v:=f(y^[E]) (so y=e(v)^{[1/E]} projectively) is a bijection 𝒵'→𝒵 **on points of the normalisations**. Here v=f(y^[E]) means the birational map extended to Γ̃'. It is undefined pointwise at Γ'∩Bs(f), and Γ' passes through every proper base point of f with multiplicity >=E−3 (R18-T v2.1 Lemma 2.1A); several places of Γ̃' lie over such a point. [v2: FIX-6]
+88,90c93,95
+< **Lemma 1.1 (branch tangents; PROVED).**
+< - (i) Every place v of Γ̃ gives a branch of Γ' at e(v), whose tangent line is ℓ_v={Y : v^[E]·Y=0}.
+< - (ii) Consequently the tangent line of the branch of Γ'^{(1/E)} at y=e(v)^{[1/E]} is the line with coordinates v. That is, it is {Y : v·Y=0}.
+---
+> **Lemma 1.1 (branch tangents; PROVED for m(w)<E, OPEN for m(w)>=E) [v2: FIX-2].**
+> - (i) Let w be a place of Γ̃ whose branch of Γ' at z(w) has multiplicity m(w)<E. Then the branch tangent is ℓ_w={Y : w^[E]·Y=0}. In all cases, ℓ_w meets the branch with multiplicity >=E.
+> - (ii) Consequently, for m(v)<E (in particular at generic v), the tangent line of the branch of Γ'^{(1/E)} at y=e(v)^{[1/E]} is the line with coordinates v. That is, it is {Y : v·Y=0}.
+93,94c98,106
+< - **(i)** At generic places the tangent is [f(z)^[E]]=[v^[E]]. The branch tangent depends continuously on the place (it is the limit of the tangents at nearby places), and v↦[v^[E]] is a morphism Γ̃→P².
+< - **(ii)** Apply the coordinatewise E-th root to (i). ∎
+---
+> - **(i) [v2: FIX-2; the v1 continuity argument is invalid at singular branches in characteristic 2.]**
+>   - *Counterexample to v1's argument.* For the branch (1,t²,t³), z×z' tends to the line (0,1,0), which meets the branch with multiplicity 2. The true tangent (0,0,1) meets it with multiplicity 3.
+>   - *Correct argument.* Let v(t) be the branch of Γ at w, with v(0)=w, and z(t) the corresponding branch of Γ'.
+>     - On Γ, v(t)^[E]·z(t)=0 identically.
+>     - Also v(0)^[E]−v(t)^[E]=(v(0)−v(t))^[E] is divisible by t^E.
+>     - Hence ℓ_w·z(t)=(v(0)^[E]−v(t)^[E])·z(t)=O(t^E), i.e. I_w(ℓ_w)>=E.
+>     - For a branch of multiplicity m, every line through z(0) other than the branch tangent meets it with multiplicity exactly m. So if m(w)<E, ℓ_w is the branch tangent.
+>   - For m(w)>=E, whether ℓ_w is the branch tangent is OPEN. The places with m(w)>=E number at most (2d'+2g−2)/(E−1) (Lemma 1.5's count).
+> - **(ii)** Apply the coordinatewise E-th root to (i). It is used only at the generic place (Lemma 1.4), where m=1. ∎
+103c115
+< - **(i) The contact is at most E.** By FNAK part 1, applied to the point map z:Γ̃→P² (nondegenerate, since Γ' is not a line, with orders (0,1,ε_2), ε_2>=4), the osculating object z×D^{(1)}z, i.e. the tangent line, is projectively defined over K^{ε_2}. The tangent is [u^[E]]. If ε_2>=2E, then [u]∈P²(K^{ε_2/E})⊂P²(K²), so x=U_1/U_0∈K², which is false. Hence ε_2=E.
+---
+> - **(i) The contact is at most E.** By FNAK part 1, applied to the point map z:Γ̃→P² (nondegenerate, since Γ' is not a line, with orders (0,1,ε_2), ε_2>=4), the osculating object z×D^{(1)}z, i.e. the tangent line, is projectively defined over K^{ε_2}. The tangent is [u^[E]]. If ε_2>=2E, then [u]∈P²(K^{ε_2/E})⊂P²(K²). So both coordinate ratios U_1/U_0 and U_2/U_0 lie in K², and since they generate K, K⊂K², which is false [v2: N1]. Hence ε_2=E.
+109c121
+< **Proposition 1.2 (residual points form an F_E-subline; PROVED, with Lang's theorem cited).**
+---
+> **Proposition 1.2 (residual points form an F_E-subline; PROVED, with Lang's theorem cited).** It applies to u with ℓ_u∩Bs(f)=∅, which is all but <=3d points [v2: FIX-6, N2]. Then C_u=f(ℓ_u) is a smooth conic through Bs(e). The degenerate case αδ=βγ is not analysed, and it is not used.
+125c137
+<   - the contact root has multiplicity exactly E;
+---
+>   - the contact root has multiplicity exactly E. The single degenerate sample at E=32 is a point u∈Bs(e)∩Γ (audit c0), so it is evidence that Bs(e)∩Γ≠∅, which is relevant to FIX-1. It is not a counterexample to Prop. 1.2 [v2: FIX-8];
+127c139
+<   - its factorisation patterns are the projective-polynomial patterns (Bluher). For E=8 these are 1+2+6, 9 and 1+1+1+3+3. Pattern 9 occurs, so the arithmetic monodromy on the E+1 roots is transitive there.
+---
+>   - its factorisation patterns are the projective-polynomial patterns (Bluher). For E=8 these are 1+2+6, 9 and 1+1+1+3+3. Pattern 9 occurs, so the arithmetic monodromy on the E+1 roots is transitive there. For E=16 transitivity follows from the observed cycle types; for E=32 it is not decided [v2: FIX-3(a)].
+147c159
+< **Lemma 1.5 (transversality away from cusps; PROVED).**
+---
+> **Lemma 1.5 (transversality away from cusps; PROVED, with the cusp-tangent exception) [v2: FIX-2].**
+149c161
+< - **Statement.** For u≠w with e(w)∈ℓ_u, the intersection multiplicity of ℓ_u with the branch at w is 1 if w is not cuspidal, and m(w) if it is.
+---
+> - **Statement.** For u≠w with e(w)∈ℓ_u, the intersection multiplicity of ℓ_u with the branch at w is 1 if w is not cuspidal. It is m(w) if w is cuspidal and ℓ_u is not the branch tangent. The latter can fail only if m(w)>=E (by Lemma 1.1(i), ℓ_w is then possibly not the tangent), and for at most one u per such w (Frobenius is injective). The excess there is <=d'−E.
+154,155c166,167
+< - **Cuspidal branches.** For a branch of multiplicity m, a non-tangent line has multiplicity exactly m.
+< - **The count.** z×dz is a nonzero section of O_{Γ'}(2)⊗Ω¹ (the map is separable and Γ' is not a line), and ord_w(z×dz)>=m(w)−1. ∎
+---
+> - **Cuspidal branches.** For a branch of multiplicity m, a non-tangent line has multiplicity exactly m. If m(w)<E, the tangent is ℓ_w (Lemma 1.1(i)), and ℓ_u=ℓ_w forces u=w. If m(w)>=E, at most one u≠w can have ℓ_u equal to the true tangent.
+> - **The count.** z×dz is a nonzero section of O_{Γ'}(2)⊗Ω¹ (the map is separable and Γ' is not a line), and ord_w(z×dz)>=m(w)−1. So the number of w with m(w)>=E is <=⌊(2d'+2g−2)/(E−1)⌋. ∎
+179c191
+< *Remark.* Irreducibility of 𝒵 is not used. Fermat (Example 1.6) shows it can fail. In Fermat the theorem is transparent: g∘Φ_ζ has degree E·deg g≠deg g.
+---
+> *Remark.* Irreducibility of 𝒵 is not used. Fermat (Example 1.6) shows it can fail. In Fermat the theorem is transparent: g∘Φ_ζ has degree E·deg g≠deg g. Equivalently, invariance g=g∘Φ_ζ forces g∈K^E, and iterating forces g∈∩_mK^{E^m}=k: purely inseparable composition removes invariants rather than creating them (audit §3.2, counterexample attempt).
+252c264
+< - **Factor.** Apply Cor. 3.2. Off det T̂=0, p is regular: its poles lie where a column of B has a common zero. ∎
+---
+> - **Factor.** Apply Cor. 3.2. [v2: FIX-1] With 𝒞 formed by the morphism z, p=λp' is regular everywhere (Thm 4.1, Step 1). The alternative Π_1=0 includes the places with λ(v)=0, i.e. where C_P and C_R both vanish at z(v); these are charged separately in Thm 4.1. ∎
+275c287
+< **Theorem 4.1 ((𝒦) with non-constant twist; PROVED, conditional on the cited inputs).** Assume §3's standing hypotheses, (𝒦) for the reduced pencil, [T̂] non-constant, and τ_0<=d'−E. Then
+---
+> **Theorem 4.1 ((𝒦) with non-constant twist; PROVED, conditional on the cited inputs; repaired in v2 [v2: FIX-1, FIX-2]).** Assume §3's standing hypotheses, (𝒦) for the reduced pencil, [T̂] non-constant, and τ_0<=d'−E. Then
+276a289
+>                                + (d'−E)·⌊(2d'+2g−2)/(E−1)⌋
+277a291
+> The second line is new in v2 (FIX-2: the cusp-tangent excess). It changes no printed digit of Cor. 4.2 (audit c1, column "with FIX-2"). FIX-1 adds no term: its cost is absorbed by the 2r(d−1)·a·d' term (Step 4).
+283,286c297,302
+<   - Let p' be p normalised to a regular section of a bundle 𝓟 of degree <=a·d' (Prop. 3.3's frame). Since E=2rX,
+<         Π_1(u,v) = π(u,y)^X,   π := β(u)·p'^σ_1(y)^{2r} + α(u)·p'^σ_2(y)^{2r}.
+<   - π is a section on 𝒵'^res of degree <=(d'−E)·deg ψ+(d−1)·2r·a·d', by Prop. 1.1(ii).
+< - **Step 2: π is nonzero on each component.** If π≡0 on a component 𝒵'_1, then ψ(u)=(p'^σ_1/p'^σ_2)^{2r}∈L². (p'^σ_2≡0 would force p≡0.) By Lemma 1.4(A), L/k(Γ_u) is separable, so L²∩k(Γ_u)=k(Γ_u)². That contradicts R14.1.
+---
+>   - [v2: FIX-1] Write p=λp', where p' is a section of a bundle 𝓟 without common zeros, and let w:=(t̂_11,t̂_21,t̂_12,t̂_22)^{ρ𝔮}, also without common zeros. Lemma 3.1 gives [𝒞_P|𝒞_R]=λ·p'⊗w. So λ is a **regular** section of z^*O(a)⊗𝓟^{−1}⊗𝓣^{−ρ𝔮}, and
+>         deg𝓟 + #Z(λ) <= a·d' − ρ·deg[T]   (in particular deg𝓟<=a·d').
+>     Its zeros Z(λ) are exactly the places where C_P and C_R both vanish at z(v). Since E=2rX,
+>         Π_1(u,v) = λ(v)·π(u,y)^X,   π := β(u)·p'^σ_1(y)^{2r} + α(u)·p'^σ_2(y)^{2r}.
+>   - π is a section on 𝒵'^res of degree <=(d'−E)·deg ψ+(d−1)·2r·deg𝓟, by Prop. 1.1(ii), using deg𝓟^σ=deg𝓟.
+> - **Step 2: π is nonzero on each component.** If π≡0 on a component 𝒵'_1, then ψ(u)=(p'^σ_1/p'^σ_2)^{2r}∈L². [v2: N3] If p'^σ_2≡0, then π=β̃(u)p'^σ_1(y)^{2r}≢0 directly, since p'^σ_1≢0. By Lemma 1.4(A), L/k(Γ_u) is separable, so L²∩k(Γ_u)=k(Γ_u)². That contradicts R14.1.
+292c308
+<   - At every remaining residual place, Π_1=0 (Prop. 3.4), so π=0.
+---
+>   - [v2: FIX-1] Remove the residual places in Z(λ). At every remaining residual place, Π_1=0 (Prop. 3.4) and λ(v)≠0, so π=0.
+296c312,313
+<   - Σ_uκ(u)<=d·Σ_w(m(w)−1)<=d(2d'+2g−2). A place w is residual for at most d places u, namely those on the line e(w)^{[1/E]}.
+---
+>   - Σ_uκ(u)<=d·Σ_w(m(w)−1)+(d'−E)⌊(2d'+2g−2)/(E−1)⌋<=d(2d'+2g−2)+(d'−E)⌊(2d'+2g−2)/(E−1)⌋. A place w is residual for at most d places u, namely those on the line e(w)^{[1/E]}. The second term is the cusp-tangent exception of Lemma 1.5 [v2: FIX-2].
+>   - [v2: FIX-1] Σ_u|Res(u)∩Z(λ)|<=d·#Z(λ). Since d<=2r(d−1), 2r(d−1)deg𝓟+d·#Z(λ)<=2r(d−1)(a·d'−ρ·deg[T])<=2r(d−1)·a·d'. So the π-degree term together with the Z(λ) charge is bounded by the printed 2r(d−1)·a·d' term [v2: N4: it even improves by 2r(d−1)ρ·deg[T], which is not used].
+304c321
+<   - r=8: 0.477 (n=256), 0.157 (n=512); fails at n>=1024.
+---
+>   - r=8: 0.477 (n=256), 0.157 (n=512); τ_max≈0.0022E at n=1024, where no 𝔮<=E suffices; τ_max=0 from n=2048 [v2: FIX-5, N5].
+316c333
+< | 16 | 256 | none / none / E/2 |
+---
+> | 16 | 256 | none / none / E/2 (and E at Q=512, E/4 at 2048, E/8 at 4096, E/32 at 16384; i.e. 𝔮>=512E/Q) [v2: FIX-5] |
+319c336,337
+<   - **r=4:** since n<=2Q in the strip, 𝔮>=E/4 suffices at every scale.
+---
+>   - **r=4:** since n<=2Q in the strip, 𝔮>=E/4 suffices at every scale. The margin is uniform: the limit is 0.4096<0.42496 (audit c1, verified to Q=2^19).
+>   - [v2: FIX-5] An independent check (audit c1) scanned **every** d'∈[2E−2,2E+4] and Q up to 16384. The minimum is always at d'=2E−2, and all thresholds are unchanged with the FIX-2 term.
+330,331c348,349
+< **Proposition 5.1 (no B(u)/B(v) relation; per-point emptiness; PROVED).** Outside (𝒦), let u be good.
+< - (i) The residual vanishing is the single equation c^[T,t]𝒞_c(v)B(u)c=0 with c=c(u). Since 𝒞_c(v)B(v)c≠0 at generic v, it gives no relation between B(u) and B(v).
+---
+> **Proposition 5.1 (no B(u)/B(v) relation; per-point emptiness; (i) HEURISTIC, (ii) PROVED) [v2: FIX-4].** Outside (𝒦), let u be good.
+> - (i) (HEURISTIC) The residual vanishing is the single equation c^[T,t]𝒞_c(v)B(u)c=0 with c=c(u). Since 𝒞_c(v)B(v)c≠0 at generic v, it gives no relation between B(u) and B(v).
+338c356
+< **Proposition 5.2 (the E-penalty; PROVED as a degree statement).**
+---
+> **Proposition 5.2 (the E-penalty; the degree counts are PROVED, the cost conclusion is HEURISTIC) [v2: FIX-4].**
+349c367
+< - 𝒵'^res has degree d'−E over Γ_u (generic fibre reduced) and <=d−1 over Γ'^{(1/E)}. 𝒵^res has inseparable degree >=E over Γ_v.
+---
+> - 𝒵'^res has degree d'−E over Γ_u (generic fibre reduced) and <=d−1 over Γ'^{(1/E)}. [v2: FIX-3(b)] 𝒵^res is inseparable over Γ_v (Lemma 1.4(B)). The inseparable degree is E in the Fermat example; in general it is not determined.
+351c369
+< - For random centres the arithmetic monodromy on the E+1 residual roots is transitive (COMPUTED). Geometric irreducibility there is OPEN, and not needed.
+---
+> - For random centres the arithmetic monodromy on the E+1 residual roots is transitive for E=8 and E=16 (COMPUTED; for E=16 via cycle-type combinatorics). It is not decided for E=32 [v2: FIX-3(a)]. Geometric irreducibility there is OPEN, and not needed.
+365c383
+<   - r>=16 (except n=256, Q>=1024, 𝔮>=E/2);
+---
+>   - r>=16, except n=256 with 𝔮>=512E/Q (Q>=512);
+379c397
+< 3. **The 2r loss.** The factor 2r in Thm 4.1 comes from E/X. If p is itself a 2r-th power on Γ', for instance in polynomial-origin situations (R18-T Prop. 2.2), the factor 2r disappears from the p-term and r=16 would close. Worth testing on R18-T Example 4.3-type data.
+---
+> 3. **The 2r loss.** The factor 2r in Thm 4.1 comes from E/X. If p is itself a 2r-th power on Γ', for instance in polynomial-origin situations (R18-T v2.1 Prop. 2.2, which is CONDITIONAL on (H_lift), OPEN; its v1 hypothesis (H_bs) never holds) [v2: FIX-7], the factor 2r disappears from the p-term and r=16 would close. Worth testing on R18-T Example 4.3-type data.
+389c407
+< | `corr_random.py` → `corr_random.out` | random centres σ1(BU), E=8,16,32 | contact multiplicity exactly E (one degenerate sample at E=32); residual degree E+1=d−1, support {E+1,E,1,0}, squarefree; projective-polynomial factor patterns (3 per E) |
+---
+> | `corr_random.py` → `corr_random.out` | random centres σ1(BU), E=8,16,32 | contact multiplicity exactly E (the one degenerate sample at E=32 is a base point of e on Γ, see FIX-8); residual degree E+1=d−1, support {E+1,E,1,0}, squarefree; projective-polynomial factor patterns (3 per E) |
+394a413,417
+> [v2: FIX-8, N8] Script notes:
+> - `corr_fermat.out`'s "symmetry … 0/0" test was **not exercised** and should be ignored.
+> - Script headers that cite "Theorem 4.4 of NOTE_CORRESPONDENCE_ROUTE.md" or "Prop 4.2" mean Thm 4.1 and Prop. 3.3 of this note.
+> - The scripts themselves are unchanged from v1. All owner outputs were re-run byte-identical by the auditor.
+> 
+401c424,425
+< | Lemma 1.1, Prop. 1.1 (contact exactly E via FNAK; degrees of 𝒵') | PROVED (uses FNAK, Stöhr–Voloch, R14.1) |
+---
+> | Lemma 1.1 | PROVED for m(w)<E (v2 proof); OPEN for m(w)>=E [v2: FIX-2] |
+> | Prop. 1.1 (contact exactly E via FNAK; degrees of 𝒵') | PROVED (uses FNAK, Stöhr–Voloch, R14.1) |
+403c427,429
+< | Lemma 1.4 (separable over u, inseparable over v), Lemma 1.5 (transversality) | PROVED |
+---
+> | Lemma 1.4 (separable over u, inseparable over v) | PROVED |
+> | Lemma 1.5 (transversality, with the cusp-tangent exception) | PROVED [v2: FIX-2] |
+> | arithmetic monodromy transitive (random centres) | COMPUTED for E=8, 16; not decided for E=32 [v2: FIX-3] |
+407,408c433,435
+< | Thm 4.1, Cor. 4.2 ((𝒦), non-constant T, closed for large 𝔮/E, r<=8) | PROVED; numbers COMPUTED exactly |
+< | Prop. 5.1, 5.2 (no gain outside 𝒦) | PROVED as stated; the method reading is HEURISTIC |
+---
+> | Thm 4.1, Cor. 4.2 ((𝒦), non-constant T, closed for large 𝔮/E, r<=8, and r=16 at n=256) | PROVED with the v2 repairs FIX-1, FIX-2 (no number changes); numbers COMPUTED exactly, independently reproduced |
+> | Prop. 5.1(ii), the 5.2 degree counts | PROVED |
+> | Prop. 5.1(i), the 5.2 cost conclusion, "the route cannot improve (R1)" | HEURISTIC [v2: FIX-4] |
+411c438,442
+< Dependencies whose audit is pending: R18-T (owner), and FNAK/FNAL/TSY/TSYC/FNAM (reviewed PASS / PASS-with-fixes). Everything here is owner work awaiting independent audit. No manuscript was edited.
+---
+> Dependencies:
+> - R18-T v2.1 (audited, revision-checked).
+> - FNAK/FNAL/TSY/TSYC/FNAM/FNAN/FNAO/FNAP (reviewed PASS / PASS-with-fixes).
+> 
+> v1 of this note was independently audited (PASS-with-fixes). This v2 applies FIX-1..8 and awaits a revision check. No manuscript was edited.
