@@ -1,0 +1,6 @@
+rho in [10,40]: cells=200 gate_pass=112 gate_fail=88
+GO(e) range a*<=(rho-4)/3: cells=78 gate_pass=51
+gate-pass cells newly covered by GX (outside GO(e) range): 61
+first new cells: [(10, 14, 3), (12, 15, 4), (12, 17, 3), (14, 18, 5), (14, 20, 4), (16, 19, 6), (16, 21, 5), (18, 22, 7), (18, 24, 6), (18, 26, 5), (20, 23, 8), (20, 25, 7)]
+closed form check rho in [10,400]: mismatches=0, cells with offending r != m/4: 0
+kernel bound rho-a*>=a*+3 over whole band rho+3<=g<=2rho, rho in [10,400] (39788 cells): failures=0

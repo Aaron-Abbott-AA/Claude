@@ -1,0 +1,14 @@
+### python3 -I dz_ld_check.py 8 60 1
+T4 dimU'=3: W' constants=True, dim W'=2 (= dimU'-1: True)
+T4 dimU'=4: W' constants=True, dim W'=3 (= dimU'-1: True)
+m=8 Q=16 samples=60 seed=1 dmax=1
+counts: {'T1': 60, 'T1_nonzeroAprime': 56, 'T2': 120, 'T3': 228, 'T4': 2, 'T5': 245}
+failures: {'T1': 0, 'T2': 0, 'T3': 0, 'T4': 0, 'T5': 0}
+### python3 -I dz_ld_check.py 12 120 2
+T4 dimU'=3: W' constants=True, dim W'=2 (= dimU'-1: True)
+T4 dimU'=4: W' constants=True, dim W'=3 (= dimU'-1: True)
+T4 dimU'=5: W' constants=True, dim W'=4 (= dimU'-1: True)
+T4 dimU'=6: W' constants=True, dim W'=5 (= dimU'-1: True)
+m=12 Q=64 samples=120 seed=2 dmax=3
+counts: {'T1': 120, 'T1_nonzeroAprime': 114, 'T2': 240, 'T3': 619, 'T4': 4, 'T5': 479}
+failures: {'T1': 0, 'T2': 0, 'T3': 0, 'T4': 0, 'T5': 0}
