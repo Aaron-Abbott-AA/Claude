@@ -549,3 +549,51 @@
 3. Codex questions (EK §3, EL §3, SH §5).
 4. The resume message in the 22:34Z section still applies. Read the newest HANDBACK, now 20261007T2240Z.
 - **Zip:** `1d2eaa75f8bf8d4be7f7ea686964fb08117e5c75c624b733f55a7ca9e1ef9494`  DZ-HANDBACK-20261007T2240Z.zip (310 files; contains PROGRESS.md as of this section)
+
+---
+## Session 2, continued (23:00Z–23:03Z): SH audit → v2 → packet EM (PENDING DIFF-CHECK)
+- **Audit.** AUDIT-SH: **PASS-with-fixes** (FIX-1, FIX-2, m1–m9). The RK example was verified.
+- **v2.** SH v2 applies every fix. FIX-1 adopts the referee's Claim U, credited [P, referee].
+- **Packet EM_20261007T2301Z.** Prepared, with MANIFEST last. **PENDING DIFF-CHECK, NOT READY.** README-PENDING.md is updated, and EF–EL are READY and unchanged.
+- **The goal is NOT complete.** GLS₀ for the arc family, the even-band question, the ker P̃ question, G1″, G1 and the linear-gap conjecture are OPEN.
+
+| Item | Status |
+|---|---|
+| SH v2: Theorem SH, SH1–SH3, Claim U (referee, adopted), Proposition RK (a = 1, G-fixed kernel) | PROVED (owner/referee; audit PASS-with-fixes; v2 pending diff check) |
+| G-stable W″ ⊃ W inside RX's P (ker P̃), m ≥ 24; even-band generic PTH (ii) | OPEN |
+
+| sha256 | File |
+|---|---|
+| 05f8fd30b6d1aff9bdb7cc996c7759d308a4539d66fcf4de371a4ff9ec5b946a | claude_archive/SH-SUBHALFFIELD-CRITERION-NOTE-20261007-v2.md |
+| 18f006358355db6429388b024f15c53f5385adec246595f1f961d880dc96b68c | claude_archive/AUDIT-SH-SUBHALFFIELD-CRITERION-20261007.md |
+| f9f13fc53a1fac1ba2b7e8618468cfb316b3de4a72650ca84fc1a1ae17768eb8 | claude_archive/HANDBACK-20261007T2302Z.md |
+| 2dfa8d6a1b91a056059755c2d4d282f16017b42a95d73045ed645640ad784701 | claude_archive/CHECKPOINT-ADDENDUM-20261007T2302Z.md |
+| b99568dfea62a82b0eb23b2ca94b2d2ea3d3e21666bbd7921d4eb8aac9d8e1ff | claude_archive/audit_SH_checks/checks_SHA256SUMS.txt |
+| 8709f1859f3cf0a00f83497e155b5c1a518eecb68070507c752223e2b7e40b44 | claude_archive/audit_SH_checks/sh_ref_Zker.log |
+| c7870dba2fa344fdfd9d08f0519e14ae8a6ac9c07ed4dec27548b9d2bc64ab71 | claude_archive/audit_SH_checks/sh_ref_Zker.py |
+| 9c17e2ecc1a8572eca094019b7bee2afa51769e309c439f371bc70bacaec32e9 | claude_archive/audit_SH_checks/sh_ref_quotient.log |
+| 50b5ebc9ede0a02bbeca2bac52bf6d1e90d99a9ed41a1cedf8b7591fecb8eda6 | claude_archive/audit_SH_checks/sh_ref_quotient.py |
+| 6f6e1f53c9e90ac9c37cbedea4bc72ca796948dab12285f5330fd0520bbb79f3 | claude_archive/audit_SH_checks/sh_ref_rk_control.log |
+| 4abecff8577187e6dc95fed955cbdac889b767621f2b576844a397643f75747e | claude_archive/audit_SH_checks/sh_ref_rk_control.py |
+| 4139b1855d58778f34de3ed4192b747836baf40b19488fd573bb1dd3e68166dc | claude_archive/audit_SH_checks/sh_ref_rk_exact.log |
+| 5dd6df3518805e3e71cf3ccddb72515947079e1bc9e8e447423d25407e283143 | claude_archive/audit_SH_checks/sh_ref_rk_exact.py |
+| 7e63fbecf542b39ee7dd077abefa3e082d710a0159247f0f7fb50482ab564b7b | claude_archive/audit_SH_checks/sh_ref_rk_kernel.log |
+| d62da9299325af264690554620e3c6f301aee490af878a3f1e8d42ad900a2d22 | claude_archive/audit_SH_checks/sh_ref_rk_kernel.py |
+| dead60fb9b87838cf1acca97ecf2e7af076508f58ba93f942cff7da6cea810f0 | claude_archive/audit_SH_checks/sh_ref_sha.log |
+| c7f3d49221fc69f04d5d14d837e66fa0b12b474a62b49486389bf46fdf7c8d17 | claude_archive/audit_SH_checks/sh_ref_sha.py |
+| bc74772ca8374092597dad05693c6979028b4906d54e6dddac1a7f321dbb4934 | claude_archive/audit_SH_checks/owner_copy/slcheck.py |
+| a060fbd370f36828145c9bfe10a86e4b1b9daf7e11937b9bba18af6c025d260a | claude_archive/audit_SH_checks/owner_copy/slcheck_rerun.log |
+| 71fce72659591742e23620020dece57bb6a85702a8118b9203ce2949a11103d9 | outbox_for_user_delivery/README-PENDING.md |
+| b19d8981c762bd85ab0ee4cd4d19f78a9967582753640fdc2741bef1aafffc8d | outbox_for_user_delivery/to_codex/EM_20261007T2301Z.md |
+| 05f8fd30b6d1aff9bdb7cc996c7759d308a4539d66fcf4de371a4ff9ec5b946a | outbox_for_user_delivery/to_codex/SH-SUBHALFFIELD-CRITERION-NOTE-20261007-v2.md |
+| 18f006358355db6429388b024f15c53f5385adec246595f1f961d880dc96b68c | outbox_for_user_delivery/to_codex/AUDIT-SH-SUBHALFFIELD-CRITERION-20261007.md |
+| bc74772ca8374092597dad05693c6979028b4906d54e6dddac1a7f321dbb4934 | outbox_for_user_delivery/to_codex/slcheck.py.txt |
+| a060fbd370f36828145c9bfe10a86e4b1b9daf7e11937b9bba18af6c025d260a | outbox_for_user_delivery/to_codex/slcheck.log |
+| 9deb82a4d50b136f1d396fc97e8e0a58aa39204f62db8e824b54b0e760730fd4 | outbox_for_user_delivery/to_codex/MANIFEST_EM_20261007T2301Z.tsv |
+
+**Pending:**
+1. SH v2 diff check, then flip EM to READY and regenerate MANIFEST_EM last.
+2. Device steps for EF→EM.
+3. Codex questions.
+4. The resume message (22:34Z section) still applies, with EM added after EL. Read the newest HANDBACK, now 20261007T2302Z.
+- **Zip:** `7d5b8016be2ccd886e95e95153edcfb920d9d2e4e4e5101aee57f57884899aed`  DZ-HANDBACK-20261007T2302Z.zip (337 files; contains PROGRESS.md as of this section)

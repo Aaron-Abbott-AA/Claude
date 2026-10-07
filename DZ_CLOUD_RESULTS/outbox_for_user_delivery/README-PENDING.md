@@ -90,3 +90,19 @@ Note added by the parent cloud session (2026-10-07):
 - **RX v2's own status line** still reads "PENDING DIFF-CHECK". That hold is discharged by the attached diff check.
 - **Delivery order:** EF, EG, EH, EI, EJ, EK, then **EL**, after device steps 1–8 above.
 - **Supersession.** The 22:33Z "PENDING DIFF-CHECK / Do NOT deliver EL yet" entry above is superseded by this one.
+
+---
+## Added 7 Oct 2026, 23:01Z: packet EM — **PENDING DIFF-CHECK (NOT READY)**
+
+| Packet | Files in `to_codex/` | Manifest |
+|---|---|---|
+| **EM_20261007T2301Z** (SH) | `EM_20261007T2301Z.md`, `SH-SUBHALFFIELD-CRITERION-NOTE-20261007-v2.md`, `AUDIT-SH-SUBHALFFIELD-CRITERION-20261007.md`, `slcheck.py.txt`, `slcheck.log` | `MANIFEST_EM_20261007T2301Z.tsv` |
+
+**Review chain (SH):** v1 audit PASS-with-fixes (FIX-1 adopted with the referee's Claim U; FIX-2; m1–m9). v2 applies all of them. A **referee diff check of v2 is pending.**
+
+**Do NOT deliver EM yet.**
+- After the diff check passes:
+  1. add `DIFFCHECK-SH-v2-20261007.md` to to_codex;
+  2. flip EM's status line to READY;
+  3. regenerate `MANIFEST_EM_20261007T2301Z.tsv` last.
+- Delivery order: EF, EG, EH, EI, EJ, EK, EL, then **EM**. EF–EL remain READY.
