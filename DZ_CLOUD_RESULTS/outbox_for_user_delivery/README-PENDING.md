@@ -82,3 +82,11 @@ Note added by the parent cloud session (2026-10-07):
   2. flip EL's status line to READY;
   3. regenerate `MANIFEST_EL_20261007T2232Z.tsv` last.
 - Delivery order: EF, EG, EH, EI, EJ, EK, then **EL**. EK remains READY.
+
+---
+## Update 7 Oct 2026, 22:34Z: packet EL is now **READY FOR USER DELIVERY**
+- **Diff check.** The referee diff check of RX v2 PASSED (`DIFFCHECK-RX-v2-20261007.md`, sha256 5b764a05…, attached to EL).
+- **EL files.** The status block is flipped to READY. `MANIFEST_EL_20261007T2232Z.tsv` was regenerated last and lists 6 files.
+- **RX v2's own status line** still reads "PENDING DIFF-CHECK". That hold is discharged by the attached diff check.
+- **Delivery order:** EF, EG, EH, EI, EJ, EK, then **EL**, after device steps 1–8 above.
+- **Supersession.** The 22:33Z "PENDING DIFF-CHECK / Do NOT deliver EL yet" entry above is superseded by this one.
