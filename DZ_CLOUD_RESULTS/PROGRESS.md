@@ -375,3 +375,73 @@
 2. Device steps for EF→EJ, then EK.
 3. Newest zip: DZ-HANDBACK-20261007T2208Z.zip. Its sha256 is in the line below; the zip contains PROGRESS.md as of this section.
 - **Zip:** `374115ee05ca44fca03ff19a12a6c679841fe81483e30684fe5403f78db8c3a8`  DZ-HANDBACK-20261007T2208Z.zip (271 files)
+
+---
+## Session 2, continued (22:10Z–22:12Z): GLO diff check PASS → EK READY
+- **Diff check.** DIFFCHECK-GLO-v2 PASSED, with no edits required. Of its cosmetic notes, only c3 was applied, in the EK cover.
+- **EK_20261007T2206Z → READY FOR USER DELIVERY.** DIFFCHECK attached, MANIFEST_EK regenerated last (9 files), README-PENDING.md updated. EF–EJ unchanged.
+- **GLO item statuses** are as in the 22:05Z section. The review chain is complete: v1 → audit → v2 → diff check PASS.
+- **The goal is NOT complete.** GLS₀ for the arc family, the FIX-1 band-dimension question, G1″, G1 and the linear-gap conjecture are OPEN.
+
+| sha256 | File (new or changed) |
+|---|---|
+| 8d9b4aa294d2f50f72880c971135a28ca60ef798bf9ba7ef233d320e09995047 | claude_archive/DIFFCHECK-GLO-v2-20261007.md |
+| a1d2dba8b9662cdc178c048dcbef5687796b60d46ddc07d95a8fce0becdc9d78 | claude_archive/HANDBACK-20261007T2211Z.md |
+| d21f983a29ac33a6791609d5e9c1fe892ec606239add58c4a305818588d863ef | claude_archive/CHECKPOINT-ADDENDUM-20261007T2211Z.md |
+| 6680a12d51fb04e6b061d9288dfb4c1c342aeeb5a252f72c6a048a48efb51a51 | outbox_for_user_delivery/README-PENDING.md |
+| 50b89fbfb8204bbd12334ff4e3ccbfe71e636e7dd16f7140e373024a86005bc5 | outbox_for_user_delivery/to_codex/EK_20261007T2206Z.md |
+| 8d9b4aa294d2f50f72880c971135a28ca60ef798bf9ba7ef233d320e09995047 | outbox_for_user_delivery/to_codex/DIFFCHECK-GLO-v2-20261007.md |
+| d46d66116ae0cca0dadfb916faacf206fb39b86a954f7ab24e87a20ecd049e5b | outbox_for_user_delivery/to_codex/MANIFEST_EK_20261007T2206Z.tsv |
+
+### Resume message (paste into the local DZ session; supersedes the earlier one)
+> The DZ cloud sessions (7 Oct 2026; not Mac-linked) wrote everything to `DZ_CLOUD_RESULTS/`, also bundled as the newest `DZ-HANDBACK-*.zip`.
+>
+> 1. Start with the newest `claude_archive/HANDBACK-*.md`. Verify the sha256 values against this PROGRESS.md, then copy `claude_archive/*` (including all `audit_*`/`revcheck_*` folders) to `CODEX_CLAUDE_EXCHANGE/DZ/claude_archive/`.
+> 2. Run `date -u`. Re-list `DZ/to_claude/` for files newer than 15:13:17Z on 7 Oct, read the new covers, and generate the receipt TSV on the device. Never execute incoming scripts.
+> 3. Fill in §1 (separate ACKs for receipt, reading and adoption) of:
+>    - EF_20261007T1917Z;
+>    - EG_20261007T1948Z;
+>    - EH_20261007T2036Z;
+>    - EI_20261007T2056Z;
+>    - EJ_20261007T2120Z;
+>    - EK_20261007T2206Z.
+>
+>    Regenerate each changed manifest last.
+> 4. Deliver EF, EG, EH, EI, EJ, then EK to `DZ/to_codex/`, following `outbox_for_user_delivery/README-PENDING.md`. Never send anything in `superseded/`. Verify the sha256 values on the device.
+> 5. Re-read memo §216 for Prop 216.3's frame.
+> 6. Research next, following the newest HANDBACK:
+>    - the EK §3 questions (GLS₀ via arc input);
+>    - the FIX-1 band-dimension question;
+>    - B1/(I216′)/G2;
+>    - the KB gate-failing cells;
+>    - G1″.
+>
+> Do not claim G1, GLS₀ or the conjecture is complete.
+- **Zip:** `a5f9df6b1fa690c7f194958bf51f559a1c84862f476870a240400f46fc423c07`  DZ-HANDBACK-20261007T2211Z.zip (275 files; contains PROGRESS.md as of this section)
+
+---
+## Session 2, continued (22:12Z–22:20Z): RX note (GLO FIX-1 [OPEN] item)
+- **New note:** RX v1. **NOT AUDITED, HOLD**, not in the outbox. EK remains READY, and EF–EK are unchanged.
+- **The goal is NOT complete.** GLS₀ for the arc family, the even-band GLS₀ question, G1″, G1 and the linear-gap conjecture are OPEN.
+
+| Item | Status |
+|---|---|
+| RX: Lemma RW, Corollary RW′, Theorem RX (i)–(v), monomial bound (§3) | PROVED (owner) — awaiting audit |
+| RX (vi): pointwise real type | PROVED via HFD §1 [A]; [C] 300/300 |
+| RX §3: no extra rational roots in the tested ranges | COMPUTATION |
+| Even-band GLS₀ question (dim W ≥ 2a₂+2) | OPEN |
+
+| sha256 | File |
+|---|---|
+| ff4da8dd5631fc79bcf20e946ef822d3b3fcaaa33181e46538509517942d76c7 | claude_archive/RX-RATIONAL-BAND-COUNTEREXAMPLE-NOTE-20261007.md |
+| 56964439123fd8079687384a043dc1828f048112508b0d364bf6458c1a25d354 | claude_archive/HANDBACK-20261007T2219Z.md |
+| 008788494c358692f13793d98b96974e8eedd9c289ef1adf06be569cb4e3b1a9 | claude_archive/CHECKPOINT-ADDENDUM-20261007T2219Z.md |
+| a53dcda9d24ca7291f5fa2726cf743405ebfc23cca96d3db61177ced88f9f047 | claude_archive/scripts/rxcheck.py |
+| 16a5315f2bddfb4891b5e264374473559876a676a57d0a650da3eb45abf2ae53 | claude_archive/scripts/rxcheck.log |
+
+**Pending:**
+1. The audit of RX v1, then the packet (EL).
+2. Device steps for EF→EK.
+3. Codex questions (EK §3, RX §5).
+4. The resume message in the 22:10Z section still applies. Read the newest HANDBACK, now 2219Z.
+- **Zip:** `32f2cb1e396f56e53dc2f5ca9b221a95196b0fb4730b5248ec3797332c026fe7`  DZ-HANDBACK-20261007T2219Z.zip (280 files; contains PROGRESS.md as of this section)

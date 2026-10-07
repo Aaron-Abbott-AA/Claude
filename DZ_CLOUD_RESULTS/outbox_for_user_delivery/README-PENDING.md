@@ -58,3 +58,11 @@ Note added by the parent cloud session (2026-10-07):
   3. regenerate `MANIFEST_EK_20261007T2206Z.tsv` last.
 - Then follow device steps 1–8 above, with **EK delivered after EJ**: EF, EG, EH, EI, EJ, then EK.
 - If the diff check requires a v2.1, the attached v2 copy and the manifest must be replaced in the local session.
+
+---
+## Update 7 Oct 2026, 22:10Z: packet EK is now **READY FOR USER DELIVERY**
+- **Diff check.** The referee diff check of GLO v2 PASSED (`DIFFCHECK-GLO-v2-20261007.md`, sha256 8d9b4aa2…, attached to EK). Its cosmetic notes are optional; c3 was applied in the EK cover only.
+- **EK files.** The status block is flipped to READY. `MANIFEST_EK_20261007T2206Z.tsv` was regenerated last and lists 9 files, including the DIFFCHECK.
+- **GLO v2's own status line** still reads "PENDING DIFF-CHECK". That hold is discharged by the attached diff check, and the note was not re-edited, to keep its checked hash.
+- **Delivery order:** EF, EG, EH, EI, EJ, then **EK**, after device steps 1–8 above. If §1 of EK changes on the device, regenerate MANIFEST_EK last.
+- **Supersession.** The 22:07Z "PENDING DIFF-CHECK / Do NOT deliver EK yet" entry above is superseded by this one.
