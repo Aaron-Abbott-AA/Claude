@@ -43,6 +43,16 @@ No file whose name contains "DZ" was opened. A DZ-CLOUD-HANDOFF zip was uploaded
    - Prop 5.2: uses the N4 inequality.
    - Lower 𝔮-thresholds for non-constant T: r=4 2E/Q (n=256) and nE/(16Q) (n>=512); r=8 2E/Q, 32E/Q, 64E/Q (n=256, 512, 1024); r=16 8E/Q.
 
+10. **R21** (owner v1 → v2 → **v2.1 final**, `notes/HYP_M2_ROUND21_owner_v2_1.md`).
+   - Audit (`audits/AUDIT_HYP_M2_ROUND21_20261007.md`): **PASS-with-fixes**. Prop 2.1 and Cor 2.2 survive in full; the main fix narrowed the Cor 2.4 overclaim.
+   - Revision check (`reviews/REVISION_CHECK_HYP_M2_ROUND21_V2_20261007.md`): **PASS-with-fixes**. RC-1..6 are applied in v2.1.
+   - R21 is included in A306_draft.
+   - Claims and statuses:
+     - P_D≡0 exactly on 𝔉₁ (D=1) / 𝔉₂ (D=2) for a constant twist: PROVED.
+     - Constant twists with D∈{1,2} off 𝔉_D are excluded: PROVED via FNAO/FNAP. This closes (R2) for n>=512 and (R3) for every n.
+     - Lifting 𝔉_D to original data: OPEN.
+     - The defect 𝔡(u)∥(α^X,β^X): PROVED. The class (𝒦_ψ): OPEN.
+
 ## Statuses (R19 v2.1)
 - Prop 1.1, Prop 1.2 (F_E-subline), Lemma 1.4, Lemma 1.5 (with the cusp-tangent exception) and Example 1.6: PROVED.
 - Lemma 1.1: PROVED for m(w)<E; OPEN for m(w)>=E.
@@ -70,6 +80,9 @@ Not linked. No A306 has been delivered; the packet kit is in A306_draft/. The pe
 361c929170381d83a82dd1baa4741a6025b3f9054838e024a641fce1d2ddcbf6  notes/HYP_M2_ROUND20_owner_v1.md
 4b53cd9a46fbcdf7979ea69a526f6d4051a7f79a00fd07905b3d91a4f5cbf5d9  notes/HYP_M2_ROUND20_owner_v2.md
 3b9f331e4ab58b1a503ff10def26a3423f97f2faa61c0c46cec50ff366eb7161  notes/HYP_M2_ROUND20_owner_v2_1.md
+1088d18531f41361de4e3f8f032f6dd9996d536aa908881ac54657e22726b5de  notes/HYP_M2_ROUND21_owner_v1.md
+60a6e253ddb29737dd636edc3abef1ce37587cb7ae167ac892437dcc3b66dfc0  notes/HYP_M2_ROUND21_owner_v2.md
+58a2aeb4c3a72d289fb3bf1e717debd2d154a69b9c19d865075ff1eb7e4030e5  notes/HYP_M2_ROUND21_owner_v2_1.md
 419b99c61b7d1d4333aa3ee64b283ba22dc9e60c7a39f1fa88c5684a93bf201b  notes/R18T_TWIST_NOTE_v2.md
 65ba7f0bdffda18145365625e13d138c4e66b70015100fe0dbe0ff33e25b41ed  notes/R18T_TWIST_NOTE_v2_1.md
 215b9925a4e042c4b449a587e45e898613349a58d799a87b454991e31555c8cd  notes/R19_CORRESPONDENCE_ROUTE_v2.md
@@ -77,8 +90,10 @@ Not linked. No A306 has been delivered; the packet kit is in A306_draft/. The pe
 63ea9f4bb675a8d6c808ad9f7a2700dc6f4aa9dc6db8a1cab05577244e3c4fcf  reviews/REVISION_CHECK_HYP_M2_ROUND18T_V2_20261007.md
 1edc8e8d73872b99d845d0514d05f8440325ea59acc74c6875b066147893d909  reviews/REVISION_CHECK_HYP_M2_ROUND19_V2_20261007.md
 f8e352dae5922d1fe450b1724f6cb20b9cce661b3d0d2053b6377b0c1c1018c9  reviews/REVISION_CHECK_HYP_M2_ROUND20_V2_20261007.md
+f3a950003b319013575e9706c30e42eca5d2c9e205b66cb9a2073ac794d6979c  reviews/REVISION_CHECK_HYP_M2_ROUND21_V2_20261007.md
 f3013a20c4df2acc5f8972a29300e26a28832c262bd589814b7c3f515aa3e35c  audits/AUDIT_HYP_M2_ROUND19_20261007.md
 3c115c1b00bdad7be2bb11d476808f5e4184b22debfdc9434e129f2f02d9133d  audits/AUDIT_HYP_M2_ROUND20_20261007.md
+c141b4079879269f8ffd82ad3c902eca69de6284f92d5410c5fc65fa010daa23  audits/AUDIT_HYP_M2_ROUND21_20261007.md
 bb192fc85e963433ed4a24779770e96b674cf3bb6817b0daf51aa482bcf5d35a  A306_draft/src/M2_ROUND18T_AUDIT_OF_V1.md
 65ba7f0bdffda18145365625e13d138c4e66b70015100fe0dbe0ff33e25b41ed  A306_draft/src/M2_ROUND18T_NONCONSTANT_TWIST_REDUCED_COVER_KERNEL_ALIGNED_v2_1.md
 63ea9f4bb675a8d6c808ad9f7a2700dc6f4aa9dc6db8a1cab05577244e3c4fcf  A306_draft/src/M2_ROUND18T_REVISION_CHECK_OF_V2.md
@@ -88,6 +103,9 @@ f3013a20c4df2acc5f8972a29300e26a28832c262bd589814b7c3f515aa3e35c  A306_draft/src
 3c115c1b00bdad7be2bb11d476808f5e4184b22debfdc9434e129f2f02d9133d  A306_draft/src/M2_ROUND20_AUDIT_OF_V1.md
 3b9f331e4ab58b1a503ff10def26a3423f97f2faa61c0c46cec50ff366eb7161  A306_draft/src/M2_ROUND20_KERNEL_ALIGNED_SHARPENED_COUNT_CONSTANT_TWIST_n256_v2_1.md
 f8e352dae5922d1fe450b1724f6cb20b9cce661b3d0d2053b6377b0c1c1018c9  A306_draft/src/M2_ROUND20_REVISION_CHECK_OF_V2.md
-ed2cf20ca39b097ecfe1d0a48633b0e21d16a99cc0ec6475e5ae61097a5fbb81  A306_draft/src/message_template.md
-7ffe6ee98400887baa0e3f857a1e9c8be6373d480755f85eb1fbe73ccdb220a7  A306_draft/src/scripts_audit_checks.tar.xz
+c141b4079879269f8ffd82ad3c902eca69de6284f92d5410c5fc65fa010daa23  A306_draft/src/M2_ROUND21_AUDIT_OF_V1.md
+58a2aeb4c3a72d289fb3bf1e717debd2d154a69b9c19d865075ff1eb7e4030e5  A306_draft/src/M2_ROUND21_CONSTANT_TWIST_D12_CLASSIFICATION_AND_DEFECT_v2_1.md
+f3a950003b319013575e9706c30e42eca5d2c9e205b66cb9a2073ac794d6979c  A306_draft/src/M2_ROUND21_REVISION_CHECK_OF_V2.md
+d7f76e49dc29afbe36868a8b1e485484403c68e4945be2350ea7df035acb3bb9  A306_draft/src/message_template.md
+7acb2eb6d63b7f4503abeb46421fcfa6a40911f01835fdaced55d2c5079ee962  A306_draft/src/scripts_audit_checks.tar.xz
 8db929b026b651161c982efef1c1433afd06ebaf0a3cf2403074056544fc310f  A306_draft/build_A306.py

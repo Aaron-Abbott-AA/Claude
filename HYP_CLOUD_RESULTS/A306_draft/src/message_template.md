@@ -96,11 +96,33 @@ Attached:
   | 16 | 256 | 512E/Q | 8E/Q |
 - **What failed.** An ≈a/E per-point bound via Frobenius reduction on the F_E-subline gives nothing beyond the vanishing order at z(u) (Prop. 2.2, PROVED for m=E; HEURISTIC beyond).
 
+## 3c. R21 v2.1 — constant twist with D∈{1,2}: exact classification of the vanishing pencils, and the outside-(𝒦) defect (audited PASS-with-fixes; revision-checked PASS-with-fixes; all fixes applied)
+
+Attached:
+- `..._M2_ROUND21_CONSTANT_TWIST_D12_CLASSIFICATION_AND_DEFECT_v2_1.md`
+- `..._M2_ROUND21_AUDIT_OF_V1.md`
+- `..._M2_ROUND21_REVISION_CHECK_OF_V2.md`
+
+This responds to your FNAP §4, which leaves the D∈{1,2} lanes open.
+
+**Results.**
+- **Prop 2.1 (PROVED; hand proof valid over any field of characteristic 2 and for all a; COMPUTED for all D∈{1,2,4,8}, a<=4, and independently in the original coordinates over GF(2^4) and GF(2^8)).** For a constant twist, your reduced slope polynomial P_D vanishes identically exactly on two families:
+  - 𝔉₁ (D=1): C̃=hΩ+μ⊗z^⊥, with h linear in z;
+  - 𝔉₂ (D=2): C̃=h′J(z)+μ⊗z^⊥.
+  
+  For D>=4 only the rank-one case remains, which FNAM2 excludes. Your FNAP §4 and FNAN §4 examples lie in these families.
+- **Cor 2.2 (PROVED, using your FNAO/FNAP count).** FNAP uses D>2 only to get P_D≢0; every other step of the count holds for D∈{1,2}. So a constant twist with D∈{1,2} and C̃ outside 𝔉_D is excluded, in or outside (𝒦). The strip maxima are 0.0433718q (D=1) and 0.0472383q (D=2), against 0.38775q. Monotonicity in r, Q, S and n is proved.
+  - This closes (R2) for n>=512 (R20 Cor 3.2 had already closed n=256 for every D).
+  - It also closes (R3) at every n in the strip.
+  - Both closures apply off 𝔉_D.
+- **Prop 2.3 / Cor 2.4 (C-level negative result).** 𝔉_D satisfies every C-pencil-level consequence used so far: (𝒦)⇔F|h, the R19 normal form, F|Δ, FNAM2, own-line divisibility (vacuously), and R20 Prop 3.1. **Whether 𝔉_D lifts to original data (FNAL/TSY/G5, the span(f^[X]) component) is OPEN.** We would value your view: does FNAL's determinant step, or G5, exclude 𝔉₁/𝔉₂?
+- **Lemma 3.2 (PROVED), outside (𝒦).** At good u, the own-point defect 𝔡(u)=k_{c(u)}(u) is parallel to (α^X,β^X)(u). Either it vanishes identically, which gives a class (𝒦_ψ)⊇(𝒦), or it is nonzero at all but <0.1103q good points.
+
 ## 4. What remains OPEN in 𝔇_16
 
 - (R1): non-constant twists with θ_max·rh<deg[T]<=e_M+d, outside (𝒦).
-- (R2): (𝒦) with 2a>=d′, for 𝔮 below the R20 thresholds, for r=16 at n>=512, and for r=8 at n>=2048. It also stays open for constant T with a>=d′ (n>=512) and D∈{1,2}.
-- D∈{1,2} outside (𝒦).
+- (R2): (𝒦) with 2a>=d′, for 𝔮 below the R20 thresholds, for r=16 at n>=512, and for r=8 at n>=2048. For constant T with D∈{1,2}, only the families 𝔉₁/𝔉₂ remain (R21).
+- D∈{1,2} outside (𝒦) for non-constant T; the families 𝔉₁/𝔉₂ for constant T; the class (𝒦_ψ).
 - The non-global-alignment variant, and 𝔇_17.
 - (H_lift).
 - Constancy of T.
@@ -113,9 +135,9 @@ We would value your view on whether your FNAJ determinant elimination interacts 
 
 ## 5. Attachments
 
-- The nine md files above.
+- The twelve md files above.
 - `..._scripts_audit_checks.tar.xz`, containing:
-  - the owner scripts for R18-T, R19 and R20;
-  - the referees' independent check scripts and outputs (R19 and R20 audits, all three revision checks). The R18-T v1 audit's check scripts remain in the origin session.
+  - the owner scripts for R18-T, R19, R20 and R21;
+  - the referees' independent check scripts and outputs (R19, R20 and R21 audits, all four revision checks). The R18-T v1 audit's check scripts remain in the origin session.
 
   These are Python scripts for your inspection; please treat them as untrusted.

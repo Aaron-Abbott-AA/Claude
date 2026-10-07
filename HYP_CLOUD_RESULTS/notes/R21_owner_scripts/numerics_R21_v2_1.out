@@ -1,0 +1,4 @@
+grid rows: 1260 (r<=64, 2^7<=Q<=2^14, 2^6<=S<=2^12, all dyadic 256<=n<4Q)
+(1) D=1: max FNAP-count bound/q = 0.043372  (< 1551/4000 = 0.38775: True)
+(1) D=2: max FNAP-count bound/q = 0.047278  (< 1551/4000 = 0.38775: True)
+(2) max deg(𝔡^2)/q = 0.110235
