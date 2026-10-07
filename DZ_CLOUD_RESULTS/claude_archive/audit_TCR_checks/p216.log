@@ -1,0 +1,12 @@
+p216 m=6 n=4 frame=orig: hyperfocused=True inf_is_focus=False finite nonfoci=61 max#radicals containing one b=3 vs n-1=3 -> OK
+p216 m=6 n=4 frame=focus-vertical: hyperfocused=True inf_is_focus=True finite nonfoci=62 max#radicals containing one b=62 vs n-1=3 -> EXCEEDS n-1
+p216 m=6 n=8 frame=orig: hyperfocused=True inf_is_focus=False finite nonfoci=57 max#radicals containing one b=7 vs n-1=7 -> OK
+p216 m=6 n=8 frame=focus-vertical: hyperfocused=True inf_is_focus=True finite nonfoci=58 max#radicals containing one b=58 vs n-1=7 -> EXCEEDS n-1
+p216 m=6 n=16 frame=orig: hyperfocused=True inf_is_focus=False finite nonfoci=49 max#radicals containing one b=15 vs n-1=15 -> OK
+p216 m=6 n=16 frame=focus-vertical: hyperfocused=True inf_is_focus=True finite nonfoci=50 max#radicals containing one b=50 vs n-1=15 -> EXCEEDS n-1
+p216 m=8 n=4 frame=orig: hyperfocused=True inf_is_focus=False finite nonfoci=253 max#radicals containing one b=3 vs n-1=3 -> OK
+p216 m=8 n=4 frame=focus-vertical: hyperfocused=True inf_is_focus=True finite nonfoci=254 max#radicals containing one b=254 vs n-1=3 -> EXCEEDS n-1
+p216 m=8 n=8 frame=orig: hyperfocused=True inf_is_focus=False finite nonfoci=249 max#radicals containing one b=7 vs n-1=7 -> OK
+p216 m=8 n=8 frame=focus-vertical: hyperfocused=True inf_is_focus=True finite nonfoci=250 max#radicals containing one b=250 vs n-1=7 -> EXCEEDS n-1
+p216 m=8 n=16 frame=orig: hyperfocused=True inf_is_focus=False finite nonfoci=241 max#radicals containing one b=15 vs n-1=15 -> OK
+p216 m=8 n=16 frame=focus-vertical: hyperfocused=True inf_is_focus=True finite nonfoci=242 max#radicals containing one b=242 vs n-1=15 -> EXCEEDS n-1

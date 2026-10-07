@@ -1,0 +1,4 @@
+m=8 trials=400: (H1) Hasse-identity failures 0; (H2) filtration-equivalence failures 0
+m=12 trials=300: (H1) Hasse-identity failures 0; (H2) filtration-equivalence failures 0
+m=8 trials=400: (H1) Hasse-identity failures 0; (H2) filtration-equivalence failures 0
+m=16 trials=200: (H1) Hasse-identity failures 0; (H2) filtration-equivalence failures 0

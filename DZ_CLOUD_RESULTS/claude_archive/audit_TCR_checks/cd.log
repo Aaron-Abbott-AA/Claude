@@ -1,0 +1,18 @@
+cd seed=7 count=600: families 600; RR_k failed somewhere in 226; Hasse-rank cross-check failures 0
+  (P1) monotone defect: 2278 level pairs, 0 failures
+  (P2) lossy & dim W_(k+1) >= 2a(k)+2 => defect drop: 65 instances, 0 failures
+  (P3) CD conclusion under its hypotheses: 68 families, 0 failures
+  min slack const-(rho'-2a0) over nontrivial CD-hypothesis families: 1
+  type 0: n=68 all-RR=52 CD-hyp=7 CD-hyp&nonconstant=7; all-RR (rho,a0,#lossy,const): {(6, 2, 1, 5): 2, (6, 3, 1, 4): 6, (6, 3, 1, 5): 3, (6, 3, 2, 2): 1, (6, 3, 2, 3): 1, (6, 3, 2, 4): 1, (6, 3, 3, 1): 1, (7, 2, 1, 6): 2, (7, 3, 1, 5): 1, (7, 3, 1, 6): 2, (7, 3, 2, 3): 3, (7, 3, 2, 4): 1, (7, 3, 3, 3): 1, (8, 2, 1, 7): 1, (8, 3, 1, 6): 2, (8, 3, 1, 7): 1, (8, 4, 2, 4): 1, (8, 4, 2, 5): 2, (8, 4, 3, 4): 1, (9, 2, 1, 8): 2, (9, 3, 1, 8): 1, (9, 4, 2, 5): 1, (9, 4, 2, 6): 2, (9, 4, 3, 3): 1, (9, 4, 3, 4): 1, (10, 2, 1, 9): 2, (10, 3, 1, 9): 1, (10, 3, 2, 8): 1, (10, 4, 1, 8): 2, (10, 4, 2, 7): 3, (10, 4, 2, 8): 1, (10, 4, 3, 7): 1}
+  type 1: n=64 all-RR=0 CD-hyp=0 CD-hyp&nonconstant=0; all-RR (rho,a0,#lossy,const): {}
+  type 2: n=78 all-RR=13 CD-hyp=13 CD-hyp&nonconstant=0; all-RR (rho,a0,#lossy,const): {(6, 0, 0, 6): 4, (7, 0, 0, 7): 1, (8, 0, 0, 8): 2, (9, 0, 0, 9): 3, (10, 0, 0, 10): 3}
+  type 3: n=54 all-RR=54 CD-hyp=0 CD-hyp&nonconstant=0; all-RR (rho,a0,#lossy,const): {(6, 3, 3, 0): 4, (6, 3, 3, 1): 5, (7, 3, 2, 3): 1, (7, 3, 3, 1): 5, (7, 3, 3, 2): 4, (8, 4, 3, 2): 11, (8, 4, 3, 3): 2, (9, 4, 3, 3): 9, (10, 5, 3, 4): 12, (10, 5, 3, 5): 1}
+  type 4: n=53 all-RR=0 CD-hyp=0 CD-hyp&nonconstant=0; all-RR (rho,a0,#lossy,const): {}
+  type 5: n=81 all-RR=53 CD-hyp=43 CD-hyp&nonconstant=42; all-RR (rho,a0,#lossy,const): {(6, 1, 1, 5): 3, (6, 2, 1, 4): 4, (7, 0, 0, 7): 1, (7, 1, 1, 6): 2, (7, 2, 1, 5): 6, (8, 1, 1, 7): 6, (8, 2, 1, 6): 9, (9, 1, 1, 8): 6, (9, 2, 1, 7): 5, (10, 1, 1, 9): 5, (10, 2, 1, 8): 6}
+  type 6: n=73 all-RR=73 CD-hyp=5 CD-hyp&nonconstant=5; all-RR (rho,a0,#lossy,const): {(6, 3, 1, 4): 16, (7, 3, 1, 5): 11, (8, 3, 1, 6): 20, (9, 3, 1, 7): 21, (10, 3, 1, 8): 5}
+  type 7: n=66 all-RR=66 CD-hyp=0 CD-hyp&nonconstant=0; all-RR (rho,a0,#lossy,const): {(6, 3, 2, 2): 9, (7, 3, 2, 3): 12, (8, 4, 2, 4): 20, (9, 4, 2, 5): 14, (10, 5, 2, 6): 11}
+  type 8: n=63 all-RR=63 CD-hyp=0 CD-hyp&nonconstant=0; all-RR (rho,a0,#lossy,const): {(6, 3, 1, 4): 6, (7, 3, 1, 5): 14, (8, 4, 3, 2): 15, (9, 4, 3, 3): 13, (10, 5, 3, 4): 15}
+
+real	1m40.790s
+user	1m39.479s
+sys	0m0.120s
