@@ -1,0 +1,4 @@
+E=8: 120/120 (u,zeta) pairs satisfy v in Gamma and u^[E].e(v)=0; E-2 distinct residuals != u except at 0/20 sampled u
+E=16: 280/280 (u,zeta) pairs satisfy v in Gamma and u^[E].e(v)=0; E-2 distinct residuals != u except at 4/20 sampled u
+E=32: 600/600 (u,zeta) pairs satisfy v in Gamma and u^[E].e(v)=0; E-2 distinct residuals != u except at 0/20 sampled u
+E=64: 1240/1240 (u,zeta) pairs satisfy v in Gamma and u^[E].e(v)=0; E-2 distinct residuals != u except at 0/20 sampled u

@@ -1,0 +1,20 @@
+== (a) Lemma 1.1(i) proof: in char 2 the limit of generic tangents need NOT be the branch tangent
+  branch z(t)=(1,t^2,t^3); z x z' = [t**4, t**2, 0] -> limit line [0, 1, 0]
+  intersection multiplicity of limit line with the branch: 2
+  intersection multiplicity of true tangent (0,0,1) with the branch: 3
+== (b) Prop 1.2: roots of (a t+b)t^E+(c t+d) form a Moebius image of P^1(F_E): cross-ratios in F_E
+  E=4: sample with 5 rational roots over GF(2^8); all cross-ratios in F_E: True
+  E=4: 5/5 split samples have all 4-point cross-ratios in F_E (Bluher root counts seen OK)
+  E=8: sample with 9 rational roots over GF(2^12); all cross-ratios in F_E: True
+  E=8: 5/5 split samples have all 4-point cross-ratios in F_E (Bluher root counts seen OK)
+  E=16: 0/0 split samples have all 4-point cross-ratios in F_E (Bluher root counts seen OK)
+== (c) char-2 matrix identities used in Cor 2.2(ii) and Lemma 3.5(ii), exhaustive over GF(4)
+  B^t Omega B = det(B) Omega for all 256 matrices: True
+  det(Ac,Bc)==0 identically (A invertible): 720 pairs; B not prop. to A: 0 violations
+  M=m*Omega => B(u)=(m/detB(v))B(v): 0 violations
+== (d) Thm 4.1 Step 3 gap (FIX-1): at v with p(v)=0, Pi_1(u,v)=0 for every u but pi(u,y)!=0
+  50/50 random instances: G_c(z(v))=0 and Pi_1=0 automatically while pi(u,y)!=0
+== (e) arithmetic-monodromy transitivity from observed cycle types (corr_random.out)
+  E=8: intransitive orbit partitions compatible with all observed cycle types: [] (0)
+  E=16: intransitive orbit partitions compatible with all observed cycle types: [] (0)
+  E=32: intransitive orbit partitions compatible with all observed cycle types: [[30, 3]] (1)

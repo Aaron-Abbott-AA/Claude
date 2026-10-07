@@ -1,0 +1,10 @@
+E=8, GF(2^13), 60 points u on Gamma (d=7, d'=14)
+multiplicity of the root v=u in R (= contact of l_u with Gamma' at e(u)): {8: 60}
+residual polynomial of degree d'-E=6 and squarefree: 60/60
+distinct-degree patterns (deg, #factors) of the residual polynomial over GF(2^m): {((3, 2),): 60}
+symmetry v^[E].e(u)=0 at rational residual points: 0/0
+E=16, GF(2^13), 40 points u on Gamma (d=15, d'=30)
+multiplicity of the root v=u in R (= contact of l_u with Gamma' at e(u)): {16: 40}
+residual polynomial of degree d'-E=14 and squarefree: 40/40
+distinct-degree patterns (deg, #factors) of the residual polynomial over GF(2^m): {((2, 1), (4, 3)): 40}
+symmetry v^[E].e(u)=0 at rational residual points: 0/0

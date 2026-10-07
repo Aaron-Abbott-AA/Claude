@@ -20,7 +20,11 @@ No file whose name contains "DZ" was opened. A DZ-CLOUD-HANDOFF zip was uploaded
    - RC-4, RC-5, RC-6, RC-7: wording and citations.
    - No statement, label or number changed relative to v2.
    - **Ready to send to PRIMARY** (in A306, once the R19 audit is in).
-4. **R19 audit** (fresh referee) — IN PROGRESS.
+4. **R19 audit** (`audits/AUDIT_HYP_M2_ROUND19_20261007.md`, fresh referee; checks in `audits/audit_R19_checks/`). Verdict: **PASS-with-fixes**.
+   - No headline claim breaks, and all Cor. 4.2 thresholds stand. Every number was reproduced independently.
+   - FIX-1 (Thm 4.1 Step 3, the Z(λ) places) and FIX-2 (Lemma 1.1(i) at singular branches) are substantive. Neither changes a number.
+   - FIX-3..8: labels, understatements, wording and citations.
+5. **R19 v2** (`notes/R19_CORRESPONDENCE_ROUTE_v2.md`) — applies FIX-1..8 and N1–N8. Revision check (fresh referee): IN PROGRESS.
 
 ## Statuses (R18-T v2.1)
 - Lemma 1.1, Lemma 1.2, Lemma 2.1 and Lemma 2.1A (Γ'⊃Bs(f)): PROVED.
@@ -39,4 +43,6 @@ Not linked. No A306 has been delivered. The pending-ACK file named by the user i
 ## Hashes (sha256)
 419b99c61b7d1d4333aa3ee64b283ba22dc9e60c7a39f1fa88c5684a93bf201b  notes/R18T_TWIST_NOTE_v2.md
 65ba7f0bdffda18145365625e13d138c4e66b70015100fe0dbe0ff33e25b41ed  notes/R18T_TWIST_NOTE_v2_1.md
+215b9925a4e042c4b449a587e45e898613349a58d799a87b454991e31555c8cd  notes/R19_CORRESPONDENCE_ROUTE_v2.md
 63ea9f4bb675a8d6c808ad9f7a2700dc6f4aa9dc6db8a1cab05577244e3c4fcf  reviews/REVISION_CHECK_HYP_M2_ROUND18T_V2_20261007.md
+f3013a20c4df2acc5f8972a29300e26a28832c262bd589814b7c3f515aa3e35c  audits/AUDIT_HYP_M2_ROUND19_20261007.md
