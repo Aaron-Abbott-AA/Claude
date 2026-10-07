@@ -1,0 +1,5 @@
+F1: 40 trials, d in 0..3, fails so far 0
+F2 m=8: |(F_q^*)^(s-1)| = 85, |ker N| = 85, equal sets: True
+F2 m=16: |(F_q^*)^(s-1)| = 4369, |ker N| = 4369, equal sets: True
+F3 (rho,g,m)=(6,9,24): 20 random mu, V = mu F_64 inside mu F_Q with v^Q = mu^(Q-1) v: failures 0
+TOTAL FAILURES: 0

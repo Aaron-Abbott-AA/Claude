@@ -1,0 +1,4 @@
+rho in [6,200] even: band cells 9898; cells admitting KB(i) for some a2<=a*: 2450; violations: 0
+K5: KB cells where KB forces a2 >= (3rho-2g)/4 > 0 (first 12): [(10, 13, 3, 1), (12, 16, 4, 1), (14, 17, 5, 2), (14, 19, 4, 1), (16, 20, 6, 2), (16, 22, 5, 1), (18, 21, 7, 3), (18, 23, 6, 2), (18, 25, 5, 1), (20, 24, 8, 3), (20, 26, 7, 2), (20, 28, 6, 1)] ... total 2352
+inner-resonance KB cells g = 3rho/2 (first 8): [(6, 9), (8, 12), (10, 15), (12, 18), (14, 21), (16, 24), (18, 27), (20, 30)] ... total 98
+gate-failing cells (rho in [10,40], a*>=1, not NWF): 88
