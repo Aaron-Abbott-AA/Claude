@@ -1,0 +1,23 @@
+== corner (r,Q,S,n)=(4,128,64,256) ==
+Cor4.1: exact=33259609702489/721554505728000 = 0.0460943829 | owner fraction match: True | v2 printed 0.046095 >= exact: True | v1 printed 0.046095 >= exact: True
+Cor4.2: exact=3194487655227/34359738368000 = 0.0929718271 | owner fraction match: True | v2 printed 0.092972 >= exact: True | v1 printed 0.092972 >= exact: True
+Thm5.3(i): exact=32480243592761/219902325555200 = 0.1477030473 | owner fraction match: True | v2 printed 0.147704 >= exact: True | v1 printed 0.147703 >= exact: False
+Thm5.3(ii): exact=114684856407837/1099511627776000 = 0.1043052693 | owner fraction match: True | v2 printed 0.104306 >= exact: True | v1 printed 0.104305 >= exact: False
+Prop5.5 classical(dim4): exact=75571916082327/1099511627776000 = 0.0687322573 | owner fraction match: True | v2 printed 0.068733 >= exact: True | v1 printed 0.068732 >= exact: False
+Prop5.5 pencil: exact=27044774933549/549755813888000 = 0.0491941590 | owner fraction match: True | v2 printed 0.049195 >= exact: True | v1 printed 0.049194 >= exact: False
+Prop5.5 classical(dim3): exact=224941521773163/4398046511104000 = 0.0511457806
+0.046094 (Sec0 COMPUTED line / Sec7 truncation) >= exact Cor4.1: False
+== Cor 5.4 thresholds ==
+(R1): exact threshold 1551/4000 - max = 0.2400469527; printed 0.240047 <= exact: False; formula with 6-8 digit rounded-up max gives 0.2400469500 <= exact: True
+(K_psi)\(K): exact threshold 1551/4000 - max = 0.2834447307; printed 0.283445 <= exact: False; formula with 6-8 digit rounded-up max gives 0.2834447300 <= exact: True
+== grid: r in 4..128, Q in 2^7..2^14, S in 2^6..2^13, dyadic n in [256,4Q) ==
+rows: 1728
+Cor4.1: max=0.0460943829 at [(4, 128, 64, 256)]; equals corner: True; < 1551/4000: True
+Cor4.2: max=0.0929718271 at [(4, 128, 64, 256)]; equals corner: True; < 1551/4000: True
+Thm5.3(i): max=0.1477030473 at [(4, 128, 64, 256)]; equals corner: True; < 1551/4000: True
+Thm5.3(ii): max=0.1043052693 at [(4, 128, 64, 256)]; equals corner: True; < 1551/4000: True
+Prop5.5 classical(dim4): max=0.0687322573 at [(4, 128, 64, 256)]; equals corner: True; < 1551/4000: True
+Prop5.5 pencil: max=0.0491941590 at [(4, 128, 64, 256)]; equals corner: True; < 1551/4000: True
+Prop5.5 classical(dim3): max=0.0511457806 at [(4, 128, 64, 256)]; equals corner: True; < 1551/4000: True
+monotonicity under doubling: comparisons 39480 violations 0
+closure dichotomy: for qq<=S, N0 >= 2r-1 >= 7 >= 2 for every r>=4: True

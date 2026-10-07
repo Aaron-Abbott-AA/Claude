@@ -1,0 +1,8 @@
+numerics_R22 .178004273 s
+numerics_R22 identical
+toy_vector_FN_v2 2.566884630 s
+toy_vector_FN_v2 identical
+toy_vector_FN 2.627520247 s
+toy_vector_FN identical
+contact_check 15.376862855 s
+contact_check identical

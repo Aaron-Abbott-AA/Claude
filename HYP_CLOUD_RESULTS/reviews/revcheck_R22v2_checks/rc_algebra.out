@@ -1,0 +1,20 @@
+omega exact division: 12/12
+L21i b constant: 12/12
+L21i b = g J(V)^t u: 12/12
+L21i J^t u = (t/g) b: 12/12
+L21ii f x v = k0 J Om J^t v: 12/12
+L21ii f x omega = k0 J Om b: 12/12
+expand g^X u^[X] = f^[X] + t^X om^[X]: 12/12
+CROSS f^[X] x m = k0^X J^[X] Om J^[X],t m: 12/12
+J^[X] has a unit 2x2 minor: 12/12
+FIX1 u-component of (gamma) automatic: 12/12
+FIX1 dot form: g^X u^[X].(om^[X] x y) = k0^X b^[X]t Om J^[X]t y: 12/12
+FIX1 dot form RHS: g^X u^[X].J^[X]m = t^(rho+X) b^[X]t C b^[rho]: 12/12
+FIX1 b^t Om b = 0 and b != 0: 12/12
+FIX3 RHS(*).u^[X] == 0: 12/12
+FIX3 RHS(*).om^[X] == t^rho F b^[X]t C b^[rho]: 12/12
+FIX3 v1 form t^(rho+X) F b C b is NOT it (when bCb != 0): 12/12
+FIX2 alignment shift a -> a + F(xi.f^[rho]): 12/12
+FIX2 f^[X] x (added term) == 0 (H, C unchanged): 12/12
+FIX2 y_u shift = f^[X](xi.om^[rho]): 12/12
+TOTAL 228 checks; 0 failures
