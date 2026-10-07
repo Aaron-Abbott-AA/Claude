@@ -32,7 +32,11 @@ No file whose name contains "DZ" was opened. A DZ-CLOUD-HANDOFF zip was uploaded
 7. **R19 v2.1** (`notes/R19_CORRESPONDENCE_ROUTE_v2_1.md`) — applies RC-1..8. It is final. No statement, proof step or number changed; RC-5 fills two missing table cells.
 8. **A306 draft** (`A306_draft/`) — packet kit for PRIMARY (R18-T v2.1 and R19 v2.1, each with its audit and revision check, plus scripts). **NOT delivered**: the local HYP session must poll, acknowledge, build and place it (see `A306_draft/README.md`).
 
-9. **R20 owner v1** (`notes/HYP_M2_ROUND20_owner_v1.md`, scripts in `notes/R20_owner_scripts/`) — **UNAUDITED owner draft**; the independent audit is IN PROGRESS. Do not send it to PRIMARY before the audit. What it claims, all inside (𝒦):
+9. **R20** (owner v1 → v2 → **v2.1 final**, `notes/HYP_M2_ROUND20_owner_v2_1.md`; scripts in `notes/R20_owner_scripts/`).
+   - The independent audit (`audits/AUDIT_HYP_M2_ROUND20_20261007.md`) gave **PASS-with-fixes**, and all three headline claims survived.
+   - The revision check (`reviews/REVISION_CHECK_HYP_M2_ROUND20_V2_20261007.md`) gave **PASS-with-fixes (minor)**. It adjudicated Example 2.4 in the owner's favour.
+   - RC-1..6 are applied in v2.1.
+   - R20 is now included in A306_draft. Its claims, all inside (𝒦):
    - Frobenius reduction on the subline gives no ≈a/E bound. Negative results: Prop 2.2, Prop 2.3, Example 2.4.
    - Prop 3.1: constant T in (𝒦) forces a>=d′, which would close constant-T (R2) at n=256 for every D.
    - Lemma 4.2 / Thm 5.1: a per-point bound with no τ_0 restriction, at n=256.
@@ -64,19 +68,26 @@ Not linked. No A306 has been delivered; the packet kit is in A306_draft/. The pe
 
 ## Hashes (sha256)
 361c929170381d83a82dd1baa4741a6025b3f9054838e024a641fce1d2ddcbf6  notes/HYP_M2_ROUND20_owner_v1.md
+4b53cd9a46fbcdf7979ea69a526f6d4051a7f79a00fd07905b3d91a4f5cbf5d9  notes/HYP_M2_ROUND20_owner_v2.md
+3b9f331e4ab58b1a503ff10def26a3423f97f2faa61c0c46cec50ff366eb7161  notes/HYP_M2_ROUND20_owner_v2_1.md
 419b99c61b7d1d4333aa3ee64b283ba22dc9e60c7a39f1fa88c5684a93bf201b  notes/R18T_TWIST_NOTE_v2.md
 65ba7f0bdffda18145365625e13d138c4e66b70015100fe0dbe0ff33e25b41ed  notes/R18T_TWIST_NOTE_v2_1.md
 215b9925a4e042c4b449a587e45e898613349a58d799a87b454991e31555c8cd  notes/R19_CORRESPONDENCE_ROUTE_v2.md
 465496ba78a7c5704139fd938ac0f3bc5316b949731e20ac545ed0219a576be1  notes/R19_CORRESPONDENCE_ROUTE_v2_1.md
 63ea9f4bb675a8d6c808ad9f7a2700dc6f4aa9dc6db8a1cab05577244e3c4fcf  reviews/REVISION_CHECK_HYP_M2_ROUND18T_V2_20261007.md
 1edc8e8d73872b99d845d0514d05f8440325ea59acc74c6875b066147893d909  reviews/REVISION_CHECK_HYP_M2_ROUND19_V2_20261007.md
+f8e352dae5922d1fe450b1724f6cb20b9cce661b3d0d2053b6377b0c1c1018c9  reviews/REVISION_CHECK_HYP_M2_ROUND20_V2_20261007.md
 f3013a20c4df2acc5f8972a29300e26a28832c262bd589814b7c3f515aa3e35c  audits/AUDIT_HYP_M2_ROUND19_20261007.md
+3c115c1b00bdad7be2bb11d476808f5e4184b22debfdc9434e129f2f02d9133d  audits/AUDIT_HYP_M2_ROUND20_20261007.md
 bb192fc85e963433ed4a24779770e96b674cf3bb6817b0daf51aa482bcf5d35a  A306_draft/src/M2_ROUND18T_AUDIT_OF_V1.md
 65ba7f0bdffda18145365625e13d138c4e66b70015100fe0dbe0ff33e25b41ed  A306_draft/src/M2_ROUND18T_NONCONSTANT_TWIST_REDUCED_COVER_KERNEL_ALIGNED_v2_1.md
 63ea9f4bb675a8d6c808ad9f7a2700dc6f4aa9dc6db8a1cab05577244e3c4fcf  A306_draft/src/M2_ROUND18T_REVISION_CHECK_OF_V2.md
 f3013a20c4df2acc5f8972a29300e26a28832c262bd589814b7c3f515aa3e35c  A306_draft/src/M2_ROUND19_AUDIT_OF_V1.md
 465496ba78a7c5704139fd938ac0f3bc5316b949731e20ac545ed0219a576be1  A306_draft/src/M2_ROUND19_OWN_LINE_CORRESPONDENCE_KERNEL_ALIGNED_COUNT_v2_1.md
 1edc8e8d73872b99d845d0514d05f8440325ea59acc74c6875b066147893d909  A306_draft/src/M2_ROUND19_REVISION_CHECK_OF_V2.md
-76828abcfd5dce535ce3df3a1f4a37522ed8918a5043c5a9f3b8db82e7e2805a  A306_draft/src/message_template.md
-f621ebbda9be9b86507ffe48f4320089129bad2404d722a41457499ee6177789  A306_draft/src/scripts_audit_checks.tar.xz
+3c115c1b00bdad7be2bb11d476808f5e4184b22debfdc9434e129f2f02d9133d  A306_draft/src/M2_ROUND20_AUDIT_OF_V1.md
+3b9f331e4ab58b1a503ff10def26a3423f97f2faa61c0c46cec50ff366eb7161  A306_draft/src/M2_ROUND20_KERNEL_ALIGNED_SHARPENED_COUNT_CONSTANT_TWIST_n256_v2_1.md
+f8e352dae5922d1fe450b1724f6cb20b9cce661b3d0d2053b6377b0c1c1018c9  A306_draft/src/M2_ROUND20_REVISION_CHECK_OF_V2.md
+ed2cf20ca39b097ecfe1d0a48633b0e21d16a99cc0ec6475e5ae61097a5fbb81  A306_draft/src/message_template.md
+7ffe6ee98400887baa0e3f857a1e9c8be6373d480755f85eb1fbe73ccdb220a7  A306_draft/src/scripts_audit_checks.tar.xz
 8db929b026b651161c982efef1c1433afd06ebaf0a3cf2403074056544fc310f  A306_draft/build_A306.py
