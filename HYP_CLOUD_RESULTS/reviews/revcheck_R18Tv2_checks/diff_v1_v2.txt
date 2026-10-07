@@ -1,0 +1,219 @@
+1c1
+< # HYP M>=2, round 18-T: the non-constant twist in 𝔇_16 — a reduced second-layer cover, the kernel-aligned case, and why identities alone cannot force constancy
+---
+> # HYP M>=2, round 18-T (v2): the non-constant twist in 𝔇_16 — a reduced second-layer cover, the kernel-aligned case, and the decoupling of the two layers
+3c3
+< 7 October 2026. Claude HYP(2) research note for session_012ij7YN37LGpSS88rmUGQ7E, written as the R18 §8 follow-up ("does rigidity force constant mixing?"). Owner draft; independent audit pending. Scripts: this directory (`numerics_twist.py`, `toy_checks.py`, outputs `.out`). No file whose name contains "DZ" was opened. Nothing under any `src/` or `zips/` directory was executed (the PRIMARY `.md` sources were read only).
+---
+> 7 October 2026. Claude HYP(2) research note for session_012ij7YN37LGpSS88rmUGQ7E, written as the R18 §8 follow-up ("does rigidity force constant mixing?"). Scripts: this directory (`numerics_twist.py`, `toy_checks.py`, outputs `.out`). No file whose name contains "DZ" was opened. Nothing under any `src/` or `zips/` directory was executed (the PRIMARY `.md` sources were read only).
+5c5,22
+< Inputs (read, not re-proved): R16 v2.1, R17 v2, R18 v1 (`HYP_M2_ROUND18_ENVELOPE_RIGIDITY_20261007_v1.md`, owner, audit pending), PRIMARY FNAK, FNAL, TSY, TSYC, FNAM, FNAN, FNAO, FNAP (owner hand proofs; review status as stated in each source).
+---
+> **Version history.**
+> - v1: owner draft.
+> - v1 audited by an independent referee (`AUDIT_HYP_M2_ROUND18T_20261007.md`): PASS-with-fixes, one substantive fix (FIX-1) and six wording, bookkeeping or citation fixes (FIX-2..7).
+> - **v2 (this file)** applies FIX-1..7 and the minor notes N1–N10 where they affect content. The changes, by fix:
+>   - **FIX-1.** (H_bs) never holds in 𝔇_16, because Γ' passes through every proper base point of f. It is replaced by the polynomial-lift hypothesis (H_lift), which is OPEN. The "(PROVED) identities cannot force constancy" claim is relabelled CONDITIONAL/HEURISTIC.
+>   - **No change to §§3–4 or to any number.** Theorem 3.4, Cor. 3.5 and §4 do not depend on §2 and are unchanged, apart from FIX-3/FIX-5 wording.
+>   - **Changes are marked.** Each change is marked "[v2: FIX-n]".
+> 
+> Inputs (read, not re-proved; review status updated in v2 [v2: FIX-4]):
+> - R16 v2.1, R17 v2.1, R18 v2.1 (`HYP_M2_ROUND18_v2_1.md`: audited PASS-with-fixes, revision-checked, fixes applied).
+> - PRIMARY FNAK, FNAL, TSY, TSYC, FNAM, FNAN, FNAO, FNAP (owner hand proofs), as reviewed in `CLAUDE_REVIEW_PRIMARY_FNAK_FNAL_FNAM_FNAN_FNAO_FNAP_20261007.md`:
+>   - FNAK, TSY, TSYC, FNAM: PASS;
+>   - FNAL, FNAN, FNAO, FNAP: PASS-with-fixes (FIX-L1–L4, FIX-N1).
+> 
+> Notation warning [v2: N1]:
+> - T denotes both the twist matrix and the integer QS. The integer appears only in exponents and in X=T/2, Q−1+T−D and (T−D)/(Q−1).
+> - a denotes deg C_•, except in 𝔮=2^a.
+> - D denotes the reduced exponent 2^t. The R16/FNAM3 function c·e(u) is written D only where it is cited.
+8c25,26
+< - **PROVED**: full proof given here (owner proof, not yet audited). A PROVED statement is conditional on the inputs it names.
+---
+> - **PROVED**: full proof given here (owner proof; v1 independently audited, v2 revision check pending). A PROVED statement is conditional on the inputs it names.
+> - **CONDITIONAL**: proved under a named hypothesis that is not established.
+22,24c40,49
+< 2. **Layer identity (PROVED, §2).** [f^[X]]_×=κ_0^X J^[X]ΩJ^[X,t], hence J^[X,t]P^t=κ_0^{−X}F·ΩC_PJ^[ρ,t]. The first layer (the twist) and the second layer (C_P,C_R) are **formally decoupled**: P^t↦P^t+f^[X]⊗η, for any polynomial syzygy η of f^[ρ], preserves global alignment, common image, zero top, H_P, C_P, G_c and FNAM2, and adds η to the first-layer row (Prop. 2.4). So no argument that uses only these global identities can force T constant (obstruction, option (3)).
+< 
+< 3. **Polynomial origin (option (1), PROVED, negative).** If ϰ_P lifts to a polynomial syzygy (always true when Γ' avoids the base points of f; Prop. 2.2 identifies the obstruction in general), then [T^ρ] is cut out on Γ' by four forms of degree m=M'−2X−ρ. This gives ρ·deg[T]<=m·d'. That is the R18 §8.1 height bound again, and it does not force constancy: nonconstant ρ𝔮-th-power ratios of degree-m forms exist on every plane curve once ρ𝔮<=m (Remark 2.3).
+---
+> 2. **Layer identity (PROVED, §2).**
+>    - [f^[X]]_×=κ_0^X J^[X]ΩJ^[X,t], hence J^[X,t]P^t=κ_0^{−X}F·ΩC_PJ^[ρ,t].
+>    - The first layer (the twist) and the second layer (C_P,C_R) are **formally decoupled** (Prop. 2.4, PROVED). For any polynomial syzygy η of f^[ρ], the change P^t↦P^t+f^[X]⊗η preserves global alignment, common image, zero top, H_P, C_P, G_c and FNAM2, and it adds η to the first-layer row.
+>    - [v2: FIX-1] Whether this can turn a constant twist into a non-constant one depends on (H_lift) below, which is OPEN. So the v1 claim "no argument using only these identities can force T constant" is downgraded to CONDITIONAL on (H_lift), and HEURISTIC as a methodological statement (Remark 2.5).
+> 
+> 3. **Polynomial origin (option (1), CONDITIONAL on (H_lift), negative).** [v2: FIX-1]
+>    - Suppose ϰ_P lifts to a polynomial syzygy: (H_lift), which is OPEN.
+>    - The v1 sufficient condition (H_bs) **never holds**, since Γ' passes through every proper base point of f. Also, (H_lift) forces P(q)=R(q)=0 at those base points.
+>    - Under (H_lift), [T^ρ] is cut out on Γ' by four forms of degree m=M'−2X−ρ, which gives ρ·deg[T]<=m·d'<Nd.
+>    - That is the R18 §5 height bound again (used in R18 §8.1), and it does not force constancy: non-constant ρ𝔮-th-power ratios of degree-m forms exist on every plane curve once ρ𝔮<=m (Cor. 2.3).
+27c52
+<    - Substituting the first layer pointwise into FNAM's G_c(Y) and restricting to the own line gives sections 𝔊_k (k>=0) of explicit degree. Each vanishes at every good point.
+---
+>    - Substituting the first layer pointwise into FNAM's G_c(Y) and restricting to the own line gives sections 𝔊_k (k>=0) of explicit degree. Each vanishes at every good point off the exceptional set of Lemma 3.1 [v2: N7].
+35c60
+<    - D=4, 8, 16 are covered at h=256E, D<=32 at 512E, and D<=64 from 1024E on (`numerics_twist.out`).
+---
+>    - [v2: FIX-5] D has a nonempty low-height closing window (θ_max>0) exactly when D<=n/16, for n=h/E=256,…,8192. That is D∈{4,8,16} at n=256, D<=32 at 512, D<=64 at 1024, D<=128 at 2048, D<=256 at 4096 and D<=512 at 8192. These values come from the referee's grid; the v1 owner grid stopped at D=64. For such D only deg[T]<=θ_max·rh is closed, not the whole case.
+46c71,74
+< - The reduced cover costs ≈X·deg[T]=T·deg[T]/2 (the Frobenius-iterated twist B_{j+1}^[D]). This closes only deg[T]<=~0.25rh.
+---
+> - [v2: FIX-6] The reduced cover is expensive in deg[T].
+>   - The half-section 𝔊_k costs ≈X·deg[T]=T·deg[T]/2, from the Frobenius-iterated twist B_{j+1}^[D].
+>   - The counted section 𝔊_k² carries Q·deg[T](Q−1+T−D)/(Q−1)≈T·deg[T]=2X·deg[T].
+>   - That is what closes only deg[T]<=~0.25rh.
+48c76,77
+< - Polynomial origin gives no height improvement over R18.
+---
+> - Polynomial origin, even granted (H_lift), gives no height improvement over R18.
+> - [v2: FIX-1] The v1 "identities cannot force constancy" obstruction is not established. It rested on (H_bs), which never holds.
+61c90
+< - FNAL, TSY, TSYC, FNAM (with FNAM2: Δ(v,Y):=det(v_1C_P(Y)+v_2C_R(Y))≢0 in k[v,Y]); FNAN/FNAO/FNAP as stated by PRIMARY. All are owner proofs, review pending; FNAN is DZ-reviewed per FNAO.
+---
+> - FNAL, TSY, TSYC, FNAM (with FNAM2: Δ(v,Y):=det(v_1C_P(Y)+v_2C_R(Y))≢0 in k[v,Y]); FNAN/FNAO/FNAP as stated by PRIMARY. [v2: FIX-4] Claude referee review: FNAK, TSY, TSYC, FNAM PASS; FNAL, FNAN, FNAO, FNAP PASS-with-fixes (FIX-L1–L4, FIX-N1).
+67c96
+< With 𝒜's entries the sections t̂_ij^{ρ𝔮} of 𝓣^{ρ𝔮}, λ' is regular at every good point, and it vanishes at no more than Nd good points.
+---
+> With 𝒜's entries the sections t̂_ij^{ρ𝔮} of 𝓣^{ρ𝔮}, λ' is regular at every good point off {g=0} and off Bs(e) [v2: FIX-3], and it vanishes at no more than Nd good points.
+71c100
+< - **Regularity of λ'.** At a good point u, E_P(u) and E_R(u) are independent (FNAN §1: the maximal minors of J(e(u)) are a nonzero constant times g(u)u). The ϰ_• are regular sections of O(N) (R16.2). Solving for the coordinates of ϰ_• in the basis E_P^[ρ](u), E_R^[ρ](u) shows that λ'·t̂_ij^{ρ𝔮} is regular at u for all i,j. Some t̂_ij(u)≠0, so λ' is regular at u.
+---
+> - **Regularity of λ'.** Let u be a good point with g(u)≠0 and e(u)≠0 [v2: FIX-3; this is FIX-N1 of the PRIMARY review]. Then E_P(u) and E_R(u) are independent (FNAN §1: the maximal minors of J(e(u)) are a nonzero constant times g(u)u). The ϰ_• are regular sections of O(N) (R16.2). Solving for the coordinates of ϰ_• in the basis E_P^[ρ](u), E_R^[ρ](u) shows that λ'·t̂_ij^{ρ𝔮} is regular at u for all i,j. Some t̂_ij(u)≠0, so λ' is regular at u.
+108,110c137,153
+< **Proposition 2.2 (polynomial lift of the first layer; PROVED under (H_bs)).**
+< - **Hypothesis (H_bs):** no base point of f lies on Γ'.
+< - **Statement.** Under (H_bs) there are forms A_P, B_P, A_R, B_R∈S of degree m:=M'−2X−ρ with
+---
+> **Lemma 2.1A (Γ' contains every base point of f; PROVED) [v2: FIX-1].** Let q be a proper base point of the quadratic Cremona map f. Then q∈Γ', and mult_qΓ'>=E−3.
+> 
+> *Proof (from the audit).*
+> - C_f(Z):=Z·f(Z)^[E] is a form of degree 2E+1 that vanishes on Γ'.
+> - Every f_i vanishes at q, so mult_qC_f>=E.
+> - The components of {C_f=0} other than Γ' have total degree <=2E+1−d'<=3, since d'>=2E−2. So their multiplicity at q is <=3, and mult_qΓ'>=E−3>0. ∎
+> 
+> *COMPUTED (audit r2 g1, g2).*
+> - On Fermat σ1, mult_{(1:0:0)}Γ'=E−1.
+> - For 8 random centres (E=16), the third zero u* of C_orig on a contracted line of e satisfies g(u*)=0 and e(u*)∈Γ'∩Bs(f).
+> 
+> **Hypothesis (H_lift) (polynomial lift; OPEN in 𝔇_16) [v2: FIX-1].** There are κ̃'_P, κ̃'_R∈Syz(f^[ρ])_{M'−2X} with
+>       P^t≡f^[X]⊗κ̃'_P   and   R^t≡f^[X]⊗κ̃'_R   (mod F).
+> *Remark.* (H_lift) is a genuine condition. At a proper base point q of f (which lies on Γ' by Lemma 2.1A), f(q)=0 forces P(q)=R(q)=0. Nothing in the standing hypotheses is known to imply this.
+> 
+> **Proposition 2.2 (polynomial lift of the first layer; CONDITIONAL on (H_lift)) [v2: FIX-1].**
+> - **Statement.** Assume (H_lift). Then there are forms A_P, B_P, A_R, B_R∈S of degree m:=M'−2X−ρ with
+114c157,162
+< - **Without (H_bs).** The two obstructions are (a) local non-freeness of (f^[X])O_{Γ'} at points of Γ'∩Bs(f), and (b) the module (I_ρ:F)/I_ρ=Tor_1^S(S/I_ρ,S/F). Both are supported on Γ'∩Bs(f).
+---
+> - **The general case (this is the actual case in 𝔇_16).** Without (H_lift), the two obstructions to a lift are:
+>   - (a) local non-freeness of (f^[X])O_{Γ'} at the points of Γ'∩Bs(f);
+>   - (b) the module (I_ρ:F)/I_ρ=Tor_1^S(S/I_ρ,S/F).
+>   
+>   Both are supported on Γ'∩Bs(f). By Lemma 2.1A this set is the full set of proper base points of f, so it is never empty. Whether they vanish is OPEN.
+> - **Superseded v1 hypothesis.** v1 assumed (H_bs): no base point of f lies on Γ'. Steps 1–4 below prove (H_bs)⇒(H_lift). Steps 5–6 prove the statement from (H_lift). By Lemma 2.1A, (H_bs) **never holds** in 𝔇_16. Steps 1–4 are kept only as the record of where the obstructions (a), (b) arise.
+124c172
+<   - Hence f_i^X(κ̃·f^[ρ])≡0 mod F for all i. By (H_bs) some f_i^X is a unit at each point of Γ', so κ̃·f^[ρ]=F·b with b∈S.
+---
+>   - Hence f_i^X(κ̃·f^[ρ])≡0 mod F for all i. F is prime and F∤f_i^X for some i, so κ̃·f^[ρ]=F·b with b∈S. (This step does not need (H_bs) [v2: N3].)
+130c178
+< - **Without (H_bs).** Steps 1 and 4 are the only uses of (H_bs). Their failures are exactly (a) and (b). ∎
+---
+> - **Where (H_bs) was used.** Steps 1 and 4 are the only uses of (H_bs). Their failures are exactly (a) and (b). Steps 5–6 use only the conclusion of Step 4, i.e. (H_lift). ∎
+132c180
+< **Corollary 2.3 (height from polynomial origin; PROVED under (H_bs)).**
+---
+> **Corollary 2.3 (height from polynomial origin; CONDITIONAL on (H_lift)) [v2: FIX-1].**
+134,135c182,184
+< - **Comparison with R18.** This is (up to lower-order terms) the R18 §5 bound deg[T]<=e_M+d<=Nd/ρ+d, since m·d'<=2M'd≈Nd. Polynomial origin gives **no** height improvement.
+< - **It does not force constancy.** For any plane curve Γ' that is not a line, any independent linear forms α_1, β_1, and any form g of degree m−ρ𝔮 (possible when ρ𝔮<=m), the forms A=gα_1^{ρ𝔮}, B=gβ_1^{ρ𝔮} have A/B=(α_1/β_1)^{ρ𝔮}|_{Γ'}, a non-constant ρ𝔮-th power. In 𝔇_16, ρ𝔮<=m is compatible with the strip whenever 𝔮<=2m/Q, which allows up to 𝔮≈0.1E.
+---
+> - **Comparison with R18.** This is the R18 §5 bound deg[T]<=e_M+d<=Nd/ρ+d [v2: N5]. In fact m·d'<=(M−1−4X−2ρ)d<Nd strictly, since d'<=2d. So deg[T]<Nd/ρ, marginally below R18. Polynomial origin gives **no** real height improvement.
+> - **It does not force constancy.** Take any plane curve Γ' that is not a line, any independent linear forms α_1, β_1, and any form g of degree m−ρ𝔮 (possible when ρ𝔮<=m). Then the forms A=gα_1^{ρ𝔮}, B=gβ_1^{ρ𝔮} have A/B=(α_1/β_1)^{ρ𝔮}|_{Γ'}, a non-constant ρ𝔮-th power.
+> - **Size of the 𝔮-range [v2: N6].** In 𝔇_16, ρ𝔮<=m requires 𝔮<=2m/Q. That is 𝔮<64E/625≈0.1E only as h→4QE; at h=256E it is <0.0512E (Q=128).
+150c199
+< In particular, if (H_bs) holds and the original model is pure with twist T, the choice
+---
+> In particular, suppose (H_lift) holds (OPEN; [v2: FIX-1], v1 said (H_bs), which never holds) and the original model is pure with twist T. Then the choice
+160c209,215
+< - **The example** follows from Prop. 2.2, Lemma 1.1 and E_•=j_•(e(U)). ∎
+---
+> - **The example** follows from Prop. 2.2 (under (H_lift)), Lemma 1.1 and E_•=j_•(e(U)). ∎
+> 
+> *Remark (exactly what the decoupling covers) [v2: N10].* Let P' be any matrix with the same second layer and the same alignment as P. Then J^[X,t](P'^t−P^t)=0. Also ker J^[X,t]=S·f^[X], because its maximal minors κ_0^X f^[X] have grade 2. So P'^t=P^t+f^[X]⊗η with η∈S³ polynomial, and the syzygy condition on η is exactly the zero-top/alignment requirement. Hence "same second layer and alignment" is the same as "first-layer change within Syz(f^[ρ])".
+> 
+> *Remark 2.5 (obstruction, option (3); relabelled in v2) [v2: FIX-1, FIX-2].* Prop. 2.4 says the global polynomial identities are invariant under an arbitrary change of the first layer within Syz(f^[ρ]). These identities are alignment, common image, zero top, H, C, G_c and FNAM2's Δ, i.e. those used by FNAL/TSY/TSYC/FNAM.
+> 
+> The Γ-local, good-point conditions are **not** invariant: R16.2, Lemma 1.2, FN and FNAN/FNAO's pointwise inputs all couple the first layer at u.
+162,163c217,221
+< *Remark 2.5 (obstruction, option (3)).* Prop. 2.4 says that every global identity used by FNAL/TSY/TSYC/FNAM/FNAN/FNAO/FNAP, and by R16–R18's Γ-local structure, is invariant under an arbitrary change of the first layer within Syz(f^[ρ]). The twist T is first-layer data. Therefore:
+< - **(PROVED)** no argument that uses only these identities, without the coupling of the two layers at the same good point u, can force T to be constant;
+---
+> The twist T is first-layer data. Therefore:
+> - **(PROVED)** every global identity listed is invariant under P^t↦P^t+f^[X]⊗η, η∈Syz(f^[ρ])_{M'−2X};
+> - **(CONDITIONAL on (H_lift) and ρ𝔮<=m)** this exchanges a constant twist for a non-constant one, with an identical second layer;
+> - **(HEURISTIC)** hence an argument from these global identities alone can force constancy only by excluding all lift-admitting data with ρ𝔮<=m. That is, it would have to prove those identities inconsistent for such data, which is not ruled out;
+> - **(OPEN)** (H_lift) itself. It is nontrivial: it forces P, R to vanish at the base points of f, which lie on Γ' (Lemma 2.1A);
+165c223
+< - **consequence:** constancy, if true, must come from the **point coupling**: the same c(u), u and own line enter both the first-layer equation 𝔉(u)=0 and the second-layer divisibility ℓ_u | G_{c(u)}. §3 builds the cover that uses this coupling.
+---
+> - **consequence (HEURISTIC):** constancy, if true, most plausibly comes from the **point coupling**: the same c(u), u and own line enter both the first-layer equation 𝔉(u)=0 and the second-layer divisibility ℓ_u | G_{c(u)}. §3 builds the cover that uses this coupling.
+250c308,309
+<   - The boundary: 6d_def+7. ∎
+---
+>   - The boundary: 6d_def+7.
+>   - [v2: FIX-3] {g=0} (<=3d) is contained in 𝔈 and charged in 1.5d²+3.5d+1, so FIX-N1 is satisfied. Bs(e) lies in the original boundary. No number changes. ∎
+260c319
+<   - Non-empty windows (r=4, least admissible Q): D∈{4,8,16} at n=256, D<=32 at n=512, D<=64 for n>=1024.
+---
+>   - [v2: FIX-5] Non-empty windows θ_max>0 (r=4, least admissible Q) occur exactly for D<=n/16, at n=256,…,8192 (audit r1 grid, 1260 cases; the same sets over the whole grid). That is D∈{4,8,16} at n=256, D<=32 at 512, D<=64 at 1024, D<=128 at 2048, D<=256 at 4096 and D<=512 at 8192. v1's "D<=64 for n>=1024" was an artefact of the owner grid stopping at D=64. Within a window only deg[T]<=θ_max·rh is closed.
+292c351
+< - The bound a<min(ρ𝔮,E) from Prop. 4.1(iii) combined with Prop. 3.3(b) gives nothing new: a<=E−2 already implies 2a<d'.
+---
+> - [v2: N4] Combining Prop. 4.1(iii) with Prop. 3.3(b) excludes (𝒦) whenever a+1<=min(ρ𝔮,E). This adds only the edge case a=E−1, d'=2E−2 (when E<=ρ𝔮), where 2a=d' and Prop. 4.2 does not apply. For a<=E−2, Prop. 4.2 already applies.
+305,309c364,375
+< 1. **Decoupling (PROVED, Prop. 2.4).** All global identities of FNAL/TSY/TSYC/FNAM/FNAM2 and of the R16–R18 structure are invariant under P^t↦P^t+f^[X]⊗η with η∈Syz(f^[ρ]). Under (H_bs) this changes a constant twist into an arbitrary ρ𝔮-th-power twist of polynomial origin with ρ𝔮<=m, keeping the second layer fixed. So constancy of T is not a consequence of identities. It can only come from the point coupling (Lemma 3.1) or from the non-algebraic gates: the count N_good>1551q/4000, and possibly G5/PRIM.
+< 2. **Polynomial origin is no height gain (PROVED, Cor. 2.3).**
+< 3. **The kernel-aligned sub-case is formally consistent (Example 4.3).** In (𝒦) the own-line expansion of the reduced second layer is automatically flat to order min(ρ𝔮,E). So no cover of degree O(D·E·d+X·deg[T]) can come from the own line at z alone.
+< 4. **D∈{1,2} (FNAP §4).** FNAP's counterexamples to non-vanishing are pointwise identities in z'. They apply verbatim at every u for non-constant B(u). So Lemma 3.2/Prop. 3.3 genuinely need D>=4 (COMPUTED `toy_checks.out` (3′)).
+< 5. **The cost X·deg[T] (HEURISTIC).** Any cover obtained by substituting the first layer into G_c must express c^[T] through c^[Q]∥B(u)c. That introduces the Frobenius iterate B_{j+1}^[D], of height ≈S·ρ·deg[T]=X·deg[T]. The alternative c^[T]=(β:α)^[X] costs X·deg ψ. Either way the cover has degree >=X·min(deg[T],deg ψ), up to lower-order terms. So the method of §3 closes exactly the heights deg[T]≲rh·const (Cor. 3.5), and no rearrangement of the same substitution can do better.
+---
+> 1. **Decoupling (identities PROVED, Prop. 2.4; consequence CONDITIONAL/HEURISTIC) [v2: FIX-1].**
+>    - All global identities of FNAL/TSY/TSYC/FNAM/FNAM2 are invariant under P^t↦P^t+f^[X]⊗η with η∈Syz(f^[ρ]). The Γ-local conditions are not.
+>    - Under (H_lift) (OPEN; (H_bs) never holds) this changes a constant twist into an arbitrary ρ𝔮-th-power twist of polynomial origin with ρ𝔮<=m, keeping the second layer fixed.
+>    - So, conditionally on (H_lift), constancy of T is not a consequence of the global identities alone, unless they are inconsistent for such data (HEURISTIC).
+>    - It would then have to come from the point coupling (Lemma 3.1) or from the non-algebraic gates: the count N_good>1551q/4000, and possibly G5/PRIM.
+> 2. **Polynomial origin is no height gain (CONDITIONAL on (H_lift), Cor. 2.3).**
+> 3. **The kernel-aligned sub-case is formally consistent (Example 4.3).**
+>    - In (𝒦) the own-line expansion of the reduced second layer is automatically flat to order min(ρ𝔮,E).
+>    - [v2: FIX-7] So no 𝔊_k (k<min(ρ𝔮,E)) is nonzero in (𝒦) (PROVED, Prop. 4.1(iii)).
+>    - That no own-line cover at z of degree O(D·E·d+X·deg[T]) exists by any other construction is HEURISTIC.
+> 4. **D∈{1,2} (FNAP §4).** FNAP's counterexamples to non-vanishing are pointwise identities in z'. They apply verbatim at every u for non-constant B(u). So the method of Lemma 3.2/Prop. 3.3 needs D>=4 [v2: N8]: the FNAP counterexamples are to the algebraic step only (COMPUTED `toy_checks.out` (3′)).
+> 5. **The cost X·deg[T] (HEURISTIC) [v2: FIX-6].** Any cover obtained by substituting the first layer into G_c must express c^[T] through c^[Q]∥B(u)c. That introduces the Frobenius iterate B_{j+1}^[D]. The half-section 𝔊_k then has height ≈S·ρ·deg[T]=X·deg[T], and the counted section 𝔊_k² has ≈2X·deg[T]=T·deg[T]. The alternative c^[T]=(β:α)^[X] costs X·deg ψ. Either way the cover has degree >=X·min(deg[T],deg ψ), up to lower-order terms. So the method of §3 closes exactly the heights deg[T]≲rh·const (Cor. 3.5), and no rearrangement of the same substitution can do better.
+320c386,387
+< - (R4) the non-global-alignment variant of 𝔇_16 (FNAL unavailable) and 𝔇_17 (R18 §6).
+---
+> - (R4) the non-global-alignment variant of 𝔇_16 (FNAL unavailable) and 𝔇_17 (R18 §6);
+> - [v2: FIX-1] (H_lift), the polynomial lift of the first layer through the base points of f.
+356,357c423,428
+< | Prop. 2.2 (polynomial lift), Cor. 2.3 (height; no constancy) | PROVED under (H_bs); general case: obstruction identified, OPEN |
+< | Prop. 2.4 (decoupling), Remark 2.5 | identities PROVED; preservation of G5/PRIM/count OPEN |
+---
+> | Lemma 2.1A (Γ'⊃Bs(f), mult>=E−3) [v2] | PROVED (audit FIX-1); COMPUTED (audit r2 g1, g2) |
+> | Prop. 2.2 (polynomial lift), Cor. 2.3 (height; no constancy) | CONDITIONAL on (H_lift), which is OPEN [v2: FIX-1]. (H_bs)⇒(H_lift) is proved, but (H_bs) never holds |
+> | Prop. 2.4 (i)–(v) (decoupling) | PROVED (unconditional) |
+> | "In particular" example in Prop. 2.4 | CONDITIONAL on (H_lift) |
+> | Remark 2.5 obstruction | CONDITIONAL/HEURISTIC [v2: FIX-1, FIX-2] |
+> | Preservation of G5/PRIM/count under decoupling | OPEN |
+363,364c434,435
+< | constancy of T in 𝔇_16; (R1)–(R4) | OPEN |
+< | residual-intersection route (§6) | HEURISTIC |
+---
+> | constancy of T in 𝔇_16; (R1)–(R4); (H_lift) | OPEN |
+> | residual-intersection route (§6) | HEURISTIC (developed in R19, owner draft) |
+366c437,441
+< Dependencies whose review is pending: R18 v1 (owner), FNAL, TSY, TSYC, FNAM (FNAM2 is essential for Props. 3.3(b), 4.2), FNAO, FNAP (owner hand proofs). Everything here is owner work awaiting independent audit. No manuscript was edited.
+---
+> [v2: FIX-4] Dependencies:
+> - R18 v2.1: audited and revision-checked.
+> - PRIMARY FNAL, TSY, TSYC, FNAM (FNAM2 is essential for Props. 3.3(b), 4.2), FNAN, FNAO, FNAP: Claude referee review PASS / PASS-with-fixes as listed in the header.
+> - This v2 applies the audit's FIX-1..7 and awaits an independent revision check.
+> - No manuscript was edited.

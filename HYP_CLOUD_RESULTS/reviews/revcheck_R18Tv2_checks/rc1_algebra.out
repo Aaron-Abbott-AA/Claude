@@ -1,0 +1,20 @@
+E=4 t=0: Cf!=0:True deg=9 (2E+1=9) f(e(U))=gU:True Cf(e(U))=g^E*Corig:True f(bp)=0:True mult_bp(Cf)=[4, 4, 5] (>=E:True)
+E=4 t=1: Cf!=0:True deg=9 (2E+1=9) f(e(U))=gU:True Cf(e(U))=g^E*Corig:True f(bp)=0:True mult_bp(Cf)=[4, 4, 4] (>=E:True)
+E=4 t=2: Cf!=0:True deg=9 (2E+1=9) f(e(U))=gU:True Cf(e(U))=g^E*Corig:True f(bp)=0:True mult_bp(Cf)=[4, 5, 4] (>=E:True)
+E=8 t=0: Cf!=0:True deg=17 (2E+1=17) f(e(U))=gU:True Cf(e(U))=g^E*Corig:True f(bp)=0:True mult_bp(Cf)=[8, 9, 8] (>=E:True)
+E=8 t=1: Cf!=0:True deg=17 (2E+1=17) f(e(U))=gU:True Cf(e(U))=g^E*Corig:True f(bp)=0:True mult_bp(Cf)=[8, 8, 8] (>=E:True)
+E=8 t=2: Cf!=0:True deg=17 (2E+1=17) f(e(U))=gU:True Cf(e(U))=g^E*Corig:True f(bp)=0:True mult_bp(Cf)=[8, 8, 8] (>=E:True)
+E=16 t=0: Cf!=0:True deg=33 (2E+1=33) f(e(U))=gU:True Cf(e(U))=g^E*Corig:True f(bp)=0:True mult_bp(Cf)=[16, 17, 16] (>=E:True)
+E=16 t=1: Cf!=0:True deg=33 (2E+1=33) f(e(U))=gU:True Cf(e(U))=g^E*Corig:True f(bp)=0:True mult_bp(Cf)=[17, 16, 17] (>=E:True)
+E=16 t=2: Cf!=0:True deg=33 (2E+1=33) f(e(U))=gU:True Cf(e(U))=g^E*Corig:True f(bp)=0:True mult_bp(Cf)=[16, 17, 16] (>=E:True)
+support argument: monomials of Z_i*f_i^E have exponent vector = e_i mod E; pairwise disjoint => Cf=0 iff f=0
+sigma E=4: Cf=Z0Z1Z2*F:True degF=6 mult_(1:0:0)F=3 (E-1=3); cofactor mult=2, total mult Cf=5
+sigma E=8: Cf=Z0Z1Z2*F:True degF=14 mult_(1:0:0)F=7 (E-1=7); cofactor mult=2, total mult Cf=9
+sigma E=16: Cf=Z0Z1Z2*F:True degF=30 mult_(1:0:0)F=15 (E-1=15); cofactor mult=2, total mult Cf=17
+mu=1: F^2 | C_f would need 2d' <= 2E+1, impossible with d' >= 2E-2 and E >= 3
+N10 X=2 t=0: deg v: dimker/dim S_(deg-2X) -> 0:0/0 1:0/0 2:0/0 3:0/0 4:1/1 5:3/3 6:6/6
+N10 X=2 t=1: deg v: dimker/dim S_(deg-2X) -> 0:0/0 1:0/0 2:0/0 3:0/0 4:1/1 5:3/3 6:6/6
+N10 X=2 t=2: deg v: dimker/dim S_(deg-2X) -> 0:0/0 1:0/0 2:0/0 3:0/0 4:1/1 5:3/3 6:6/6
+N10 X=4 t=0: deg v: dimker/dim S_(deg-2X) -> 0:0/0 1:0/0 2:0/0 3:0/0 4:0/0 5:0/0 6:0/0 7:0/0 8:1/1 9:3/3 10:6/6
+N10 X=4 t=1: deg v: dimker/dim S_(deg-2X) -> 0:0/0 1:0/0 2:0/0 3:0/0 4:0/0 5:0/0 6:0/0 7:0/0 8:1/1 9:3/3 10:6/6
+N10 X=4 t=2: deg v: dimker/dim S_(deg-2X) -> 0:0/0 1:0/0 2:0/0 3:0/0 4:0/0 5:0/0 6:0/0 7:0/0 8:1/1 9:3/3 10:6/6

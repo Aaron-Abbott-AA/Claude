@@ -6,16 +6,37 @@ Input bundle: HYP_CLOUD_HANDOFF_20261007.zip. All files match MANIFEST_SHA256.tx
 No file whose name contains "DZ" was opened. A DZ-CLOUD-HANDOFF zip was uploaded to this session but was left unopened.
 
 ## Log (UTC 2026-10-07)
-1. **R18-T v2** (`notes/R18T_TWIST_NOTE_v2.md`) — owner revision applying audit FIX-1..7 plus N3–N8, N10.
-   - FIX-1: (H_bs) never holds (new Lemma 2.1A: Γ'⊃Bs(f), PROVED). Prop 2.2, Cor 2.3 and the Prop 2.4 example are now CONDITIONAL on (H_lift), which is OPEN.
-   - Remark 2.5's obstruction is now CONDITIONAL/HEURISTIC.
-   - Thm 3.4, Cor 3.5 and §4 are unchanged: PROVED, with numbers COMPUTED.
-   - Status: revision check (fresh referee) IN PROGRESS.
-2. **R19 audit** (fresh referee) — IN PROGRESS.
+1. **R18-T v2** (`notes/R18T_TWIST_NOTE_v2.md`) — owner revision applying audit FIX-1..7 (+N1, N3–N8, N10).
+2. **Revision check of v2** (`reviews/REVISION_CHECK_HYP_M2_ROUND18T_V2_20261007.md`, fresh referee, own checks in `reviews/revcheck_R18Tv2_checks/`). Verdict: **PASS-with-fixes**.
+   - FIX-1..7 are all ADDRESSED.
+   - Lemma 2.1A was verified by hand and by exact GF(2) computation (E=4,8,16, Fermat).
+   - The (N10) remark is correct.
+   - §§3–4 numbers recompute exactly (1764 grid cases).
+   - Seven minor items RC-1..7 were raised.
+3. **R18-T v2.1** (`notes/R18T_TWIST_NOTE_v2_1.md`) — applies RC-1..7, so it is the final version for PRIMARY.
+   - RC-1: self-contained Lemma 2.1A proof.
+   - RC-2: N10 uses the alignment coefficients.
+   - RC-3: N2 applied; N9 deferred (script comments only).
+   - RC-4, RC-5, RC-6, RC-7: wording and citations.
+   - No statement, label or number changed relative to v2.
+   - **Ready to send to PRIMARY** (in A306, once the R19 audit is in).
+4. **R19 audit** (fresh referee) — IN PROGRESS.
 
-## Statuses carried over
-- R17 v2.1, R18 v2.1: audited and revision-checked, sent as A305.
-- Constancy of T in 𝔇_16; (R1), (R2), (R3), (R4); (H_lift): OPEN.
+## Statuses (R18-T v2.1)
+- Lemma 1.1, Lemma 1.2, Lemma 2.1 and Lemma 2.1A (Γ'⊃Bs(f)): PROVED.
+- Prop 2.4 (i)–(v) (decoupling): PROVED.
+- Prop 2.2 and Cor 2.3: CONDITIONAL on (H_lift), which is OPEN.
+- Remark 2.5 obstruction: CONDITIONAL/HEURISTIC.
+- Def 3.0, Lemma 3.1, Lemma 3.2, Prop 3.3 and Thm 3.4: PROVED.
+- Cor 3.5: COMPUTED (exact).
+- Props 4.1, 4.2: PROVED. Example 4.3: COMPUTED, and not a model.
+- OPEN: constancy of T in 𝔇_16, (R1), (R2), (R3), (R4), (H_lift).
+- Carried over: R17 v2.1 and R18 v2.1 were audited, revision-checked and sent as A305.
 
-## Hashes
+## Mailbox
+Not linked. No A306 has been delivered. The pending-ACK file named by the user is not present in the bundle.
+
+## Hashes (sha256)
 419b99c61b7d1d4333aa3ee64b283ba22dc9e60c7a39f1fa88c5684a93bf201b  notes/R18T_TWIST_NOTE_v2.md
+65ba7f0bdffda18145365625e13d138c4e66b70015100fe0dbe0ff33e25b41ed  notes/R18T_TWIST_NOTE_v2_1.md
+63ea9f4bb675a8d6c808ad9f7a2700dc6f4aa9dc6db8a1cab05577244e3c4fcf  reviews/REVISION_CHECK_HYP_M2_ROUND18T_V2_20261007.md
