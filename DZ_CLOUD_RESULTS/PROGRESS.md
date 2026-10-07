@@ -633,3 +633,31 @@
 >
 > Do not claim G1, GLS₀ or the conjecture is complete.
 - **Zip:** `b9dd2a8eebcf9cc68f87c06467f5a4304561dd3f1a87e1b75f84670226b9b629`  DZ-HANDBACK-20261007T2303Z.zip (341 files; contains PROGRESS.md as of this section)
+
+---
+## Session 2, continued (23:04Z–23:30Z): KP note (ker P̃ question)
+- **New note:** KP v1. **NOT AUDITED, HOLD**, not in the outbox. Packets EF–EM are READY and unchanged.
+- **The goal is NOT complete.** GLS₀ for the arc family, the even-band question, G1″, G1 and the linear-gap conjecture are OPEN.
+
+| Item | Status |
+|---|---|
+| KP: Lemma FR, Lemma GS | PROVED (owner) — awaiting audit |
+| KP: Theorem KP (m = 24..44), Proposition KL (m = 10, 14, 18) | PROVED given the recorded computations — awaiting audit |
+| General-m version; the m/2-odd line case for m ≥ 26 | OPEN |
+
+| sha256 | File |
+|---|---|
+| 87430b2398f7858c53fcc92ad5d87b395eeefd382af2c90d0354985a89256ffd | claude_archive/KP-RX-ROOTSPACE-GALOIS-NOTE-20261007.md |
+| 8f3a40c7b3a572874bc1ea09ac9f0f5cbc4a36634f5161906ef8a12df769ca72 | claude_archive/HANDBACK-20261007T2330Z.md |
+| 6e8e6ef17bec1f8596c742102c974722809398be016327c8a07ac2605533052b | claude_archive/CHECKPOINT-ADDENDUM-20261007T2330Z.md |
+| bb1eb2a4c77fae982df8f832d20ea585ce9e8ef4976796858109f509c96a9a60 | claude_archive/scripts/kpcheck.py |
+| cb00f4b0991a4c8eb77f90bdfc0752bf82a3e218bb0ac84600c9be5271138d96 | claude_archive/scripts/kpcheck.log |
+| bde2936239b0fa5274a2969b1aaad92c6c56991877e6ab0dc81db53a653c4e5b | claude_archive/scripts/kprat.py |
+| cc1344dfb38cec31fa146670bb381bf458d31f2257a57cb22aac92bff7627ee9 | claude_archive/scripts/kprat.log |
+
+**Pending:**
+1. The audit of KP v1, then the packet (EN).
+2. Device steps for EF→EM.
+3. Codex questions.
+4. The resume message in the 23:03Z section still applies. Read the newest HANDBACK, now 20261007T2330Z.
+- **Zip:** `ca40f4d5644c696e507b29e449ff89df7ecdde63203f0b1127ef86a07ad8a573`  DZ-HANDBACK-20261007T2330Z.zip (348 files; contains PROGRESS.md as of this section)

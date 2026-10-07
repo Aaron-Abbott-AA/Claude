@@ -1,0 +1,27 @@
+### kprat.py 10
+m=10 n=3 coefficient degrees=[150, 138, 114, 66]
+  possible poles (pi, max order): [('0b111', 0), ('0b10011', 0), ('0b11001', 0), ('0b11111', 0)]; inf root vals [Fraction(-12, 1)]; D=12
+  F_2-dim of rational roots of Pt (in F_q(X), denominators | v, deg u <= 12): 0
+### kprat.py 10 control
+POSITIVE CONTROL: searching rational roots of P itself
+m=10 n=6 coefficient degrees=[160, 160, None, None, None, 130, 66]
+  possible poles (pi, max order): [('0b111', 0), ('0b10011', 0), ('0b11001', 0), ('0b11111', 0)]; inf root vals [Fraction(-2, 1), Fraction(-1, 1), Fraction(0, 1)]; D=2
+  F_2-dim of rational roots of Pt (in F_q(X), denominators | v, deg u <= 2): 3
+### kprat.py 14
+m=14 n=5 coefficient degrees=[630, 618, 594, 546, 450, 258]
+  possible poles (pi, max order): [('0b111', 0), ('0b1011', 0), ('0b1101', 0), ('0b1000011', 0), ('0b1001001', 0), ('0b1010111', 0), ('0b1011011', 0), ('0b1100001', 0), ('0b1100111', 0), ('0b1101101', 0), ('0b1110011', 0), ('0b1110101', 0)]; inf root vals [Fraction(-12, 1)]; D=12
+  F_2-dim of rational roots of Pt (in F_q(X), denominators | v, deg u <= 12): 0
+### kprat.py 14 control
+POSITIVE CONTROL: searching rational roots of P itself
+m=14 n=8 coefficient degrees=[640, 640, None, None, None, None, None, 514, 258]
+  possible poles (pi, max order): [('0b111', 0), ('0b1011', 0), ('0b1101', 0), ('0b1000011', 0), ('0b1001001', 0), ('0b1010111', 0), ('0b1011011', 0), ('0b1100001', 0), ('0b1100111', 0), ('0b1101101', 0), ('0b1110011', 0), ('0b1110101', 0)]; inf root vals [Fraction(-2, 1), Fraction(-1, 1), Fraction(0, 1)]; D=2
+  F_2-dim of rational roots of Pt (in F_q(X), denominators | v, deg u <= 2): 3
+### kprat.py 18
+m=18 n=7 coefficient degrees=[2550, 2538, 2514, 2466, 2370, 2178, 1794, 1026]
+  possible poles (pi, max order): [('0b111', 0), ('0b10011', 0), ('0b11001', 0), ('0b11111', 0), ('0b100011011', 0), ('0b100011101', 0), ('0b100101011', 0), ('0b100101101', 0), ('0b100111001', 0), ('0b100111111', 0), ('0b101001101', 0), ('0b101011111', 0), ('0b101100011', 0), ('0b101100101', 0), ('0b101101001', 0), ('0b101110001', 0), ('0b101110111', 0), ('0b101111011', 0), ('0b110000111', 0), ('0b110001011', 0), ('0b110001101', 0), ('0b110011111', 0), ('0b110100011', 0), ('0b110101001', 0), ('0b110110001', 0), ('0b110111101', 0), ('0b111000011', 0), ('0b111001111', 0), ('0b111010111', 0), ('0b111011101', 0), ('0b111100111', 0), ('0b111110011', 0), ('0b111110101', 0), ('0b111111001', 0)]; inf root vals [Fraction(-12, 1)]; D=12
+  F_2-dim of rational roots of Pt (in F_q(X), denominators | v, deg u <= 12): 0
+### kprat.py 18 control
+POSITIVE CONTROL: searching rational roots of P itself
+m=18 n=10 coefficient degrees=[2560, 2560, None, None, None, None, None, None, None, 2050, 1026]
+  possible poles (pi, max order): [('0b111', 0), ('0b10011', 0), ('0b11001', 0), ('0b11111', 0), ('0b100011011', 0), ('0b100011101', 0), ('0b100101011', 0), ('0b100101101', 0), ('0b100111001', 0), ('0b100111111', 0), ('0b101001101', 0), ('0b101011111', 0), ('0b101100011', 0), ('0b101100101', 0), ('0b101101001', 0), ('0b101110001', 0), ('0b101110111', 0), ('0b101111011', 0), ('0b110000111', 0), ('0b110001011', 0), ('0b110001101', 0), ('0b110011111', 0), ('0b110100011', 0), ('0b110101001', 0), ('0b110110001', 0), ('0b110111101', 0), ('0b111000011', 0), ('0b111001111', 0), ('0b111010111', 0), ('0b111011101', 0), ('0b111100111', 0), ('0b111110011', 0), ('0b111110101', 0), ('0b111111001', 0)]; inf root vals [Fraction(-2, 1), Fraction(-1, 1), Fraction(0, 1)]; D=2
+  F_2-dim of rational roots of Pt (in F_q(X), denominators | v, deg u <= 2): 3
