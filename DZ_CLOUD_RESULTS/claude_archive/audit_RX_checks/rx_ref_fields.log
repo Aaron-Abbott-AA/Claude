@@ -1,0 +1,19 @@
+modulus 12 4179 irreducible: True
+modulus 16 65581 irreducible: True
+modulus 22 4194307 irreducible: True
+modulus 28 268435465 irreducible: True
+modulus 61 2305843009213693991 irreducible: True
+F1 {'m': 16, 'eval_det_eq_exact': True, 'Delta_nonzero': True, 'DeltaOmega_nonzero': True, 'rank_full': True, 'rank_Eprime': 2}
+F1 {'m': 16, 'eval_det_eq_exact': True, 'Delta_nonzero': True, 'DeltaOmega_nonzero': True, 'rank_full': True, 'rank_Eprime': 2}
+F1 {'m': 16, 'eval_det_eq_exact': True, 'Delta_nonzero': True, 'DeltaOmega_nonzero': True, 'rank_full': True, 'rank_Eprime': 2}
+F1 {'m': 18, 'eval_det_eq_exact': True, 'Delta_nonzero': True, 'DeltaOmega_nonzero': True, 'rank_full': True, 'rank_Eprime': 2}
+F1 {'m': 18, 'eval_det_eq_exact': True, 'Delta_nonzero': True, 'DeltaOmega_nonzero': True, 'rank_full': True, 'rank_Eprime': 2}
+F1 {'m': 18, 'eval_det_eq_exact': True, 'Delta_nonzero': True, 'DeltaOmega_nonzero': True, 'rank_full': True, 'rank_Eprime': 2}
+F1 {'m': 20, 'eval_det_eq_exact': True, 'Delta_nonzero': True, 'DeltaOmega_nonzero': True, 'rank_full': True, 'rank_Eprime': 2}
+F1 {'m': 20, 'eval_det_eq_exact': True, 'Delta_nonzero': True, 'DeltaOmega_nonzero': True, 'rank_full': True, 'rank_Eprime': 2}
+F1 {'m': 20, 'eval_det_eq_exact': True, 'Delta_nonzero': True, 'DeltaOmega_nonzero': True, 'rank_full': True, 'rank_Eprime': 2}
+F2 exhaustive {'a': 1, 'm': 12, 'tested': 4096, 'rank_rho': 4032, 'real_type': 4032, 'rank_deficient': 64, 'rank_rho_but_c0_zero': 0}
+F2 exhaustive {'a': 2, 'm': 12, 'tested': 4096, 'rank_rho': 4020, 'real_type': 4020, 'rank_deficient': 76, 'rank_rho_but_c0_zero': 0}
+F2 exhaustive {'a': 1, 'm': 16, 'tested': 65536, 'rank_rho': 65280, 'real_type': 65280, 'rank_deficient': 256, 'rank_rho_but_c0_zero': 0}
+F3 sample {'a': 2, 'm': 22, 'tested': 1500, 'rank_rho': 1500, 'real_type': 1500, 'rank_deficient': 0, 'rank_rho_but_c0_zero': 0}
+F3 sample {'a': 3, 'm': 28, 'tested': 300, 'rank_rho': 300, 'real_type': 300, 'rank_deficient': 0, 'rank_rho_but_c0_zero': 0}

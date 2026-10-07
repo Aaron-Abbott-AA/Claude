@@ -1,0 +1,11 @@
+K1 {'a': 1, 'm': 16, 'poly_root_degree_candidates': [0, 1, 2], 'pole_order_at_0_candidates': []}
+K1 {'a': 1, 'm': 18, 'poly_root_degree_candidates': [0, 1, 2], 'pole_order_at_0_candidates': []}
+K1 {'a': 1, 'm': 20, 'poly_root_degree_candidates': [0, 1, 2], 'pole_order_at_0_candidates': []}
+K1 {'a': 2, 'm': 22, 'poly_root_degree_candidates': [0, 1, 2, 3, 4], 'pole_order_at_0_candidates': []}
+K1 {'a': 3, 'm': 28, 'poly_root_degree_candidates': [0, 1, 2, 3, 4, 5, 6], 'pole_order_at_0_candidates': []}
+K2 {'a': 1, 'm': 16, 'dmax': 48, 'F2_kernel_dim': 3}
+K2 {'a': 1, 'm': 18, 'dmax': 48, 'F2_kernel_dim': 3}
+K2 {'a': 1, 'm': 20, 'dmax': 64, 'F2_kernel_dim': 3}
+K2 {'a': 2, 'm': 22, 'dmax': 40, 'F2_kernel_dim': 5}
+K3 {'a': 1, 'm': 16, 'dmax': 6, 'F2_kernel_dim_on_FqX': 3}
+K3 {'a': 1, 'm': 16, 'dmax': 10, 'F2_kernel_dim_on_FqX': 3}
