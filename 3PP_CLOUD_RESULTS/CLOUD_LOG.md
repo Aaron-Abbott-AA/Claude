@@ -3,3 +3,4 @@
 - 2026-10-07T17:41Z first 4 shards (17693,16950,16949,16948) done, all COUNTEREXAMPLES=0; 50-72 s CPU but 89-122 s wall per shard (shared vCPUs) => ~2.3 shards/min (~135/h) on 4 workers.
 - 2026-10-07T18:43:57Z container restarted; 168 shards were complete; in-flight shards discarded; restarted run_cloud.sh 4 (self-test q=16 re-passed).
 - 2026-10-07T19:38:37Z PACK: 326 cloud shards done (lowest 16626), COUNTEREXAMPLES>0 in 0; 171 shards in the last hour; 4 workers.
+- 2026-10-07T21:35:37Z PACK: 709 cloud shards done (lowest 16243), COUNTEREXAMPLES>0 in 0; 198 shards in the last hour; 4 workers.

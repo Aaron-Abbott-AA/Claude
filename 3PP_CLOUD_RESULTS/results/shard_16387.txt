@@ -1,0 +1,2 @@
+q=32 H=16 shard 16387/20000 SYM2: nodes=1147721858 leaves=1058256194 even-3PP=0 o-polys=0 COUNTEREXAMPLES=0  [68.140 s]
+   N2 histogram:
