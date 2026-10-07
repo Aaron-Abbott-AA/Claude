@@ -523,3 +523,29 @@
 >
 > Do not claim G1, GLS₀ or the conjecture is complete.
 - **Zip:** `3b9eb8218c08f234b19a4c9537a163341a68eaf0308db387254c0d077aaf8169`  DZ-HANDBACK-20261007T2235Z.zip (305 files; contains PROGRESS.md as of this section)
+
+---
+## Session 2, continued (22:36Z–22:40Z): SH note (even-band GLS₀ question)
+- **New note:** SH v1. **NOT AUDITED, HOLD**, not in the outbox. Packets EF–EL are READY and unchanged.
+- **The goal is NOT complete.** GLS₀ for the arc family, the even-band question (generic PTH (ii)), G1″, G1 and the linear-gap conjecture are OPEN.
+
+| Item | Status |
+|---|---|
+| SH: Theorem SH (a)–(c), SH1, SH2, SH3; Proposition RK (a = 1, all m) | PROVED (owner) — awaiting audit |
+| RK numerics (V, R) | COMPUTATION |
+| Even-band GLS₀ = generic PTH (ii) | OPEN |
+
+| sha256 | File |
+|---|---|
+| 6fe44b3aa532917279ff06cf69568075fbb97986e36ca3a7ce13c15972668e2e | claude_archive/SH-SUBHALFFIELD-CRITERION-NOTE-20261007.md |
+| 273afc4458dfe8c8a10a1f00d7f62d8a86b9eabc1aa9a34d82a313bdb308bac1 | claude_archive/HANDBACK-20261007T2240Z.md |
+| 5313cc8503ee2aa9bf481721f472412c423abea6967f9c8982032c6281e0df14 | claude_archive/CHECKPOINT-ADDENDUM-20261007T2240Z.md |
+| bc74772ca8374092597dad05693c6979028b4906d54e6dddac1a7f321dbb4934 | claude_archive/scripts/slcheck.py |
+| a060fbd370f36828145c9bfe10a86e4b1b9daf7e11937b9bba18af6c025d260a | claude_archive/scripts/slcheck.log |
+
+**Pending:**
+1. The audit of SH v1, then the packet (EM).
+2. Device steps for EF→EL.
+3. Codex questions (EK §3, EL §3, SH §5).
+4. The resume message in the 22:34Z section still applies. Read the newest HANDBACK, now 20261007T2240Z.
+- **Zip:** `1d2eaa75f8bf8d4be7f7ea686964fb08117e5c75c624b733f55a7ca9e1ef9494`  DZ-HANDBACK-20261007T2240Z.zip (310 files; contains PROGRESS.md as of this section)
