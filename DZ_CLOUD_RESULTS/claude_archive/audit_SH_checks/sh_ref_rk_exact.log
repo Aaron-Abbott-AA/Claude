@@ -1,0 +1,7 @@
+{'m': 4, 'E1': True, 'E2_degs': True, 'E2_monic': True, 'E2_vX': True, 'E2_vX1': True, 'E3_maxmult_other': 1, 'E3_gcd_is_X+1': True, 'E4': True, 'E5': True, 'E6': True}
+{'m': 6, 'E1': True, 'E2_degs': True, 'E2_monic': True, 'E2_vX': True, 'E2_vX1': True, 'E3_maxmult_other': 2, 'E3_gcd_is_X+1': True, 'E4': True, 'E5': True, 'E6': True}
+{'m': 8, 'E1': True, 'E2_degs': True, 'E2_monic': True, 'E2_vX': True, 'E2_vX1': True, 'E3_maxmult_other': 2, 'E3_gcd_is_X+1': True, 'E4': True, 'E5': True, 'E6': True}
+{'m': 10, 'E1': True, 'E2_degs': True, 'E2_monic': True, 'E2_vX': True, 'E2_vX1': True, 'E3_maxmult_other': 2, 'E3_gcd_is_X+1': True, 'E4': True, 'E5': True, 'E6': True}
+{'m': 12, 'E1': True, 'E2_degs': True, 'E2_monic': True, 'E2_vX': True, 'E2_vX1': True, 'E3_maxmult_other': 2, 'E3_gcd_is_X+1': True, 'E4': True, 'E5': True, 'E6': True}
+{'m': 14, 'E1': True, 'E2_degs': True, 'E2_monic': True, 'E2_vX': True, 'E2_vX1': True, 'E3_gcd_is_X+1': True, 'E4': True, 'E5': True, 'E6': True}
+{'m': 16, 'E1': True, 'E2_degs': True, 'E2_monic': True, 'E2_vX': True, 'E2_vX1': True, 'E3_gcd_is_X+1': True, 'E4': True, 'E5': True, 'E6': True}

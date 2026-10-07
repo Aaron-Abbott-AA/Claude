@@ -1,0 +1,8 @@
+V {'m': 8, 'vandermonde_product': True, 'degs': [80, 80, 66, 34], 'expected': [80, 80, 66, 34], 'v_X': [20, 18, 4, 4], 'v_Xp1': [20, 18, 4, 4], 'expected_v': [20, 18, 4, 4]}
+V {'m': 10, 'vandermonde_product': True, 'degs': [160, 160, 130, 66], 'expected': [160, 160, 130, 66], 'v_X': [36, 34, 4, 4], 'v_Xp1': [36, 34, 4, 4], 'expected_v': [36, 34, 4, 4]}
+V {'m': 16, 'vandermonde_product': True, 'degs': [1280, 1280, 1026, 514], 'expected': [1280, 1280, 1026, 514], 'v_X': [260, 258, 4, 4], 'v_Xp1': [260, 258, 4, 4], 'expected_v': [260, 258, 4, 4]}
+V {'m': 18, 'vandermonde_product': True, 'degs': [2560, 2560, 2050, 1026], 'expected': [2560, 2560, 2050, 1026], 'v_X': [516, 514, 4, 4], 'v_Xp1': [516, 514, 4, 4], 'expected_v': [516, 514, 4, 4]}
+V {'m': 20, 'vandermonde_product': True, 'degs': [5120, 5120, 4098, 2050], 'expected': [5120, 5120, 4098, 2050], 'v_X': [1028, 1026, 4, 4], 'v_Xp1': [1028, 1026, 4, 4], 'expected_v': [1028, 1026, 4, 4]}
+R {'m': 16, 'dmax': 3, 'F2_vectors': 64, 'kernel_dim': 3}
+R {'m': 18, 'dmax': 3, 'F2_vectors': 72, 'kernel_dim': 3}
+R {'m': 20, 'dmax': 3, 'F2_vectors': 80, 'kernel_dim': 3}

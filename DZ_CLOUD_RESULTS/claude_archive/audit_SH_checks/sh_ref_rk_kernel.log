@@ -1,0 +1,5 @@
+{'m': 4, 'poly_kernel_deg8': 3, 'all_monic_g_deg_le': 3, 'random_extra': 300, 'random_deg': 4, 'denominators_tested': 4668, 'kernel_dim_histogram': {3: 4668}, 'bad': []}
+{'m': 6, 'poly_kernel_deg8': 3, 'all_monic_g_deg_le': 2, 'random_extra': 500, 'random_deg': 3, 'denominators_tested': 4660, 'kernel_dim_histogram': {3: 4660}, 'bad': []}
+{'m': 8, 'poly_kernel_deg8': 3, 'all_monic_g_deg_le': 1, 'random_extra': 1000, 'random_deg': 2, 'denominators_tested': 1256, 'kernel_dim_histogram': {3: 1256}, 'bad': []}
+{'m': 10, 'poly_kernel_deg8': 3, 'all_monic_g_deg_le': 1, 'random_extra': 300, 'random_deg': 2, 'denominators_tested': 1324, 'kernel_dim_histogram': {3: 1324}, 'bad': []}
+{'m': 12, 'poly_kernel_deg8': 3, 'all_monic_g_deg_le': 1, 'random_extra': 100, 'random_deg': 2, 'denominators_tested': 4196, 'kernel_dim_histogram': {3: 4196}, 'bad': []}

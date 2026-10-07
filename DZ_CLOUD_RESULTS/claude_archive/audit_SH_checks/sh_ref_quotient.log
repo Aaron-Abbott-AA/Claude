@@ -1,0 +1,4 @@
+{'m': 6, 'MW_kills_W': True, 'division_exact': True, 'reconstruct': True, 'Ptilde_tau_degree': 1, 'deg_p': [30, 18], 'note': 'Ptilde = p0 + p1 tau: nonzero root p0/p1 ∈ F_2(X) ⊂ L, so R_P (dim m/2+1 = 4) is G-stable'}
+{'m': 8, 'MW_kills_W': True, 'division_exact': True, 'reconstruct': True, 'Ptilde_tau_degree': 2, 'deg_p': [70, 58, 34], 'points_tested': 240, 'kernel_dim_histogram': {1: 192, 2: 48}, 'points_with_only_root_0': 0, 'conclusion': 'inconclusive'}
+{'m': 10, 'MW_kills_W': True, 'division_exact': True, 'reconstruct': True, 'Ptilde_tau_degree': 3, 'deg_p': [150, 138, 114, 66], 'points_tested': 990, 'kernel_dim_histogram': {3: 270, 2: 720}, 'points_with_only_root_0': 0, 'conclusion': 'inconclusive'}
+{'m': 12, 'MW_kills_W': True, 'division_exact': True, 'reconstruct': True, 'Ptilde_tau_degree': 4, 'deg_p': [310, 298, 274, 226, 130], 'points_tested': 389, 'kernel_dim_histogram': {3: 370, 4: 19}, 'points_with_only_root_0': 0, 'conclusion': 'inconclusive'}
