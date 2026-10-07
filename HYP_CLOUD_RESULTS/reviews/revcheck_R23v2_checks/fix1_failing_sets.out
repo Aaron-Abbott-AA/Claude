@@ -1,0 +1,37 @@
+=== r=16 n=256 Q=128 S=64 E=131072  4E/Q=4096  8E/Q=8192 ===
+qq=  128 d'=2E-2: tau_hi=5484333 N1=16 N4-domain<= 131085 N4 holds on [(1, 1527)]; (4.1') holds on [(2036041, 5484333)]; FAILING [(1528, 2036040)]
+qq=  128 d'=2E-1: tau_hi=5484322 N1=16 N4-domain<= 131086 N4 holds on [(1, 1528)]; (4.1') holds on [(2035944, 5484322)]; FAILING [(1529, 2035943)]
+qq=  128 d'=2E+0: tau_hi=5484311 N1=16 N4-domain<= 131087 N4 holds on [(1, 1530)]; (4.1') holds on [(2035848, 5484311)]; FAILING [(1531, 2035847)]
+qq=  128 d'=2E+1: tau_hi=5484300 N1=16 N4-domain<= 131088 N4 holds on [(1, 1531)]; (4.1') holds on [(2035751, 5484300)]; FAILING [(1532, 2035750)]
+qq=  128 d'=2E+2: tau_hi=5484289 N1=16 N4-domain<= 131089 N4 holds on [(1, 1532)]; (4.1') holds on [(2035655, 5484289)]; FAILING [(1533, 2035654)]
+qq=  128 d'=2E+3: tau_hi=5484278 N1=16 N4-domain<= 131090 N4 holds on [(1, 1533)]; (4.1') holds on [(2035558, 5484278)]; FAILING [(1534, 2035557)]
+qq=  128 d'=2E+4: tau_hi=5484267 N1=16 N4-domain<= 131091 N4 holds on [(1, 1535)]; (4.1') holds on [(2035462, 5484267)]; FAILING [(1536, 2035461)]
+qq= 1024 d'=2E-2: tau_hi=685541 N1=2 N4-domain<= 131071 N4 holds on [(1, 1808)]; (4.1') holds on [(254503, 685541)]; FAILING [(1809, 254502)]
+qq= 1024 d'=2E-1: tau_hi=685540 N1=2 N4-domain<= 131072 N4 holds on [(1, 1810)]; (4.1') holds on [(254491, 685540)]; FAILING [(1811, 254490)]
+qq= 1024 d'=2E+0: tau_hi=685538 N1=2 N4-domain<= 131073 N4 holds on [(1, 1811)]; (4.1') holds on [(254479, 685538)]; FAILING [(1812, 254478)]
+qq= 1024 d'=2E+1: tau_hi=685537 N1=2 N4-domain<= 131074 N4 holds on [(1, 1813)]; (4.1') holds on [(254466, 685537)]; FAILING [(1814, 254465)]
+qq= 1024 d'=2E+2: tau_hi=685536 N1=2 N4-domain<= 131075 N4 holds on [(1, 1814)]; (4.1') holds on [(254454, 685536)]; FAILING [(1815, 254453)]
+qq= 1024 d'=2E+3: tau_hi=685534 N1=2 N4-domain<= 131076 N4 holds on [(1, 1816)]; (4.1') holds on [(254442, 685534)]; FAILING [(1817, 254441)]
+qq= 1024 d'=2E+4: tau_hi=685533 N1=2 N4-domain<= 131077 N4 holds on [(1, 1817)]; (4.1') holds on [(254430, 685533)]; FAILING [(1818, 254429)]
+qq= 4096 d'=2E-2: tau_hi=171385 N1=1 N4-domain<= 131070 N4 holds on [(1, 5472)]; (4.1') holds on [(63626, 171385)]; FAILING [(5473, 63625)]
+qq= 4096 d'=2E-1: tau_hi=171385 N1=1 N4-domain<= 131071 N4 holds on [(1, 5477)]; (4.1') holds on [(63623, 171385)]; FAILING [(5478, 63622)]
+qq= 4096 d'=2E+0: tau_hi=171384 N1=1 N4-domain<= 131072 N4 holds on [(1, 5482)]; (4.1') holds on [(63620, 171384)]; FAILING [(5483, 63619)]
+qq= 4096 d'=2E+1: tau_hi=171384 N1=1 N4-domain<= 131073 N4 holds on [(1, 5486)]; (4.1') holds on [(63617, 171384)]; FAILING [(5487, 63616)]
+qq= 4096 d'=2E+2: tau_hi=171384 N1=1 N4-domain<= 131074 N4 holds on [(1, 5491)]; (4.1') holds on [(63614, 171384)]; FAILING [(5492, 63613)]
+qq= 4096 d'=2E+3: tau_hi=171383 N1=1 N4-domain<= 131075 N4 holds on [(1, 5495)]; (4.1') holds on [(63611, 171383)]; FAILING [(5496, 63610)]
+qq= 4096 d'=2E+4: tau_hi=171383 N1=1 N4-domain<= 131076 N4 holds on [(1, 5500)]; (4.1') holds on [(63608, 171383)]; FAILING [(5501, 63607)]
+qq= 8192 d'=2E-2: tau_hi=85692 N1=1 N4-domain<= 131070 N4 holds on [(1, 85692)]; (4.1') holds on [(31813, 85692)]; FAILING []
+qq= 8192 d'=2E-1: tau_hi=85692 N1=1 N4-domain<= 131071 N4 holds on [(1, 85692)]; (4.1') holds on [(31812, 85692)]; FAILING []
+qq= 8192 d'=2E+0: tau_hi=85692 N1=1 N4-domain<= 131072 N4 holds on [(1, 85692)]; (4.1') holds on [(31810, 85692)]; FAILING []
+qq= 8192 d'=2E+1: tau_hi=85692 N1=1 N4-domain<= 131073 N4 holds on [(1, 85692)]; (4.1') holds on [(31809, 85692)]; FAILING []
+qq= 8192 d'=2E+2: tau_hi=85692 N1=1 N4-domain<= 131074 N4 holds on [(1, 85692)]; (4.1') holds on [(31807, 85692)]; FAILING []
+qq= 8192 d'=2E+3: tau_hi=85691 N1=1 N4-domain<= 131075 N4 holds on [(1, 85691)]; (4.1') holds on [(31806, 85691)]; FAILING []
+qq= 8192 d'=2E+4: tau_hi=85691 N1=1 N4-domain<= 131076 N4 holds on [(1, 85691)]; (4.1') holds on [(31804, 85691)]; FAILING []
+direct-formula spot checks at all failing-interval ends +-1: OK
+=== brute-force scan of every integer tau_0 in [1,tau_hi] (d'=2E-2, 2E+4) ===
+qq=4096 d'=2E-2: scan failing runs=[(5473, 63625)]  solver=[(5473, 63625)]  agree=True  len=58153  (0.1s)
+qq=4096 d'=2E+4: scan failing runs=[(5501, 63607)]  solver=[(5501, 63607)]  agree=True  len=58107  (0.1s)
+qq=1024 d'=2E-2: scan failing runs=[(1809, 254502)]  solver=[(1809, 254502)]  agree=True  len=252694  (0.1s)
+qq=1024 d'=2E+4: scan failing runs=[(1818, 254429)]  solver=[(1818, 254429)]  agree=True  len=252612  (0.1s)
+qq=128 d'=2E-2: scan failing runs=[(1528, 2036040)]  solver=[(1528, 2036040)]  agree=True  len=2034513  (1.0s)
+qq=128 d'=2E+4: scan failing runs=[(1536, 2035461)]  solver=[(1536, 2035461)]  agree=True  len=2033926  (1.1s)

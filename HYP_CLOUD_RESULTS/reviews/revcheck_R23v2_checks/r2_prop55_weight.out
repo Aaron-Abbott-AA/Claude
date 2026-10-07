@@ -1,0 +1,17 @@
+closed sequences with eps_1=1, entries<=2^13: 104
+N_1=2^1: max Sigma/(N_1-eps_top) = 1 at (0, 1);  weight>=1-only worst 2(N_1-1) = 2
+N_1=2^2: max Sigma/(N_1-eps_top) = 6 at (0, 1, 2, 3);  weight>=1-only worst 2(N_1-1) = 6
+N_1=2^3: max Sigma/(N_1-eps_top) = 10/3 at (0, 1, 4, 5);  weight>=1-only worst 2(N_1-1) = 14
+N_1=2^4: max Sigma/(N_1-eps_top) = 18/7 at (0, 1, 8, 9);  weight>=1-only worst 2(N_1-1) = 30
+N_1=2^5: max Sigma/(N_1-eps_top) = 34/15 at (0, 1, 16, 17);  weight>=1-only worst 2(N_1-1) = 62
+N_1=2^6: max Sigma/(N_1-eps_top) = 66/31 at (0, 1, 32, 33);  weight>=1-only worst 2(N_1-1) = 126
+N_1=2^7: max Sigma/(N_1-eps_top) = 130/63 at (0, 1, 64, 65);  weight>=1-only worst 2(N_1-1) = 254
+N_1=2^8: max Sigma/(N_1-eps_top) = 258/127 at (0, 1, 128, 129);  weight>=1-only worst 2(N_1-1) = 510
+N_1=2^9: max Sigma/(N_1-eps_top) = 514/255 at (0, 1, 256, 257);  weight>=1-only worst 2(N_1-1) = 1022
+N_1=2^10: max Sigma/(N_1-eps_top) = 1026/511 at (0, 1, 512, 513);  weight>=1-only worst 2(N_1-1) = 2046
+N_1=2^11: max Sigma/(N_1-eps_top) = 2050/1023 at (0, 1, 1024, 1025);  weight>=1-only worst 2(N_1-1) = 4094
+N_1=2^12: max Sigma/(N_1-eps_top) = 4098/2047 at (0, 1, 2048, 2049);  weight>=1-only worst 2(N_1-1) = 8190
+N_1=2^13: max Sigma/(N_1-eps_top) = 8194/4095 at (0, 1, 4096, 4097);  weight>=1-only worst 2(N_1-1) = 16382
+overall max ratio with p-adic structure: 6
+corner (4,128,64,256,qq_max=128) bound/q with p-adic ratio: 0.06873225727970475 <1551/4000: True
+grid cases 8820: max bound/q with p-adic ratio = 0.068732 (<0.38775: True); cases NOT closed using only 'weight>=1' (ratio 2(N_1-1)): 1389

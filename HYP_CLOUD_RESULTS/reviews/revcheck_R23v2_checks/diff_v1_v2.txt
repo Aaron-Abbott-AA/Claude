@@ -1,0 +1,183 @@
+1c1
+< # HYP M>=2, round 23 (owner v1): in (𝒦) the twist vanishes to order E at its own point — F²∤a is excluded for every twist; 𝔅_0 is the support of 𝔡 and lies in the Weierstrass locus of the twist
+---
+> # HYP M>=2, round 23 (owner v2): in (𝒦) the twist vanishes to order E at its own point — F²∤a is excluded for every twist; 𝔅_0 is the support of 𝔡 and lies in the Weierstrass locus of the twist
+6c6,14
+< - **v1 (this file)**: owner draft. Not yet audited.
+---
+> - v1: owner draft (`HYP_M2_ROUND23_owner_v1.md`, kept unchanged).
+> - v1 independently audited (`AUDIT_HYP_M2_ROUND23_20261007.md`): **PASS-with-fixes**. No mathematical error was found in any headline result (Prop 2.1 including the divisibility lift (ii), Cor 2.2, Prop 2.3, Thm 3.1, Prop 3.2, Cor 3.3, Prop 4.1, Cor 4.2, Lemma 4.3, Prop 4.4, Cor 4.5). Fixes FIX-1..5 and minor notes N1–N6 were raised.
+> - **v2 (this file)** applies FIX-1..5 and N1–N6, marked "[v2: FIX-n]" / "[v2: Nn]". No closure is withdrawn and no headline number changes.
+>   - FIX-1 corrects a false COMPUTED reading of the r=16, n=256 diagnostics: the two bounds fail on τ_0-intervals of length ~58 000, not on one value. The r=16 threshold 8E/Q is unchanged.
+>   - FIX-2 re-attributes Cor 3.3: its gain already follows from R22 Cor 3.2 fed into R20's order step; the bootstrap Prop 2.1(ii) is needed for Thm 3.1 (and for Cor 5.2's edge case), not for Cor 3.3.
+>   - FIX-3 withdraws the overclaim "makes R22 Prop 5.5's (R1) part unconditional" and marks the classical / dim V=2 closures as already in R22.
+>   - FIX-4 corrects "the R20 'none' rows close only vacuously".
+>   - FIX-5 corrects the citation for Cor 5.2's edge case.
+>   - The script is fixed in a new copy `scripts/numerics_R23_v2.py` → `numerics_R23_v2.out` (exact failing sets; mode "R22only"; τ_hi at the least closing 𝔮). Its Parts A, C, D are byte-identical to v1's output; v1's script and output are kept.
+35c43
+< - One own script, `scripts/numerics_R23.py`, run with `python3 -I`, single process, 6 s.
+---
+> - Own scripts only: `scripts/numerics_R23.py` (v1, 6 s) and its corrected copy `scripts/numerics_R23_v2.py` (v2, 10 s), run with `python3 -I`, single process.
+52c60
+< **The idea.** R22 proved two facts at every good point: Ξ(u,·) vanishes at u to order >=E−X (Cor 3.2), and the second layer obeys the congruence C_cb^[ρ]≡κ_0^X(t^{X−ρ}a'_c+ε)Ωb^[X] (mod t^X) (Thm 3.1(ii)). In the kernel-aligned case (𝒦) the second layer factors through Ξ along Γ: V_u(z(y))=p(y)·det(B(y)c,c^[Q]). So the first fact makes the left side of the congruence vanish mod t^X. Then the singular term ε, whose order is X+ν_u−e_u, must be absorbed by t^{X−ρ}a'_c. This forces ν_u>=e_u−ρ, and divisibility of ν_u by ρ𝔮 lifts it to ν_u>=E. This bootstrap is the main new input. R22 §6 item 3 compared only the order bounds of Thm 3.1(iii) with R20's m and so missed it.
+---
+> **The idea.** R22 proved two facts at every good point: Ξ(u,·) vanishes at u to order >=E−X (Cor 3.2), and the second layer obeys the congruence C_cb^[ρ]≡κ_0^X(t^{X−ρ}a'_c+ε)Ωb^[X] (mod t^X) (Thm 3.1(ii)). In the kernel-aligned case (𝒦) the second layer factors through Ξ along Γ: V_u(z(y))=p(y)·det(B(y)c,c^[Q]). So the first fact makes the left side of the congruence vanish mod t^X. Then the singular term ε, whose order is X+ν_u−e_u, must be absorbed by t^{X−ρ}a'_c. This forces ν_u>=e_u−ρ, and divisibility of ν_u by ρ𝔮 lifts it to ν_u>=E. This bootstrap is what Thm 3.1 needs (through Cor 2.2(i)). [v2: FIX-2] The (R2) gain of Cor 3.3 does not need it: it already follows from R22 Cor 3.2 (ν_u>=E−X) fed into R20 Lemma 4.2's order step, which gives m>=E−X for every 𝔮. R22 §6 item 3 compared only Thm 3.1(iii)'s bound with R20's m, and R22 Remark 5.6 applied Cor 3.2 only to the residual count ("not recomputed"); so that input was missed.
+61c69
+< 5. **R20/R19 with m=E (Prop 3.2, Cor 3.3).** In (𝒦), R20 Lemma 4.2 and Thm 5.1 hold with m=E for every 𝔮, and R19 Lemma 3.5(iii) holds with τ_0−N_1.
+---
+> 5. **R20/R19 with m=E (Prop 3.2, Cor 3.3).** In (𝒦), R20 Lemma 4.2 and Thm 5.1 hold with m=E for every 𝔮, and R19 Lemma 3.5(iii) holds with τ_0−N_1. [v2: FIX-2] For every number in Cor 3.3, m>=E−X (R22 Cor 3.2) already suffices; the mode "R22only" reproduces the same closures on all 162 rows and 112/112 B2 cases.
+64c72
+< 6. **𝔅_0 is the support of 𝔡 (Prop 4.1).** If S>=128, then for good u: u∈𝔅_0 ⟺ 𝔡(u)≠0. On 𝔅_0, 𝔡(u) has an explicit formula: the ratio of the leading coefficients of s̃_u (order E−X) and F|_{ℓ_u} (order E).
+---
+> 6. **𝔅_0 is the support of 𝔡 (Prop 4.1).** For good u [v2: N1: the v1 hypothesis S>=128 is superfluous]: u∈𝔅_0 ⟺ 𝔡(u)≠0. On 𝔅_0, 𝔡(u) has an explicit formula: the ratio of the leading coefficients of s̃_u (order E−X) and F|_{ℓ_u} (order E).
+68,69c76,77
+<    - for every classical V;
+<    - for every V with ε_top<N_0. This makes R22 Prop 5.5's (R1) part unconditional and removes its 𝔮_max<(2r−1)S/3 restriction;
+---
+>    - for every classical V and for dim V=2 (already in R22: Prop 5.5's classical/pencil cases with Thm 5.3) [v2: FIX-3];
+>    - for every V with ε_top<N_0, with no count hypothesis: Lemma 4.3(iii) makes the weight N_0−ε_top>=γ>=2 uniform. [v2: FIX-3] v1 said this "makes R22 Prop 5.5's (R1) part unconditional and removes its 𝔮_max<(2r−1)S/3 restriction". That overclaims: the hypothesis ε_top<N_0 on V remains, and the 𝔮_max restriction is vacuous in (R1) (𝔮_max<=S gives N_0>=7);
+78c86
+< - R20 Cor 5.3 re-implemented. Mode "R20" reproduces every entry of the R20 v2.1 table: 162 (r,n,Q,S) rows; the "none" rows close only vacuously, at τ_hi<1. Mode "R23" closes n=256 for r∈{4,8} at every 𝔮.
+---
+> - R20 Cor 5.3 re-implemented. Mode "R20" reproduces every entry of the R20 v2.1 table: 162 (r,n,Q,S) rows. [v2: FIX-4] In the "none" rows the least closing 𝔮 is huge, with τ_hi∈{1,2,6,12} there (v1 wrongly said "only vacuously, at τ_hi<1"). Mode "R23" closes n=256 for r∈{4,8} at every 𝔮; mode "R22only" (m>=E−X, N_1=1) gives exactly the same closures [v2: FIX-2].
+84,85c92,93
+< - **(R2) below R20's thresholds under F²|a.** The m=E recount does not move n>=512, or r=16 at n=256. There 𝔮<8E/Q stays open; at 𝔮=4E/Q (Q=128, S=64) the two bounds miss by a single value of τ_0.
+< - **(R1).** Only Frobenius non-classical V of dimension 3 or 4 with Σε_i>Σ*>=0.238γn remains. That means ε_top>0.119γn>=60 and 𝔮_max<=S, with more than 0.24q Weierstrass points of V among the good points.
+---
+> - **(R2) below R20's thresholds under F²|a.** The m=E recount does not move n>=512, or r=16 at n=256. There 𝔮<8E/Q stays open. [v2: FIX-1] At 𝔮=4E/Q (Q=128, S=64) both bounds fail on τ_0∈[5473,63625] (d'=2E−2; [5501,63607] for d'=2E+4), and at 𝔮=128 on [1528,2036040]. v1's "miss by a single value of τ_0" was a misreading of the script, which printed only failing test points.
+> - **(R1).** Only non-classical V [v2: N4: v1 said "Frobenius non-classical"; the order sequence ε_i of V is meant] of dimension 3 or 4 with Σε_i>Σ*>=0.238γn remains. That means ε_top>0.119γn>=60 and 𝔮_max<=S, with more than 0.24q Weierstrass points of V among the good points.
+87c95
+< **Newly closed (PROVED; numbers COMPUTED; v1, not yet audited):**
+---
+> **Newly closed (PROVED; numbers COMPUTED; v1 audited PASS-with-fixes, no closure withdrawn):**
+89c97
+< - non-constant (𝒦) at n=256 for r∈{4,8}, all 𝔮>=128 (grid-COMPUTED, as R20's table);
+---
+> - non-constant (𝒦) at n=256 for r∈{4,8}, all 𝔮>=128 (grid-COMPUTED, as R20's table; [v2: FIX-2] the input is R22 Cor 3.2 fed into R20's order step);
+91c99
+< - (R1) for every twist whose V is classical, or has ε_top<N_0, or has Σε_i<=0.238γn. This includes every V with ε_top<=0.119γn.
+---
+> - (R1) for every twist whose V has ε_top<N_0 (no count hypothesis) or Σε_i<=0.238γn. This includes every V with ε_top<=0.119γn. [v2: FIX-3] Classical V and dim V=2 were already closed in R22.
+111a120,121
+> [v2: N2] **Γ' is smooth at z(u).** f∘z equals the normalisation map Γ̃→Γ off z^{−1}(Bs f), and z(u)∉Bs f since f(z(u))=g(u)u≠0. So z(v)=z(u) forces v↦u in Γ, and Γ is smooth at u, so z^{−1}(z(u))={u} and z is unramified there. This is used in Prop 2.1 Step 2 and Cor 2.2(ii); the singular-branch pitfall does not arise.
+> 
+116c126
+< In particular (1.1) holds for 𝔮=128, and 128 | 2rS since r>=4, S>=64.
+---
+> In particular (1.1) holds for 𝔮=128, and 128 | 2rS since r>=4, S>=64. [v2: N1] Any admissible 𝔮>=2 would serve in Prop 2.1 Step 5 (audit toy B); 128 is a choice, not a need.
+146c156
+< - **What R22 §6 item 3 missed (PROVED comparison).** R22 compared the order bound min(X−ρ,ρ𝔮−1) of Thm 3.1(iii) with R20's m=min(ρ𝔮,E), and that comparison is correct. But in (𝒦), R20's own order step "ord_{y=u}ω^tV_u(z(y))>=ord Ξ(u,·)" combined with R22 Cor 3.2 already gives m>=E−X for every 𝔮. The bootstrap of Steps 3–5 raises this to m>=E.
+---
+> - **What R22 §6 item 3 missed (PROVED comparison).** R22 compared the order bound min(X−ρ,ρ𝔮−1) of Thm 3.1(iii) with R20's m=min(ρ𝔮,E), and that comparison is correct. But in (𝒦), R20's own order step "ord_{y=u}ω^tV_u(z(y))>=ord Ξ(u,·)" combined with R22 Cor 3.2 already gives m>=E−X for every 𝔮. The bootstrap of Steps 3–5 raises this to m>=E. [v2: FIX-2] The miss that matters for (R2) is the E−X input: it alone gives every closure of Cor 3.3 (audit `variant_modes.out`; mode "R22only" of `numerics_R23_v2.out`). The raise to E is used by Thm 3.1 (via Cor 2.2(i)) and by Cor 5.2's edge case, not by Cor 3.3.
+207c217
+< **Proposition 3.2 (R19/R20 per-point inputs in (𝒦) with m=E; PROVED, conditional on Prop 2.1 and the cited R19/R20 statements).** Assume (𝒦) with a non-constant twist (R19's reduced pencil, as in R20). Then:
+---
+> **Proposition 3.2 (R19/R20 per-point inputs in (𝒦) with m=E; PROVED, conditional on Prop 2.1 and the cited R19/R20 statements; [v2: FIX-2] the weaker form with m=E−X needs only R22 Cor 3.2 in place of Prop 2.1).** Assume (𝒦) with a non-constant twist (R19's reduced pencil, as in R20). Then:
+215c225,226
+< - **(iii)** deg σ_u=τ_0, and σ_u has a zero of order ν_u/(ρ𝔮)>=E/(ρ𝔮) at u. ∎
+---
+> - **(iii)** deg σ_u=τ_0, and σ_u has a zero of order ν_u/(ρ𝔮)>=E/(ρ𝔮) at u.
+> - [v2: FIX-2] **Weaker form.** Replacing Prop 2.1(ii) by R22 Cor 3.2 (ν_u>=E−X) in (i) gives m>=E−X for every 𝔮 and D_1>=d'−a−X in (ii). Every closure of Cor 3.3 already holds with this weaker form. ∎
+217c228
+< **Corollary 3.3 (recount of R20 Cor 5.3; COMPUTED exactly, `numerics_R23.out` Parts B, B2).**
+---
+> **Corollary 3.3 (recount of R20 Cor 5.3; COMPUTED exactly, `numerics_R23.out` Parts B, B2; failing sets and mode "R22only" in `numerics_R23_v2.out` [v2: FIX-1, FIX-2]).**
+227,228c238,239
+<   - "none" (r=8, n>=2048; r=16, n>=512). In these rows the only closed 𝔮 are those with τ_hi<1, where no non-constant twist exists.
+< - **Mode "R23"** (m=E, N_1=⌈E/(ρ𝔮)⌉):
+---
+>   - "none" (r=8, n>=2048; r=16, n>=512). [v2: FIX-4] In these rows only very large 𝔮 close, where τ_hi is O(1)–O(10): at the least closing 𝔮, τ_hi∈{1,2,6,12} (e.g. 12 at (8,2048,1024,64), 2 at (16,512,256,64), 6 at (8,8192,16384,64)). v1 said "only those with τ_hi<1", which is false: these are genuine, if extreme, closures. No claim of this note depends on them.
+> - **Mode "R23"** (m=E, N_1=⌈E/(ρ𝔮)⌉). [v2: FIX-2] Mode "R22only" (m=min(ρ𝔮⌈(E−X)/(ρ𝔮)⌉,E), N_1=1, i.e. only R22 Cor 3.2) gives identical results on all 162 rows and on the 112 B2 cases (`numerics_R23_v2.out`):
+231c242,246
+<   - For r=16, n=256 the threshold stays 8E/Q. At Q=128, S=64, 𝔮=4E/Q=4096 the two bounds miss by one value: N4 fails at τ_0=63625 (d'=2E−2) while (4.1′) holds from 63626. For smaller 𝔮 the gap is wide (at 𝔮=128: N4 up to 131085, (4.1′) from 2036041).
+---
+>   - For r=16, n=256 the threshold stays 8E/Q. [v2: FIX-1] At Q=128, S=64 the exact failing τ_0-sets (`numerics_R23_v2.out`, diagnostics v2) are:
+>     - 𝔮=4E/Q=4096: [5473,63625] for d'=2E−2 and [5501,63607] for d'=2E+4 (τ_hi=171385). N4 holds only up to 5472, (4.1′) from 63626.
+>     - 𝔮=1024: [1809,254502] (d'=2E−2), [1818,254429] (d'=2E+4).
+>     - 𝔮=128: [1528,2036040] (d'=2E−2), [1536,2035461] (d'=2E+4). Here 131085 is only the end of N4's domain τ_0<=d'−E+N_1−1; N4 itself holds only up to 1527.
+>     - v1 said that at 𝔮=4E/Q "the two bounds miss by one value". That was a misreading: v1's script printed only the failing test points (endpoints and vertex), not the failing set.
+243c258
+< R22 Prop 5.5 continues to apply there (CONDITIONAL on ε_top<N_1, with N_1 in place of N_0 by Prop 2.1). The p-adic argument of §4 does not apply here, because N_1=2rS/𝔮 is a power of 2.
+---
+> R22 Prop 5.5 continues to apply there (CONDITIONAL on ε_top<N_1, with N_1 in place of N_0 by Prop 2.1). [v2: N3] Here N_1=2rS/𝔮_max: Prop 5.5 must be applied with 𝔮_max (R22 v2.1 RC-1), and if 𝔮_max>2rS then N_1=1 and the condition is void. [v2: FIX-3, audit's optional observation] For ε_top<N_1 the weight N_1−ε_top is >=1, so R22 Prop 5.5's count is automatic there as well. The p-adic argument of §4 does not apply here, because N_1=2rS/𝔮_max is a power of 2.
+249c264
+< **Proposition 4.1 (𝔅_0={𝔡≠0}; PROVED, conditional on R22 Thm 3.1, Lemma 5.1, R21 Cor 3.3).** Assume S>=128 and a non-constant twist, inside or outside (𝒦). For every good u:
+---
+> **Proposition 4.1 (𝔅_0={𝔡≠0}; PROVED, conditional on R22 Thm 3.1, Lemma 5.1, R21 Cor 3.3).** Assume a non-constant twist, inside or outside (𝒦). [v2: N1: v1 also assumed S>=128; this is superfluous, see the proof.] For every good u:
+254a270
+> - [v2: N1] **Case S=64.** Then 𝔮_max>=128>S, so R22 Lemma 5.1(a) gives V_u(z(u))=0 and ν_u>=E at every good u. Hence 𝔅_0=∅ and 𝔡=0 at every good u, and the equivalence holds trivially. Assume S>=128 below.
+303c319
+< **Corollary 4.5 ((R1) is excluded unless V is Frobenius non-classical with a large order sum; PROVED; numbers COMPUTED).** A non-constant model outside (𝒦) in 𝔇_16 is excluded unless 𝔮_max<=S and
+---
+> **Corollary 4.5 ((R1) is excluded unless V is non-classical with a large order sum [v2: N4]; PROVED; numbers COMPUTED).** A non-constant model outside (𝒦) in 𝔇_16 is excluded unless 𝔮_max<=S and
+306c322
+< - V is classical (ε_i=i), or dim V=2;
+---
+> - V is classical (ε_i=i), or dim V=2 (already in R22 [v2: FIX-3]);
+325,326c341,342
+< - **Relation to R22 Prop 5.5.** In (R1), Cor 4.5 contains R22 Prop 5.5's pencil and classical cases and makes its "ε_top<N_0" case unconditional. Prop 5.5 needed 𝔮_max<(2r−1)S/3 for classical V; Cor 4.5 does not.
+< - **The residual of (R1)** is now: 𝔮_max<=S (so S>=128); dim V∈{3,4}; V Frobenius non-classical with ε=(0,1,2^a), (0,1,2^a,2^b) or (0,1,2^a,2^a+1); ε_top>0.119γn (so ε_top>=64 at n=256); and more than 0.24q good points that are Weierstrass points of V, each of weight >=γ.
+---
+> - **Relation to R22 Prop 5.5.** [v2: FIX-3] In (R1), Cor 4.5 contains R22 Prop 5.5's pencil and classical cases (both already closed in R22). For V with ε_top<N_0 it gives the exclusion with no count hypothesis, because Lemma 4.3(iii) makes the weight N_0−ε_top>=γ>=2 uniform. The hypothesis ε_top<N_0 on V itself remains; v1's "makes ... unconditional" was an overclaim. v1's "Prop 5.5 needed 𝔮_max<(2r−1)S/3; Cor 4.5 does not" is vacuous in (R1), where 𝔮_max<=S gives N_0>=7.
+> - **The residual of (R1)** is now: 𝔮_max<=S (so S>=128); dim V∈{3,4}; V non-classical [v2: N4] with ε=(0,1,2^a), (0,1,2^a,2^b) or (0,1,2^a,2^a+1); ε_top>0.119γn (so ε_top>=64 at n=256); and more than 0.24q good points that are Weierstrass points of V, each of weight >=γ.
+337c353
+< - for a non-constant twist, F|Δ forces 2a>=d' (R18-T Prop 4.2), so a<E only at a=E−1, d'=2E−2. That is the edge case of R18-T's N4 remark, which is already excluded.
+---
+> - for a non-constant twist, F|Δ forces 2a>=d' (R18-T Prop 4.2), so a<E only at a=E−1, d'=2E−2. [v2: FIX-5] That edge case is excluded by Prop 3.2(i) together with R20 Lemma 4.3: with m=E>a, every good non-cuspidal u has ξ^ω_u≡0, i.e. lies in 𝔅, and |𝔅|<=B_𝔅=O(E²)≪q. This uses the bootstrap Prop 2.1(ii); m=E−X would not suffice. v1 cited R18-T's N4 remark, which is stated for D>=4 and needs E<=ρ𝔮, so it does not cover non-constant twists with ρ𝔮<E.
+347c363
+< **Residual after R23** (inside 𝔇_16, global alignment, Q>=128, 256E<=h<4QE, 𝔮_max>=128; v1, not yet audited):
+---
+> **Residual after R23** (inside 𝔇_16, global alignment, Q>=128, 256E<=h<4QE, 𝔮_max>=128; v1 audited PASS-with-fixes, v2 applies the fixes):
+353c369
+< - **(R1).** Only 𝔮_max<=S with V Frobenius non-classical, dim V∈{3,4}, Σε_i>Σ*>=0.238γn.
+---
+> - **(R1).** Only 𝔮_max<=S with V non-classical [v2: N4], dim V∈{3,4}, Σε_i>Σ*>=0.238γn.
+358c374
+< 2. **r=16, n=256.** The miss at 𝔮=4E/Q is a single τ_0 value. A small per-point gain would close that 𝔮: for example, ν_u>=E+ρ𝔮 at the e_u=E+1 points, or a sharper count of the 2d'+2g−2 cusp term. Smaller 𝔮 needs a genuinely new input.
+---
+> 2. **r=16, n=256.** [v2: FIX-1] The gap below 8E/Q is wide: at 𝔮=4E/Q both bounds fail on ~58 000 consecutive values of τ_0 ([5473,63625]), and at 𝔮=128 on [1528,2036040]. v1's "a small per-point gain would close that 𝔮" is withdrawn. Closing these rows needs a genuinely new input in the middle τ_0-range, where neither the N4 denominator d'−E−τ_0+N_1 nor the (4.1′) budget ad'−ρ𝔮τ_0 is favourable.
+363c379
+< ## 7. Computations (`scripts/`; `python3 -I`, single process, 6 s)
+---
+> ## 7. Computations (`scripts/`; `python3 -I`, single process; v1 script 6 s, v2 copy 10 s)
+370c386
+< | Part B | R20 Cor 5.3 re-implementation, modes "R20" and "R23", 162 (r,n,Q,S) rows, every d', all dyadic 𝔮 up to τ_hi<1 | R20 mode reproduces the R20 v2.1 table exactly; R23 mode: n=256, r∈{4,8}: least 𝔮 = 128 (all close); other rows unchanged |
+---
+> | Part B | R20 Cor 5.3 re-implementation, modes "R20" and "R23", 162 (r,n,Q,S) rows, every d', all dyadic 𝔮 up to τ_hi<1 [v2: N5: the audit's independent recount adds Q=8192, 198 rows, all agreeing] | R20 mode reproduces the R20 v2.1 table exactly; R23 mode: n=256, r∈{4,8}: least 𝔮 = 128 (all close); other rows unchanged |
+372c388,389
+< | diagnostics | R23 mode, r=16, n=256, Q=128, S=64 | 𝔮=4096: N4 fails only at τ_0=63625 (63607 for d'=2E+4), (4.1′) from 63626 (63608); 𝔮=128, 1024: gap N4<=~131085 vs (4.1′)>=2036041, 254503 |
+---
+> | diagnostics (v1) | R23 mode, r=16, n=256, Q=128, S=64 | [v2: FIX-1] v1's script printed only the failing *test points* (endpoints/vertex), e.g. "fails at τ_0 in [63625]"; v1 misread this as a one-value gap. Superseded by the next rows |
+> | `numerics_R23_v2.py` → `numerics_R23_v2.out` [v2: FIX-1, FIX-2, FIX-4] | corrected copy: exact failing integer τ_0-sets (bisection on exact sign changes, with spot checks at both ends of every interval); mode "R22only"; τ_hi at the least closing 𝔮 per row. Parts A, C, D byte-identical to v1's | r=16, n=256, Q=128, S=64: 𝔮=4096 fails on [5473,63625] (d'=2E−2), [5501,63607] (d'=2E+4); 𝔮=1024 on [1809,254502], [1818,254429]; 𝔮=128 on [1528,2036040], [1536,2035461] (all agree with the audit). R22only = R23 on 162/162 rows and 112/112 B2 cases. "none" rows: τ_hi at the least closing 𝔮 ∈{1,2,6,12} |
+374c391
+< Checksums: `scripts/SHA256SUMS.txt`.
+---
+> Checksums: `scripts/SHA256SUMS.txt` (v1 and v2 scripts and outputs).
+376c393
+< *Caveat.* The new structural results (Prop 2.1, Cor 2.2, Prop 2.3, Prop 4.1, Prop 4.4) are proved by hand from the cited inputs. No toy model of an original configuration was built, because R22's `toy_vector_FN.py` is not in this directory and was not re-run. The computations check the counts, the reproduction of R20's and R22's numbers, and the combinatorics of Lemma 4.3. They do not check the structural steps.
+---
+> *Caveat.* The new structural results (Prop 2.1, Cor 2.2, Prop 2.3, Prop 4.1, Prop 4.4) are proved by hand from the cited inputs. The owner built no toy model of an original configuration, because R22's `toy_vector_FN.py` is not in this directory and was not re-run. The owner computations check the counts, the reproduction of R20's and R22's numbers, and the combinatorics of Lemma 4.3. [v2: N6] The audit's toys A and B (`toy_prop21.py`, GF(2^8)) check the mechanism: (1.1) for a non-constant twist (683/683), and the congruence (2.1) with the divisibility lift (solvable iff ν>=e−ρ; with 𝔮>=2 the only surviving ν<e is ν=E at e=E+1). They are not original models.
+388,389c405,406
+< | Prop 3.2 (R20 Lemma 4.2/Thm 5.1 with m=E; R19 Lemma 3.5(iii) with τ_0−N_1) | PROVED |
+< | Cor 3.3 (non-constant (𝒦) at n=256, r∈{4,8}, all 𝔮) | COMPUTED exactly on the grid (exclusion PROVED where evaluated); R20 table reproduced |
+---
+> | Prop 3.2 (R20 Lemma 4.2/Thm 5.1 with m=E; R19 Lemma 3.5(iii) with τ_0−N_1) | PROVED; [v2: FIX-2] the weaker form m>=E−X needs only R22 Cor 3.2 |
+> | Cor 3.3 (non-constant (𝒦) at n=256, r∈{4,8}, all 𝔮) | COMPUTED exactly on the grid (exclusion PROVED where evaluated); R20 table reproduced; [v2: FIX-2] input is R22 Cor 3.2 into R20's order step; [v2: FIX-1] r=16 failing sets corrected; [v2: FIX-4] "none" rows not vacuous |
+391c408
+< | Prop 4.1 (𝔅_0={𝔡≠0} for S>=128; formula (4.1)) | PROVED |
+---
+> | Prop 4.1 (𝔅_0={𝔡≠0}; formula (4.1)) | PROVED; [v2: N1] S>=128 not needed |
+395,396c412,413
+< | Cor 4.5 ((R1) excluded if Σε_i<=Σ*, Σ*>=0.238γn; classical V; ε_top<N_0) | PROVED; Σ* COMPUTED |
+< | Prop 5.1, Cor 5.2 (no gain for constant twists; W-line count vacuous) | PROVED (negative) |
+---
+> | Cor 4.5 ((R1) excluded if Σε_i<=Σ*, Σ*>=0.238γn; ε_top<N_0 with no count hypothesis; classical V and dim V=2 already in R22) | PROVED; Σ* COMPUTED; [v2: FIX-3] "unconditional" withdrawn |
+> | Prop 5.1, Cor 5.2 (no gain for constant twists; W-line count vacuous) | PROVED (negative); [v2: FIX-5] edge case via Prop 3.2(i) + R20 Lemma 4.3 |
+398c415
+< | (𝒦)∧F²\|a_P∧F²\|a_R (constant and non-constant, rows of §6); (R1) with Frobenius non-classical V, Σε_i>Σ* | OPEN |
+---
+> | (𝒦)∧F²\|a_P∧F²\|a_R (constant and non-constant, rows of §6); (R1) with non-classical V [v2: N4], Σε_i>Σ* | OPEN |
+400c417
+< Dependencies: R22, R21, R20, R19, R18-T, R16 (all v2.1, audited and revision-checked); PRIMARY FNAL/TSY/TSYC/FNAM (reviewed); Stöhr–Voloch (CITED). The PRIMARY results remain PRIMARY's. The bootstrap of Prop 2.1 combines R22's Cor 3.2 and Thm 3.1(ii) with R19's (𝒦) normal form; the count of Thm 3.1 follows R21 Lemma 3.2's ψ∉K² device. This v1 is not audited. No manuscript was edited. The classification of hyperovals is not claimed complete.
+---
+> Dependencies: R22, R21, R20, R19, R18-T, R16 (all v2.1, audited and revision-checked); PRIMARY FNAL/TSY/TSYC/FNAM (reviewed); Stöhr–Voloch (CITED). The PRIMARY results remain PRIMARY's. The bootstrap of Prop 2.1 combines R22's Cor 3.2 and Thm 3.1(ii) with R19's (𝒦) normal form; the count of Thm 3.1 follows R21 Lemma 3.2's ψ∉K² device. v1 was independently audited (PASS-with-fixes); this v2 applies FIX-1..5 and N1–N6. No manuscript was edited. The classification of hyperovals is not claimed complete.
