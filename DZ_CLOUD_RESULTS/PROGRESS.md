@@ -597,3 +597,39 @@
 3. Codex questions.
 4. The resume message (22:34Z section) still applies, with EM added after EL. Read the newest HANDBACK, now 20261007T2302Z.
 - **Zip:** `7d5b8016be2ccd886e95e95153edcfb920d9d2e4e4e5101aee57f57884899aed`  DZ-HANDBACK-20261007T2302Z.zip (337 files; contains PROGRESS.md as of this section)
+
+---
+## Session 2, continued (23:03Z): SH diff check PASS → EM READY
+- **Diff check.** DIFFCHECK-SH-v2 PASSED.
+- **EM_20261007T2301Z → READY FOR USER DELIVERY.** DIFFCHECK attached, MANIFEST_EM regenerated last (6 files), README-PENDING.md updated.
+- **All packets EF–EM are READY.** EF–EL are unchanged.
+- **The goal is NOT complete.**
+
+| sha256 | File (new or changed) |
+|---|---|
+| 7d192409b54c10c4ebb2373c5114f538504e898833d687a26983ab35ca1f7942 | claude_archive/DIFFCHECK-SH-v2-20261007.md |
+| 7c9aae09a486ecaf70b7b5f45783ccde2a3851ac35dedd7bf8a87168ddc28ab9 | claude_archive/HANDBACK-20261007T2303Z.md |
+| 02a7e4e89a62118274cafd2056ebc5407d73f9ed6e6ec5887c58a50e35219e98 | claude_archive/CHECKPOINT-ADDENDUM-20261007T2303Z.md |
+| 977ea83afb46da045aba2dac793c604a0e7fb56e62f4cbccfd3c361a139aacf7 | outbox_for_user_delivery/README-PENDING.md |
+| 0278d5553d445bc9dbd3f36d215b8ea444d22684ba98ca41839322028f82465d | outbox_for_user_delivery/to_codex/EM_20261007T2301Z.md |
+| 7d192409b54c10c4ebb2373c5114f538504e898833d687a26983ab35ca1f7942 | outbox_for_user_delivery/to_codex/DIFFCHECK-SH-v2-20261007.md |
+| 043ebbb01afce3caf306ba124a374ce20439d7d7de2e6ba38f7002303f234eb6 | outbox_for_user_delivery/to_codex/MANIFEST_EM_20261007T2301Z.tsv |
+
+### Resume message (paste into the local DZ session; supersedes the earlier ones)
+> The DZ cloud sessions (7 Oct 2026; not Mac-linked) wrote everything to `DZ_CLOUD_RESULTS/`, also bundled as the newest `DZ-HANDBACK-*.zip`.
+>
+> 1. Start with the newest `claude_archive/HANDBACK-*.md`. Verify the sha256 values against this PROGRESS.md, then copy `claude_archive/*` (including all `audit_*`/`revcheck_*` folders) to `CODEX_CLAUDE_EXCHANGE/DZ/claude_archive/`.
+> 2. Run `date -u`. Re-list `DZ/to_claude/` for files newer than 15:13:17Z on 7 Oct, read the new covers, and generate the receipt TSV on the device. Never execute incoming scripts.
+> 3. Fill in §1 (separate ACKs for receipt, reading and adoption) of EF_20261007T1917Z, EG_20261007T1948Z, EH_20261007T2036Z, EI_20261007T2056Z, EJ_20261007T2120Z, EK_20261007T2206Z, EL_20261007T2232Z and EM_20261007T2301Z. Regenerate each changed manifest last.
+> 4. Deliver EF, EG, EH, EI, EJ, EK, EL, then EM to `DZ/to_codex/`, following `outbox_for_user_delivery/README-PENDING.md`. Never send anything in `superseded/`. Verify the sha256 values on the device.
+> 5. Re-read memo §216 for Prop 216.3's frame.
+> 6. Research next, following the newest HANDBACK:
+>    - the Codex answers to EK/EL/EM §3;
+>    - the ker P̃ question;
+>    - the even-band question;
+>    - B1/(I216′)/G2;
+>    - the KB gate-failing cells;
+>    - G1″.
+>
+> Do not claim G1, GLS₀ or the conjecture is complete.
+- **Zip:** `b9dd2a8eebcf9cc68f87c06467f5a4304561dd3f1a87e1b75f84670226b9b629`  DZ-HANDBACK-20261007T2303Z.zip (341 files; contains PROGRESS.md as of this section)

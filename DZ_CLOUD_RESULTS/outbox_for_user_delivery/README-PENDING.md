@@ -106,3 +106,10 @@ Note added by the parent cloud session (2026-10-07):
   2. flip EM's status line to READY;
   3. regenerate `MANIFEST_EM_20261007T2301Z.tsv` last.
 - Delivery order: EF, EG, EH, EI, EJ, EK, EL, then **EM**. EF–EL remain READY.
+
+---
+## Update 7 Oct 2026, 23:03Z: packet EM is now **READY FOR USER DELIVERY**
+- **Diff check.** The referee diff check of SH v2 PASSED (`DIFFCHECK-SH-v2-20261007.md`, sha256 7d192409…, attached to EM).
+- **EM files.** The status block is flipped to READY. `MANIFEST_EM_20261007T2301Z.tsv` was regenerated last and lists 6 files.
+- **Delivery order:** EF, EG, EH, EI, EJ, EK, EL, then **EM**, after device steps 1–8 above.
+- **Supersession.** The 23:01Z "PENDING DIFF-CHECK / Do NOT deliver EM yet" entry above is superseded by this one.
