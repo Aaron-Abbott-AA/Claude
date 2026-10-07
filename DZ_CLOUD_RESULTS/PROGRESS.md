@@ -1,4 +1,4 @@
-# DZ cloud session — PROGRESS (last updated 7 Oct 2026, 20:00Z)
+# DZ cloud session — PROGRESS (last updated 7 Oct 2026, 20:20Z)
 
 ## Context
 - **Input:** DZ-CLOUD-HANDOFF-20261007.zip; START-HERE followed.
@@ -14,18 +14,21 @@
 | 19:17 | Packet EF_20261007T1917Z (RBL) | READY FOR USER DELIVERY | — |
 | 19:20 → 19:47 | TCR note v1 → v2 → **v2.1** | HF PROVED; CD, TC, RS CONDITIONAL; G5 traded for (I216′) + Prop 216.3 | v1 audit PASS-with-fixes; v2 revision check PASS |
 | 19:48 | Packet EG_20261007T1948Z (TCR; deliver after EF) | READY FOR USER DELIVERY | — |
-| 19:58 | PTH note (new): Lemma LS, Lemma MI, Theorem PTH (pointwise twisted half-field classification) | PROVED; [C] pthcheck 470 samples, 0 failures | **audit PENDING** |
-| 19:58 | PTH note: Proposition GO (GLS₁ + gate ⇒ orbit bound ⇒ G1″ when a* ≤ (ρ−4)/3) | CONDITIONAL | **audit PENDING** |
-| — | GLS₁; gate-failing cells; range a* > (ρ−4)/3 | OPEN | — |
+| 19:58 | PTH note v1: Lemma LS, Lemma MI, Theorem PTH | PROVED; [C] pthcheck 435 samples, 0 failures | **PASS-with-fixes** (independent audit; classification sentence corrected in v2) |
+| 20:18 | PTH note v2 (FIX-1, FIX-2, m1–m10 applied; Lemma ML / GO-S adopted from the referee) | LS, MI, PTH and the two-sided consequence PROVED; GO CONDITIONAL | **revision check PENDING** |
+| — | PTH: Proposition GO (GLS₀ + (GT) + G4 + WG + (B1a⁺) + (B1b) ⇒ G1″ when a* ≤ (ρ−4)/3) | CONDITIONAL | PASS as logic (v1 audit); inputs named in v2 |
+| — | GLS₀; the 27 gate-failing cells; the range a* > (ρ−4)/3 | OPEN | — |
 | — | G1″ (dim W^rat ≥ 2a*+4) | OPEN (conditional route via GO) | — |
 | — | Prop 216.3 (own earlier statement; frame-dependent) | CITED; needed form derived in TCR v2.1 §0 under (I216′) | — |
 | 19:49 | HANDBACK and CHECKPOINT-ADDENDUM (19:49Z) | written | — |
-| 19:59 | HANDBACK and CHECKPOINT-ADDENDUM (19:59Z); zip rebuilt | written | — |
+| 19:59 | HANDBACK and CHECKPOINT-ADDENDUM (19:59Z) | written | — |
+| 20:19 | HANDBACK and CHECKPOINT-ADDENDUM (20:19Z); zip rebuilt | written | — |
 
 ## Files (sha256)
 | sha256 | File |
 |---|---|
-| 8b9dcb0cef20cc72f760a69fa4226c70e8c9c915384f6360360c65c4cb3260a1 | DZ-HANDBACK-20261007T1959Z.zip |
+| 696bb231ee303c34525d0429919617236e13aff6f39d5507889e76774abe2e9d | DZ-HANDBACK-20261007T2019Z.zip |
+| b3c01e587f0a4e315cf82c501a90fefbefecef2e885640ef1b86b3e3d2ce4e58 | claude_archive/AUDIT-PTH-POINTWISE-TWISTED-HALFFIELD-20261007.md |
 | 75830869976bb05b946b3f528ecc64df7437dc0b9da260fe6e1467f64730a015 | claude_archive/AUDIT-RBL-RATIONAL-BRANCH-LIFT-20261007.md |
 | ac0852eb7dbd26615f2181ac4ef2a8acfaeb838947e6ac6a52ec61c5c5f2273d | claude_archive/AUDIT-TCR-TERMINAL-CONSTANT-ROOT-20261007.md |
 | 72229fabbe07e98fc7a8de2f02becb5f15a60b7376dc52dfd94be64dfcc08be7 | claude_archive/CHECKPOINT-ADDENDUM-20261007T1830Z.md |
@@ -35,6 +38,7 @@
 | ed332abae3d3e3db808a432d0acf51060a0f0bd1a4a83facb4429489dcd183a8 | claude_archive/CHECKPOINT-ADDENDUM-20261007T1940Z.md |
 | 26b63ce3e606658e85de06272aefa4c3f502be0829ea0bdf90475f27a2aede59 | claude_archive/CHECKPOINT-ADDENDUM-20261007T1949Z.md |
 | 99d5b0ac7e29e04e3dc2abc83823cf935875ea6daf96ed03809ee9a4f1c76f4c | claude_archive/CHECKPOINT-ADDENDUM-20261007T1959Z.md |
+| 4ff86bf71b38b2234b74a278f08c5b4a01217cf2caa03f52c6c03b4b23a75e5e | claude_archive/CHECKPOINT-ADDENDUM-20261007T2019Z.md |
 | bbc7a88dc329c1949446c0a17a3fea5bbfe76852ef4049b53eb92806694e2c81 | claude_archive/HANDBACK-20261007T1830Z.md |
 | 7c54d04efc7215af415267d06ed00e79d6c23f81e92ed3833ec4d6cabc893f08 | claude_archive/HANDBACK-20261007T1907Z.md |
 | eb65e707eb40b840e9606b5e09297d01fe8f27491d70ddb39bee06752af263e9 | claude_archive/HANDBACK-20261007T1918Z.md |
@@ -42,6 +46,8 @@
 | a033802ccb59d75f42a7835e30e2fbc138e482449b01d5a941a4b54f5763a994 | claude_archive/HANDBACK-20261007T1940Z.md |
 | 40985e2bc5deab6cf7530e685281e3052468bdda885ea0a25e11072d97007617 | claude_archive/HANDBACK-20261007T1949Z.md |
 | 81885e9bae35535c95da5647b59d852a7099372524ca8f49e04f9d4b4295afd5 | claude_archive/HANDBACK-20261007T1959Z.md |
+| 4b76af495b9d6a9ad94d014f42ada015b8ab3eca4f962b335b0c39703424cefb | claude_archive/HANDBACK-20261007T2019Z.md |
+| 478ffaf98bd7108f3b8b4b3cce1dbb9da999e76b7fa0896c5ebd19ebe5dfea87 | claude_archive/PTH-POINTWISE-TWISTED-HALFFIELD-NOTE-20261007-v2.md |
 | 3e17d28c056982a35834fcadf94aa81ba28cac9d2dd1724615bd9165c2680a03 | claude_archive/PTH-POINTWISE-TWISTED-HALFFIELD-NOTE-20261007.md |
 | f3a2e176f7e3929170b6f1bec0bed5bde5086d77d3a0cf7f75a6f8d6784d9453 | claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007-v2.1.md |
 | f9a1116197a710dac9c5b5cd69b85a36515460028bfcb8d5d05907d9833622ab | claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007-v2.md |
@@ -51,6 +57,16 @@
 | 4b2d969b442ba2f8ad9650191c9fa6fbc9d127a371cfa74e6bc4b208ab6c7428 | claude_archive/TCR-TERMINAL-CONSTANT-ROOT-NOTE-20261007-v2.1.md |
 | 2eb8e88fa50b2f0c142f8797a5def4a48ddcd8bb5341fa5aabbc7fc4fc2cca38 | claude_archive/TCR-TERMINAL-CONSTANT-ROOT-NOTE-20261007-v2.md |
 | bfb63eda267a614a23d6c149a768651ceb8a00081598f26bb6543818bbc07a85 | claude_archive/TCR-TERMINAL-CONSTANT-ROOT-NOTE-20261007.md |
+| e24b6c7fbaaca7bb339c600559629899aa930c41acdc8d540c7311702733c5e4 | claude_archive/audit_PTH_checks/checks_SHA256SUMS.txt |
+| 0bf53e8a0f86228ec8cbd47444c328256cf926b17b35339f10784453c7cc1cc5 | claude_archive/audit_PTH_checks/owner_copy/gocells.py |
+| 5e2f8f58cf0adb5203cdf86a05a43d7705f126ab2eb6fda9ad2d758753fc1b86 | claude_archive/audit_PTH_checks/owner_copy/gocells_rerun.log |
+| 31c784fbca5cd01d68d087ce489965f58da91ff2c7345a5a7c348f42370d85ff | claude_archive/audit_PTH_checks/owner_copy/pthcheck.py |
+| d8605bfd50ef1a03dba996570dc8500bdc7a3ca5d5e65f3c081abd0c7ac65d30 | claude_archive/audit_PTH_checks/owner_copy/pthcheck_rerun.log |
+| 7f1d7b2af138cb3310451d037b8a332237912ca9d9cc7b03c3786a926c8659ae | claude_archive/audit_PTH_checks/ref_go.log |
+| a6338c537b351942fcdbf5e151c806ba35a5535c3a8ec7a1c6b4c89df134dc96 | claude_archive/audit_PTH_checks/ref_go.py |
+| e8f75d4238d887bc4cf85ae7da12cdbc7f31cd1d6e71eeefccba28a80d53f18c | claude_archive/audit_PTH_checks/ref_pth.log |
+| 8e309d68a0891020dc41896443c885fb721b99a5f1d5914e9ef556929d34078f | claude_archive/audit_PTH_checks/ref_pth.py |
+| 16171947ee3ec64867ac17973ae25b60cdc4eb1b52e440a0fc8979c8f6eaeb55 | claude_archive/audit_PTH_checks/ref_pth_stab.log |
 | 3b830fbb9c63983d02386dabb3eb65a561f6a731e08423139124648f2157a7a0 | claude_archive/audit_RBL_checks/check_module.log |
 | c917304b283071fd840ecb2c91a8097d69f6aed47bb40dde6841c5ef194acf7a | claude_archive/audit_RBL_checks/check_module.py |
 | 28b999345df75f76fe3d8acbd35fd526e5d277451f01099fb2b76631bab9b397 | claude_archive/audit_RBL_checks/check_range.log |
@@ -124,7 +140,7 @@
 
 ## Pending for the user
 1. Deliver packets EF, then EG, after the device-only steps in outbox_for_user_delivery/README-PENDING.md: re-list to_claude after 15:13:17Z; receipts TSV; three separate ACKs; manifests last.
-2. The PTH note needs an independent audit; it is NOT in the outbox.
+2. PTH v2 needs a revision check. It is NOT in the outbox. Its v1 audit verdict was PASS-with-fixes.
 3. Locally, re-read memo §216 (Prop 216.3) and its frame hypotheses.
 4. Unverified ACKs: unread Codex files after 15:13:17Z; any reply to EE; PRIMARY's G23O review.
 
@@ -141,7 +157,7 @@
 > 1. `date -u`. Re-list `DZ/to_claude/` for files newer than 15:13:17Z, read the new covers, and generate the receipt TSV on the device. Never execute incoming scripts.
 > 2. Fill in §1 of EF_20261007T1917Z.md and EG_20261007T1948Z.md. Regenerate the manifests last. Deliver EF, then EG, to `DZ/to_codex/` (never anything in `superseded/`), and verify the sha256 values.
 > 3. Re-read memo §216 for the frame of Prop 216.3.
-> 4. Get an independent audit of `PTH-POINTWISE-TWISTED-HALFFIELD-NOTE-20261007.md`. If it passes, send it in packet EH with its §6 questions.
-> 5. Research next: GLS₁ (generic Lang solvability), or STT/B1 input from Codex.
+> 4. Revision-check `PTH-POINTWISE-TWISTED-HALFFIELD-NOTE-20261007-v2.md`; its v1 audit was PASS-with-fixes. If it passes, send it in packet EH with its §6 questions.
+> 5. Research next: GLS₀ (generic Lang solvability; the necessary test is c_{a₂}/d_{a₂} ∈ F_q(X^{2^{a₂}})), or STT/B1 input from Codex.
 >
 > Do not claim G1 or the conjecture is complete.
