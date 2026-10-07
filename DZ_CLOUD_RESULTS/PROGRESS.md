@@ -1,4 +1,4 @@
-# DZ cloud session — PROGRESS (last updated 7 Oct 2026, 19:25Z)
+# DZ cloud session — PROGRESS (last updated 7 Oct 2026, 19:41Z)
 
 ## Context
 - **Input:** DZ-CLOUD-HANDOFF-20261007.zip; START-HERE followed.
@@ -10,41 +10,40 @@
 ## Work done and verdicts
 | Time (UTC) | Item | Status | Verdict |
 |---|---|---|---|
-| 18:24 | toycheck.py (m = 16, 20, 24) | COMPUTED | reproduced by the auditor |
-| 18:27 | RBL note v1 | written | PASS-with-fixes (independent audit) |
-| 19:06 | RBL note v2 | written | PASS (independent revision check) |
-| 19:16 | RBL note v2.1 (RC items applied) | current | released |
-| — | RBL: Lemma AR, Proposition TX, Lemma TSZ, Theorem RB, RD(a) | PROVED | PASS |
-| — | RBL: RD(b)–(d) and termination | CONDITIONAL | PASS |
+| 18:27 → 19:16 | RBL note v1 → v2 → v2.1 (current) | AR, TX, TSZ, RB, RD(a) PROVED; RD(b)–(d) and termination CONDITIONAL | v1: PASS-with-fixes. v2: PASS (revision check). v2.1: released |
 | 19:17 | Outbox EF_20261007T1917Z (carries RBL v2.1, the audit and the revision check) | READY FOR USER DELIVERY (device-only steps pending) | — |
-| 19:20 | hassecheck.py (700 cases, 0 failures) | COMPUTED | — |
-| 19:20 | TCR note: Lemma HF (G2 equivalent to the Hasse conditions RR_k) | PROVED | **audit PENDING** |
-| 19:20 | TCR note: Lemma CD (a constant subspace of dim ≥ 4) | CONDITIONAL (RR_k) | **audit PENDING** |
-| 19:20 | TCR note: Theorem TC (rational branch excluded; G5 removed) | CONDITIONAL (G2, B1a, B1b, I216 + Prop 216.3) | **audit PENDING** |
-| 19:20 | TCR note: Corollary RS (G1′ weakened to G1″) | CONDITIONAL (same + G4) | **audit PENDING** |
-| — | G1″ (dim W^rat ≥ 2a*+4) | OPEN | — |
-| — | Lang-equation route (RBL §6) | HEURISTIC | — |
-| 19:24 | HANDBACK and CHECKPOINT-ADDENDUM (19:24Z); zip rebuilt | written | — |
-
-- **CITED inputs:** WG, RR, BWG, HFA1, Lemma G, HFD §1 and Prop 216.3, all via the handoff's summary notes.
+| 19:20 | TCR note v1 | written | **PASS-with-fixes** (independent audit, 19:22–19:40Z; 3 substantive + 8 minor) |
+| 19:37 | hassecheck_v2.py (seeds logged; 519 forced s′ = 0 cases) | COMPUTED, 0 failures | — |
+| 19:38 | TCR note v2 (all fixes applied) | written | **revision check PENDING** |
+| — | TCR: Lemma HF | PROVED (a reformulation of G2) | PASS |
+| — | TCR: Lemma CD | CONDITIONAL (RR_k) | PASS |
+| — | TCR: Theorem TC (G5 traded for (I216′) + Prop 216.3) | CONDITIONAL | PASS as a conditional; inputs restated in v2 |
+| — | TCR: Corollary RS(a) / RS(b) | CONDITIONAL / CONDITIONAL (+ G4) | PASS |
+| — | G1″ | OPEN | — |
+| — | Prop 216.3 (own earlier statement, frame-dependent) | CITED, unaudited | to be re-read locally |
+| 19:40 | HANDBACK and CHECKPOINT-ADDENDUM (19:40Z); zip rebuilt | written | — |
 
 ## Files (sha256)
 | sha256 | File |
 |---|---|
-| 7b2d02a412d75d2357b9e30ec3361a783f9fc7e646971df0035f390e3215645d | DZ-HANDBACK-20261007T1924Z.zip |
+| e3ac836039d2052c9c8300b43aadf112970c5b9ae395289373b5c52675ab8a28 | DZ-HANDBACK-20261007T1940Z.zip |
 | 75830869976bb05b946b3f528ecc64df7437dc0b9da260fe6e1467f64730a015 | claude_archive/AUDIT-RBL-RATIONAL-BRANCH-LIFT-20261007.md |
+| ac0852eb7dbd26615f2181ac4ef2a8acfaeb838947e6ac6a52ec61c5c5f2273d | claude_archive/AUDIT-TCR-TERMINAL-CONSTANT-ROOT-20261007.md |
 | 72229fabbe07e98fc7a8de2f02becb5f15a60b7376dc52dfd94be64dfcc08be7 | claude_archive/CHECKPOINT-ADDENDUM-20261007T1830Z.md |
 | 65c09bc33155cb6d839e0043721adcffd4a23da25f95bdfea0c4ed96f08a5dd2 | claude_archive/CHECKPOINT-ADDENDUM-20261007T1907Z.md |
 | 3a082594e6bd36585d00bada48cb73fb85644374aa031e368e7a9edf78e11d3f | claude_archive/CHECKPOINT-ADDENDUM-20261007T1918Z.md |
 | 3b0a80645a68bd46f84945b8c7bd72f891036da3e67dd306753af3f2a85581da | claude_archive/CHECKPOINT-ADDENDUM-20261007T1924Z.md |
+| ed332abae3d3e3db808a432d0acf51060a0f0bd1a4a83facb4429489dcd183a8 | claude_archive/CHECKPOINT-ADDENDUM-20261007T1940Z.md |
 | bbc7a88dc329c1949446c0a17a3fea5bbfe76852ef4049b53eb92806694e2c81 | claude_archive/HANDBACK-20261007T1830Z.md |
 | 7c54d04efc7215af415267d06ed00e79d6c23f81e92ed3833ec4d6cabc893f08 | claude_archive/HANDBACK-20261007T1907Z.md |
 | eb65e707eb40b840e9606b5e09297d01fe8f27491d70ddb39bee06752af263e9 | claude_archive/HANDBACK-20261007T1918Z.md |
 | 6a1c12627b13f5a8dbda3d88acae5946afd137802e22f1475ec1daae711bc244 | claude_archive/HANDBACK-20261007T1924Z.md |
+| a033802ccb59d75f42a7835e30e2fbc138e482449b01d5a941a4b54f5763a994 | claude_archive/HANDBACK-20261007T1940Z.md |
 | f3a2e176f7e3929170b6f1bec0bed5bde5086d77d3a0cf7f75a6f8d6784d9453 | claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007-v2.1.md |
 | f9a1116197a710dac9c5b5cd69b85a36515460028bfcb8d5d05907d9833622ab | claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007-v2.md |
 | c5f5b805c19676f7a021d8efabc0df5db8c54fe2ccebae30d7b4ad62c2a34cfe | claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007.md |
 | e0cd99ba293e48ec8fbb68f96bd87afc19af5ab860e83753d1e09c00b14d558a | claude_archive/REVISION-CHECK-RBL-v2-20261007.md |
+| 2eb8e88fa50b2f0c142f8797a5def4a48ddcd8bb5341fa5aabbc7fc4fc2cca38 | claude_archive/TCR-TERMINAL-CONSTANT-ROOT-NOTE-20261007-v2.md |
 | bfb63eda267a614a23d6c149a768651ceb8a00081598f26bb6543818bbc07a85 | claude_archive/TCR-TERMINAL-CONSTANT-ROOT-NOTE-20261007.md |
 | 3b830fbb9c63983d02386dabb3eb65a561f6a731e08423139124648f2157a7a0 | claude_archive/audit_RBL_checks/check_module.log |
 | c917304b283071fd840ecb2c91a8097d69f6aed47bb40dde6841c5ef194acf7a | claude_archive/audit_RBL_checks/check_module.py |
@@ -62,6 +61,15 @@
 | 348020bb710cf3923372bd8ea3cb132a527fd670003ffef6358ccd13d36fa8a1 | claude_archive/audit_RBL_checks/owner_copy/rerun_20_8_s2.log |
 | f8d0afac7f5e12f56c4c006fa59c75a1faa4a76f475a1659bdf4e6c95f836fbe | claude_archive/audit_RBL_checks/owner_copy/rerun_24_10_s3.log |
 | aeff51cd313c50d1cae1a59a92cd7ece26576756d8b41592751e9354e90a3d9b | claude_archive/audit_RBL_checks/owner_copy/toycheck.py |
+| 80fc10e358078a0e3daa317771547dd23ea28116a837d3290f0820e8ad949c28 | claude_archive/audit_TCR_checks/arith.log |
+| 34ec806c630a5509e81db3b741f304165ae03754c1b5e153e729efcf5e3f95a8 | claude_archive/audit_TCR_checks/cd.log |
+| f014186ff86de23eff2971fb756eb355ee1bd7437bbc5cc4a28965b2421266b5 | claude_archive/audit_TCR_checks/checks_SHA256SUMS.txt |
+| 2e38f56670c19bd1b0e706262cdab634380b9859f65de1b13fcfd52366a4fa1c | claude_archive/audit_TCR_checks/hasse.log |
+| 551931c06d73c06dd00ccb2667af46931f6c32c348822888e35952f2d0a81246 | claude_archive/audit_TCR_checks/owner_copy/hassecheck.owner.log |
+| 70bff0f50de38e1b0e90dcec46f78a4e256cf040276284b4f0791189e0d8e31d | claude_archive/audit_TCR_checks/owner_copy/hassecheck.py |
+| 1747bf4560a6e335bff144ee94674aeab478e7db3c736808892301ae659ba3a1 | claude_archive/audit_TCR_checks/owner_copy/rerun.log |
+| c56b661cb443dd79c07168feaada052496f9c56ee368de5817075cf6b5c0fe50 | claude_archive/audit_TCR_checks/p216.log |
+| 9bab3f81bb225edf62cd1e3387fc2ae6f5bf385d26e5fd44dda06eb30c549e5e | claude_archive/audit_TCR_checks/tcr_referee_checks.py |
 | e0aefe252ebcf2871dedc964b931b27a148ff503e1854db8bf1fd25298317e7f | claude_archive/revcheck_RBLv2_checks/check_arith_v2.log |
 | 56636e9f6b858e141b987bdbc570bbea1a0a088391031d9806601a9adf1453bf | claude_archive/revcheck_RBLv2_checks/check_arith_v2.py |
 | 5c1e0a61381ccdb98ad9ce017bdbef0edea731bf1e20358cf7658d32aa8ae22b | claude_archive/revcheck_RBLv2_checks/check_tx_v2.py |
@@ -73,6 +81,8 @@
 | 47ed7ed1e0480a91e87933828c5e3a5a087be9a5628c8ea7503c0cd185a9ab33 | claude_archive/revcheck_RBLv2_checks/wdiff_v1_v2.py |
 | 551931c06d73c06dd00ccb2667af46931f6c32c348822888e35952f2d0a81246 | claude_archive/scripts/hassecheck.log |
 | 70bff0f50de38e1b0e90dcec46f78a4e256cf040276284b4f0791189e0d8e31d | claude_archive/scripts/hassecheck.py |
+| 117c91da14040a82868734517b0155c0865bfe907bbd075a93c3e11fc150ba50 | claude_archive/scripts/hassecheck_v2.log |
+| afe56bb12cb83f3e6d70bf78969d8d2d2af723c2a24ce5afcbcb275308f9c5d9 | claude_archive/scripts/hassecheck_v2.py |
 | 613fa8c094d5929812880a4da4d838f201cf51386ed2fed8c53715e9a1c145dd | claude_archive/scripts/toycheck.log |
 | aeff51cd313c50d1cae1a59a92cd7ece26576756d8b41592751e9354e90a3d9b | claude_archive/scripts/toycheck.py |
 | cddd8d9aa76662d4acdd0b18735dcab052b8c65bec94fbf42bac76d2b6c426db | outbox_for_user_delivery/README-PENDING.md |
@@ -91,24 +101,26 @@
 | aeff51cd313c50d1cae1a59a92cd7ece26576756d8b41592751e9354e90a3d9b | outbox_for_user_delivery/to_codex/toycheck.py.txt |
 
 ## Pending for the user
-1. **EF packet:** do the device-only steps in outbox_for_user_delivery/README-PENDING.md (re-list to_claude after 15:13:17Z, receipts TSV, three separate ACKs, MANIFEST last), then deliver by hand.
-2. **TCR note:** needs an independent audit before it goes into any packet. It is not in the outbox.
-3. **Unverified ACKs:** unread Codex files after 15:13:17Z; any reply to EE; PRIMARY's G23O review.
+1. **EF packet:** do the device-only steps in outbox_for_user_delivery/README-PENDING.md, then deliver by hand.
+2. **TCR v2:** needs a revision check (being arranged). It is NOT in the outbox.
+3. **Locally:** re-read memo §216 (Prop 216.3) and its frame hypotheses.
+4. **Unverified ACKs:** unread Codex files after 15:13:17Z; any reply to EE; PRIMARY's G23O review.
 
 ## Resume message (paste into the local DZ session)
-> The DZ cloud session (7 Oct 2026, 18:07–19:25Z; not Mac-linked) has paused at a checkpoint. Its files are in the GitHub-synced folder `DZ_CLOUD_RESULTS/`, also bundled as `DZ-HANDBACK-20261007T1924Z.zip`.
+> The DZ cloud session (7 Oct 2026, 18:07–19:41Z; not Mac-linked) has paused at a checkpoint. Its files are in the GitHub-synced folder `DZ_CLOUD_RESULTS/`, also bundled as `DZ-HANDBACK-20261007T1940Z.zip`.
 >
 > Read, in order:
-> 1. `claude_archive/HANDBACK-20261007T1924Z.md`;
-> 2. `claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007-v2.1.md` (audit PASS-with-fixes, then revision check PASS);
-> 3. `claude_archive/TCR-TERMINAL-CONSTANT-ROOT-NOTE-20261007.md` (new; NOT yet audited).
+> 1. `claude_archive/HANDBACK-20261007T1940Z.md`;
+> 2. `claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007-v2.1.md` (audited; revision check PASS);
+> 3. `claude_archive/TCR-TERMINAL-CONSTANT-ROOT-NOTE-20261007-v2.md` (v1 audit PASS-with-fixes; v2 revision check pending);
+> 4. the audits `AUDIT-RBL-…`, `REVISION-CHECK-RBL-v2-…` and `AUDIT-TCR-…`.
 >
 > Verify the sha256 values against `DZ_CLOUD_RESULTS/PROGRESS.md`, then copy `claude_archive/*` to `CODEX_CLAUDE_EXCHANGE/DZ/claude_archive/`.
 >
 > Then:
 > 1. `date -u`. Re-list `DZ/to_claude/` for files newer than 15:13:17Z, read the new covers, and generate the receipt TSV on the device. Never execute incoming scripts.
 > 2. Fill in §1 of `outbox_for_user_delivery/to_codex/EF_20261007T1917Z.md`, regenerate `MANIFEST.tsv` last, and deliver `to_codex/*` (not `superseded/`).
-> 3. Get an independent agent audit of TCR. Re-read memo §216 to confirm Prop 216.3 and (I216). If the audit passes, send TCR in packet EG with the questions in TCR §6.
-> 4. Research next: G1″ (a rational subspace of dimension ≥ 2a*+4 for the WG family in the structured branch).
+> 3. Revision-check TCR v2 if that has not been done. Re-read memo §216 for the frame hypotheses of Prop 216.3. If the check passes, send TCR v2 in packet EG with the questions in its §6.
+> 4. Research next: G1″ (a rational subspace of dimension ≥ 2a*+4 for the WG family).
 >
 > Do not claim G1 or the conjecture is complete.

@@ -1,0 +1,3 @@
+cmd: python3 -I hassecheck_v2.py 8 400 1 | m=8 trials=400 (s'=0 cases: 227): (H1) Hasse-identity failures 0; (H2) filtration-equivalence failures 0
+cmd: python3 -I hassecheck_v2.py 12 300 2 | m=12 trials=300 (s'=0 cases: 173): (H1) Hasse-identity failures 0; (H2) filtration-equivalence failures 0
+cmd: python3 -I hassecheck_v2.py 16 200 3 | m=16 trials=200 (s'=0 cases: 119): (H1) Hasse-identity failures 0; (H2) filtration-equivalence failures 0
