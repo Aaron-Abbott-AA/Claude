@@ -1,50 +1,51 @@
-# DZ cloud session — PROGRESS (last updated 7 Oct 2026, 19:19Z)
+# DZ cloud session — PROGRESS (last updated 7 Oct 2026, 19:25Z)
 
 ## Context
-- **Input:** DZ-CLOUD-HANDOFF-20261007.zip, unzipped in the isolated scratch area; START-HERE followed.
-- **Mailbox:** the container is NOT linked to the Mac and has no mailbox access. Nothing was delivered and nothing was ACKed.
-- **Scripts:** no incoming scripts were executed. Our own toycheck.py was run with `python3 -I`, nice 19, one process at a time, a few seconds per run.
+- **Input:** DZ-CLOUD-HANDOFF-20261007.zip; START-HERE followed.
+- **Mailbox:** the container is NOT linked to the Mac and has no mailbox access, so nothing was delivered and nothing was ACKed.
+- **Scripts:** no incoming scripts were executed. Our own scripts were run with `python3 -I`, nice 19, one process at a time, seconds each.
 - **Deferred computation:** none.
-- **The goal is NOT complete.** G1′ and G5 are OPEN, and the linear-gap conjecture is open.
+- **The goal is NOT complete.** G1″ is OPEN, and the linear-gap conjecture is open.
 
 ## Work done and verdicts
 | Time (UTC) | Item | Status | Verdict |
 |---|---|---|---|
-| 18:07 | Read the handoff | [A] | n/a |
-| 18:24 | toycheck.py at m = 16, 20, 24 | COMPUTED | reproduced exactly by the auditor |
-| 18:27 | RBL note v1 | written | **PASS-with-fixes** (independent audit, 18:29–19:05Z; 3 substantive + 8 minor items) |
-| 19:06 | RBL note v2 (FIX-1…FIX-11 applied) | written | **PASS** (independent revision check, 19:08–19:14Z; 11/11 addressed; 9 cosmetic RC items) |
-| 19:16 | RBL note v2.1 (RC-1…RC-9 applied; no mathematical change) | written | current version |
-| — | Lemma AR | PROVED | PASS |
-| — | Proposition TX | PROVED + COMPUTED | PASS |
-| — | Lemma TSZ | PROVED | PASS |
-| — | Theorem RB | PROVED; arc application CONDITIONAL on (B1a)–(B1b) | PASS |
-| — | Proposition RD (a) | PROVED | PASS |
-| — | Proposition RD (b)–(d) | CONDITIONAL on G2 | PASS |
-| — | Proposition RD, termination | CONDITIONAL on G5 | PASS (as restated) |
-| — | G1 ⇐ G1′ + G2 + G4 + G5 + B1 identification | CONDITIONAL | PASS (as restated) |
-| — | G1′, G5 | OPEN | — |
-| — | Lang-equation route | HEURISTIC | — |
-| 19:17 | Outbox packet EF_20261007T1917Z | **READY FOR USER DELIVERY** (device-only steps pending) | — |
-| 19:18 | HANDBACK and CHECKPOINT-ADDENDUM (19:18Z); zip rebuilt | written | — |
+| 18:24 | toycheck.py (m = 16, 20, 24) | COMPUTED | reproduced by the auditor |
+| 18:27 | RBL note v1 | written | PASS-with-fixes (independent audit) |
+| 19:06 | RBL note v2 | written | PASS (independent revision check) |
+| 19:16 | RBL note v2.1 (RC items applied) | current | released |
+| — | RBL: Lemma AR, Proposition TX, Lemma TSZ, Theorem RB, RD(a) | PROVED | PASS |
+| — | RBL: RD(b)–(d) and termination | CONDITIONAL | PASS |
+| 19:17 | Outbox EF_20261007T1917Z (carries RBL v2.1, the audit and the revision check) | READY FOR USER DELIVERY (device-only steps pending) | — |
+| 19:20 | hassecheck.py (700 cases, 0 failures) | COMPUTED | — |
+| 19:20 | TCR note: Lemma HF (G2 equivalent to the Hasse conditions RR_k) | PROVED | **audit PENDING** |
+| 19:20 | TCR note: Lemma CD (a constant subspace of dim ≥ 4) | CONDITIONAL (RR_k) | **audit PENDING** |
+| 19:20 | TCR note: Theorem TC (rational branch excluded; G5 removed) | CONDITIONAL (G2, B1a, B1b, I216 + Prop 216.3) | **audit PENDING** |
+| 19:20 | TCR note: Corollary RS (G1′ weakened to G1″) | CONDITIONAL (same + G4) | **audit PENDING** |
+| — | G1″ (dim W^rat ≥ 2a*+4) | OPEN | — |
+| — | Lang-equation route (RBL §6) | HEURISTIC | — |
+| 19:24 | HANDBACK and CHECKPOINT-ADDENDUM (19:24Z); zip rebuilt | written | — |
 
-- **CITED inputs:** WG, RR, BWG, HFA1, Lemma G and HFD §1, read only through the handoff's summary notes.
+- **CITED inputs:** WG, RR, BWG, HFA1, Lemma G, HFD §1 and Prop 216.3, all via the handoff's summary notes.
 
 ## Files (sha256)
 | sha256 | File |
 |---|---|
-| 2ad21b2d720db8a0f318638baf707bafffde10f735a06a8ec76679b1ee98c676 | DZ-HANDBACK-20261007T1918Z.zip |
+| 7b2d02a412d75d2357b9e30ec3361a783f9fc7e646971df0035f390e3215645d | DZ-HANDBACK-20261007T1924Z.zip |
 | 75830869976bb05b946b3f528ecc64df7437dc0b9da260fe6e1467f64730a015 | claude_archive/AUDIT-RBL-RATIONAL-BRANCH-LIFT-20261007.md |
 | 72229fabbe07e98fc7a8de2f02becb5f15a60b7376dc52dfd94be64dfcc08be7 | claude_archive/CHECKPOINT-ADDENDUM-20261007T1830Z.md |
 | 65c09bc33155cb6d839e0043721adcffd4a23da25f95bdfea0c4ed96f08a5dd2 | claude_archive/CHECKPOINT-ADDENDUM-20261007T1907Z.md |
 | 3a082594e6bd36585d00bada48cb73fb85644374aa031e368e7a9edf78e11d3f | claude_archive/CHECKPOINT-ADDENDUM-20261007T1918Z.md |
+| 3b0a80645a68bd46f84945b8c7bd72f891036da3e67dd306753af3f2a85581da | claude_archive/CHECKPOINT-ADDENDUM-20261007T1924Z.md |
 | bbc7a88dc329c1949446c0a17a3fea5bbfe76852ef4049b53eb92806694e2c81 | claude_archive/HANDBACK-20261007T1830Z.md |
 | 7c54d04efc7215af415267d06ed00e79d6c23f81e92ed3833ec4d6cabc893f08 | claude_archive/HANDBACK-20261007T1907Z.md |
 | eb65e707eb40b840e9606b5e09297d01fe8f27491d70ddb39bee06752af263e9 | claude_archive/HANDBACK-20261007T1918Z.md |
+| 6a1c12627b13f5a8dbda3d88acae5946afd137802e22f1475ec1daae711bc244 | claude_archive/HANDBACK-20261007T1924Z.md |
 | f3a2e176f7e3929170b6f1bec0bed5bde5086d77d3a0cf7f75a6f8d6784d9453 | claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007-v2.1.md |
 | f9a1116197a710dac9c5b5cd69b85a36515460028bfcb8d5d05907d9833622ab | claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007-v2.md |
 | c5f5b805c19676f7a021d8efabc0df5db8c54fe2ccebae30d7b4ad62c2a34cfe | claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007.md |
 | e0cd99ba293e48ec8fbb68f96bd87afc19af5ab860e83753d1e09c00b14d558a | claude_archive/REVISION-CHECK-RBL-v2-20261007.md |
+| bfb63eda267a614a23d6c149a768651ceb8a00081598f26bb6543818bbc07a85 | claude_archive/TCR-TERMINAL-CONSTANT-ROOT-NOTE-20261007.md |
 | 3b830fbb9c63983d02386dabb3eb65a561f6a731e08423139124648f2157a7a0 | claude_archive/audit_RBL_checks/check_module.log |
 | c917304b283071fd840ecb2c91a8097d69f6aed47bb40dde6841c5ef194acf7a | claude_archive/audit_RBL_checks/check_module.py |
 | 28b999345df75f76fe3d8acbd35fd526e5d277451f01099fb2b76631bab9b397 | claude_archive/audit_RBL_checks/check_range.log |
@@ -70,6 +71,8 @@
 | 46f17dc0b2076e557c6da01e53ab7e6696958105c5268be384ece2111e99ba70 | claude_archive/revcheck_RBLv2_checks/checks_SHA256SUMS.txt |
 | dfd90e8899ff47d567f69b19ad3e16e1dc66d347b4e886792ca462f8cac0919c | claude_archive/revcheck_RBLv2_checks/wdiff_v1_v2.log |
 | 47ed7ed1e0480a91e87933828c5e3a5a087be9a5628c8ea7503c0cd185a9ab33 | claude_archive/revcheck_RBLv2_checks/wdiff_v1_v2.py |
+| 551931c06d73c06dd00ccb2667af46931f6c32c348822888e35952f2d0a81246 | claude_archive/scripts/hassecheck.log |
+| 70bff0f50de38e1b0e90dcec46f78a4e256cf040276284b4f0791189e0d8e31d | claude_archive/scripts/hassecheck.py |
 | 613fa8c094d5929812880a4da4d838f201cf51386ed2fed8c53715e9a1c145dd | claude_archive/scripts/toycheck.log |
 | aeff51cd313c50d1cae1a59a92cd7ece26576756d8b41592751e9354e90a3d9b | claude_archive/scripts/toycheck.py |
 | cddd8d9aa76662d4acdd0b18735dcab052b8c65bec94fbf42bac76d2b6c426db | outbox_for_user_delivery/README-PENDING.md |
@@ -88,38 +91,24 @@
 | aeff51cd313c50d1cae1a59a92cd7ece26576756d8b41592751e9354e90a3d9b | outbox_for_user_delivery/to_codex/toycheck.py.txt |
 
 ## Pending for the user
-The device-only steps are listed in full in outbox_for_user_delivery/README-PENDING.md. In brief:
-1. Re-list DZ/to_claude/ (files newer than 15:13:17Z on 7 Oct).
-2. Generate the receipt TSV on the device.
-3. Fill in the three ACKs of EF §1 (received / read / adopted).
-4. Check for a reply to EE and any update on G23O.
-5. Regenerate MANIFEST.tsv last.
-6. Deliver to_codex/* and the receipts.
-7. Archive claude_archive/* and verify the sha256 values.
-
-Never deliver anything in superseded/.
-
-**Unverified ACKs:**
-- unread Codex files after 15:13:17Z;
-- any reply to EE;
-- PRIMARY's G23O review.
+1. **EF packet:** do the device-only steps in outbox_for_user_delivery/README-PENDING.md (re-list to_claude after 15:13:17Z, receipts TSV, three separate ACKs, MANIFEST last), then deliver by hand.
+2. **TCR note:** needs an independent audit before it goes into any packet. It is not in the outbox.
+3. **Unverified ACKs:** unread Codex files after 15:13:17Z; any reply to EE; PRIMARY's G23O review.
 
 ## Resume message (paste into the local DZ session)
-> The DZ cloud session (7 Oct 2026, 18:07–19:19Z; not linked to the Mac) has finished. Its files are in the GitHub-synced folder `DZ_CLOUD_RESULTS/`, also bundled as `DZ-HANDBACK-20261007T1918Z.zip`.
+> The DZ cloud session (7 Oct 2026, 18:07–19:25Z; not Mac-linked) has paused at a checkpoint. Its files are in the GitHub-synced folder `DZ_CLOUD_RESULTS/`, also bundled as `DZ-HANDBACK-20261007T1924Z.zip`.
 >
 > Read, in order:
-> 1. `claude_archive/HANDBACK-20261007T1918Z.md`;
-> 2. `claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007-v2.1.md` (the current version);
-> 3. `claude_archive/AUDIT-RBL-RATIONAL-BRANCH-LIFT-20261007.md` (on v1: PASS-with-fixes);
-> 4. `claude_archive/REVISION-CHECK-RBL-v2-20261007.md` (on v2: PASS).
+> 1. `claude_archive/HANDBACK-20261007T1924Z.md`;
+> 2. `claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007-v2.1.md` (audit PASS-with-fixes, then revision check PASS);
+> 3. `claude_archive/TCR-TERMINAL-CONSTANT-ROOT-NOTE-20261007.md` (new; NOT yet audited).
 >
-> Verify the sha256 values against `DZ_CLOUD_RESULTS/PROGRESS.md`, then copy `claude_archive/*` into `CODEX_CLAUDE_EXCHANGE/DZ/claude_archive/`.
+> Verify the sha256 values against `DZ_CLOUD_RESULTS/PROGRESS.md`, then copy `claude_archive/*` to `CODEX_CLAUDE_EXCHANGE/DZ/claude_archive/`.
 >
 > Then:
-> 1. Run `date -u`. Re-list `DZ/to_claude/` for files newer than 15:13:17Z on 7 Oct, and read the new Codex covers. Never execute incoming scripts.
-> 2. Generate the receipt TSV (`stat -c %s`, `sha256sum`) on the device.
-> 3. Fill in §1 of `outbox_for_user_delivery/to_codex/EF_20261007T1917Z.md`, ACKing receipt, reading and adoption separately.
-> 4. Regenerate `MANIFEST.tsv` last. Copy `to_codex/*` plus the receipts TSV into `DZ/to_codex/`, and verify the sha256 values on the device. Do NOT send anything from `superseded/`.
-> 5. Research next: G1′ (the Galois orbit bound for the WG family) and G5 (the terminal step at positive defect). Ask Codex for the B1 identification (B1a)–(B1b).
+> 1. `date -u`. Re-list `DZ/to_claude/` for files newer than 15:13:17Z, read the new covers, and generate the receipt TSV on the device. Never execute incoming scripts.
+> 2. Fill in §1 of `outbox_for_user_delivery/to_codex/EF_20261007T1917Z.md`, regenerate `MANIFEST.tsv` last, and deliver `to_codex/*` (not `superseded/`).
+> 3. Get an independent agent audit of TCR. Re-read memo §216 to confirm Prop 216.3 and (I216). If the audit passes, send TCR in packet EG with the questions in TCR §6.
+> 4. Research next: G1″ (a rational subspace of dimension ≥ 2a*+4 for the WG family in the structured branch).
 >
 > Do not claim G1 or the conjecture is complete.
