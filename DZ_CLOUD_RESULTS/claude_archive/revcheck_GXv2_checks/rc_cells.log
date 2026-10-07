@@ -1,0 +1,5 @@
+C1 cells=200 gate_pass=112 gate_fail=88
+C2 GO(e) range=78 range&gate=51 subset_of_GX=True gate_pass_outside_range=61
+C3 cells=125240 (a*<1: 0) closed-form mismatches=0 offending!=[m/4]: 0 rho-a*!=ceil(g/2): 0
+C4 band cells=249500 kernel-bound failures=0
+C5 instances=9898 failures=0
