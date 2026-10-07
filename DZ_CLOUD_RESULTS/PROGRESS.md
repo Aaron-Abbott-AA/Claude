@@ -288,3 +288,33 @@
 >    - G1″.
 >
 > Do not claim G1 or the conjecture is complete.
+
+---
+## Session 2 (DZ cloud owner, 7 Oct 2026, 21:41Z–21:46Z; appended, earlier content unchanged)
+- **Resumed** from HANDBACK-20261007T2124Z. Item 1 (device/mailbox) is not possible in this container. Item 2 (GLS₀/GLS₁) was taken.
+- **New note:** GLO v1 (generic Lang obstruction). **NOT AUDITED, HOLD.** It is not in the outbox, and packets EF–EJ were not touched.
+- **Scripts.** Own code, nice -n 19 python3 -I, about 1 s each. No incoming scripts were executed.
+- **The goal is NOT complete.** GLS₀ for the arc family, G1″ and the linear-gap conjecture are OPEN.
+
+| Item | Status |
+|---|---|
+| GLO: FS, GR/AC, OB/TB, RLE, RD/N1, OB1, PV, TH, VO/DO, Example NG | PROVED (owner) — awaiting audit |
+| GLO: R0 ((N0) for the arc relation) | CONDITIONAL ((B1a⁺), (B1b), HFD §1 [A]) |
+| GLO: TH degree scale; Hermitian analogy | HEURISTIC |
+| GLS₀/GLS₁ for the arc family | OPEN (NG shows arc input is necessary) |
+
+| sha256 | File |
+|---|---|
+| 3a8a7dbb7d1d1c9cddbe73d41f9204ff09edfe55eaf6ac5e2f7c8bb331136cf2 | claude_archive/GLO-GENERIC-LANG-OBSTRUCTION-NOTE-20261007.md |
+| b98f9d7eb09d0e88cdeb5a322f8e36860318afc3b10fdb6a6fdbbe8df1ffa2f8 | claude_archive/HANDBACK-20261007T2145Z.md |
+| 715076908650fa163358547d89db5c05c8349e471e332766d58cd7fa408c7c86 | claude_archive/CHECKPOINT-ADDENDUM-20261007T2145Z.md |
+| e39894a42da9d03bac0ee22d62d45e4b544253225b4d96f7ea9867afe066a9d3 | claude_archive/scripts/glocheck.py |
+| 48ed5541addb7530b086d856ec8b523197a4e827f0bd3b77ab8b3f50ca865424 | claude_archive/scripts/glocheck.log |
+| 84c310e972da513398392d8afe0e2582471c86085dfc4e9fbbca01dcc6e0534b | claude_archive/scripts/glocheck_seed7.log |
+| 413b9fd4fc7faf8b8bbbab05cdf3d98fa7bfd12cb765d789154f4c758a7adf6b | claude_archive/scripts/glovo.py |
+| 1ef8ddc45646fd5c7a67dc76b11d4d08f9dc4f07af3a9f972a6714a89866dd6f | claude_archive/scripts/glovo.log |
+
+**Pending:**
+1. The independent audit of GLO v1, then owner v2 and a revision check. The next packet letter is EK, after EJ.
+2. The device steps for EF→EJ (unchanged).
+3. GLO §7 questions for Codex.

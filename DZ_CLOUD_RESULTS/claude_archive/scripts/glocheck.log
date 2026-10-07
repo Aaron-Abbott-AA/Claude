@@ -1,0 +1,11 @@
+glocheck seed=1
+T1 Q=4 N=6 (F_{Q^2} NOT subset F): {'inst': 40, 'pos': 25, 'neg': 15, 'bad': 0, 'planted': 20}
+T1 Q=8 N=9 (F_{Q^2} NOT subset F): {'inst': 30, 'pos': 19, 'neg': 11, 'bad': 0, 'planted': 15}
+T1 Q=4 N=10 (F_{Q^2} NOT subset F): {'inst': 20, 'pos': 10, 'neg': 10, 'bad': 0, 'planted': 10}
+T1 Q=8 N=12 (F_{Q^2} subset F): {'inst': 10, 'pos': 5, 'neg': 5, 'bad': 0, 'planted': 5}
+T2 PV Q=4 F_{Q^2}=GF(2^4): failures 0/300
+T2 PV Q=8 F_{Q^2}=GF(2^6): failures 0/300
+T2 PV Q=16 F_{Q^2}=GF(2^8): failures 0/300
+T2 PV Q=32 F_{Q^2}=GF(2^10): failures 0/300
+T3 a2=2 n=1 Q=4 N=6: instances 20, with nonzero solution 18, count mismatches 0
+T3 a2=2 n=2 Q=4 N=6: instances 12, with nonzero solution 11, count mismatches 0
