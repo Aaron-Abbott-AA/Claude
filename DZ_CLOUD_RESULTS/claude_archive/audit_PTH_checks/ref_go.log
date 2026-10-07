@@ -1,0 +1,13 @@
+(1) a* forms mismatch=0; cells in range a*<=(rho-4)/3: 78; gate passes: 51; gate fails: 27; sufficient-vs-exact gate mismatch=0
+    first gate failures: [(10, 15, [10]), (14, 21, [14]), (16, 24, [16]), (18, 27, [18]), (20, 30, [20]), (22, 31, [21]), (22, 33, [22]), (24, 36, [24])]
+    listed failure (10, 15) in fails: True
+    listed failure (14, 21) in fails: True
+    listed failure (16, 24) in fails: True
+    listed failure (18, 27) in fails: True
+    listed failure (20, 30) in fails: True
+(2) 2^t-1 < T for t <= rho/2, even rho <= 80: True
+(3) cells=380; violations of u*sum <= Q^2/2: 0; worst ratio deg/(Q^2/2) = 0.2500 at (rho,g,j)=(40, 43, 18)
+(4) m=8: C*A == D*A^(Q): True; c1/d1 = 1 (a square): True
+(4) m=12: C*A == D*A^(Q): True; c1/d1 = 1 (a square): True
+(4) m=16: C*A == D*A^(Q): True; c1/d1 = 1 (a square): True
+(4) m=20: C*A == D*A^(Q): True; c1/d1 = 1 (a square): True
