@@ -1,4 +1,4 @@
-# DZ cloud session — PROGRESS (last updated 7 Oct 2026, 21:01Z)
+# DZ cloud session — PROGRESS (last updated 7 Oct 2026, 21:12Z)
 
 ## Context
 - **Input:** DZ-CLOUD-HANDOFF-20261007.zip; START-HERE followed.
@@ -14,7 +14,7 @@
 | TCR (terminal constant root) | v2.1 | v1 audit PASS-with-fixes; v2 revision check PASS | EG_20261007T1948Z — READY FOR USER DELIVERY |
 | PTH (pointwise twisted half-field) | v2.2 | v1 audit PASS-with-fixes; v2 revision check PASS-with-fixes; v2.1 diff check (one line), applied in v2.2 | EH_20261007T2036Z — READY FOR USER DELIVERY |
 | GX (global-twist exclusion) | v2.1 (20:55Z) | v1 audit PASS-with-fixes; v2 revision check **PASS** (RC-1…RC-7 applied in v2.1) | EI_20261007T2056Z — READY FOR USER DELIVERY |
-| KB (Kummer–binomial gate-failing structure; new 20:59Z) | v1 | **audit PENDING** | none (not in the outbox) |
+| KB (Kummer–binomial gate-failing structure) | v2 (21:10Z) | v1 audit **PASS-with-fixes** (2 substantive + 9 minor, all applied in v2); **revision check PENDING** | none (not in the outbox) |
 
 ## Item statuses
 | Item | Status |
@@ -29,17 +29,20 @@
 | GX: Lemma SQ | PROVED |
 | GX: Lemma LD | PROVED mod RR_k |
 | GX: Theorem GX (complements GO(e); no range restriction given GLS₁'s degree bound) | CONDITIONAL |
-| KB: Proposition KB (if (GT) fails: W′ = B(ηF_{2^{m/4}}), η integral Kummer, F_q-valued on N) | PROVED under GLS₁, (B1a⁺), (B1b) (unaudited) |
+| KB: Proposition KB (i)–(v) | PROVED under GLS₁, (B1a⁺), (B1b) (audit PASS) |
+| KB(vi): e ≥ 2^{ρ/2+1} − 1 (Kummer–Weil) | PROVED [referee; adopted] |
+| KB: B = 1 subcases (half-field) | routed to HFA [A]; inner resonance pending HFA3's scope |
 | KB: counting does not exclude KB | HEURISTIC |
-| GLS₀/GLS₁; exclusion of the KB families (in the gate-failing cells) | OPEN |
+| GLS₀/GLS₁; exclusion of KB with deg B ≥ 1 (in the gate-failing cells) | OPEN |
 | WG, RR, BWG, HFA1, Lemma G, HFD §1, Prop 216.3 | CITED |
 | Lang-equation heuristics (RBL §6) | superseded by PTH |
 
 ## Files (sha256)
 | sha256 | File |
 |---|---|
-| 7b57794afdd71fae8826753e4e51caff7ab0b7d0f025f33eb5813fec068fed61 | DZ-HANDBACK-20261007T2100Z.zip |
+| a1e9e31f82fd952e24b7a491b74b065b23bd3ad49e5030ba5e6505476a884e34 | DZ-HANDBACK-20261007T2111Z.zip |
 | 633548f0a3673dfcdfc45408d1de8b9c3c319b41ad7f3ad629ffa2b46f7f9b24 | claude_archive/AUDIT-GX-GLOBAL-TWIST-EXCLUSION-20261007.md |
+| fc0cc9cec7fbe9a725ca50dd9ed3c5ae0b61d15b5abc2d2199b8135838daf168 | claude_archive/AUDIT-KB-KUMMER-BINOMIAL-GATE-20261007.md |
 | b3c01e587f0a4e315cf82c501a90fefbefecef2e885640ef1b86b3e3d2ce4e58 | claude_archive/AUDIT-PTH-POINTWISE-TWISTED-HALFFIELD-20261007.md |
 | 75830869976bb05b946b3f528ecc64df7437dc0b9da260fe6e1467f64730a015 | claude_archive/AUDIT-RBL-RATIONAL-BRANCH-LIFT-20261007.md |
 | ac0852eb7dbd26615f2181ac4ef2a8acfaeb838947e6ac6a52ec61c5c5f2273d | claude_archive/AUDIT-TCR-TERMINAL-CONSTANT-ROOT-20261007.md |
@@ -57,6 +60,7 @@
 | 468e49b8d360abf1887c61875a473fd9540bc6cbad6a219aebb0035fc84fde6b | claude_archive/CHECKPOINT-ADDENDUM-20261007T2049Z.md |
 | 39060404dfb1326f53b528e62427560262d866af93bcac99a74046cc39d48123 | claude_archive/CHECKPOINT-ADDENDUM-20261007T2057Z.md |
 | 94bdd1015a19f7dc52408d3fc81aa9fe61a26fbb95cf153d613bc4975f8bd94b | claude_archive/CHECKPOINT-ADDENDUM-20261007T2100Z.md |
+| 725bb18c10de428f3819cb28d18a810fa7eec471c75972da70372c9163f5a259 | claude_archive/CHECKPOINT-ADDENDUM-20261007T2111Z.md |
 | c2501b3de1e1317b2721ad66aca744d80f0484eb29f866448e75598189d7607f | claude_archive/DIFFCHECK-PTH-v2.1-20261007.md |
 | 2b2a1d69e3bd8007763eab4d75006cafdb974280f6362208fc472ca607fdc1fa | claude_archive/GX-GLOBAL-TWIST-EXCLUSION-NOTE-20261007-v2.1.md |
 | 5971847f763c0b87aaf449926f77277f57925082d2fab14b5954855bab8f29c7 | claude_archive/GX-GLOBAL-TWIST-EXCLUSION-NOTE-20261007-v2.md |
@@ -75,6 +79,8 @@
 | 8f34ca928126bfa267be9a3968c8ccffd3eae217bf449a658e7ac0083d6a6cb2 | claude_archive/HANDBACK-20261007T2049Z.md |
 | 1a4cbb09523a1051351c72da08cd2bb205e10e358862461df321021e9249bdb0 | claude_archive/HANDBACK-20261007T2057Z.md |
 | 83cedf33136cd533a5f27c55a3378a259a583fb730e8d89e0a95d1103a2621f9 | claude_archive/HANDBACK-20261007T2100Z.md |
+| b2bb91e2b8592d15078ef79366b9799c79720f41a7d3be67a01b63b33cb2dd91 | claude_archive/HANDBACK-20261007T2111Z.md |
+| 4af210536e8b98d17be78024c65ce4ffadd0a1c464490dc0d6634598fe49df59 | claude_archive/KB-KUMMER-BINOMIAL-GATE-NOTE-20261007-v2.md |
 | d6b60aa1d52119e7b4247072c47bd94f5deab0a7b8639363b9da4575b6f124d7 | claude_archive/KB-KUMMER-BINOMIAL-GATE-NOTE-20261007.md |
 | 869cdf73fe9702b0bcf9d2e562b00001799b2a6dcb06ffee01ebb86d0b2133d7 | claude_archive/PTH-POINTWISE-TWISTED-HALFFIELD-NOTE-20261007-v2.1.md |
 | 9ecf61da099317b96706f0cd63cc136c34699520fe19bbbe83058f19baf2c484 | claude_archive/PTH-POINTWISE-TWISTED-HALFFIELD-NOTE-20261007-v2.2.md |
@@ -97,6 +103,14 @@
 | 8a000fa9139adf0c7c226181151c0ea19c676ae43afadcbb57ce9b4354ed2c77 | claude_archive/audit_GX_checks/gx_cells_ref.py |
 | 5bd7e2256b32900f9fa3c2f2fc7e53908628b76e02035b7d7bbd35753603b940 | claude_archive/audit_GX_checks/owner_copy/gxcells.py |
 | 5c9568355c2be1b1b726751fe5c61515199c63c0b4d77f66017773a41e26f60b | claude_archive/audit_GX_checks/owner_copy/gxcells_rerun.log |
+| 809fa4472f3043b1d8fa82b576cc9102abbddd3f5605cc957e980d0be85cfd28 | claude_archive/audit_KB_checks/checks_SHA256SUMS.txt |
+| 7fe6115f336bcd41f85b61d89f1d0b547113276fb9ed8bfec31435e9ed3b933e | claude_archive/audit_KB_checks/kb_arith.log |
+| 65b2f61c758952672abb9c83555d841a2a22815c1dfe7156eba2cd8f217eeebb | claude_archive/audit_KB_checks/kb_arith.py |
+| a879f4e8de5aa14e8d4c609770648be2cf290421fb0bd52fd1d0970695392b6a | claude_archive/audit_KB_checks/kb_ff.log |
+| dbb2a31223dbad40fec7b98acffbb343fabff645cba4ae5db175ab212472ddf2 | claude_archive/audit_KB_checks/kb_ff.py |
+| a879f4e8de5aa14e8d4c609770648be2cf290421fb0bd52fd1d0970695392b6a | claude_archive/audit_KB_checks/kb_ff_seed7.log |
+| fed7414633530c7f7227d16a043dc16aec0610e8018c74318636e72a156749ee | claude_archive/audit_KB_checks/kb_weil.log |
+| 55b8f4c2e0980be89a376e1068675e8216f93a5a343919ec1545a6bafa972570 | claude_archive/audit_KB_checks/kb_weil.py |
 | e24b6c7fbaaca7bb339c600559629899aa930c41acdc8d540c7311702733c5e4 | claude_archive/audit_PTH_checks/checks_SHA256SUMS.txt |
 | 0bf53e8a0f86228ec8cbd47444c328256cf926b17b35339f10784453c7cc1cc5 | claude_archive/audit_PTH_checks/owner_copy/gocells.py |
 | 5e2f8f58cf0adb5203cdf86a05a43d7705f126ab2eb6fda9ad2d758753fc1b86 | claude_archive/audit_PTH_checks/owner_copy/gocells_rerun.log |
@@ -223,7 +237,7 @@
    - generate the receipts TSV;
    - write three separate ACKs;
    - regenerate the manifests last.
-2. The KB note needs an independent audit. It is NOT in the outbox.
+2. KB v2 needs a revision check. It is NOT in the outbox. The v1 audit was PASS-with-fixes, and all fixes are applied.
 3. Locally, re-read memo §216 (Prop 216.3) and its frame hypotheses.
 4. Unverified ACKs:
    - unread Codex files after 15:13:17Z;
@@ -247,7 +261,7 @@
 > 2. Fill in §1 of EF_20261007T1917Z.md, EG_20261007T1948Z.md, EH_20261007T2036Z.md and EI_20261007T2056Z.md, ACKing receipt, reading and adoption separately. Regenerate the manifests last.
 > 3. Deliver EF, EG, EH, then EI, to `DZ/to_codex/`. Never send anything in `superseded/`. Verify the sha256 values on the device.
 > 4. Re-read memo §216 for the frame of Prop 216.3.
-> 5. Get an independent audit of `claude_archive/KB-KUMMER-BINOMIAL-GATE-NOTE-20261007.md`. If it passes, send it in packet EJ.
+> 5. Revision-check `claude_archive/KB-KUMMER-BINOMIAL-GATE-NOTE-20261007-v2.md` against `AUDIT-KB-KUMMER-BINOMIAL-GATE-20261007.md`. If it passes, send it in packet EJ.
 > 6. Research next: GLS₀/GLS₁ (the generic twist), and exclusion of the KB families (ask Codex about EWF1 at g = 3ρ/2).
 >
 > Do not claim G1 or the conjecture is complete.
