@@ -1,0 +1,17 @@
+glo_ob seed=20261007 galois 0.4.11
+Q=4 N=6 (F_{Q^2} not in F) a2=1 n=0: {'inst': 30, 'pos': 10, 'neg': 20, 'bad': 0, 'planted': 9, 'tb_checked': 120, 'formal': 10}
+Q=4 N=6 (F_{Q^2} not in F) a2=1 n=1: {'inst': 40, 'pos': 22, 'neg': 18, 'bad': 0, 'planted': 18, 'tb_checked': 640, 'formal': 19}
+Q=4 N=6 (F_{Q^2} not in F) a2=1 n=2: {'inst': 20, 'pos': 15, 'neg': 5, 'bad': 0, 'planted': 10, 'tb_checked': 1280, 'formal': 10}
+Q=4 N=10 (F_{Q^2} not in F) a2=1 n=1: {'inst': 16, 'pos': 7, 'neg': 9, 'bad': 0, 'planted': 7, 'tb_checked': 256, 'formal': 7}
+Q=8 N=9 (F_{Q^2} not in F) a2=1 n=1: {'inst': 16, 'pos': 7, 'neg': 9, 'bad': 0, 'planted': 7, 'tb_checked': 1024, 'formal': 7}
+Q=4 N=8 (F_{Q^2} in F) a2=1 n=1: {'inst': 16, 'pos': 7, 'neg': 9, 'bad': 0, 'planted': 7, 'tb_checked': 256, 'formal': 8}
+Q=4 N=6 (F_{Q^2} not in F) a2=2 n=1: {'inst': 20, 'pos': 8, 'neg': 12, 'bad': 0, 'planted': 8, 'tb_checked': 320, 'formal': 9}
+Q=4 N=6 (F_{Q^2} not in F) a2=2 n=2: {'inst': 12, 'pos': 6, 'neg': 6, 'bad': 0, 'planted': 6, 'tb_checked': 768, 'formal': 6}
+Q=4 N=6 (F_{Q^2} not in F) a2=3 n=2: {'inst': 8, 'pos': 4, 'neg': 4, 'bad': 0, 'planted': 4, 'tb_checked': 512, 'formal': 4}
+Q=4 N=6 (F_{Q^2} not in F) a2=3 n=3: {'inst': 6, 'pos': 3, 'neg': 3, 'bad': 0, 'planted': 3, 'tb_checked': 1536, 'formal': 3}
+Q=4 N=8 (F_{Q^2} in F) a2=2 n=2: {'inst': 8, 'pos': 4, 'neg': 4, 'bad': 0, 'planted': 4, 'tb_checked': 512, 'formal': 4}
+Q=8 N=9 (F_{Q^2} not in F) a2=2 n=1: {'inst': 10, 'pos': 5, 'neg': 5, 'bad': 0, 'planted': 5, 'tb_checked': 640, 'formal': 5}
+
+real	0m17.666s
+user	0m17.062s
+sys	0m0.186s

@@ -1,0 +1,14 @@
+glo_vo seed=20261007 sympy 1.14.0
+(1) planted twisted families Q=4: {'inst': 14, 'places': 101, 'vo_triggered': 0, 'y0_mismatch': 0, 'n1_fail': 0, 'rle_fail': 0, 'hyp_ii_held': 41}
+(1) planted twisted families Q=8: {'inst': 8, 'places': 83, 'vo_triggered': 0, 'y0_mismatch': 0, 'n1_fail': 0, 'rle_fail': 0, 'hyp_ii_held': 43}
+(2) DO vs VO at infinity: agree 89, disagree 0
+(3) NG Q=4: N0 True; VO@inf True; VO@X False; Delta = X**2 + 1; Delta*Omega1 == 0: False
+(3) NG Q=8: N0 True; VO@inf True; VO@X False; Delta = X**2 + 1; Delta*Omega1 == 0: False
+(3) NG Q=16: N0 True; VO@inf True; VO@X False; Delta = X**2 + 1; Delta*Omega1 == 0: False
+(4) TX-like Q=4: RLE(ii) holds for B = 1+X^-2 tau, 1+X^-3 tau, 1+(1+X^-2) tau : [True, False, False]
+(4) TX-like Q=8: RLE(ii) holds for B = 1+X^-2 tau, 1+X^-3 tau, 1+(1+X^-2) tau : [True, False, False]
+(4) TX-like Q=16: RLE(ii) holds for B = 1+X^-2 tau, 1+X^-3 tau, 1+(1+X^-2) tau : [True, False, False]
+
+real	0m42.922s
+user	0m42.116s
+sys	0m0.047s

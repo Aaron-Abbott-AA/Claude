@@ -1,0 +1,5 @@
+glo_ac seed=20261007: {'sol_inst': 162, 'ac_ok': 162, 'ac_fail': 0, 'nosol_inst': 78, 'nosol_leaves': 67, 'a0_in_base': 47}
+
+real	0m6.576s
+user	0m6.246s
+sys	0m0.112s

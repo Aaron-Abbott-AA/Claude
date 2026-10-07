@@ -1,0 +1,12 @@
+glo_pv_alg galois 0.4.11 sympy 1.14.0
+(a) PV Q=4 over GF(2^4) [all]: 1280 pairs, Delta*Omega1 != 0 in 0; Delta^(Q-1) != kappa^(2Q-1) in 0
+(a) PV Q=8 over GF(2^6) [all]: 36864 pairs, Delta*Omega1 != 0 in 0; Delta^(Q-1) != kappa^(2Q-1) in 0
+(a) PV Q=16 over GF(2^8) [20000]: 20000 pairs, Delta*Omega1 != 0 in 0; Delta^(Q-1) != kappa^(2Q-1) in 0
+(a) PV Q=32 over GF(2^10) [5000]: 5000 pairs, Delta*Omega1 != 0 in 0; Delta^(Q-1) != kappa^(2Q-1) in 0
+(b) OB1(c) algebra: log(LHS/RHS) - log(c1 d0^4Q / (c0^4 d1^Q Delta^(Q-1))) simplifies to: 0
+(b') s = alpha0*Delta/(c0 d0^2) from the tau^1 equation: 0 failures / 300 (GF(2^9), Q=8)
+(c) TH: deg(Delta*Omega1) > (4Q+4)delta in 0 random cases; worst ratio 1.000
+
+real	0m33.604s
+user	0m32.823s
+sys	0m0.175s

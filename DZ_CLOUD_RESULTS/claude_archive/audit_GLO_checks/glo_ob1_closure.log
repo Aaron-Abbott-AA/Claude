@@ -1,0 +1,8 @@
+glo_ob1_closure seed=20261007 galois 0.4.11
+Q=4 base GF(2^6) big GF(2^18): {'inst': 400, 'sol': 220, 'deg0': 138, 'omega_branch': np.int64(82), 'bad': 0}
+Q=4 base GF(2^4) big GF(2^12): {'inst': 300, 'sol': 177, 'deg0': 106, 'omega_branch': np.int64(71), 'bad': 0}
+Q=8 base GF(2^3) big GF(2^21): {'inst': 2401, 'sol': 637, 'deg0': 343, 'omega_branch': np.int64(294), 'bad': 0}
+
+real	1m5.546s
+user	1m4.205s
+sys	0m0.142s
