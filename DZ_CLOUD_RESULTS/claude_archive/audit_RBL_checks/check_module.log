@@ -1,0 +1,8 @@
+m=16, Q=256
+(M1) rho=6 deg A=1: bivariate d1=1; counts n(L), L=0..5: [0, 1, 2, 3, 4, 6]; predicted [0, 1, 2, 3, 4, 6]; match=True
+(M1) rho=6 deg A=2: bivariate d1=2; counts n(L), L=0..5: [0, 0, 1, 2, 4, 6]; predicted [0, 0, 1, 2, 4, 6]; match=True
+(M1) rho=8 deg A=1: bivariate d1=1; counts n(L), L=0..7: [0, 1, 2, 3, 4, 5, 6, 8]; predicted [0, 1, 2, 3, 4, 5, 6, 8]; match=True
+(M1) rho=8 deg A=2: bivariate d1=2; counts n(L), L=0..7: [0, 0, 1, 2, 3, 4, 6, 8]; predicted [0, 0, 1, 2, 3, 4, 6, 8]; match=True
+(M1) rho=8 deg A=3: bivariate d1=3; counts n(L), L=0..7: [0, 0, 0, 1, 2, 4, 6, 8]; predicted [0, 0, 0, 1, 2, 4, 6, 8]; match=True
+(M2) dim W=10, a2(W)=3 (hyp a2<=rho'/2-2: True); dim W0=8 (>= rho'-2: True); a2(W0)=1; RD(b) 'a2(W0)<=a2-1' holds: True
+(M3) constant family, beta notin F_Q: (step, bivariate defect, all derivatives zero) = [(0, 1, True), (1, 1, True), (2, 1, True), (3, 1, True), (4, 1, True), (5, 1, True)]

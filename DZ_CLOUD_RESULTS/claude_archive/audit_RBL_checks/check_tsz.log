@@ -1,0 +1,10 @@
+(A) m=4 delta=1 exhaustive: max zeros = 5 at coeffs(1,X,Y,XY)=(0, 1, 1, 1); TSZ bound 2*delta*Q = 8; violation: False
+m=6 delta=1: random max zeros 9, structured max zeros 9; TSZ bound 2*delta*Q = 16; violation: False
+m=6 delta=2: random max zeros 10, structured max zeros 18; TSZ bound 2*delta*Q = 32; violation: False
+m=8 delta=1: random max zeros 17, structured max zeros 17; TSZ bound 2*delta*Q = 32; violation: False
+m=8 delta=2: random max zeros 18, structured max zeros 33; TSZ bound 2*delta*Q = 64; violation: False
+m=8 delta=3: random max zeros 7, structured max zeros 33; TSZ bound 2*delta*Q = 96; violation: False
+
+real	0m18.860s
+user	0m18.736s
+sys	0m0.132s

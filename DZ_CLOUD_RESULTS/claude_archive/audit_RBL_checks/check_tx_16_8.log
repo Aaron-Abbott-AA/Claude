@@ -1,0 +1,14 @@
+m=16 rho=8 seed=3
+T1 identity failures: 0/50
+T2 defect histogram (key=(class, a)): {('alpha notin F_Q', 1): 299, ('alpha in F_Q', 0): 1}
+T2 degenerate alphas: 256 (all inside span(U)\0: True)
+T3 C_alpha(v) not in F_Q: 0
+T4 generic identity C(w)=D(w^Q) failures: 0/8; w^Q formula ok: True
+T5 real type D == C^(Q) ? False  (deg c1^Q = 131072, deg d1 = 257)
+T6 pairs with constant ratio C(w_i)/C(w_j): 0
+T7 bivariate real relation Gamma(w) = (iota Gamma)(iota w) failures: 0
+T8 derivative map rank = 8 (RR bound 2)
+
+real	0m11.853s
+user	0m11.797s
+sys	0m0.111s

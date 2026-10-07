@@ -1,0 +1,12 @@
+/tmp/claude-0/-home-user-Claude/50abafc3-3518-5ace-9894-43fffb226a66/scratchpad/dz_isolated/referee_RBL/checks/check_tx.py:9: SyntaxWarning: invalid escape sequence '\{'
+  classify by alpha in F_Q / not; record degenerate alphas (expected: alpha in U\{0}).
+m=12 rho=6 seed=1
+T1 identity failures: 0/50
+T2 defect histogram (key=(class, a)): {('alpha in F_Q', 0): 1, ('alpha notin F_Q', 1): 4032}
+T2 degenerate alphas: 63 (all inside span(U)\0: True)
+T3 C_alpha(v) not in F_Q: 0
+T4 generic identity C(w)=D(w^Q) failures: 0/6; w^Q formula ok: True
+T5 real type D == C^(Q) ? False  (deg c1^Q = 8192, deg d1 = 65)
+T6 pairs with constant ratio C(w_i)/C(w_j): 0
+T7 bivariate real relation Gamma(w) = (iota Gamma)(iota w) failures: 0
+T8 derivative map rank = 6 (RR bound 2)

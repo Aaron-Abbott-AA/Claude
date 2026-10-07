@@ -1,0 +1,9 @@
+m=16 rho=6 field poly=0b10000000000101011
+(C1) toy pointwise defect histogram over 200 random alpha: {1: 199, 'degenerate': 1}
+(C2) C_alpha(v) not in F_Q: 0 cases
+(C3) toy bivariate rank of [w(X), w(X)^2, w^(Q)(Y), w^(Q)(Y)^2] at independent (X,Y): {3: 200}  (<=3 means a bivariate degree-1 relation)
+(C4) control random rational family (deg<=3): pointwise defect hist {3: 199}; bivariate rank (j=1) hist {4: 200}
+
+real	0m2.927s
+user	0m2.830s
+sys	0m0.000s
