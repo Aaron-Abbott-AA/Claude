@@ -1,4 +1,4 @@
-# DZ cloud session — PROGRESS (last updated 7 Oct 2026, 20:50Z)
+# DZ cloud session — PROGRESS (last updated 7 Oct 2026, 21:01Z)
 
 ## Context
 - **Input:** DZ-CLOUD-HANDOFF-20261007.zip; START-HERE followed.
@@ -13,7 +13,8 @@
 | RBL (rational-branch lift) | v2.1 | v1 audit PASS-with-fixes; v2 revision check PASS | EF_20261007T1917Z — READY FOR USER DELIVERY |
 | TCR (terminal constant root) | v2.1 | v1 audit PASS-with-fixes; v2 revision check PASS | EG_20261007T1948Z — READY FOR USER DELIVERY |
 | PTH (pointwise twisted half-field) | v2.2 | v1 audit PASS-with-fixes; v2 revision check PASS-with-fixes; v2.1 diff check (one line), applied in v2.2 | EH_20261007T2036Z — READY FOR USER DELIVERY |
-| GX (global-twist exclusion) | v2 (20:48Z) | v1 audit **PASS-with-fixes** (2 substantive + 8 minor, all applied in v2); **revision check PENDING** | none (not in the outbox) |
+| GX (global-twist exclusion) | v2.1 (20:55Z) | v1 audit PASS-with-fixes; v2 revision check **PASS** (RC-1…RC-7 applied in v2.1) | EI_20261007T2056Z — READY FOR USER DELIVERY |
+| KB (Kummer–binomial gate-failing structure; new 20:59Z) | v1 | **audit PENDING** | none (not in the outbox) |
 
 ## Item statuses
 | Item | Status |
@@ -25,17 +26,19 @@
 | TCR: TC, RS | CONDITIONAL (G2, (B1a), (I216′) incl. (B1b-fix), Prop 216.3 [A]; RS(b) also G4) |
 | PTH: LS, MI, PTH (i)–(iii), two-sided consequence, ML (repaired) | PROVED |
 | PTH: GO | CONDITIONAL (GLS₀, (GT), G4, WG [A], (B1a⁺), (B1b)) |
-| GX: Lemma SQ (renamed from DZ) | PROVED (audit PASS) |
-| GX: Lemma LD (A injective on U′, via MI) | PROVED mod RR_k (audit PASS; clause fixed in v2) |
-| GX: Theorem GX (complements GO(e); no range restriction given GLS₁'s degree bound) | CONDITIONAL (audit PASS as a conditional) |
-| GLS₀/GLS₁; (GT) in the 88 sufficient-gate failures (all with ρ′ = (g+ρ/2)/2) | OPEN |
+| GX: Lemma SQ | PROVED |
+| GX: Lemma LD | PROVED mod RR_k |
+| GX: Theorem GX (complements GO(e); no range restriction given GLS₁'s degree bound) | CONDITIONAL |
+| KB: Proposition KB (if (GT) fails: W′ = B(ηF_{2^{m/4}}), η integral Kummer, F_q-valued on N) | PROVED under GLS₁, (B1a⁺), (B1b) (unaudited) |
+| KB: counting does not exclude KB | HEURISTIC |
+| GLS₀/GLS₁; exclusion of the KB families (in the gate-failing cells) | OPEN |
 | WG, RR, BWG, HFA1, Lemma G, HFD §1, Prop 216.3 | CITED |
 | Lang-equation heuristics (RBL §6) | superseded by PTH |
 
 ## Files (sha256)
 | sha256 | File |
 |---|---|
-| 4514b9500e65610490d0df47b819392731c8c0b55555fbcc8d20e10daf5436e8 | DZ-HANDBACK-20261007T2049Z.zip |
+| 7b57794afdd71fae8826753e4e51caff7ab0b7d0f025f33eb5813fec068fed61 | DZ-HANDBACK-20261007T2100Z.zip |
 | 633548f0a3673dfcdfc45408d1de8b9c3c319b41ad7f3ad629ffa2b46f7f9b24 | claude_archive/AUDIT-GX-GLOBAL-TWIST-EXCLUSION-20261007.md |
 | b3c01e587f0a4e315cf82c501a90fefbefecef2e885640ef1b86b3e3d2ce4e58 | claude_archive/AUDIT-PTH-POINTWISE-TWISTED-HALFFIELD-20261007.md |
 | 75830869976bb05b946b3f528ecc64df7437dc0b9da260fe6e1467f64730a015 | claude_archive/AUDIT-RBL-RATIONAL-BRANCH-LIFT-20261007.md |
@@ -52,7 +55,10 @@
 | 7bdd2162248d56c9a92ffaa66940be9c26b226532acd7465e925f358423a7001 | claude_archive/CHECKPOINT-ADDENDUM-20261007T2037Z.md |
 | 8fb551a65b0eaebd2307940fe3f5fb46de17e39c3db58dd24f87663349960c78 | claude_archive/CHECKPOINT-ADDENDUM-20261007T2040Z.md |
 | 468e49b8d360abf1887c61875a473fd9540bc6cbad6a219aebb0035fc84fde6b | claude_archive/CHECKPOINT-ADDENDUM-20261007T2049Z.md |
+| 39060404dfb1326f53b528e62427560262d866af93bcac99a74046cc39d48123 | claude_archive/CHECKPOINT-ADDENDUM-20261007T2057Z.md |
+| 94bdd1015a19f7dc52408d3fc81aa9fe61a26fbb95cf153d613bc4975f8bd94b | claude_archive/CHECKPOINT-ADDENDUM-20261007T2100Z.md |
 | c2501b3de1e1317b2721ad66aca744d80f0484eb29f866448e75598189d7607f | claude_archive/DIFFCHECK-PTH-v2.1-20261007.md |
+| 2b2a1d69e3bd8007763eab4d75006cafdb974280f6362208fc472ca607fdc1fa | claude_archive/GX-GLOBAL-TWIST-EXCLUSION-NOTE-20261007-v2.1.md |
 | 5971847f763c0b87aaf449926f77277f57925082d2fab14b5954855bab8f29c7 | claude_archive/GX-GLOBAL-TWIST-EXCLUSION-NOTE-20261007-v2.md |
 | e4df4fd1441988e6b1fe17d94f1259ba663a47fa588a219174dbfa2dfd22230d | claude_archive/GX-GLOBAL-TWIST-EXCLUSION-NOTE-20261007.md |
 | bbc7a88dc329c1949446c0a17a3fea5bbfe76852ef4049b53eb92806694e2c81 | claude_archive/HANDBACK-20261007T1830Z.md |
@@ -67,6 +73,9 @@
 | 6bf02d85e2ccb73e5e136eadf4189389a51b7d38008c8ac6914356e41b2e98c5 | claude_archive/HANDBACK-20261007T2037Z.md |
 | 8c0f1be750aff907c25b512e671c7a78c121a7845a248b0fb159d78e84d912e5 | claude_archive/HANDBACK-20261007T2040Z.md |
 | 8f34ca928126bfa267be9a3968c8ccffd3eae217bf449a658e7ac0083d6a6cb2 | claude_archive/HANDBACK-20261007T2049Z.md |
+| 1a4cbb09523a1051351c72da08cd2bb205e10e358862461df321021e9249bdb0 | claude_archive/HANDBACK-20261007T2057Z.md |
+| 83cedf33136cd533a5f27c55a3378a259a583fb730e8d89e0a95d1103a2621f9 | claude_archive/HANDBACK-20261007T2100Z.md |
+| d6b60aa1d52119e7b4247072c47bd94f5deab0a7b8639363b9da4575b6f124d7 | claude_archive/KB-KUMMER-BINOMIAL-GATE-NOTE-20261007.md |
 | 869cdf73fe9702b0bcf9d2e562b00001799b2a6dcb06ffee01ebb86d0b2133d7 | claude_archive/PTH-POINTWISE-TWISTED-HALFFIELD-NOTE-20261007-v2.1.md |
 | 9ecf61da099317b96706f0cd63cc136c34699520fe19bbbe83058f19baf2c484 | claude_archive/PTH-POINTWISE-TWISTED-HALFFIELD-NOTE-20261007-v2.2.md |
 | 478ffaf98bd7108f3b8b4b3cce1dbb9da999e76b7fa0896c5ebd19ebe5dfea87 | claude_archive/PTH-POINTWISE-TWISTED-HALFFIELD-NOTE-20261007-v2.md |
@@ -74,6 +83,7 @@
 | f3a2e176f7e3929170b6f1bec0bed5bde5086d77d3a0cf7f75a6f8d6784d9453 | claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007-v2.1.md |
 | f9a1116197a710dac9c5b5cd69b85a36515460028bfcb8d5d05907d9833622ab | claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007-v2.md |
 | c5f5b805c19676f7a021d8efabc0df5db8c54fe2ccebae30d7b4ad62c2a34cfe | claude_archive/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007.md |
+| 5b6279fa513cf7fd4909e58ed7f16071ad39909656e3e1bd1ea9028a860d232f | claude_archive/REVISION-CHECK-GX-v2-20261007.md |
 | 920a94d9d819c1923898b6a2a5a51f2c242d87fd37c8d3905a54d273bddcffcd | claude_archive/REVISION-CHECK-PTH-v2-20261007.md |
 | e0cd99ba293e48ec8fbb68f96bd87afc19af5ab860e83753d1e09c00b14d558a | claude_archive/REVISION-CHECK-RBL-v2-20261007.md |
 | 3744745ef922605da4479dfa4168c59804f288a806dfb80c02ebb7f35eb40675 | claude_archive/REVISION-CHECK-TCR-v2-20261007.md |
@@ -122,6 +132,15 @@
 | 1747bf4560a6e335bff144ee94674aeab478e7db3c736808892301ae659ba3a1 | claude_archive/audit_TCR_checks/owner_copy/rerun.log |
 | c56b661cb443dd79c07168feaada052496f9c56ee368de5817075cf6b5c0fe50 | claude_archive/audit_TCR_checks/p216.log |
 | 9bab3f81bb225edf62cd1e3387fc2ae6f5bf385d26e5fd44dda06eb30c549e5e | claude_archive/audit_TCR_checks/tcr_referee_checks.py |
+| 45fafb3a088d4ba10f77f71959a929aa89632ad2d1c7a2e84071cd6a51c6741d | claude_archive/revcheck_GXv2_checks/checks_SHA256SUMS.txt |
+| 0bf53e8a0f86228ec8cbd47444c328256cf926b17b35339f10784453c7cc1cc5 | claude_archive/revcheck_GXv2_checks/owner_copy/gocells.py |
+| 5e2f8f58cf0adb5203cdf86a05a43d7705f126ab2eb6fda9ad2d758753fc1b86 | claude_archive/revcheck_GXv2_checks/owner_copy/gocells_rerun.log |
+| 5bd7e2256b32900f9fa3c2f2fc7e53908628b76e02035b7d7bbd35753603b940 | claude_archive/revcheck_GXv2_checks/owner_copy/gxcells.py |
+| 5c9568355c2be1b1b726751fe5c61515199c63c0b4d77f66017773a41e26f60b | claude_archive/revcheck_GXv2_checks/owner_copy/gxcells_rerun.log |
+| b3ad0a9182d3cdd72d771e9374a26180eab4e82195cd8352e96c34856e6b650c | claude_archive/revcheck_GXv2_checks/rc_cells.log |
+| 878a0048afb826d7490abbaf406c9dc69147fcaf13b053175e2206c2454d103f | claude_archive/revcheck_GXv2_checks/rc_cells.py |
+| cf7dd2cd24fe64e6db63ca0b8b5bd269b6bee2b022f8ce1f14c7efaa96e79109 | claude_archive/revcheck_GXv2_checks/rc_fix2.log |
+| 2eb6c6430e3059e2c3386042299d8a61b14c33033604d448a17ffb35f4da66c8 | claude_archive/revcheck_GXv2_checks/rc_fix2.py |
 | 70ca178178d77dda46afe87fb3de7cafb89aca83cf1b5809a38c23f190732edc | claude_archive/revcheck_PTHv2_checks/checks_SHA256SUMS.txt |
 | 5e2f8f58cf0adb5203cdf86a05a43d7705f126ab2eb6fda9ad2d758753fc1b86 | claude_archive/revcheck_PTHv2_checks/owner_copy/gocells.log |
 | 0bf53e8a0f86228ec8cbd47444c328256cf926b17b35339f10784453c7cc1cc5 | claude_archive/revcheck_PTHv2_checks/owner_copy/gocells.py |
@@ -159,13 +178,14 @@
 | 31c784fbca5cd01d68d087ce489965f58da91ff2c7345a5a7c348f42370d85ff | claude_archive/scripts/pthcheck.py |
 | 613fa8c094d5929812880a4da4d838f201cf51386ed2fed8c53715e9a1c145dd | claude_archive/scripts/toycheck.log |
 | aeff51cd313c50d1cae1a59a92cd7ece26576756d8b41592751e9354e90a3d9b | claude_archive/scripts/toycheck.py |
-| 3b2d0118b56b1e870c580ebdc98b9785382fc088b89b16b11d3c20dd5c1e50ee | outbox_for_user_delivery/README-PENDING.md |
+| b65464bfd665d1628a15ac7b81fa83d557a21f3763c72b2951f84884b92a9708 | outbox_for_user_delivery/README-PENDING.md |
 | e27609fd1e0cc3359822103072c1a0b07225608e170cfa9f518ab4c0cf61f251 | outbox_for_user_delivery/superseded/EF_20261007T1828Z.md |
 | cffccf56af82a80e084e36acfcd39958ac6a87fe13de1e853be5ec163575d394 | outbox_for_user_delivery/superseded/EF_20261007T1906Z.md |
 | 18d331067cee4b82eb11aeb295778702b2a26f74b0bd33f9e1ecc4898f9fd8f0 | outbox_for_user_delivery/superseded/MANIFEST-20261007T1828Z.tsv |
 | 5d158704fb2582b28bee891c219fb3c6fd197668ac21b7179db6aa7319f0f0f9 | outbox_for_user_delivery/superseded/MANIFEST-20261007T1906Z.tsv |
 | f9a1116197a710dac9c5b5cd69b85a36515460028bfcb8d5d05907d9833622ab | outbox_for_user_delivery/superseded/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007-v2.md |
 | c5f5b805c19676f7a021d8efabc0df5db8c54fe2ccebae30d7b4ad62c2a34cfe | outbox_for_user_delivery/superseded/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007.md |
+| 633548f0a3673dfcdfc45408d1de8b9c3c319b41ad7f3ad629ffa2b46f7f9b24 | outbox_for_user_delivery/to_codex/AUDIT-GX-GLOBAL-TWIST-EXCLUSION-20261007.md |
 | b3c01e587f0a4e315cf82c501a90fefbefecef2e885640ef1b86b3e3d2ce4e58 | outbox_for_user_delivery/to_codex/AUDIT-PTH-POINTWISE-TWISTED-HALFFIELD-20261007.md |
 | 75830869976bb05b946b3f528ecc64df7437dc0b9da260fe6e1467f64730a015 | outbox_for_user_delivery/to_codex/AUDIT-RBL-RATIONAL-BRANCH-LIFT-20261007.md |
 | ac0852eb7dbd26615f2181ac4ef2a8acfaeb838947e6ac6a52ec61c5c5f2273d | outbox_for_user_delivery/to_codex/AUDIT-TCR-TERMINAL-CONSTANT-ROOT-20261007.md |
@@ -173,17 +193,23 @@
 | 3fde9902162ad0f147b91447e4f12bb935d6dc6dd978bad5eabb19c8839e1628 | outbox_for_user_delivery/to_codex/EF_20261007T1917Z.md |
 | d1e46b68cf214afc37c3baaecfbdedd68c2997566336d7e1dfa56dcbffc65073 | outbox_for_user_delivery/to_codex/EG_20261007T1948Z.md |
 | 1865a79cd204eae975a99bfaa2b40553c67575fc33b043da4b4514045f0924f1 | outbox_for_user_delivery/to_codex/EH_20261007T2036Z.md |
+| 0ac56b0f6989fdf681398512cb71e467d07c67dd21f234bc476fddbd9a871d95 | outbox_for_user_delivery/to_codex/EI_20261007T2056Z.md |
+| 2b2a1d69e3bd8007763eab4d75006cafdb974280f6362208fc472ca607fdc1fa | outbox_for_user_delivery/to_codex/GX-GLOBAL-TWIST-EXCLUSION-NOTE-20261007-v2.1.md |
 | 558079f6acd1672385b01b213f28d12a0ae3a805f06b91917cf6e7d26afa26f0 | outbox_for_user_delivery/to_codex/MANIFEST.tsv |
 | c272ebfdc10808cbe5f41fd2764e72099954078ec592dcc43bc5c3ad64dd385b | outbox_for_user_delivery/to_codex/MANIFEST_EG_20261007T1948Z.tsv |
 | 75e7453e37873aa131957a1debbc4b5518ee9762550db799b1d1c607ff5bb448 | outbox_for_user_delivery/to_codex/MANIFEST_EH_20261007T2036Z.tsv |
+| 1a122b2d3778a43e2499eb11cf0fccb4fc5c5f344bd1897b6a1c25b3f1893c1e | outbox_for_user_delivery/to_codex/MANIFEST_EI_20261007T2056Z.tsv |
 | 9ecf61da099317b96706f0cd63cc136c34699520fe19bbbe83058f19baf2c484 | outbox_for_user_delivery/to_codex/PTH-POINTWISE-TWISTED-HALFFIELD-NOTE-20261007-v2.2.md |
 | f3a2e176f7e3929170b6f1bec0bed5bde5086d77d3a0cf7f75a6f8d6784d9453 | outbox_for_user_delivery/to_codex/RBL-RATIONAL-BRANCH-LIFT-NOTE-20261007-v2.1.md |
+| 5b6279fa513cf7fd4909e58ed7f16071ad39909656e3e1bd1ea9028a860d232f | outbox_for_user_delivery/to_codex/REVISION-CHECK-GX-v2-20261007.md |
 | 920a94d9d819c1923898b6a2a5a51f2c242d87fd37c8d3905a54d273bddcffcd | outbox_for_user_delivery/to_codex/REVISION-CHECK-PTH-v2-20261007.md |
 | e0cd99ba293e48ec8fbb68f96bd87afc19af5ab860e83753d1e09c00b14d558a | outbox_for_user_delivery/to_codex/REVISION-CHECK-RBL-v2-20261007.md |
 | 3744745ef922605da4479dfa4168c59804f288a806dfb80c02ebb7f35eb40675 | outbox_for_user_delivery/to_codex/REVISION-CHECK-TCR-v2-20261007.md |
 | 4b2d969b442ba2f8ad9650191c9fa6fbc9d127a371cfa74e6bc4b208ab6c7428 | outbox_for_user_delivery/to_codex/TCR-TERMINAL-CONSTANT-ROOT-NOTE-20261007-v2.1.md |
 | 5e2f8f58cf0adb5203cdf86a05a43d7705f126ab2eb6fda9ad2d758753fc1b86 | outbox_for_user_delivery/to_codex/gocells.log |
 | 0bf53e8a0f86228ec8cbd47444c328256cf926b17b35339f10784453c7cc1cc5 | outbox_for_user_delivery/to_codex/gocells.py.txt |
+| 5c9568355c2be1b1b726751fe5c61515199c63c0b4d77f66017773a41e26f60b | outbox_for_user_delivery/to_codex/gxcells.log |
+| 5bd7e2256b32900f9fa3c2f2fc7e53908628b76e02035b7d7bbd35753603b940 | outbox_for_user_delivery/to_codex/gxcells.py.txt |
 | 117c91da14040a82868734517b0155c0865bfe907bbd075a93c3e11fc150ba50 | outbox_for_user_delivery/to_codex/hassecheck_v2.log |
 | afe56bb12cb83f3e6d70bf78969d8d2d2af723c2a24ce5afcbcb275308f9c5d9 | outbox_for_user_delivery/to_codex/hassecheck_v2.py.txt |
 | 7ee7b481e1480963aaa6b95bb0b4e812bb361038f1c6a6e9e552901abf6b2ff3 | outbox_for_user_delivery/to_codex/pthcheck.log |
@@ -192,12 +218,12 @@
 | aeff51cd313c50d1cae1a59a92cd7ece26576756d8b41592751e9354e90a3d9b | outbox_for_user_delivery/to_codex/toycheck.py.txt |
 
 ## Pending for the user
-1. Deliver packets **EF, then EG, then EH**, after the device-only steps in `outbox_for_user_delivery/README-PENDING.md`:
+1. Deliver packets **EF, EG, EH, then EI**, after the device-only steps in `outbox_for_user_delivery/README-PENDING.md`:
    - re-list to_claude for files after 15:13:17Z;
    - generate the receipts TSV;
    - write three separate ACKs;
    - regenerate the manifests last.
-2. GX v2 needs a revision check. It is NOT in the outbox. The v1 audit was PASS-with-fixes, and all fixes are applied.
+2. The KB note needs an independent audit. It is NOT in the outbox.
 3. Locally, re-read memo §216 (Prop 216.3) and its frame hypotheses.
 4. Unverified ACKs:
    - unread Codex files after 15:13:17Z;
@@ -207,20 +233,21 @@
 ## Resume message (paste into the local DZ session)
 > The DZ cloud session (7 Oct 2026, from 18:07Z; not linked to the Mac) has written its files to the GitHub-synced folder `DZ_CLOUD_RESULTS/`, also bundled as the newest `DZ-HANDBACK-*.zip`.
 >
-> 1. Start with the newest `claude_archive/HANDBACK-*.md`. Its three notes have finished review:
+> 1. Start with the newest `claude_archive/HANDBACK-*.md`. Its four notes have finished review:
 >    - RBL v2.1;
 >    - TCR v2.1;
->    - PTH v2.2.
+>    - PTH v2.2;
+>    - GX v2.1.
 >
 >    The audits, revision checks and diff check sit next to them in `claude_archive/`.
 > 2. Verify the sha256 values against `DZ_CLOUD_RESULTS/PROGRESS.md`, then copy `claude_archive/*` to `CODEX_CLAUDE_EXCHANGE/DZ/claude_archive/`.
 >
 > Then:
 > 1. Run `date -u`. Re-list `DZ/to_claude/` for files newer than 15:13:17Z, read the new covers, and generate the receipt TSV on the device. Never execute incoming scripts.
-> 2. Fill in §1 of EF_20261007T1917Z.md, EG_20261007T1948Z.md and EH_20261007T2036Z.md, ACKing receipt, reading and adoption separately. Regenerate the manifests last.
-> 3. Deliver EF, then EG, then EH, to `DZ/to_codex/`. Never send anything in `superseded/`. Verify the sha256 values on the device.
+> 2. Fill in §1 of EF_20261007T1917Z.md, EG_20261007T1948Z.md, EH_20261007T2036Z.md and EI_20261007T2056Z.md, ACKing receipt, reading and adoption separately. Regenerate the manifests last.
+> 3. Deliver EF, EG, EH, then EI, to `DZ/to_codex/`. Never send anything in `superseded/`. Verify the sha256 values on the device.
 > 4. Re-read memo §216 for the frame of Prop 216.3.
-> 5. Revision-check `claude_archive/GX-GLOBAL-TWIST-EXCLUSION-NOTE-20261007-v2.md` against its audit `AUDIT-GX-GLOBAL-TWIST-EXCLUSION-20261007.md`. If it passes, send it in packet EI.
-> 6. Research next: GLS₀/GLS₁ (the generic twist), and (GT) in the gate-failing cells.
+> 5. Get an independent audit of `claude_archive/KB-KUMMER-BINOMIAL-GATE-NOTE-20261007.md`. If it passes, send it in packet EJ.
+> 6. Research next: GLS₀/GLS₁ (the generic twist), and exclusion of the KB families (ask Codex about EWF1 at g = 3ρ/2).
 >
 > Do not claim G1 or the conjecture is complete.
