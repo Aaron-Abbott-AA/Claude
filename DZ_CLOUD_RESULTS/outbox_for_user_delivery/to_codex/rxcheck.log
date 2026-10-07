@@ -1,0 +1,12 @@
+A {'a': 1, 'm': 16, 'Q': 256, 'rho': 3, 'band': True, 'all_minors_nonzero': True, 'deg_ord0_predicted': True, 'vinf_y0': -254, 'formula': 1, 'vinf_mod_Qm1': 1, 'cofactor_identity': True, 'no_deg_a_minus_1_relation': True, 'terms': [6, 6, 6, 6]}
+A {'a': 1, 'm': 18, 'Q': 512, 'rho': 3, 'band': True, 'all_minors_nonzero': True, 'deg_ord0_predicted': True, 'vinf_y0': -510, 'formula': 1, 'vinf_mod_Qm1': 1, 'cofactor_identity': True, 'no_deg_a_minus_1_relation': True, 'terms': [6, 6, 6, 6]}
+A {'a': 1, 'm': 20, 'Q': 1024, 'rho': 3, 'band': True, 'all_minors_nonzero': True, 'deg_ord0_predicted': True, 'vinf_y0': -1022, 'formula': 1, 'vinf_mod_Qm1': 1, 'cofactor_identity': True, 'no_deg_a_minus_1_relation': True, 'terms': [6, 6, 6, 6]}
+A {'a': 2, 'm': 22, 'Q': 2048, 'rho': 5, 'band': True, 'all_minors_nonzero': True, 'deg_ord0_predicted': True, 'vinf_y0': -4090, 'formula': 4, 'vinf_mod_Qm1': 4, 'cofactor_identity': True, 'no_deg_a_minus_1_relation': True, 'terms': [72, 104, 72, 72, 104, 72]}
+A {'a': 2, 'm': 24, 'Q': 4096, 'rho': 5, 'band': True, 'all_minors_nonzero': True, 'deg_ord0_predicted': True, 'vinf_y0': -8186, 'formula': 4, 'vinf_mod_Qm1': 4, 'cofactor_identity': True, 'no_deg_a_minus_1_relation': True, 'terms': [72, 104, 72, 72, 104, 72]}
+A {'a': 2, 'm': 26, 'Q': 8192, 'rho': 5, 'band': True, 'all_minors_nonzero': True, 'deg_ord0_predicted': True, 'vinf_y0': -16378, 'formula': 4, 'vinf_mod_Qm1': 4, 'cofactor_identity': True, 'no_deg_a_minus_1_relation': True, 'terms': [72, 104, 72, 72, 104, 72]}
+A {'a': 3, 'm': 28, 'Q': 16384, 'rho': 7, 'band': True, 'all_minors_nonzero': True, 'deg_ord0_predicted': True, 'vinf_y0': -49138, 'formula': 11, 'vinf_mod_Qm1': 11, 'cofactor_identity': True, 'no_deg_a_minus_1_relation': True, 'terms': [852, 1518, 1492, 852, 852, 1518, 1492, 852]}
+A {'a': 3, 'm': 30, 'Q': 32768, 'rho': 7, 'band': True, 'all_minors_nonzero': True, 'deg_ord0_predicted': True, 'vinf_y0': -98290, 'formula': 11, 'vinf_mod_Qm1': 11, 'cofactor_identity': True, 'no_deg_a_minus_1_relation': True, 'terms': [852, 1518, 1492, 852, 852, 1518, 1492, 852]}
+B a=1 m=16 {'tested': 300, 'real_type': 300, 'skipped': 0}
+C {'m': 16, 'dmax': 48, 'kernel_dim_on_F2X': 3}
+C {'m': 18, 'dmax': 48, 'kernel_dim_on_F2X': 3}
+D {'m': 16, 'dmax': 6, 'F2_vectors': 112, 'kernel_dim_on_FqX': 3, 'expected_from_W_tensor': '3 (W itself)'}

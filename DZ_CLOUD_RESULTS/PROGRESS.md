@@ -445,3 +445,46 @@
 3. Codex questions (EK §3, RX §5).
 4. The resume message in the 22:10Z section still applies. Read the newest HANDBACK, now 2219Z.
 - **Zip:** `32f2cb1e396f56e53dc2f5ca9b221a95196b0fb4730b5248ec3797332c026fe7`  DZ-HANDBACK-20261007T2219Z.zip (280 files; contains PROGRESS.md as of this section)
+
+---
+## Session 2, continued (22:30Z–22:35Z): RX audit → v2 → packet EL (PENDING DIFF-CHECK)
+- **Audit.** AUDIT-RX: **PASS-with-fixes** (FIX-1 + m1–m8). The explicit example was independently verified.
+- **v2.** RX v2 applies every fix. FIX-1 adopts the referee's real-type proof, credited [P, referee].
+- **Packet EL_20261007T2232Z.** Prepared, with MANIFEST last. **PENDING DIFF-CHECK, NOT READY.** README-PENDING.md is updated, and EF–EK are unchanged (EK READY).
+- **The goal is NOT complete.** GLS₀ for the arc family, the even-band GLS₀ question, G1″, G1 and the linear-gap conjecture are OPEN.
+
+| Item | Status |
+|---|---|
+| RX v2: RW/RW′, RX (i)–(v), RX(vi) (referee proof, adopted), monomial bound | PROVED (owner/referee; audit PASS-with-fixes; v2 pending diff check) |
+| RX §3: search completeness for polynomial roots | COMPUTATION (referee K1) |
+| Even-band GLS₀ question | OPEN |
+
+| sha256 | File |
+|---|---|
+| fcecc2c7758565594e3d02f4da64f81d2da17a8407069898dd50c10a74610e18 | claude_archive/RX-RATIONAL-BAND-COUNTEREXAMPLE-NOTE-20261007-v2.md |
+| 7cfed7981b1e70574906fbca7f6b9feb287a96ce2d50dfc9597b8bbebc59b0a8 | claude_archive/AUDIT-RX-RATIONAL-BAND-COUNTEREXAMPLE-20261007.md |
+| 459b9111848f4530c95260ff2e8c79162cab3b5f5dc10899ab2acb4404f0d0b2 | claude_archive/HANDBACK-20261007T2234Z.md |
+| a52e6858e09a5e9a1d532db5360504df4de2b82d89bc35d543cc89a72b410872 | claude_archive/CHECKPOINT-ADDENDUM-20261007T2234Z.md |
+| 81ceccebb7bac30d249d4ea749f7e3baad9cd5c56f1b6f72387b5cbb6750bf3e | claude_archive/audit_RX_checks/checks_SHA256SUMS.txt |
+| 59248ee1741b21678ca60de4815d17d393f3d6774da07669c2ecb86d7087806d | claude_archive/audit_RX_checks/rx_ref_exact.log |
+| 66b2adb0ce9a305916b5a21880eef430c97ecc2c7311d0aa934d8db68af5451f | claude_archive/audit_RX_checks/rx_ref_exact.py |
+| 500f32e6c854bd7502d80b47e9fe5691158b41b2c17d4b7e666f42a489a1bc1e | claude_archive/audit_RX_checks/rx_ref_fields.log |
+| 9f7d87fb40e850b52ad2ba01bbf9d0c985de3c1df3190c728708705a40d23b26 | claude_archive/audit_RX_checks/rx_ref_fields.py |
+| 539f3878fd3f2a1db0d5e72a08a333636496622ce59f7e2ed379b11ab016c2f7 | claude_archive/audit_RX_checks/rx_ref_kernel.log |
+| e288cd35a48517b684253b075379d0a935da40bf85c7e0e278debf7a5db80593 | claude_archive/audit_RX_checks/rx_ref_kernel.py |
+| a53dcda9d24ca7291f5fa2726cf743405ebfc23cca96d3db61177ced88f9f047 | claude_archive/audit_RX_checks/owner_copy/rxcheck.py |
+| 16a5315f2bddfb4891b5e264374473559876a676a57d0a650da3eb45abf2ae53 | claude_archive/audit_RX_checks/owner_copy/rxcheck_rerun.log |
+| b2b469df6b091ca75178259b05ab7777da1ffbea9a175bca16d2ef22f692a73c | outbox_for_user_delivery/README-PENDING.md |
+| 99fa78547d4d9e97e9b97bfc340648be06fd21dec4271cf153909d22f1aa2dc6 | outbox_for_user_delivery/to_codex/EL_20261007T2232Z.md |
+| fcecc2c7758565594e3d02f4da64f81d2da17a8407069898dd50c10a74610e18 | outbox_for_user_delivery/to_codex/RX-RATIONAL-BAND-COUNTEREXAMPLE-NOTE-20261007-v2.md |
+| 7cfed7981b1e70574906fbca7f6b9feb287a96ce2d50dfc9597b8bbebc59b0a8 | outbox_for_user_delivery/to_codex/AUDIT-RX-RATIONAL-BAND-COUNTEREXAMPLE-20261007.md |
+| a53dcda9d24ca7291f5fa2726cf743405ebfc23cca96d3db61177ced88f9f047 | outbox_for_user_delivery/to_codex/rxcheck.py.txt |
+| 16a5315f2bddfb4891b5e264374473559876a676a57d0a650da3eb45abf2ae53 | outbox_for_user_delivery/to_codex/rxcheck.log |
+| 271953b6c1508909cd6ed325749cbb2aa0fd91a6b6fff98c97ed211e349b043f | outbox_for_user_delivery/to_codex/MANIFEST_EL_20261007T2232Z.tsv |
+
+**Pending:**
+1. RX v2 diff check, then flip EL to READY and regenerate MANIFEST_EL last.
+2. Device steps for EF→EL.
+3. Codex questions.
+4. The resume message (22:10Z section) still applies, with EL added after EK. Read the newest HANDBACK, now 2234Z.
+- **Zip:** `58fe123e6f970e206557baf4164d237568b62f5e8a9a1790cb80850ad1e8adeb`  DZ-HANDBACK-20261007T2234Z.zip (301 files; contains PROGRESS.md as of this section)

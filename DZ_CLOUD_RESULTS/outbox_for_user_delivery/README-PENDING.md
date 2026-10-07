@@ -66,3 +66,19 @@ Note added by the parent cloud session (2026-10-07):
 - **GLO v2's own status line** still reads "PENDING DIFF-CHECK". That hold is discharged by the attached diff check, and the note was not re-edited, to keep its checked hash.
 - **Delivery order:** EF, EG, EH, EI, EJ, then **EK**, after device steps 1–8 above. If §1 of EK changes on the device, regenerate MANIFEST_EK last.
 - **Supersession.** The 22:07Z "PENDING DIFF-CHECK / Do NOT deliver EK yet" entry above is superseded by this one.
+
+---
+## Added 7 Oct 2026, 22:33Z: packet EL — **PENDING DIFF-CHECK (NOT READY)**
+
+| Packet | Files in `to_codex/` | Manifest |
+|---|---|---|
+| **EL_20261007T2232Z** (RX) | `EL_20261007T2232Z.md`, `RX-RATIONAL-BAND-COUNTEREXAMPLE-NOTE-20261007-v2.md`, `AUDIT-RX-RATIONAL-BAND-COUNTEREXAMPLE-20261007.md`, `rxcheck.py.txt`, `rxcheck.log` | `MANIFEST_EL_20261007T2232Z.tsv` |
+
+**Review chain (RX):** v1 audit PASS-with-fixes (FIX-1 adopted with the referee's proof; m1–m8). v2 applies all of them. A **referee diff check of v2 is pending.**
+
+**Do NOT deliver EL yet.**
+- After the diff check passes:
+  1. add `DIFFCHECK-RX-v2-20261007.md` to to_codex;
+  2. flip EL's status line to READY;
+  3. regenerate `MANIFEST_EL_20261007T2232Z.tsv` last.
+- Delivery order: EF, EG, EH, EI, EJ, EK, then **EL**. EK remains READY.
