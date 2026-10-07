@@ -41,3 +41,20 @@ Review chains:
 Note added by the parent cloud session (2026-10-07):
 - The referee confirmed that PTH v2.2 differs from v2.1 only at line 143 (see the addendum in DIFFCHECK-PTH-v2.1-20261007.md, sha256 c2501b3d…).
 - Cosmetic: the v2.2 title and HOLD line still read "v2.1", and its change log has no v2.2 row. This changes no content. If you want, correct these header lines in the local session before delivering EH, then regenerate EH's MANIFEST.
+
+---
+## Added 7 Oct 2026, 22:07Z (DZ cloud owner session 2): packet EK — **PENDING DIFF-CHECK (NOT READY)**
+
+| Packet | Files in `to_codex/` | Manifest |
+|---|---|---|
+| **EK_20261007T2206Z** (GLO) | `EK_20261007T2206Z.md`, `GLO-GENERIC-LANG-OBSTRUCTION-NOTE-20261007-v2.md`, `AUDIT-GLO-GENERIC-LANG-OBSTRUCTION-20261007.md`, `glocheck.py.txt`, `glocheck.log`, `glocheck_seed7.log`, `glovo.py.txt`, `glovo.log` | `MANIFEST_EK_20261007T2206Z.tsv` |
+
+**Review chain (GLO):** v1 audit PASS-with-fixes (FIX-1, FIX-2, m1–m12; restatements only). v2 applies all of them. A **referee diff check of v2 is pending.**
+
+**Do NOT deliver EK yet.**
+- After the diff check passes:
+  1. add `DIFFCHECK-GLO-v2-20261007.md` to to_codex;
+  2. flip EK's status line to READY;
+  3. regenerate `MANIFEST_EK_20261007T2206Z.tsv` last.
+- Then follow device steps 1–8 above, with **EK delivered after EJ**: EF, EG, EH, EI, EJ, then EK.
+- If the diff check requires a v2.1, the attached v2 copy and the manifest must be replaced in the local session.

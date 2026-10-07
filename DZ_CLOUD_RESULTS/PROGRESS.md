@@ -318,3 +318,60 @@
 1. The independent audit of GLO v1, then owner v2 and a revision check. The next packet letter is EK, after EJ.
 2. The device steps for EF→EJ (unchanged).
 3. GLO §7 questions for Codex.
+
+---
+## Session 2, continued (22:05Z–22:09Z): GLO audit → v2 → packet EK (PENDING DIFF-CHECK)
+- **Audit.** AUDIT-GLO (referee): **PASS-with-fixes** (FIX-1, FIX-2, m1–m12; restatements only; all [P] proofs confirmed).
+- **v2.** GLO v2 applies every fix, each marked [v2: …]. v1 and the audit are unedited.
+- **FIX-1 correction to the earlier status lines.**
+  - NG shows non-implication only for W = R_P, which lies outside the band.
+  - "Arc input necessary" is withdrawn.
+  - The band-dimension question is now OPEN.
+- **FIX-2.** OB is exact per degree n, which makes it a semi-decision for GLS₀.
+- **Packet EK_20261007T2206Z.** Prepared, with MANIFEST last. **PENDING DIFF-CHECK, NOT READY.** README-PENDING.md is updated, and EF–EJ are untouched.
+- **The goal is NOT complete.** GLS₀ for the arc family, G1″, G1 and the linear-gap conjecture are OPEN.
+
+| Item | Status |
+|---|---|
+| GLO v2: FS, GR/AC, OB/TB (per degree), RLE, RD/N1, OB1, PV, TH, VO/DO, NG (m ≥ 4, W = R_P) | PROVED (owner; audit PASS-with-fixes; v2 pending diff check) |
+| GLO: band-dimension non-implication; degree bound for minimal solutions | OPEN |
+
+| sha256 | File |
+|---|---|
+| 9b1d48befb6a52b107ed49d177ab9cab293406a1653a8fdd3e9f052ba5faf40f | claude_archive/GLO-GENERIC-LANG-OBSTRUCTION-NOTE-20261007-v2.md |
+| 43daf52d99a65be34acc3e7f1b50c2002f98d7372424ae42e214da72ef77cb8d | claude_archive/AUDIT-GLO-GENERIC-LANG-OBSTRUCTION-20261007.md |
+| 221eb52b094049318a873cfed03e936fa547753a5d8a79e712d83919d39e9025 | claude_archive/HANDBACK-20261007T2208Z.md |
+| 737b5542a268bac62a6d40279d78523971e9fc43c322e334952d2ec2dbf1cfdb | claude_archive/CHECKPOINT-ADDENDUM-20261007T2208Z.md |
+| d586da00eee3acbb768f66e38515231e0d2d77d120c88bd5cb8a10ab3e6c9790 | claude_archive/audit_GLO_checks/checks_SHA256SUMS.txt |
+| ce30d2dfc29081dd27008023fcf251171363875b244a5c589fea3182bfcb9e98 | claude_archive/audit_GLO_checks/glo_ac.log |
+| 75915af9d813516fddae318dd8238d6030b6da9e9bd21b7f4a89075ce00fb1d5 | claude_archive/audit_GLO_checks/glo_ac.py |
+| 824a3fad9f732623a362533d9572ca093e6ce5df999b44ebf8256bbbe60f67f4 | claude_archive/audit_GLO_checks/glo_ob.log |
+| 704d7d78ef404307ca56967918f99d2ec7573e27a19c7108b5bb951306d3b5a9 | claude_archive/audit_GLO_checks/glo_ob.py |
+| 58d4e757b377b9b78f6f8cc8725c6cbf73b3a56ca82a00b715a4584d2c0fd460 | claude_archive/audit_GLO_checks/glo_ob1_closure.log |
+| 09564172829a319d7136f7c5fc5084cc7703c95df020f8b95617a3dc28df854f | claude_archive/audit_GLO_checks/glo_ob1_closure.py |
+| 33ad7556a6b25a340fd19e0d12a5555f051375421e94b14d27adb226ed3b6fa7 | claude_archive/audit_GLO_checks/glo_ob_seed7.log |
+| a715fb74a5c15862e4f543db0178af71ca7927af8b2773917897973beff508d0 | claude_archive/audit_GLO_checks/glo_pv_alg.log |
+| 92a7e20281dc7fd0c8dc45a2116ad071442abd47d0d67402b6a80bc4977578e3 | claude_archive/audit_GLO_checks/glo_pv_alg.py |
+| e72208ef300ca295a2446eea5e55c1718c28689080ff92ba42df645dba4693ce | claude_archive/audit_GLO_checks/glo_vo.log |
+| 839ba5e02214c8e8a33b9f3070ed30113d2f6aae041b63625b18c3cba970369f | claude_archive/audit_GLO_checks/glo_vo.py |
+| e39894a42da9d03bac0ee22d62d45e4b544253225b4d96f7ea9867afe066a9d3 | claude_archive/audit_GLO_checks/owner_copy/glocheck.py |
+| 413b9fd4fc7faf8b8bbbab05cdf3d98fa7bfd12cb765d789154f4c758a7adf6b | claude_archive/audit_GLO_checks/owner_copy/glovo.py |
+| d33ffc0201fc1c502ce7f411b5b46dbfa7bf7edded4e0006d6fab3250b228d05 | claude_archive/audit_GLO_checks/owner_copy/rerun_glocheck_seed1.log |
+| 84c310e972da513398392d8afe0e2582471c86085dfc4e9fbbca01dcc6e0534b | claude_archive/audit_GLO_checks/owner_copy/rerun_glocheck_seed7.log |
+| 1ef8ddc45646fd5c7a67dc76b11d4d08f9dc4f07af3a9f972a6714a89866dd6f | claude_archive/audit_GLO_checks/owner_copy/rerun_glovo.log |
+| ba1b1ea23d49957436789c71f45d21efebcc222340639c296e0668048cf0712e | outbox_for_user_delivery/README-PENDING.md |
+| c2a3e038673ea36a92de264ca7055fde289a984aec5c0911388a1e17e42bf1e0 | outbox_for_user_delivery/to_codex/EK_20261007T2206Z.md |
+| 9b1d48befb6a52b107ed49d177ab9cab293406a1653a8fdd3e9f052ba5faf40f | outbox_for_user_delivery/to_codex/GLO-GENERIC-LANG-OBSTRUCTION-NOTE-20261007-v2.md |
+| 43daf52d99a65be34acc3e7f1b50c2002f98d7372424ae42e214da72ef77cb8d | outbox_for_user_delivery/to_codex/AUDIT-GLO-GENERIC-LANG-OBSTRUCTION-20261007.md |
+| e39894a42da9d03bac0ee22d62d45e4b544253225b4d96f7ea9867afe066a9d3 | outbox_for_user_delivery/to_codex/glocheck.py.txt |
+| 48ed5541addb7530b086d856ec8b523197a4e827f0bd3b77ab8b3f50ca865424 | outbox_for_user_delivery/to_codex/glocheck.log |
+| 84c310e972da513398392d8afe0e2582471c86085dfc4e9fbbca01dcc6e0534b | outbox_for_user_delivery/to_codex/glocheck_seed7.log |
+| 413b9fd4fc7faf8b8bbbab05cdf3d98fa7bfd12cb765d789154f4c758a7adf6b | outbox_for_user_delivery/to_codex/glovo.py.txt |
+| 1ef8ddc45646fd5c7a67dc76b11d4d08f9dc4f07af3a9f972a6714a89866dd6f | outbox_for_user_delivery/to_codex/glovo.log |
+| a0f6e411ad6504fe19af2cbbfd4fc6b726ba74aafbf02b1ee114990271b07c5d | outbox_for_user_delivery/to_codex/MANIFEST_EK_20261007T2206Z.tsv |
+
+**Pending:**
+1. Referee diff check of GLO v2, then flip EK to READY and regenerate MANIFEST_EK last.
+2. Device steps for EF→EJ, then EK.
+3. Newest zip: DZ-HANDBACK-20261007T2208Z.zip. Its sha256 is in the line below; the zip contains PROGRESS.md as of this section.
+- **Zip:** `374115ee05ca44fca03ff19a12a6c679841fe81483e30684fe5403f78db8c3a8`  DZ-HANDBACK-20261007T2208Z.zip (271 files)
