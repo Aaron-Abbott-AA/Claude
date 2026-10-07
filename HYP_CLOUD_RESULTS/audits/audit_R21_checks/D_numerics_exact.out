@@ -1,0 +1,11 @@
+owner grid rows: 1260
+D=1: grid max bound/q = 0.04337178 at (r,Q,S,n)=(4, 128, 64, 256); exact = 7451214389181/171798691840000; < 1551/4000: True
+D=2: grid max bound/q = 0.04727838 at (r,Q,S,n)=(4, 128, 64, 256); exact = 8122364470431/171798691840000; < 1551/4000: True
+kappa^2: grid max deg/q = 0.11023472 at (4, 128, 64, 256); exact = 946909077437/8589934592000
+   <= 0.1102 ? False   <= 0.11 ? False   <= 0.1103 ? True
+monotone non-increasing in r, Q, S, n on sampled points (incl. non-dyadic r, n): True
+D=1: sup over whole strip (S>=64) = 0.04337178; over the D-lane (S=Q^j D>=Q) = 0.04334526; margin to 1551/4000 = 0.344378
+D=2: sup over whole strip (S>=64) = 0.04727838; over the D-lane (S=Q^j D>=Q) = 0.04723835; margin to 1551/4000 = 0.340472
+D=1: closed form at corner equals computed value: True
+D=2: closed form at corner equals computed value: True
+kappa^2 sup (whole strip, d'<=2E+4) = 0.11023472; with d'<=2E+1: 0.11023238

@@ -1,0 +1,22 @@
+OK   D1: z^t C z == 0
+OK   D1: det == h(h+mu.z)
+OK   D1: diag entries == (mu1 z2, mu2 z1)
+OK   D2: C z == hp*(z2^2,z1^2) + mu*(2 z1 z2)
+OK   D2: z^[2]t C z == 0
+OK   D2: det == hp(hp z1 z2 + mu1 z1^2 + mu2 z2^2)
+OK   D2: diag entries == (mu1 z2, mu2 z1)
+OK   D4: z^[D]t (mu x zperp) z == 0 and det == 0
+OK   D8: z^[D]t (mu x zperp) z == 0 and det == 0
+OK   generic a=0 block, D=1: kernel dim 4 (pred 4)
+OK   generic a=0 block, D=2: kernel dim 3 (pred 3)
+OK   generic a=0 block, D=4: kernel dim 2 (pred 2)
+OK   generic a=0 block, D=8: kernel dim 2 (pred 2)
+OK   generic a=0 block, D=3: kernel dim 2 (pred 2)
+OK   generic a=0 block, D=5: kernel dim 2 (pred 2)
+OK   Lemma 3.1: V=eta*(c^[T])^perp => c^[T].V == 0 (T=8 sample)
+OK   Lemma 3.2(i): (beta^X,alpha^X).(s*alpha^X, s*beta^X) == 0
+OK   Lemma 3.2(ii): kappa^2 == beta^2 k11^2 + alpha beta k12^2 + alpha^2 k22^2
+OK   k_c == c1^2 k11 + c1c2 k12 + c2^2 k22 (k11=C_P b1, k22=C_R b2, k12=C_P b2+C_R b1)
+OK   Remark 3.4: beta_u psi_v k22 + psi_u beta_u k22 == beta_u (psi_v+psi_u) k22
+OK   L^t Omega L == det(L) Omega (char 2)
+all symbolic identities OK: True

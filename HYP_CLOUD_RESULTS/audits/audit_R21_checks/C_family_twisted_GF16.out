@@ -1,0 +1,16 @@
+conic Y1^2+Y0Y2          D=1 a=2: (P_D==0, (K), Delta!=0 & F|Delta, F!|(C_P,C_R), normal form, exact C_cBc) -> all True (3/3)
+conic Y1^2+Y0Y2          D=1 a=3: (P_D==0, (K), Delta!=0 & F|Delta, F!|(C_P,C_R), normal form, exact C_cBc) -> all True (3/3)
+conic Y1^2+Y0Y2          D=1 a=4: (P_D==0, (K), Delta!=0 & F|Delta, F!|(C_P,C_R), normal form, exact C_cBc) -> all True (3/3)
+conic Y1^2+Y0Y2          D=2 a=2: (P_D==0, (K), Delta!=0 & F|Delta, F!|(C_P,C_R), normal form, exact C_cBc) -> all True (3/3)
+conic Y1^2+Y0Y2          D=2 a=3: (P_D==0, (K), Delta!=0 & F|Delta, F!|(C_P,C_R), normal form, exact C_cBc) -> all True (3/3)
+conic Y1^2+Y0Y2          D=2 a=4: (P_D==0, (K), Delta!=0 & F|Delta, F!|(C_P,C_R), normal form, exact C_cBc) -> all True (3/3)
+Fermat Y0^3+Y1^3+Y2^3    D=1 a=3: (P_D==0, (K), Delta!=0 & F|Delta, F!|(C_P,C_R), normal form, exact C_cBc) -> all True (3/3)
+Fermat Y0^3+Y1^3+Y2^3    D=1 a=4: (P_D==0, (K), Delta!=0 & F|Delta, F!|(C_P,C_R), normal form, exact C_cBc) -> all True (3/3)
+Fermat Y0^3+Y1^3+Y2^3    D=1 a=5: (P_D==0, (K), Delta!=0 & F|Delta, F!|(C_P,C_R), normal form, exact C_cBc) -> all True (3/3)
+Fermat Y0^3+Y1^3+Y2^3    D=2 a=3: (P_D==0, (K), Delta!=0 & F|Delta, F!|(C_P,C_R), normal form, exact C_cBc) -> all True (3/3)
+Fermat Y0^3+Y1^3+Y2^3    D=2 a=4: (P_D==0, (K), Delta!=0 & F|Delta, F!|(C_P,C_R), normal form, exact C_cBc) -> all True (3/3)
+Fermat Y0^3+Y1^3+Y2^3    D=2 a=5: (P_D==0, (K), Delta!=0 & F|Delta, F!|(C_P,C_R), normal form, exact C_cBc) -> all True (3/3)
+control (a) D=1, F not| h, Fermat a=4: (K) holds in 0 /3; P_D==0 in 3 /3
+control (b) D=2, wrong twist K'=L*B (no Frobenius on B): P_D==0 in 0 /3
+control (c) random pencil (D=2): P_D==0 in 0 /3
+all OK: True
