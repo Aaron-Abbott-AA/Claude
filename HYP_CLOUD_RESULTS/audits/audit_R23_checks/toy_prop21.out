@@ -1,0 +1,13 @@
+== Toy A: non-constant twist, divisibility of nu_u ==
+  rho=2 Q=4 qq=4: 235 (u,c(u)) tested, nu_u a positive multiple of rho*qq=8 in 235; order histogram {8: 235}
+  rho=4 Q=8 qq=2: 230 (u,c(u)) tested, nu_u a positive multiple of rho*qq=8 in 230; order histogram {8: 229, 16: 1}
+  rho=2 Q=4 qq=8: 218 (u,c(u)) tested, nu_u a positive multiple of rho*qq=16 in 218; order histogram {16: 217, 32: 1}
+== Toy B: congruence (2.1) solvability and the divisibility lift ==
+  rho=2 S=4 r=4 X=8 E=64 e=64: nu<e solvable = True (pred nu>=e-rho: [62, 63]) | qq=1 min surviving nu<e: -2 | qq=2 min surviving nu<e: None | qq=4 min surviving nu<e: None  (values relative to E)
+  rho=2 S=4 r=4 X=8 E=64 e=65: nu<e solvable = True (pred nu>=e-rho: [63, 64]) | qq=1 min surviving nu<e: 0 | qq=2 min surviving nu<e: 0 | qq=4 min surviving nu<e: 0  (values relative to E)
+  rho=4 S=4 r=4 X=16 E=128 e=128: nu<e solvable = True (pred nu>=e-rho: [124, 125, 126]) | qq=1 min surviving nu<e: -4 | qq=2 min surviving nu<e: None | qq=4 min surviving nu<e: None  (values relative to E)
+  rho=4 S=4 r=4 X=16 E=128 e=129: nu<e solvable = True (pred nu>=e-rho: [125, 126, 127]) | qq=1 min surviving nu<e: 0 | qq=2 min surviving nu<e: 0 | qq=4 min surviving nu<e: 0  (values relative to E)
+  rho=2 S=8 r=4 X=16 E=128 e=128: nu<e solvable = True (pred nu>=e-rho: [126, 127]) | qq=1 min surviving nu<e: -2 | qq=2 min surviving nu<e: None | qq=8 min surviving nu<e: None  (values relative to E)
+  rho=2 S=8 r=4 X=16 E=128 e=129: nu<e solvable = True (pred nu>=e-rho: [127, 128]) | qq=1 min surviving nu<e: 0 | qq=2 min surviving nu<e: 0 | qq=8 min surviving nu<e: 0  (values relative to E)
+  rho=4 S=2 r=8 X=8 E=128 e=128: nu<e solvable = True (pred nu>=e-rho: [124, 125, 126]) | qq=1 min surviving nu<e: -4 | qq=2 min surviving nu<e: None | qq=2 min surviving nu<e: None  (values relative to E)
+  rho=4 S=2 r=8 X=8 E=128 e=129: nu<e solvable = True (pred nu>=e-rho: [125, 126, 127]) | qq=1 min surviving nu<e: 0 | qq=2 min surviving nu<e: 0 | qq=2 min surviving nu<e: 0  (values relative to E)

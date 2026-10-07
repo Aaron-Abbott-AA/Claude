@@ -1,0 +1,40 @@
+== B2: n=256, r in {4,8}, Q=2^7..2^14, S=2^6..2^12 ==
+R23 cases 112 all qq>=128 closed: True []
+R22only cases 112 all qq>=128 closed: True []
+== r=16, n=256, Q=128, S=64 diagnostics (fail sets of integer tau0) ==
+ R23     qq=  128 d'=2E-2 closed=False fails=[(1528, 131085), (131086, 2036040)] 41p:(2036041, 5484333)
+ R23     qq=  128 d'=2E+4 closed=False fails=[(1536, 131091), (131092, 2035461)] 41p:(2035462, 5484267)
+ R23     qq= 1024 d'=2E-2 closed=False fails=[(1809, 131071), (131072, 254502)] 41p:(254503, 685541)
+ R23     qq= 1024 d'=2E+4 closed=False fails=[(1818, 131077), (131078, 254429)] 41p:(254430, 685533)
+ R23     qq= 2048 d'=2E-2 closed=False fails=[(2328, 127250)] 41p:(127251, 342770)
+ R23     qq= 2048 d'=2E+4 closed=False fails=[(2339, 127214)] 41p:(127215, 342766)
+ R23     qq= 4096 d'=2E-2 closed=False fails=[(5473, 63625)] 41p:(63626, 171385)
+ R23     qq= 4096 d'=2E+4 closed=False fails=[(5501, 63607)] 41p:(63608, 171383)
+ R23     qq= 8192 d'=2E-2 closed=True fails=[] 41p:(31813, 85692)
+ R23     qq= 8192 d'=2E+4 closed=True fails=[] 41p:(31804, 85691)
+ R22only qq=  128 d'=2E-2 closed=False fails=[(1528, 131085), (131086, 2036040)] 41p:(2036041, 5484333)
+ R22only qq=  128 d'=2E+4 closed=False fails=[(1536, 131091), (131092, 2035461)] 41p:(2035462, 5484267)
+ R22only qq= 1024 d'=2E-2 closed=False fails=[(1809, 131071), (131072, 254502)] 41p:(254503, 685541)
+ R22only qq= 1024 d'=2E+4 closed=False fails=[(1818, 131077), (131078, 254429)] 41p:(254430, 685533)
+ R22only qq= 2048 d'=2E-2 closed=False fails=[(2328, 127250)] 41p:(127251, 342770)
+ R22only qq= 2048 d'=2E+4 closed=False fails=[(2339, 127214)] 41p:(127215, 342766)
+ R22only qq= 4096 d'=2E-2 closed=False fails=[(5473, 63625)] 41p:(63626, 171385)
+ R22only qq= 4096 d'=2E+4 closed=False fails=[(5501, 63607)] 41p:(63608, 171383)
+ R22only qq= 8192 d'=2E-2 closed=True fails=[] 41p:(31813, 85692)
+ R22only qq= 8192 d'=2E+4 closed=True fails=[] 41p:(31804, 85691)
+ R20     qq=  128 d'=2E-2 closed=False fails=[(1513, 131070), (131071, 5484333)] 41p:None
+ R20     qq=  128 d'=2E+4 closed=False fails=[(1520, 131076), (131077, 5484267)] 41p:None
+ R20     qq= 1024 d'=2E-2 closed=False fails=[(1808, 131070), (131071, 595342)] 41p:(595343, 685541)
+ R20     qq= 1024 d'=2E+4 closed=False fails=[(1817, 131076), (131077, 595271)] 41p:(595272, 685533)
+ R20     qq= 2048 d'=2E-2 closed=False fails=[(2328, 127250)] 41p:(127251, 342770)
+ R20     qq= 2048 d'=2E+4 closed=False fails=[(2339, 127214)] 41p:(127215, 342766)
+ R20     qq= 4096 d'=2E-2 closed=False fails=[(5473, 63625)] 41p:(63626, 171385)
+ R20     qq= 4096 d'=2E+4 closed=False fails=[(5501, 63607)] 41p:(63608, 171383)
+ R20     qq= 8192 d'=2E-2 closed=True fails=[] 41p:(31813, 85692)
+ R20     qq= 8192 d'=2E+4 closed=True fails=[] 41p:(31804, 85691)
+== vacuity of the 'none' rows: at the least closing qq, tau_hi per d' ==
+ r=16 n=512 Q=256 S=64 least closing qq=2147483648 (=2097152 E/Q); tau_hi there per d'=[2, 2, 2, 2, 2, 2, 2]; at qq/2 tau_hi=[4, 4, 4, 4, 4, 4, 4], fails e.g. [[(1, 1)], [(1, 1)]]
+ r=16 n=512 Q=16384 S=256 least closing qq=2199023255552 (=536870912 E/Q); tau_hi there per d'=[2, 2, 2, 2, 2, 2, 2]; at qq/2 tau_hi=[4, 4, 4, 4, 4, 4, 4], fails e.g. [[(1, 1)], [(1, 1)]]
+ r=8 n=2048 Q=1024 S=64 least closing qq=2147483648 (=4194304 E/Q); tau_hi there per d'=[12, 12, 12, 12, 12, 12, 12]; at qq/2 tau_hi=[24, 24, 24, 24, 24, 24, 24], fails e.g. [[(1, 1)], [(1, 1)]]
+ r=16 n=8192 Q=16384 S=256 least closing qq=70368744177664 (=17179869184 E/Q); tau_hi there per d'=[1, 1, 1, 1, 1, 1, 1]; at qq/2 tau_hi=[3, 3, 3, 3, 3, 3, 3], fails e.g. [[(1, 1)], [(1, 1)]]
+ r=8 n=8192 Q=16384 S=64 least closing qq=274877906944 (=536870912 E/Q); tau_hi there per d'=[6, 6, 6, 6, 6, 6, 6]; at qq/2 tau_hi=[12, 12, 12, 12, 12, 12, 12], fails e.g. [[(1, 1)], [(1, 1)]]

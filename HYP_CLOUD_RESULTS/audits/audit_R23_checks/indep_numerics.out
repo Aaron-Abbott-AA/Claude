@@ -1,0 +1,17 @@
+== A. Thm 3.1 ==
+ corner UB: 101790647887837/1099511627776000 0.09257805494402147  equals note's 101790647887837/1099511627776000: True  < 1551/4000: True
+ d(UB)/dE numerator (should be <=0 for positive vars): -6144*E*n*rho - 32*E*n - 500625*E*rho - 1842500*rho | den: 40000*E**3*n*rho
+ d(UB)/dn numerator (should be <=0 for positive vars): -160*E**2 - 801*E - 1474 | den: 64*E**2*n**2
+ d(UB)/drho numerator (should be <=0 for positive vars): -E - 2 | den: 2500*E*rho**2
+ grid max exact bound/q: 0.08263032688203047 at (64, 16384, 64, 32768)
+ R22 Cor 4.2 corner (for comparison): 0.0929718271138554
+== C. Lemma 4.3: order sequences closed under binary sub-integers, <=4 orders ==
+ brute force (all integers <=160): 119 sequences; equals structural list (powers of 2, eps3=eps1+eps2): True
+ structural sequences with entries <=2^12: 443 (owner: 443)
+ sequences containing (2r-1)2^k (r in 4..128, k<=11): 0 ; gamma violations: 0 ; Sigma>2*eps_top violations (eps1=1): 0
+== D. Cor 4.2(ii) and Cor 4.5 ==
+ 1551/4000 - B53(i) corner = 0.24004695270044885  (note: >0.240046) True
+ R22 Thm 5.3(i) corner recomputed equals R22's printed fraction: True
+ 0.238(1+1/E) = 0.23800726318359375 ; 4 tau_hi/q <= 1.2504488457125263e-05 ; total/gamma (gamma>=2) = 0.23801351542782231 ; note prints <=0.2380137: True ; < 0.240046: True
+ Sigma* grid: min Sigma*/n = 0.4765625 at (4, 128, 128, 256, 128) Sigma*= 122 gamma= 2 ; violations of Sigma*>=0.238 gamma n: 0
+ eps_top<N0 => Sigma<=0.238*gamma*256 on sample (r,x): True
