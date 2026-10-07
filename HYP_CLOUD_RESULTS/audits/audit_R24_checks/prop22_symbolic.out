@@ -1,0 +1,12 @@
+L = [[1, 0, 1], [1, 0, 1], [0, 1, 0]]  N = [[1, 1, 1], [0, 0, 1], [0, 1, 0]]
+f = ['Y0**2 + Y0*Y1', 'Y0*Y1 + Y1**2', 'Y0**2 + Y0*Y1 + Y1']
+generic (kP,kR,mP,mR)=(1,1,1,1): (I) det A = F^4 detC_A lambda_A: True; (III): True; ord_F det A = 6, k_Delta=0, min ord_F a=1, 4+2k+2m=6, (II): True
+C_P,C_R divisible by F (2,2,1,1): (I) det A = F^4 detC_A lambda_A: True; (III): True; ord_F det A = 10, k_Delta=2, min ord_F a=1, 4+2k+2m=10, (II): True
+only C_P divisible by F (2,1,1,1): (I) det A = F^4 detC_A lambda_A: True; (III): True; ord_F det A = 6, k_Delta=0, min ord_F a=1, 4+2k+2m=6, (II): True
+F^2|a_P,a_R (1,1,2,2): (I) det A = F^4 detC_A lambda_A: True; (III): True; ord_F det A = 8, k_Delta=0, min ord_F a=2, 4+2k+2m=8, (II): True
+(K)-like k_Delta>=1 and F^2|a (2,2,2,2): (I) det A = F^4 detC_A lambda_A: True; (III): True; ord_F det A = 12, k_Delta=2, min ord_F a=2, 4+2k+2m=12, (II): True
+mixed orders of a (1,1,1,2): (I) det A = F^4 detC_A lambda_A: True; (III): True; ord_F det A = 6, k_Delta=0, min ord_F a=1, 4+2k+2m=6, (II): True
+zero alignment a_P=a_R=0: det A == 0; identity (I) True; (III) True; Delta==0: False; a_P==0: True, a_R==0: True
+Delta==0 (rank-one C pencil, common kernel), a != 0: det A == 0; identity (I) True; (III) True; Delta==0: True; a_P==0: False, a_R==0: False
+exact failing set: []
+ALL CHECKS PASS: True

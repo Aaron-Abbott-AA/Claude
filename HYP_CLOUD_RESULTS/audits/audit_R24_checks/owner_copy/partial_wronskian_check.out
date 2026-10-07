@@ -1,0 +1,14 @@
+forced D^(4)g(P0)=0 at P0=7: D4g(P0)=0, D5g(P0)=57
+tau0 = 24  generic orders eps = [0, 1, 4, 8]
+s=1: rows [0], deg(finite R_s) = 0, bound s*tau0 + (sum eps)(2g-2) = 24, ok=True
+   exact failing set for v_P(R_s) >= sum_{i<s}(j_i-eps_i): []
+s=2: rows [0, 1], deg(finite R_s) = 0, bound s*tau0 + (sum eps)(2g-2) = 46, ok=True
+   exact failing set for v_P(R_s) >= sum_{i<s}(j_i-eps_i): []
+s=3: rows [0, 1, 4], deg(finite R_s) = 17, bound s*tau0 + (sum eps)(2g-2) = 62, ok=True
+   exact failing set for v_P(R_s) >= sum_{i<s}(j_i-eps_i): []
+   points with 5 (non-order) as vanishing order, (P, j(P), v_P(R_3)): [(7, [0, 1, 5, 8], 1), (16, [0, 1, 5, 8], 1)]
+   all Weierstrass points of V in GF(2^8) with v_P(R_3) (P, j(P), v_P(R_3)): [(7, [0, 1, 5, 8], 1), (16, [0, 1, 5, 8], 1), (30, [0, 1, 4, 9], 0)]
+s=4: rows [0, 1, 4, 8], deg(finite R_s) = 33, bound s*tau0 + (sum eps)(2g-2) = 70, ok=True
+   exact failing set for v_P(R_s) >= sum_{i<s}(j_i-eps_i): []
+   Weierstrass points of V in GF(2^8) (P, j(P), v_P(R_4)): [(7, [0, 1, 5, 8], 1), (16, [0, 1, 5, 8], 1), (30, [0, 1, 4, 9], 1)]
+ALL CHECKS PASS: True

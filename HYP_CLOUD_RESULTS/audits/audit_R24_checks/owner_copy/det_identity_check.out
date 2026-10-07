@@ -1,0 +1,10 @@
+(X,rho)=(4,2): cumulative identity ok 25/25
+(X,rho)=(8,2): cumulative identity ok 50/50
+(X,rho)=(8,4): cumulative identity ok 75/75
+(X,rho)=(64,32): cumulative identity ok 100/100
+(X,rho)=(128,64): cumulative identity ok 125/125
+(X,rho)=(4096,64): cumulative identity ok 150/150
+det identity: 150/150; failing count 0
+layer identity + alignment: 150/150
+a_P=a_R=0 gives det A=0: 150/150
+det A nonzero in 150/150 samples; negative control (F^3 in place of F^4) fails in 150/150 of those

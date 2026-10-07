@@ -1,0 +1,17 @@
+X=4 rho=2 e=9 trial=0 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+X=4 rho=2 e=9 trial=1 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+X=4 rho=2 e=9 trial=2 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+X=8 rho=2 e=17 trial=0 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+X=8 rho=2 e=17 trial=1 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+X=8 rho=2 e=17 trial=2 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+X=8 rho=4 e=17 trial=0 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+X=8 rho=4 e=17 trial=1 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+X=8 rho=4 e=17 trial=2 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+X=16 rho=4 e=33 trial=0 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+X=16 rho=4 e=33 trial=1 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+X=16 rho=4 e=33 trial=2 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+X=16 rho=8 e=33 trial=0 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+X=16 rho=8 e=33 trial=1 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+X=16 rho=8 e=33 trial=2 | random sigma: FN False, alpha2=0 False | constructed sigma: FN True, alpha2=0 True, ord(sigma.f^[rho]) inf (>=K means 0 mod t^K), ord(local a) inf, alignment True | control ord s~<e gives pole: True
+cases: 15  exact failing set: []
+ALL CHECKS PASS: True

@@ -1,0 +1,8 @@
+False
+True False
+Poly(Y0**4 + Y0**3 + Y0**2*Y1**2 + Y0 + Y1**4 + Y1, Y0, Y1, U0, v1, v2, modulus=2)
+True
+diff D2: 0
+coeff v1,0: None
+via Poly(v1,v2): [((2, 0),), ((1, 1),), ((0, 2),)]
+False

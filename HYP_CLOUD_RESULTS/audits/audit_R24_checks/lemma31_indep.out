@@ -1,0 +1,277 @@
+== curve y^2+y=x^3 (g=1), V=span(1,x,(x-a)^7,x^8), a=2, tau=k=16
+   exact orders eps = [0, 1, 2, 8]
+   s=1 rows [0]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 16; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=2 rows [0, 1]: deg R_s = affine 0 + v_inf 4 = 4; bound s*tau+Sigma'(2g-2) = 32; v_inf(formula)=4; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=3 rows [0, 1, 2]: deg R_s = affine 10 + v_inf 22 = 32; bound s*tau+Sigma'(2g-2) = 48; v_inf(formula)=22; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 10 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=4 rows [0, 1, 2, 8]: deg R_s = affine 10 + v_inf 54 = 64; bound s*tau+Sigma'(2g-2) = 64; v_inf(formula)=54; (a) ok=True [equality required, s=r+1]
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 10 <= deg R_s: True; local/global v_P inconsistencies: []
+   N=7 (non-order): s=3, gamma'=5, points with N in j(P): [((2, 44), [0, 1, 7, 8]), ((2, 45), [0, 1, 7, 8])]
+     v_P(R_s) at these points: [((2, 44), 5), ((2, 45), 5)]; exact failing set for v_P(R_s)>=gamma': []
+   N=11 (non-order): s=4, gamma'=3, points with N in j(P): []
+   N=13 (non-order): s=4, gamma'=5, points with N in j(P): []
+   N=14 (non-order): s=4, gamma'=6, points with N in j(P): [('inf', [0, 2, 14, 16])]
+     v_P(R_s) at these points: [('inf', 54)]; exact failing set for v_P(R_s)>=gamma': []
+   N=19 (non-order): s=4, gamma'=11, points with N in j(P): []
+   N=21 (non-order): s=4, gamma'=13, points with N in j(P): []
+   N=22 (non-order): s=4, gamma'=14, points with N in j(P): []
+   N=25 (non-order): s=4, gamma'=17, points with N in j(P): []
+   N=26 (non-order): s=4, gamma'=18, points with N in j(P): []
+   N=28 (non-order): s=4, gamma'=20, points with N in j(P): []
+   j(P_inf) = [0, 2, 14, 16]
+   ALL OK for this V: True
+== curve y^2+y=x^3 (g=1), V=span(1,x,(x-a)^7+y,x^8+x*y), a=2, tau=k=16
+   exact orders eps = [0, 1, 2, 3]
+   s=1 rows [0]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 16; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=2 rows [0, 1]: deg R_s = affine 0 + v_inf 4 = 4; bound s*tau+Sigma'(2g-2) = 32; v_inf(formula)=4; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=3 rows [0, 1, 2]: deg R_s = affine 0 + v_inf 22 = 22; bound s*tau+Sigma'(2g-2) = 48; v_inf(formula)=22; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=4 rows [0, 1, 2, 3]: deg R_s = affine 16 + v_inf 48 = 64; bound s*tau+Sigma'(2g-2) = 64; v_inf(formula)=48; (a) ok=True [equality required, s=r+1]
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 8 <= deg R_s: True; local/global v_P inconsistencies: []
+   N=7 (non-order): s=4, gamma'=4, points with N in j(P): []
+   N=11 (non-order): s=4, gamma'=8, points with N in j(P): []
+   N=13 (non-order): s=4, gamma'=10, points with N in j(P): []
+   N=14 (non-order): s=4, gamma'=11, points with N in j(P): [('inf', [0, 2, 14, 16])]
+     v_P(R_s) at these points: [('inf', 48)]; exact failing set for v_P(R_s)>=gamma': []
+   N=19 (non-order): s=4, gamma'=16, points with N in j(P): []
+   N=21 (non-order): s=4, gamma'=18, points with N in j(P): []
+   N=22 (non-order): s=4, gamma'=19, points with N in j(P): []
+   N=25 (non-order): s=4, gamma'=22, points with N in j(P): []
+   N=26 (non-order): s=4, gamma'=23, points with N in j(P): []
+   N=28 (non-order): s=4, gamma'=25, points with N in j(P): []
+   j(P_inf) = [0, 2, 14, 16]
+   ALL OK for this V: True
+== curve y^2+y=x^3 (g=1), V=span(1,x,y^4,x*y^4), tau=k=14
+   exact orders eps = [0, 1, 4, 5]
+   s=1 rows [0]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 14; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=2 rows [0, 1]: deg R_s = affine 0 + v_inf 4 = 4; bound s*tau+Sigma'(2g-2) = 28; v_inf(formula)=4; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=3 rows [0, 1, 4]: deg R_s = affine 16 + v_inf 12 = 28; bound s*tau+Sigma'(2g-2) = 42; v_inf(formula)=12; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 16 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=4 rows [0, 1, 4, 5]: deg R_s = affine 32 + v_inf 24 = 56; bound s*tau+Sigma'(2g-2) = 56; v_inf(formula)=24; (a) ok=True [equality required, s=r+1]
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 32 <= deg R_s: True; local/global v_P inconsistencies: []
+   N=7 (non-order): s=4, gamma'=2, points with N in j(P): []
+   N=11 (non-order): s=4, gamma'=6, points with N in j(P): []
+   N=13 (non-order): s=4, gamma'=8, points with N in j(P): [((0, 0), [0, 1, 12, 13]), ((0, 1), [0, 1, 12, 13])]
+     v_P(R_s) at these points: [((0, 0), 16), ((0, 1), 16)]; exact failing set for v_P(R_s)>=gamma': []
+   N=14 (non-order): s=4, gamma'=9, points with N in j(P): [('inf', [0, 2, 12, 14])]
+     v_P(R_s) at these points: [('inf', 24)]; exact failing set for v_P(R_s)>=gamma': []
+   N=19 (non-order): s=4, gamma'=14, points with N in j(P): []
+   N=21 (non-order): s=4, gamma'=16, points with N in j(P): []
+   N=22 (non-order): s=4, gamma'=17, points with N in j(P): []
+   N=25 (non-order): s=4, gamma'=20, points with N in j(P): []
+   N=26 (non-order): s=4, gamma'=21, points with N in j(P): []
+   N=28 (non-order): s=4, gamma'=23, points with N in j(P): []
+   j(P_inf) = [0, 2, 12, 14]
+   ALL OK for this V: True
+== curve y^2+y=x^3 (g=1), V=span(1,x,(x-a)^14,x^16+y), a=2, tau=k=32
+   exact orders eps = [0, 1, 2, 3]
+   s=1 rows [0]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 32; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=2 rows [0, 1]: deg R_s = affine 0 + v_inf 32 = 32; bound s*tau+Sigma'(2g-2) = 64; v_inf(formula)=32; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=3 rows [0, 1, 2]: deg R_s = affine 0 + v_inf 40 = 40; bound s*tau+Sigma'(2g-2) = 96; v_inf(formula)=40; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=4 rows [0, 1, 2, 3]: deg R_s = affine 24 + v_inf 104 = 128; bound s*tau+Sigma'(2g-2) = 128; v_inf(formula)=104; (a) ok=True [equality required, s=r+1]
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 24 <= deg R_s: True; local/global v_P inconsistencies: []
+   N=7 (non-order): s=4, gamma'=4, points with N in j(P): []
+   N=11 (non-order): s=4, gamma'=8, points with N in j(P): []
+   N=13 (non-order): s=4, gamma'=10, points with N in j(P): []
+   N=14 (non-order): s=4, gamma'=11, points with N in j(P): [((2, 44), [0, 1, 2, 14]), ((2, 45), [0, 1, 2, 14])]
+     v_P(R_s) at these points: [((2, 44), 12), ((2, 45), 12)]; exact failing set for v_P(R_s)>=gamma': []
+   N=19 (non-order): s=4, gamma'=16, points with N in j(P): []
+   N=21 (non-order): s=4, gamma'=18, points with N in j(P): []
+   N=22 (non-order): s=4, gamma'=19, points with N in j(P): []
+   N=25 (non-order): s=4, gamma'=22, points with N in j(P): []
+   N=26 (non-order): s=4, gamma'=23, points with N in j(P): []
+   N=28 (non-order): s=4, gamma'=25, points with N in j(P): []
+   j(P_inf) = [0, 4, 30, 32]
+   ALL OK for this V: True
+== curve y^2+y=x^3 (g=1), V=span(1,x,y,x^2), tau=k=4
+   exact orders eps = [0, 1, 2, 3]
+   s=1 rows [0]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 4; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=2 rows [0, 1]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 8; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=3 rows [0, 1, 2]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 12; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=4 rows [0, 1, 2, 3]: deg R_s = affine 0 + v_inf 16 = 16; bound s*tau+Sigma'(2g-2) = 16; v_inf(formula)=16; (a) ok=True [equality required, s=r+1]
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   N=7 (non-order): s=4, gamma'=4, points with N in j(P): []
+   N=11 (non-order): s=4, gamma'=8, points with N in j(P): []
+   N=13 (non-order): s=4, gamma'=10, points with N in j(P): []
+   N=14 (non-order): s=4, gamma'=11, points with N in j(P): []
+   N=19 (non-order): s=4, gamma'=16, points with N in j(P): []
+   N=21 (non-order): s=4, gamma'=18, points with N in j(P): []
+   N=22 (non-order): s=4, gamma'=19, points with N in j(P): []
+   N=25 (non-order): s=4, gamma'=22, points with N in j(P): []
+   N=26 (non-order): s=4, gamma'=23, points with N in j(P): []
+   N=28 (non-order): s=4, gamma'=25, points with N in j(P): []
+   j(P_inf) = [0, 1, 2, 4]
+   ALL OK for this V: True
+== curve y^2+y=x^3 (g=1), V=span(1,x,(x-a)^7) [dim 3], tau=k=14
+   exact orders eps = [0, 1, 2]
+   s=1 rows [0]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 14; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=2 rows [0, 1]: deg R_s = affine 0 + v_inf 16 = 16; bound s*tau+Sigma'(2g-2) = 28; v_inf(formula)=16; (a) ok=True
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=3 rows [0, 1, 2]: deg R_s = affine 10 + v_inf 32 = 42; bound s*tau+Sigma'(2g-2) = 42; v_inf(formula)=32; (a) ok=True [equality required, s=r+1]
+     (b) exact failing set over 224 affine GF(2^8)-points: []; sum of v_P over them = 10 <= deg R_s: True; local/global v_P inconsistencies: []
+   N=7 (non-order): s=3, gamma'=5, points with N in j(P): [((2, 44), [0, 1, 7]), ((2, 45), [0, 1, 7])]
+     v_P(R_s) at these points: [((2, 44), 5), ((2, 45), 5)]; exact failing set for v_P(R_s)>=gamma': []
+   N=11 (non-order): s=3, gamma'=9, points with N in j(P): []
+   N=13 (non-order): s=3, gamma'=11, points with N in j(P): []
+   N=14 (non-order): s=3, gamma'=12, points with N in j(P): [('inf', [0, 12, 14])]
+     v_P(R_s) at these points: [('inf', 32)]; exact failing set for v_P(R_s)>=gamma': []
+   N=19 (non-order): s=3, gamma'=17, points with N in j(P): []
+   N=21 (non-order): s=3, gamma'=19, points with N in j(P): []
+   N=22 (non-order): s=3, gamma'=20, points with N in j(P): []
+   N=25 (non-order): s=3, gamma'=23, points with N in j(P): []
+   N=26 (non-order): s=3, gamma'=24, points with N in j(P): []
+   N=28 (non-order): s=3, gamma'=26, points with N in j(P): []
+   j(P_inf) = [0, 12, 14]
+   ALL OK for this V: True
+== curve y^2+y=x^5 (g=2), V=span(1,x,(x-a)^7,x^8), a=10, tau=k=16
+   exact orders eps = [0, 1, 2, 8]
+   s=1 rows [0]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 16; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=2 rows [0, 1]: deg R_s = affine 0 + v_inf 6 = 6; bound s*tau+Sigma'(2g-2) = 34; v_inf(formula)=6; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=3 rows [0, 1, 2]: deg R_s = affine 10 + v_inf 28 = 38; bound s*tau+Sigma'(2g-2) = 54; v_inf(formula)=28; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 10 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=4 rows [0, 1, 2, 8]: deg R_s = affine 10 + v_inf 76 = 86; bound s*tau+Sigma'(2g-2) = 86; v_inf(formula)=76; (a) ok=True [equality required, s=r+1]
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 10 <= deg R_s: True; local/global v_P inconsistencies: []
+   N=7 (non-order): s=3, gamma'=5, points with N in j(P): [((10, 214), [0, 1, 7, 8]), ((10, 215), [0, 1, 7, 8])]
+     v_P(R_s) at these points: [((10, 214), 5), ((10, 215), 5)]; exact failing set for v_P(R_s)>=gamma': []
+   N=11 (non-order): s=4, gamma'=3, points with N in j(P): []
+   N=13 (non-order): s=4, gamma'=5, points with N in j(P): []
+   N=14 (non-order): s=4, gamma'=6, points with N in j(P): [('inf', [0, 2, 14, 16])]
+     v_P(R_s) at these points: [('inf', 76)]; exact failing set for v_P(R_s)>=gamma': []
+   N=19 (non-order): s=4, gamma'=11, points with N in j(P): []
+   N=21 (non-order): s=4, gamma'=13, points with N in j(P): []
+   N=22 (non-order): s=4, gamma'=14, points with N in j(P): []
+   N=25 (non-order): s=4, gamma'=17, points with N in j(P): []
+   N=26 (non-order): s=4, gamma'=18, points with N in j(P): []
+   N=28 (non-order): s=4, gamma'=20, points with N in j(P): []
+   j(P_inf) = [0, 2, 14, 16]
+   ALL OK for this V: True
+== curve y^2+y=x^5 (g=2), V=span(1,x,(x-a)^7+y,x^8+x*y), a=10, tau=k=16
+   exact orders eps = [0, 1, 2, 3]
+   s=1 rows [0]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 16; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=2 rows [0, 1]: deg R_s = affine 0 + v_inf 6 = 6; bound s*tau+Sigma'(2g-2) = 34; v_inf(formula)=6; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=3 rows [0, 1, 2]: deg R_s = affine 0 + v_inf 22 = 22; bound s*tau+Sigma'(2g-2) = 54; v_inf(formula)=22; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=4 rows [0, 1, 2, 3]: deg R_s = affine 32 + v_inf 44 = 76; bound s*tau+Sigma'(2g-2) = 76; v_inf(formula)=44; (a) ok=True [equality required, s=r+1]
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 16 <= deg R_s: True; local/global v_P inconsistencies: []
+   N=7 (non-order): s=4, gamma'=4, points with N in j(P): []
+   N=11 (non-order): s=4, gamma'=8, points with N in j(P): []
+   N=13 (non-order): s=4, gamma'=10, points with N in j(P): []
+   N=14 (non-order): s=4, gamma'=11, points with N in j(P): [('inf', [0, 2, 14, 16])]
+     v_P(R_s) at these points: [('inf', 44)]; exact failing set for v_P(R_s)>=gamma': []
+   N=19 (non-order): s=4, gamma'=16, points with N in j(P): []
+   N=21 (non-order): s=4, gamma'=18, points with N in j(P): []
+   N=22 (non-order): s=4, gamma'=19, points with N in j(P): []
+   N=25 (non-order): s=4, gamma'=22, points with N in j(P): []
+   N=26 (non-order): s=4, gamma'=23, points with N in j(P): []
+   N=28 (non-order): s=4, gamma'=25, points with N in j(P): []
+   j(P_inf) = [0, 2, 14, 16]
+   ALL OK for this V: True
+== curve y^2+y=x^5 (g=2), V=span(1,x,y^4,x*y^4), tau=k=22
+   exact orders eps = [0, 1, 4, 5]
+   s=1 rows [0]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 22; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=2 rows [0, 1]: deg R_s = affine 0 + v_inf 6 = 6; bound s*tau+Sigma'(2g-2) = 46; v_inf(formula)=6; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=3 rows [0, 1, 4]: deg R_s = affine 32 + v_inf 22 = 54; bound s*tau+Sigma'(2g-2) = 76; v_inf(formula)=22; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 32 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=4 rows [0, 1, 4, 5]: deg R_s = affine 64 + v_inf 44 = 108; bound s*tau+Sigma'(2g-2) = 108; v_inf(formula)=44; (a) ok=True [equality required, s=r+1]
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 64 <= deg R_s: True; local/global v_P inconsistencies: []
+   N=7 (non-order): s=4, gamma'=2, points with N in j(P): []
+   N=11 (non-order): s=4, gamma'=6, points with N in j(P): []
+   N=13 (non-order): s=4, gamma'=8, points with N in j(P): []
+   N=14 (non-order): s=4, gamma'=9, points with N in j(P): []
+   N=19 (non-order): s=4, gamma'=14, points with N in j(P): []
+   N=21 (non-order): s=4, gamma'=16, points with N in j(P): [((0, 0), [0, 1, 20, 21]), ((0, 1), [0, 1, 20, 21])]
+     v_P(R_s) at these points: [((0, 0), 32), ((0, 1), 32)]; exact failing set for v_P(R_s)>=gamma': []
+   N=22 (non-order): s=4, gamma'=17, points with N in j(P): [('inf', [0, 2, 20, 22])]
+     v_P(R_s) at these points: [('inf', 44)]; exact failing set for v_P(R_s)>=gamma': []
+   N=25 (non-order): s=4, gamma'=20, points with N in j(P): []
+   N=26 (non-order): s=4, gamma'=21, points with N in j(P): []
+   N=28 (non-order): s=4, gamma'=23, points with N in j(P): []
+   j(P_inf) = [0, 2, 20, 22]
+   ALL OK for this V: True
+== curve y^2+y=x^5 (g=2), V=span(1,x,(x-a)^14,x^16+y), a=10, tau=k=32
+   exact orders eps = [0, 1, 2, 4]
+   s=1 rows [0]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 32; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=2 rows [0, 1]: deg R_s = affine 0 + v_inf 30 = 30; bound s*tau+Sigma'(2g-2) = 66; v_inf(formula)=30; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=3 rows [0, 1, 2]: deg R_s = affine 0 + v_inf 46 = 46; bound s*tau+Sigma'(2g-2) = 102; v_inf(formula)=46; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=4 rows [0, 1, 2, 4]: deg R_s = affine 56 + v_inf 86 = 142; bound s*tau+Sigma'(2g-2) = 142; v_inf(formula)=86; (a) ok=True [equality required, s=r+1]
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 22 <= deg R_s: True; local/global v_P inconsistencies: []
+   N=7 (non-order): s=4, gamma'=3, points with N in j(P): []
+   N=11 (non-order): s=4, gamma'=7, points with N in j(P): []
+   N=13 (non-order): s=4, gamma'=9, points with N in j(P): []
+   N=14 (non-order): s=4, gamma'=10, points with N in j(P): [((10, 214), [0, 1, 2, 14]), ((10, 215), [0, 1, 2, 14])]
+     v_P(R_s) at these points: [((10, 214), 10), ((10, 215), 10)]; exact failing set for v_P(R_s)>=gamma': []
+   N=19 (non-order): s=4, gamma'=15, points with N in j(P): []
+   N=21 (non-order): s=4, gamma'=17, points with N in j(P): []
+   N=22 (non-order): s=4, gamma'=18, points with N in j(P): []
+   N=25 (non-order): s=4, gamma'=21, points with N in j(P): []
+   N=26 (non-order): s=4, gamma'=22, points with N in j(P): []
+   N=28 (non-order): s=4, gamma'=24, points with N in j(P): []
+   j(P_inf) = [0, 4, 30, 32]
+   ALL OK for this V: True
+== curve y^2+y=x^5 (g=2), V=span(1,x,y,x^2), tau=k=5
+   exact orders eps = [0, 1, 2, 4]
+   s=1 rows [0]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 5; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=2 rows [0, 1]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 12; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=3 rows [0, 1, 2]: deg R_s = affine 0 + v_inf 1 = 1; bound s*tau+Sigma'(2g-2) = 21; v_inf(formula)=1; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=4 rows [0, 1, 2, 4]: deg R_s = affine 32 + v_inf 2 = 34; bound s*tau+Sigma'(2g-2) = 34; v_inf(formula)=2; (a) ok=True [equality required, s=r+1]
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 32 <= deg R_s: True; local/global v_P inconsistencies: []
+   N=7 (non-order): s=4, gamma'=3, points with N in j(P): []
+   N=11 (non-order): s=4, gamma'=7, points with N in j(P): []
+   N=13 (non-order): s=4, gamma'=9, points with N in j(P): []
+   N=14 (non-order): s=4, gamma'=10, points with N in j(P): []
+   N=19 (non-order): s=4, gamma'=15, points with N in j(P): []
+   N=21 (non-order): s=4, gamma'=17, points with N in j(P): []
+   N=22 (non-order): s=4, gamma'=18, points with N in j(P): []
+   N=25 (non-order): s=4, gamma'=21, points with N in j(P): []
+   N=26 (non-order): s=4, gamma'=22, points with N in j(P): []
+   N=28 (non-order): s=4, gamma'=24, points with N in j(P): []
+   j(P_inf) = [0, 1, 3, 5]
+   ALL OK for this V: True
+== curve y^2+y=x^5 (g=2), V=span(1,x,(x-a)^7) [dim 3], tau=k=14
+   exact orders eps = [0, 1, 2]
+   s=1 rows [0]: deg R_s = affine 0 + v_inf 0 = 0; bound s*tau+Sigma'(2g-2) = 14; v_inf(formula)=0; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=2 rows [0, 1]: deg R_s = affine 0 + v_inf 18 = 18; bound s*tau+Sigma'(2g-2) = 30; v_inf(formula)=18; (a) ok=True
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 0 <= deg R_s: True; local/global v_P inconsistencies: []
+   s=3 rows [0, 1, 2]: deg R_s = affine 10 + v_inf 38 = 48; bound s*tau+Sigma'(2g-2) = 48; v_inf(formula)=38; (a) ok=True [equality required, s=r+1]
+     (b) exact failing set over 192 affine GF(2^8)-points: []; sum of v_P over them = 10 <= deg R_s: True; local/global v_P inconsistencies: []
+   N=7 (non-order): s=3, gamma'=5, points with N in j(P): [((10, 214), [0, 1, 7]), ((10, 215), [0, 1, 7])]
+     v_P(R_s) at these points: [((10, 214), 5), ((10, 215), 5)]; exact failing set for v_P(R_s)>=gamma': []
+   N=11 (non-order): s=3, gamma'=9, points with N in j(P): []
+   N=13 (non-order): s=3, gamma'=11, points with N in j(P): []
+   N=14 (non-order): s=3, gamma'=12, points with N in j(P): [('inf', [0, 12, 14])]
+     v_P(R_s) at these points: [('inf', 38)]; exact failing set for v_P(R_s)>=gamma': []
+   N=19 (non-order): s=3, gamma'=17, points with N in j(P): []
+   N=21 (non-order): s=3, gamma'=19, points with N in j(P): []
+   N=22 (non-order): s=3, gamma'=20, points with N in j(P): []
+   N=25 (non-order): s=3, gamma'=23, points with N in j(P): []
+   N=26 (non-order): s=3, gamma'=24, points with N in j(P): []
+   N=28 (non-order): s=3, gamma'=26, points with N in j(P): []
+   j(P_inf) = [0, 12, 14]
+   ALL OK for this V: True
+OVERALL: all checks pass = True

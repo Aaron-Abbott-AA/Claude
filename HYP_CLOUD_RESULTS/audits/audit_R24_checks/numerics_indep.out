@@ -1,0 +1,20 @@
+Part 1
+  brute-force closed sequences with eps_1=1, entries<=2^10: 65; not of the 3 forms: []
+  expected count 1+L+C(L,2)+(L-1) = 65  match: True
+  exact failing set (N_0 an order / gamma'<gamma / Sigma'/gamma'>5 / s/gamma'>2 / >2(rx+1)/gamma): []
+  sup Sigma'/gamma' = 5 at (4, 1, (0, 1, 4, 5)) ; sup s/gamma' = 2 at (4, 1, (0, 1, 4, 5))
+  5((r-1)x-1) - 2(rx+1) = 3*r*x - 5*x - 7 (>=0 for r>=4,x>=1: 7x-7>=0 at r=4, increasing in r)
+Part 2
+  B_5.3(i) corner = 32480243592761/219902325555200 0.14770304729955114  equals R22's 32480243592761/219902325555200: True
+  whole-strip UB B + 2tau_hi + 5(d^2-3d) at corner (4,128,64,256), q_max=128: 91941792089517/549755813888000 0.16724114555384767
+  equals owner's 91941792089517/549755813888000: True ; < 1551/4000: True
+  pieces: B=0.147703047  2tau_hi/q=6.252e-06  5(d^2-3d)/q=0.019531846
+  grid cases (r<=1024,Q<=2^16,S<=2^14,256<=n<4Q, 128<=q_max<=S): 17820
+  exact failing set (bound >= 1551/4000): []
+  grid max = 0.16722838503039392 at (4, 128, 128, 256, 128) ; exact set of cases exceeding the corner UB: []
+  exact set of monotonicity violations (each of B, tau_hi/q, (d^2-3d)/q non-increasing): []
+Part 3
+  (r,Q,S) tested: 2310 ; exact set where M'+Q-T<2d' is NOT forced at n=256: []
+  n=512 degree-feasible (even against d'=2E+4) on 2310/2310; but the strip n<4Q puts n=512 only at Q>=256
+  symbolic: (M'+Q-T-2d') - (a-d'-3(X-rho)) = 0
+  8*256/625 = 2048/625 = 3.2768 < 4: E-threshold for (4-2048/625)E>4: 625/113
