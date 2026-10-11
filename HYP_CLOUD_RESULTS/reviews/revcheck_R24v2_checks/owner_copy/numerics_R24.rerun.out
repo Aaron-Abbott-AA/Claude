@@ -1,0 +1,21 @@
+Part A
+  closed sequences enumerated: 120
+  brute-force check (entries<=64): brute=27, enumerated=27, equal=True
+  exact failing set (N0 an order, or gamma'<gamma, or ratio>(2rx+2)/gamma): []
+  r=4 x=1: max Sigma'/gamma' = 5 (seq (0, 1, 4, 5)), max s/gamma' = 2, (2rx+2)/gamma = 5
+  r=4 x=2: max Sigma'/gamma' = 18/5 (seq (0, 1, 8, 9)), max s/gamma' = 4/5, (2rx+2)/gamma = 18/5
+  r=8 x=1: max Sigma'/gamma' = 3 (seq (0, 1, 8, 9)), max s/gamma' = 2/3, (2rx+2)/gamma = 3
+  r=16 x=1: max Sigma'/gamma' = 17/7 (seq (0, 1, 16, 17)), max s/gamma' = 2/7, (2rx+2)/gamma = 17/7
+  r=64 x=64: max Sigma'/gamma' = 8194/4031 (seq (0, 1, 4096, 4097)), max s/gamma' = 4/4031, (2rx+2)/gamma = 8194/4031
+  global max Sigma'/gamma' = (Fraction(5, 1), (4, 1, (0, 1, 4, 5)))
+  global max s/gamma'      = (Fraction(2, 1), (4, 1, (0, 1, 4, 5)))
+Part B
+  R22 Thm 5.3(i) corner B/q = 32480243592761/219902325555200 = 0.14770304729955114  reproduces 32480243592761/219902325555200: True
+  (R1) R24 bound on grid: 3780 (r,Q,S,n,q_max<=S) cases; exact failing set: []
+  grid maximum = 0.16722838503039392 at (4, 128, 128, 256, 128)
+  whole-strip UB (ratio 5, s/gamma'<=2) at corner (4,128,64,256), q_max=128 (tau_hi largest): 91941792089517/549755813888000 = 0.16724114555384767
+  margin to 1551/4000: 0.2205088544461523
+Part C
+  rows (r,Q,S) where F^2|a with (a_P,a_R)!=0 is degree-feasible at n=256 (exact set): []
+  least dyadic n at which it is degree-feasible, over all 280 (r,Q,S): [512]
+  4-2048/625 = 452/625

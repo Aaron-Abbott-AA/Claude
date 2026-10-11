@@ -1,0 +1,10 @@
+grid |(r,Q,S)| = 2310 ; feasible at n=256 (exact set): []
+threshold E > 625/113 = 625/113 ; min E in strip = 4*128*64 = 32768
+least feasible n ignoring n<4Q, distinct values: [512]
+least feasible n inside strip (n<4Q), distinct values: [512, None]
+Q=128 rows with a feasible strip scale (exact set): []
+rows with a feasible strip scale and Q<256 (exact set): []
+rows with Q>=256 and no feasible strip scale: []
+D-lane rows (D>=4): 1936 ; with a degree-feasible n<4D: 924 ; violating D>=256, Q>=512, S>=256 (exact set): []
+arithmetic: (n,D,Q) with 512<=n<4D, D<Q and not (D>=256,Q>=512): []
+arithmetic: (n,Q) with n>=512, n<4Q, Q<256: []

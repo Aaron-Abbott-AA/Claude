@@ -1,0 +1,38 @@
+numeric tokens only in v1 (count diff): {}
+numeric tokens only in v2 (count diff): {'2': 62, '24': 2, '1': 31, '5': 4, '0': 18, '16': 2, '256': 10, '7': 1, '23': 4, '2.1': 4, '20261007': 1, '3.1': 6, '3.3': 5, '2.2': 7, '2.5': 3, '17': 1, '820': 1, '3': 11, '11': 4, '22': 6, '4.2': 4, '4.4': 2, '4': 15, '512': 4, '6': 3, '4.1': 1, '2.4': 1, '5.3': 1, '8': 4, '10': 4, '128': 4, '120': 1, '2^14': 5, '119': 1, '13': 1, '43': 2, '9': 2, '0.147704': 1, '0.104306': 2}
+  0.167242                           v1=3 v2=3
+  1551                               v1=4 v2=4
+  91941792089517/549755813888000     v1=3 v2=3
+  0.1672411                          v1=3 v2=3
+  32480243592761/219902325555200     v1=2 v2=2
+  0.147704                           v1=1 v2=2
+  0.104306                           v1=1 v2=3
+  0.167228                           v1=3 v2=3
+  3780                               v1=3 v2=3
+  280                                v1=3 v2=3
+  120                                v1=3 v2=4
+  150/150                            v1=9 v2=9
+  15/15                              v1=1 v2=1
+  625                                v1=9 v2=9
+  2048                               v1=4 v2=4
+  452/625                            v1=1 v2=1
+  512                                v1=20 v2=24
+  256                                v1=30 v2=40
+label counts v1: {'PROVED': 31, 'CONDITIONAL': 1, 'COMPUTED': 16, 'HEURISTIC': 8, 'OPEN': 7, 'CITED': 4}
+label counts v2: {'PROVED': 33, 'CONDITIONAL': 1, 'COMPUTED': 17, 'HEURISTIC': 15, 'OPEN': 7, 'CITED': 4}
+status rows v1=16 v2=16
+  v1: | Lemma 2.1 (transverse layer σ; a'=σ·f^[ρ]; F²\|a ⟺ second-order lift) | PROVED | 
+  v2: | Lemma 2.1 (transverse layer σ; a'=σ·f^[ρ]; F²\|a ⟺ second-order lift) | PROVED; general z∈Γ' with f(z)≠0 by step (o) [v2: FIX-1] |
+  v1: | Prop 2.2 (det A=κ_0^{−(Q+T)}F⁴det𝒞_Aλ_A) | PROVED; COMPUTED (150/150, control fails) | 
+  v2: | Prop 2.2 (det A=κ_0^{−(Q+T)}F⁴detC_A^homλ_A) | PROVED; COMPUTED (150/150, control fails) |
+  v1: | Cor 2.3 (G5 ⟺ FNAM2 ∧ (a_P,a_R)≢0; ord_F det A=4+2k_Δ+2min ord_F a) | PROVED | 
+  v2: | Cor 2.3 (G5 ⟺ Δ≢0 ∧ (a_P,a_R)≢0 [v2: N3]; ord_F det A=4+2k_Δ+2min ord_F a) | PROVED (audit: verified as exact identities in 6–8 configurations) |
+  v1: | Cor 2.5 (𝔇_16 excluded at n=256; R23 Remark 3.4 resolved) | PROVED (assembly of R20, R22, R23 and this note) | 
+  v2: | Cor 2.5 (𝔇_16 excluded at n=256, standing hypotheses [v2: N2]; R23 Remark 3.4 resolved via (2.2) alone [v2: N8]) | PROVED (assembly of R20, R22, R23 and this note); upgrades R23 Cor 3.3's n=256 grid closure to the whole strip [v2: N9] |
+  v1: | Remark 3.5 (no transfer to (R2) via Lemma 3.1) | PROVED (negative); rank-one osculation route HEURISTIC | 
+  v2: | Remark 3.5 (no transfer to (R2) via Lemma 3.1) | observation PROVED; "yields nothing" HEURISTIC [v2: FIX-3]; rank-one osculation route HEURISTIC |
+  v1: | Prop 4.2 (local realisability of (𝒦)∧F²\|a at one own line) | PROVED; COMPUTED toy | 
+  v2: | Prop 4.2 (local realisability of (𝒦)∧F²\|a at one own line) | PROVED for formal germs [v2: FIX-2]; COMPUTED toy (along ℓ_u only [v2: N5]) |
+  v1: | Cor 4.3 (no single-point argument excludes (𝒦)∧F²\|a) | PROVED (negative) | 
+  v2: | Cor 4.3 (no single-point argument excludes (𝒦)∧F²\|a) | PROVED (negative, formal-germ sense); R22 Remark 4.4 stays HEURISTIC [v2: FIX-2] |
+v2 tag occurrences: Counter({'FIX-2': 6, 'N4': 6, 'v2': 4, 'N10': 4, 'N3': 3, 'N2': 3, 'FIX-3': 3, 'FIX-1': 3, 'N5': 3, 'N9': 2, 'N8': 2, 'N1': 2, 'N6': 1, 'N11': 1, 'N7': 1})

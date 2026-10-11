@@ -1,0 +1,253 @@
+1c1
+< # HYP M>=2, round 24 (owner v1): (R1) is closed by a partial Wronskian; G5 is exactly FNAM2 plus nonzero alignment, which closes 𝔇_16 at n=256; the condition F²|a is invisible to every single-point own-line argument
+---
+> # HYP M>=2, round 24 (owner v2): (R1) is closed by a partial Wronskian; G5 is exactly Δ≢0 plus nonzero alignment, which closes 𝔇_16 at n=256 (standing hypotheses); the condition F²|a is invisible to every single-point own-line argument
+5c5,18
+< **Version.** v1, owner draft. It has not been audited. Every PROVED label below is the owner's claim, pending an independent audit.
+---
+> **Version history.**
+> - v1: owner draft (`HYP_M2_ROUND24_owner_v1.md`, kept unchanged).
+> - v1 independently audited (`AUDIT_HYP_M2_ROUND24_20261007.md`): **PASS-with-fixes (minor)**.
+>   - No mathematical error was found in any headline result. Lemma 3.1, Thm 3.3, Prop 2.2 and Cor 2.5 survive.
+>   - The audit re-derived them and checked them independently: Lemma 3.1 on genus-1 and genus-2 curves, including the point at infinity; Prop 2.2 as an exact polynomial identity over GF(2)[U,Y]; the Thm 3.3 numbers on 17 820 cases.
+>   - FIX-1..3 and minor notes N1–N11 were raised.
+> - **v2 (this file)** applies FIX-1..3 and N1–N11, marked "[v2: FIX-n]" / "[v2: Nn]".
+>   - **No number changes.** No closure is withdrawn.
+>   - FIX-1 gives Lemma 2.1 a self-contained construction of the first-layer lift at every z∈Γ' with f(z)≠0. v1 cited R22 §1, which covers only z=z(u).
+>   - FIX-2 makes Prop 4.2 a statement about formal germs, and withdraws v1's claim that R22 Remark 4.4 "becomes PROVED".
+>   - FIX-3 relabels "Lemma 3.1 yields nothing for (R2)" as HEURISTIC.
+>   - N4 sharpens the residual to Q>=256 (Q>=512 on the D-lanes).
+>   - N6 renames 𝒞_A to C_A^hom, and the dimension index in Lemma 3.1 to r_V.
+>   - Scripts and outputs are unchanged; `scripts/SHA256SUMS.txt` is unchanged.
+30a44
+> - [v2] No script was changed or rerun for v2. The audit reran all four owner scripts: byte-identical outputs.
+41c55
+<   - 𝒞_A:=(ℓ(U)·Y)C_P^[2]+(m(U)·Y)C_R^[2] (2×2) and λ_A:=(ℓ(U)·Y)a_P²+(m(U)·Y)a_R² (§2).
+---
+>   - C_A^hom:=(ℓ(U)·Y)C_P^[2]+(m(U)·Y)C_R^[2] (2×2) and λ_A:=(ℓ(U)·Y)a_P²+(m(U)·Y)a_R² (§2).
+57,59c71,73
+<       det A = κ_0^{−(Q+T)} · F⁴ · det 𝒞_A · λ_A.
+< 3. **G5 is exactly FNAM2 plus nonzero alignment (Cor 2.3).**
+<    - G5 ⟺ Δ≢0 and (a_P,a_R)≢(0,0).
+---
+>       det A = κ_0^{−(Q+T)} · F⁴ · det C_A^hom · λ_A.
+> 3. **G5 is exactly Δ≢0 plus nonzero alignment (Cor 2.3).** [v2: N3: v1 wrote "FNAM2", which is the name of the implication G5⇒Δ≢0.]
+>    - G5 ⟺ Δ≢0 and (a_P,a_R)≢(0,0) (given (2.1), (2.2)).
+63c77
+< 5. **𝔇_16 is excluded at n=256 (Cor 2.5).** Assembling R20 Cor 3.2, R22 Cor 4.1/4.2, R23 Thm 3.1, Thm 3.3 and Cor 2.4: every model of 𝔇_16 (standing hypotheses) with h=256E is excluded. This answers R23 Remark 3.4's OPEN question ("zero alignment" a_P=a_R≡0 contradicts G5). It closes (R2) at n=256 for every r>=16, including r=16 below 8E/Q.
+---
+> 5. **𝔇_16 is excluded at n=256 (Cor 2.5), under the standing hypotheses of 𝔇_16** [v2: N2]: global alignment, common image, zero top, first scalar order ρ, pure, Q>=128, 256E<=h<4QE, 𝔮_max>=128, all original gates. Assembling R20 Cor 3.2, R22 Cor 4.1/4.2, R23 Thm 3.1, Thm 3.3 and Cor 2.4: every model of 𝔇_16 (standing hypotheses) with h=256E is excluded. This answers R23 Remark 3.4's OPEN question ("zero alignment" a_P=a_R≡0 contradicts G5). It closes (R2) at n=256 for every r>=16, including r=16 below 8E/Q.
+70c84
+< 8. **Local realisability of (𝒦)∧F²|a (Prop 4.2).** Let u be good, with (𝒦), (α) at u and ν_u>=e_u (automatic for a constant twist; necessary by R23 Cor 2.2(iii)). Then there is a matrix germ P at z(u) with:
+---
+> 8. **Local realisability of (𝒦)∧F²|a (Prop 4.2).** Let u be good, with (𝒦), (α) at u and ν_u>=e_u (automatic for a constant twist; necessary by R23 Cor 2.2(iii)). Then there is a **formal** matrix germ P at z(u), with entries in Ô_{P²,z(u)} [v2: FIX-2], with:
+75c89
+<    Hence no argument at a single good point, at any own-line order (in particular (★)/Thm 3.1 at order 2X), can exclude (𝒦)∧F²|a. An exclusion must use global (polynomial, degree) information on P's transverse layer, as Cor 2.4 does.
+---
+>    Hence no argument at a single good point, at any own-line order (in particular (★)/Thm 3.1 at order 2X), can exclude (𝒦)∧F²|a. This holds in the formal-germ sense; every finite jet is realised by polynomials. An exclusion must use global (polynomial, degree) information on P's transverse layer, as Cor 2.4 does.
+82,83c96,98
+<   - Cor 2.4: the set of rows where F²|a is degree-feasible at n=256 is empty; the least feasible n is 512 on all 280 (r,Q,S).
+< - `det_identity_check.out`: Prop 2.2, at random points over GF(2^16): 150/150, with (X,ρ) ranging from (4,2) to (4096,64). The negative control (F³ in place of F⁴) fails 150/150, and a_P=a_R=0 gives det A=0 in 150/150.
+---
+>   - Cor 2.4: the set of rows where F²|a is degree-feasible at n=256 is empty; the least feasible n is 512 on all 280 (r,Q,S). [v2: N4] Part C ignores the strip condition n<4Q. With it, n=512 needs Q>=256.
+>   - [v2: N10] Part A's header says "entries <=2^14", but it includes (0,1,2^14,2^14+1); hence 120 sequences rather than 119. This is harmless.
+> - `det_identity_check.out` [v2: N10: 13 s in the recorded run; 43 s in the audit's rerun]: Prop 2.2, at random points over GF(2^16): 150/150, with (X,ρ) ranging from (4,2) to (4096,64). The negative control (F³ in place of F⁴) fails 150/150, and a_P=a_R=0 gives det A=0 in 150/150.
+93c108
+< - Nothing new for (R2) from Lemma 3.1 (Remark 3.5): there N_1=2rS/𝔮_max is a power of 2, and only a lower bound for ord σ_u is known.
+---
+> - No (R2) gain from Lemma 3.1 was found (Remark 3.5, HEURISTIC [v2: FIX-3]): there N_1=2rS/𝔮_max is a power of 2, and only a lower bound for ord σ_u is known.
+95c110
+< **Newly closed (PROVED; numbers COMPUTED; v1 not yet audited):**
+---
+> **Newly closed (PROVED; numbers COMPUTED; v1 audited PASS-with-fixes, no closure withdrawn), under the standing hypotheses of 𝔇_16** [v2: N2]: global alignment, common image, zero top, first scalar order ρ, pure, Q>=128, 256E<=h<4QE, 𝔮_max>=128, all original gates:
+97c112
+< - 𝔇_16 at n=256 entirely, including (R2) at n=256 for r>=16 (r=16 below 8E/Q and r>=32).
+---
+> - 𝔇_16 at n=256 entirely, including (R2) at n=256 for r>=16 (r=16 below 8E/Q and r>=32). [v2: N9] This also turns R23 Cor 3.3's grid-COMPUTED closure of non-constant (𝒦) at n=256, r∈{4,8}, into a whole-strip PROVED statement, since every link of Cor 2.5 holds for all (r,Q,S).
+100,101c115,116
+< **Residual of 𝔇_16 after R24.** Only (𝒦)∧F²|a_P∧F²|a_R remains (§5), with n>=512 and M'+Q−T>=2d':
+< - constant twists: D∈{1,2} on 𝔉_D∩{F|h}∩{F²|a}; D>=4 lanes with n<4D, now only D>=256;
+---
+> **Residual of 𝔇_16 after R24.** Only (𝒦)∧F²|a_P∧F²|a_R remains (§5), with n>=512 and M'+Q−T>=2d'. [v2: N4] Since n<4Q in the strip, this also forces Q>=256. The residual is:
+> - constant twists: D∈{1,2} on 𝔉_D∩{F|h}∩{F²|a}; D>=4 lanes with n<4D, now only D>=256 (so Q>=512, since D<Q) [v2: N4];
+116,117c131,132
+< **Lemma 2.1 (the transverse layer and the second-order lift; PROVED from R22 Lemma 2.4(i), R18-T Lemma 2.1(ii), FNAM1).** Let z∈Γ' with f(z)≠0, and O:=O_{P²,z}.
+< - Take the syzygy lift κ̃_P=λ̃(𝒜̃_11j_1^[ρ]+𝒜̃_12j_2^[ρ]) of R22 §1, so κ̃_P·f^[ρ]=0 exactly.
+---
+> **Lemma 2.1 (the transverse layer and the second-order lift; PROVED from FNAL common image, zero top, R18-T Lemma 2.1(ii), FNAM1; at z=z(u) also from R22 Lemma 2.4(i)).** Let z∈Γ' with f(z)≠0, and O:=O_{P²,z}.
+> - Take a syzygy lift κ̃_P of the first layer: κ̃_P∈O³ with κ̃_P·f^[ρ]=0 exactly and P^t≡f^[X]⊗κ̃_P mod F. [v2: FIX-1] Such a lift exists at every such z (step (o) of the proof). At z=z(u), u good, one may take R22 §1's κ̃_P=λ̃(𝒜̃_11j_1^[ρ]+𝒜̃_12j_2^[ρ]) (R22 Lemma 2.4(i)). Only z=z(u) is used in §4.
+134c149,153
+< - **(i) The second layer.** By R22 Lemma 2.4(i), P^t−f^[X]⊗κ̃_P=F·S_P with S_P∈M_3(O).
+---
+> - **(o) Existence of κ̃_P [v2: FIX-1].** Pick i with f_i(z)≠0.
+>   - Common image (FNAL: [f^[X]]_×P^t≡0 mod F) says that every column of P^t mod F is parallel to f^[X] in (O/F)³. Since f_i^X is a unit, P^t≡f^[X]⊗κ mod F with κ:=(row i of P^t)/f_i^X∈O³.
+>   - Zero top gives a_P∈FO. So f^[X](κ·f^[ρ])≡P^tf^[ρ]=a_Pf^[X]≡0 mod F, hence κ·f^[ρ]∈FO.
+>   - With e' as in (iii) below (e'·f^[ρ]=1), put κ̃_P:=κ−(κ·f^[ρ])e'. Then κ̃_P·f^[ρ]=0 and κ̃_P≡κ mod F.
+> - **(i) The second layer.** P^t−f^[X]⊗κ̃_P∈F·M_3(O) by (o) (at z(u) this is R22 Lemma 2.4(i)), say =F·S_P with S_P∈M_3(O).
+137c156
+< - **(i) Alignment.** Multiply by f^[ρ]. Here κ̃_P·f^[ρ]=0 and J^{[ρ],t}f^[ρ]=0. So P^tf^[ρ]=F(σ_P·f^[ρ])f^[X]. Comparing with a_Pf^[X] (f^[X] unimodular) gives a_P=Fσ_P·f^[ρ].
+---
+> - **(i) Alignment.** Multiply by f^[ρ]. Here κ̃_P·f^[ρ]=0 (by the choice of lift) and J^{[ρ],t}f^[ρ]=0. So P^tf^[ρ]=F(σ_P·f^[ρ])f^[X]. Comparing with a_Pf^[X] (f^[X] unimodular) gives a_P=Fσ_P·f^[ρ].
+146,147c165,166
+<       det A = κ_0^{−(Q+T)} · F⁴ · det 𝒞_A · λ_A,
+<       𝒞_A=(U·j_1)C_P^[2]+(U·j_2)C_R^[2],   λ_A=(U·j_1)a_P²+(U·j_2)a_R².
+---
+>       det A = κ_0^{−(Q+T)} · F⁴ · det C_A^hom · λ_A,
+>       C_A^hom=(U·j_1)C_P^[2]+(U·j_2)C_R^[2],   λ_A=(U·j_1)a_P²+(U·j_2)a_R².
+153c172
+<       J^{[T],t}A^t = κ_0^{−T}F²Ω𝒞_AJ^{[Q],t}.          (2.1)
+---
+>       J^{[T],t}A^t = κ_0^{−T}F²ΩC_A^homJ^{[Q],t}.          (2.1)
+157c176
+<       L_eA^tR_Q = [[κ_0^{−T}F²Ω𝒞_A(J^tJ)^[Q], 0],[e^tA^tJ^[Q], λ_A(e·f^[T])]].
+---
+>       L_eA^tR_Q = [[κ_0^{−T}F²ΩC_A^hom(J^tJ)^[Q], 0],[e^tA^tJ^[Q], λ_A(e·f^[T])]].
+164c183
+<       κ_0^{−T}(e·f^[T])·det A·κ_0^{−Q}(f·f)^Q = κ_0^{−2T}F⁴det𝒞_A·κ_0^{−2Q}(f·f)^Q·λ_A(e·f^[T]).
+---
+>       κ_0^{−T}(e·f^[T])·det A·κ_0^{−Q}(f·f)^Q = κ_0^{−2T}F⁴detC_A^hom·κ_0^{−2Q}(f·f)^Q·λ_A(e·f^[T]).
+169c188
+< - (i) **G5 ⟺ FNAM2 ∧ (a_P,a_R)≢(0,0).** That is, det A≢0 iff Δ≢0 and not both alignment coefficients vanish identically.
+---
+> - (i) **G5 ⟺ Δ≢0 ∧ (a_P,a_R)≢(0,0)** (given (2.1), (2.2)) [v2: N3]. That is, det A≢0 iff Δ≢0 and not both alignment coefficients vanish identically.
+177c196
+<       det 𝒞_A = Δ(v,Y)² with v_1²=U·j_1, v_2²=U·j_2, i.e. det 𝒞_A = (U·j_1)²Δ_0² + (U·j_1)(U·j_2)Δ_1² + (U·j_2)²Δ_2².
+---
+>       det C_A^hom = Δ(v,Y)² with v_1²=U·j_1, v_2²=U·j_2, i.e. det C_A^hom = (U·j_1)²Δ_0² + (U·j_1)(U·j_2)Δ_1² + (U·j_2)²Δ_2².
+180c199
+< - **(i)** Hence det𝒞_A≢0 iff some Δ_i≢0, i.e. Δ≢0; and λ_A≢0 iff (a_P,a_R)≢0. Then apply Prop 2.2 (k[U,Y] is a domain).
+---
+> - **(i)** Hence detC_A^hom≢0 iff some Δ_i≢0, i.e. Δ≢0; and λ_A≢0 iff (a_P,a_R)≢0. Then apply Prop 2.2 (k[U,Y] is a domain).
+182c201
+< - **(ii) The orders.** So, after removing F^{2k_Δ} (resp. F^{2min ord}), the bracket is not divisible by F. Its restriction to Γ', as a polynomial in U, is nonzero. Hence ord_F det𝒞_A=2k_Δ and ord_F λ_A=2min(ord_F a_P, ord_F a_R). ∎
+---
+> - **(ii) The orders.** So, after removing F^{2k_Δ} (resp. F^{2min ord}), the bracket is not divisible by F. Its restriction to Γ', as a polynomial in U, is nonzero. Hence ord_F detC_A^hom=2k_Δ and ord_F λ_A=2min(ord_F a_P, ord_F a_R). ∎
+190c209
+< - In the strip this fails for n=256, for every r>=4, Q>=128, S>=64. So F²|a forces n>=512.
+---
+> - In the strip this fails for n=256, for every r>=4, Q>=128, S>=64. So F²|a forces n>=512, and then Q>=256, since n<4Q [v2: N4].
+205c224
+< *What is new in Cor 2.5.* R23 Remark 3.4 left "a_P=a_R≡0" OPEN at n=256. Cor 2.3(i) excludes it by G5. Before this note, (R2) at n=256 was open for r=16 below 8E/Q (R20/R23 tables) and for r>=32 where R20 does not apply. Both are now closed.
+---
+> *What is new in Cor 2.5.* R23 Remark 3.4 left "a_P=a_R≡0" OPEN at n=256. Cor 2.3(i) excludes it by G5. [v2: N8] Only identity (2.2) is needed for this: a_P=a_R=0 gives A^tf^[Q]=0, so det A≡0. So the zero-alignment exclusion, and with it Cor 2.5, does not depend on the F⁴ bookkeeping of Prop 2.2. Before this note, (R2) at n=256 was open for r=16 below 8E/Q (R20/R23 tables) and for r>=32 where R20 does not apply. Both are now closed.
+211c230
+< **Lemma 3.1 (partial Wronskian divisor; PROVED; COMPUTED `partial_wronskian_check.out`).** Let 𝒳 be a smooth projective curve of genus g over an algebraically closed field of characteristic p, 𝓛 a line bundle of degree τ, and V⊂H⁰(𝓛) of dimension r+1, with orders ε_0<…<ε_r (SV §1). For 1<=s<=r+1 there is an effective divisor R_s with:
+---
+> **Lemma 3.1 (partial Wronskian divisor; PROVED; COMPUTED `partial_wronskian_check.out`).** Let 𝒳 be a smooth projective curve of genus g over an algebraically closed field of characteristic p, 𝓛 a line bundle of degree τ, and V⊂H⁰(𝓛) of dimension r_V+1, with orders ε_0<…<ε_{r_V} (SV §1) [v2: N6: v1 wrote r, which clashes with the strip parameter r]. For 1<=s<=r_V+1 there is an effective divisor R_s with:
+213c232
+< - (b) v_P(R_s) >= Σ_{i<s}(j_i(P)−ε_i) at every point P, where j_0(P)<…<j_r(P) are the vanishing orders of V at P.
+---
+> - (b) v_P(R_s) >= Σ_{i<s}(j_i(P)−ε_i) at every point P, where j_0(P)<…<j_{r_V}(P) are the vanishing orders of V at P.
+215c234
+< For s=r+1 this is SV Thm 1.5, where (a) is an equality.
+---
+> For s=r_V+1 this is SV Thm 1.5, where (a) is an equality. [v2: N11] In substance R_s is the ramification divisor of the (s−1)-st associated (osculating) map. For s<=r_V, deg R_s falls short of the bound by the degree of that associated curve.
+218c237
+< - **Setup.** Fix a basis x_0..x_r of V, a nonzero section s_0∈H⁰(𝓛), and a separating variable x∈K=k(𝒳). Put ξ_j:=x_j/s_0∈K, and let D^{(m)} be Hasse derivatives with respect to x. Let row_m:=(D^{(m)}ξ_j)_j∈K^{r+1}.
+---
+> - **Setup.** Fix a basis x_0..x_{r_V} of V, a nonzero section s_0∈H⁰(𝓛), and a separating variable x∈K=k(𝒳). Put ξ_j:=x_j/s_0∈K, and let D^{(m)} be Hasse derivatives with respect to x. Let row_m:=(D^{(m)}ξ_j)_j∈K^{r_V+1}.
+220c239
+< - **The minors.** Let W_s be the s×(r+1) matrix with rows row_{ε_0},…,row_{ε_{s−1}}. Its rows are K-independent, so some s×s minor w_J (J an s-subset of columns) is ≢0.
+---
+> - **The minors.** Let W_s be the s×(r_V+1) matrix with rows row_{ε_0},…,row_{ε_{s−1}}. Its rows are K-independent, so some s×s minor w_J (J an s-subset of columns) is ≢0.
+247c266
+< - If 𝔮_max>S, N_good<=0.147704q (R22 Thm 5.3).
+---
+> - If 𝔮_max>S, either (𝒦) holds or N_good<=max(0.147704, 0.104306)q (R22 Thm 5.3(i),(ii), with R23 Cor 4.2(i)) [v2: N1].
+254c273
+< - **𝔮_max>S.** This is R22 Thm 5.3.
+---
+> - **𝔮_max>S.** By R22 Thm 5.3(i), 𝔡≢0 gives N_good<=0.147704q. Otherwise (𝒦_ψ) holds, and by Thm 5.3(ii) / R23 Cor 4.2(i), either (𝒦) holds, which is not (R1), or N_good<=0.104306q [v2: N1].
+271c290,292
+< - **3.5 (no transfer to (R2); PROVED negative).** In (R2), R23 Prop 2.1 gives only ord_uσ_u>=N_1=2rS/𝔮_max at every good u. Exactness is not known. Suppose some order ε_i>=N_1. Then at every non-Weierstrass point the members of V of order >=N_1 form a nonzero subspace. So "ord_uσ_u>=N_1" is not a Weierstrass condition, and Lemma 3.1 yields nothing. If ε_top<N_1, R22 Prop 5.5 already closes it (R23 §3, RC-1).
+---
+> - **3.5 (no transfer to (R2); observation PROVED, conclusion HEURISTIC [v2: FIX-3]).** In (R2), R23 Prop 2.1 gives only ord_uσ_u>=N_1=2rS/𝔮_max at every good u. Exactness is not known.
+>   - (PROVED) Suppose some order ε_i>=N_1. Then at every non-Weierstrass point the members of V of order >=N_1 form a nonzero subspace. So "ord_uσ_u>=N_1" is not a Weierstrass condition, and Lemma 3.1 does not apply the way Thm 3.3 uses it.
+>   - (HEURISTIC) v1 said "Lemma 3.1 yields nothing" for (R2). That is not proved: some other use of a partial Wronskian is not excluded. If ε_top<N_1, R22 Prop 5.5 already closes it (R23 §3, RC-1).
+300c321
+< **Proposition 4.2 (local realisability of (𝒦)∧F²|a at one own line; PROVED; COMPUTED `local_realization_toy.out`).** Fix the C-level data (C_P, C_R, twist, first layer κ̃_•). Assume at u: (𝒦), (α), and ν_u>=e_u. The last condition is automatic for a constant twist (s̃_u≡0) and is necessary for F²|a by R23 Cor 2.2(iii). Then there is a matrix germ P^t (and R^t) of regular functions at z(u) with:
+---
+> **Proposition 4.2 (local realisability of (𝒦)∧F²|a at one own line, formal germs; PROVED; COMPUTED `local_realization_toy.out`).** Fix the C-level data (C_P, C_R, twist, first layer κ̃_•). Assume at u: (𝒦), (α), and ν_u>=e_u. The last condition is automatic for a constant twist (s̃_u≡0) and is necessary for F²|a by R23 Cor 2.2(iii). Then there is a **formal** matrix germ P^t (and R^t), with entries in Ô:=Ô_{P²,z(u)}≅k[[x,y]], with: [v2: FIX-2: v1 said "of regular functions". The σ constructed below lies in k[[x]][y], not in O.]
+303c324
+< - P^tf^[ρ]=a_Pf^[X] with F²|a_P in O (and likewise for R);
+---
+> - P^tf^[ρ]=a_Pf^[X] with F²|a_P in Ô (and likewise for R);
+305a327,328
+> Truncating the formal germ realises any finite jet of these conditions by polynomial matrices.
+> 
+307c330
+< - **The ansatz.** Take P^t, R^t of the form of Lemma 2.1(i), with σ_R:=0 and σ_P:=σ/c_1 (if c_1=0, swap the roles of P and R). The first two properties hold for every regular σ. The third holds with a_P=F·σ_P·f^[ρ]. By Prop 4.1, FN holds iff g^ρσ(Y(t))·u^[ρ]=φ_u. So it suffices to find σ∈O³ with
+---
+> - **The ansatz.** Take P^t, R^t of the form of Lemma 2.1(i), with σ_R:=0 and σ_P:=σ/c_1 (if c_1=0, swap the roles of P and R). The first two properties hold for every σ∈Ô³ (Lemma 2.1 holds verbatim over the completion Ô). The third holds with a_P=F·σ_P·f^[ρ]. By Prop 4.1, FN holds iff g^ρσ(Y(t))·u^[ρ]=φ_u. So it suffices to find σ∈Ô³ with
+309c332
+<   - (B) σ·f^[ρ]∈FO.
+---
+>   - (B) σ·f^[ρ]∈FÔ.
+315c338
+<   which is regular. Then σ(x,γ(x))·Φ(x)=0, i.e. (B), and σ(x,0)=A, i.e. (A). ∎
+---
+>   which lies in k[[x]][y]³⊂Ô³ (a formal germ). Then σ(x,γ(x))·Φ(x)=0, i.e. (B), and σ(x,0)=A, i.e. (A). ∎
+318,319c341,344
+< - No argument that uses only the C-level data, the twist and FN along a single own line (as an identity of germs at z(u), at any order in t) can exclude (𝒦)∧F²|a_P∧F²|a_R.
+< - In particular, (★) and R22 Thm 3.1 at order 2X, or at any order, give no condition on a''. R22's Remark 4.4 "HEURISTIC non-determination" becomes PROVED in this local sense.
+---
+> - No argument that uses only the C-level data, the twist and FN along a single own line (as an identity of formal germs at z(u), at any order in t) can exclude (𝒦)∧F²|a_P∧F²|a_R [v2: FIX-2: formal germs].
+> - In particular, (★) and R22 Thm 3.1 at order 2X, or at any order, give no condition on a''.
+> - The local fact that is proved: with σ free in Ô and a'_c fixed, FN on one own line is exactly a'_c≡φ_u (mod t^ρ) (Prop 4.1, since a'_c=g^ρσ_c·u^[ρ]+t^ρσ_c·ω^[ρ]).
+> - [v2: FIX-2] v1 said that R22 Remark 4.4's "HEURISTIC non-determination" becomes PROVED in this local sense. That overclaims and is withdrawn. R22's statement concerns fixed global (C, a, first layer) with only polynomial-syzygy freedom ξ∈Syz(f^[ρ]). Prop 4.2 lets the local σ, and with it the local a, vary freely in Ô. R22's statement remains HEURISTIC.
+331c356
+<   It tests the algebra of Props 4.1–4.2 on 15 cases (X up to 16, e up to 33). It is not an original model.
+---
+>   It tests the algebra of Props 4.1–4.2 on 15 cases (X up to 16, e up to 33). It is not an original model. [v2: N5] The toy checks σ·f^[ρ]=0 only along ℓ_u. It does not test the off-line extension σ=A+yβv that gives (B) on Γ'; that step rests on the hand proof.
+345,346c370,371
+< - **(𝒦) with F²|a_P, F²|a_R:** open only for n>=512 with M'+Q−T>=2d' and (a_P,a_R)≢0 (Cor 2.3, 2.4). That is:
+<   - constant twists: D∈{1,2} on 𝔉_D∩{F|h}∩{F²|a}; D>=4 with 512<=n<4D, so D>=256;
+---
+> - **(𝒦) with F²|a_P, F²|a_R:** open only for n>=512 with M'+Q−T>=2d' and (a_P,a_R)≢0 (Cor 2.3, 2.4); hence Q>=256 (n<4Q) [v2: N4]. That is:
+>   - constant twists: D∈{1,2} on 𝔉_D∩{F|h}∩{F²|a}; D>=4 with 512<=n<4D, so D>=256 and Q>=512 (D<Q) [v2: N4];
+351c376
+< 1. **Global transverse layer.** Remark 4.5: a polynomial representative of σ modulo Syz(f^[ρ]), the second-layer analogue of (H_lift), would convert Prop 4.1's pointwise jets into a count. Its obstruction is supported on Bs(f)⊂Γ' (R18-T Lemma 2.1A), and so is (H_lift)'s. Bs(f) has three points, so the obstruction might be chargeable rather than fatal.
+---
+> 1. **Global transverse layer.** Remark 4.5: a polynomial representative of σ modulo Syz(f^[ρ]), the second-layer analogue of (H_lift), would convert Prop 4.1's pointwise jets into a count. Its obstruction is supported on Bs(f)⊂Γ' (R18-T Lemma 2.1A), and so is (H_lift)'s. f has at most three proper base points [v2: N7: v1 said "three points"; infinitely near base points are possible]. So the obstruction might be chargeable rather than fatal.
+361c386
+< | `numerics_R24.py` → `numerics_R24.out` (0.2 s), Part A | all p-adic-closed order sequences, ε_0=0, ε_1=1, length <=4, entries <=2^14 (120; brute-force cross-check on entries <=64: 27=27); r∈{4,…,64}, x∈{1,…,64}; s, Σ', γ' | exact failing set (N_0 an order, γ'<γ, or Σ'/γ'>(2rx+2)/γ) empty; max Σ'/γ'=5, max s/γ'=2, at r=4, x=1, ε=(0,1,4,5) |
+---
+> | `numerics_R24.py` → `numerics_R24.out` (0.2 s), Part A | all p-adic-closed order sequences, ε_0=0, ε_1=1, length <=4, entries <=2^14, plus (0,1,2^14,2^14+1) (120 [v2: N10]; brute-force cross-check on entries <=64: 27=27); r∈{4,…,64}, x∈{1,…,64}; s, Σ', γ' | exact failing set (N_0 an order, γ'<γ, or Σ'/γ'>(2rx+2)/γ) empty; max Σ'/γ'=5, max s/γ'=2, at r=4, x=1, ε=(0,1,4,5) |
+364c389
+< | `det_identity_check.py` → `.out` (13 s) | Prop 2.2 at random points over GF(2^16), for P^t=FK_PJ^{[ρ],t}+f^[X]⊗η_P (the general shape given C and a); (X,ρ)∈{(4,2),(8,2),(8,4),(64,32),(128,64),(4096,64)} | 150/150; layer identity and alignment 150/150; a_P=a_R=0 ⇒ det A=0 150/150; det A≠0 in 150/150; negative control (F³) fails 150/150 |
+---
+> | `det_identity_check.py` → `.out` (13 s; 43 s in the audit rerun [v2: N10]) | Prop 2.2 at random points over GF(2^16), for P^t=FK_PJ^{[ρ],t}+f^[X]⊗η_P (the general shape given C and a); (X,ρ)∈{(4,2),(8,2),(8,4),(64,32),(128,64),(4096,64)} | 150/150; layer identity and alignment 150/150; a_P=a_R=0 ⇒ det A=0 150/150; det A≠0 in 150/150; negative control (F³) fails 150/150 |
+366c391
+< | `local_realization_toy.py` → `.out` (14 s) | Props 4.1–4.2 on one own line over GF(2^8)[[t]] mod t^96; (X,ρ,e)∈{(4,2,9),(8,2,17),(8,4,17),(16,4,33),(16,8,33)}, 3 trials each | 15/15: random σ violates FN and α_2≠0; constructed σ satisfies FN, α_2=0, σ·f^[ρ]≡0, alignment; control ord s̃=e−1 gives the pole; exact failing set empty |
+---
+> | `local_realization_toy.py` → `.out` (14 s; along ℓ_u only [v2: N5]) | Props 4.1–4.2 on one own line over GF(2^8)[[t]] mod t^96; (X,ρ,e)∈{(4,2,9),(8,2,17),(8,4,17),(16,4,33),(16,8,33)}, 3 trials each | 15/15: random σ violates FN and α_2≠0; constructed σ satisfies FN, α_2=0, σ·f^[ρ]≡0, alignment; control ord s̃=e−1 gives the pole; exact failing set empty |
+372c397
+< - The proofs are by hand from the cited inputs. Thm 3.3 is a strong claim, the closure of all of (R1). It rests on Lemma 3.1 (proved here), on R23 Prop 4.1 / Cor 4.2 / Lemma 4.3, and on the two order facts behind R23 Prop 4.4: ord_uσ_u=N_0 on 𝔅_0, and SV's j_i>=ε_i. The audit should check these first.
+---
+> - The proofs are by hand from the cited inputs. Thm 3.3 is a strong claim, the closure of all of (R1). It rests on Lemma 3.1 (proved here), on R23 Prop 4.1 / Cor 4.2 / Lemma 4.3, and on the two order facts behind R23 Prop 4.4: ord_uσ_u=N_0 on 𝔅_0, and SV's j_i>=ε_i. [v2] The audit checked these and found them correct; it also tested Lemma 3.1 independently on curves of genus 1 and 2.
+381,383c406,408
+< | Lemma 2.1 (transverse layer σ; a'=σ·f^[ρ]; F²\|a ⟺ second-order lift) | PROVED |
+< | Prop 2.2 (det A=κ_0^{−(Q+T)}F⁴det𝒞_Aλ_A) | PROVED; COMPUTED (150/150, control fails) |
+< | Cor 2.3 (G5 ⟺ FNAM2 ∧ (a_P,a_R)≢0; ord_F det A=4+2k_Δ+2min ord_F a) | PROVED |
+---
+> | Lemma 2.1 (transverse layer σ; a'=σ·f^[ρ]; F²\|a ⟺ second-order lift) | PROVED; general z∈Γ' with f(z)≠0 by step (o) [v2: FIX-1] |
+> | Prop 2.2 (det A=κ_0^{−(Q+T)}F⁴detC_A^homλ_A) | PROVED; COMPUTED (150/150, control fails) |
+> | Cor 2.3 (G5 ⟺ Δ≢0 ∧ (a_P,a_R)≢0 [v2: N3]; ord_F det A=4+2k_Δ+2min ord_F a) | PROVED (audit: verified as exact identities in 6–8 configurations) |
+385c410
+< | Cor 2.5 (𝔇_16 excluded at n=256; R23 Remark 3.4 resolved) | PROVED (assembly of R20, R22, R23 and this note) |
+---
+> | Cor 2.5 (𝔇_16 excluded at n=256, standing hypotheses [v2: N2]; R23 Remark 3.4 resolved via (2.2) alone [v2: N8]) | PROVED (assembly of R20, R22, R23 and this note); upgrades R23 Cor 3.3's n=256 grid closure to the whole strip [v2: N9] |
+389c414
+< | Remark 3.5 (no transfer to (R2) via Lemma 3.1) | PROVED (negative); rank-one osculation route HEURISTIC |
+---
+> | Remark 3.5 (no transfer to (R2) via Lemma 3.1) | observation PROVED; "yields nothing" HEURISTIC [v2: FIX-3]; rank-one osculation route HEURISTIC |
+391,392c416,417
+< | Prop 4.2 (local realisability of (𝒦)∧F²\|a at one own line) | PROVED; COMPUTED toy |
+< | Cor 4.3 (no single-point argument excludes (𝒦)∧F²\|a) | PROVED (negative) |
+---
+> | Prop 4.2 (local realisability of (𝒦)∧F²\|a at one own line) | PROVED for formal germs [v2: FIX-2]; COMPUTED toy (along ℓ_u only [v2: N5]) |
+> | Cor 4.3 (no single-point argument excludes (𝒦)∧F²\|a) | PROVED (negative, formal-germ sense); R22 Remark 4.4 stays HEURISTIC [v2: FIX-2] |
+396c421
+< Dependencies: R23, R22, R21, R20, R19, R18-T, R16 (all v2.1, audited and revision-checked); PRIMARY FNAL/TSY/TSYC/FNAM (reviewed); Stöhr–Voloch (CITED). PRIMARY's results remain PRIMARY's. FNAM2's implication G5⇒Δ≢0 is PRIMARY's; Prop 2.2 makes it exact. R23's reduction of (R1) to 𝔅_0 (Prop 4.1, Cor 4.2, Prop 4.4) is the input that Thm 3.3 completes. This v1 is unaudited. No manuscript was edited. The classification of hyperovals is not claimed complete: 𝔇_16 at n>=512 (§5), 𝔇_17, and the non-global-alignment variant remain.
+---
+> Dependencies: R23, R22, R21, R20, R19, R18-T, R16 (all v2.1, audited and revision-checked); PRIMARY FNAL/TSY/TSYC/FNAM (reviewed); Stöhr–Voloch (CITED). PRIMARY's results remain PRIMARY's. FNAM2's implication G5⇒Δ≢0 is PRIMARY's; Prop 2.2 makes it exact. R23's reduction of (R1) to 𝔅_0 (Prop 4.1, Cor 4.2, Prop 4.4) is the input that Thm 3.3 completes. v1 was independently audited (PASS-with-fixes, minor); this v2 applies FIX-1..3 and N1–N11, with no number changed. No manuscript was edited. The classification of hyperovals is not claimed complete: 𝔇_16 at n>=512 (§5), 𝔇_17, and the non-global-alignment variant remain.
