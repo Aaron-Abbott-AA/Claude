@@ -83,6 +83,27 @@ No file whose name contains "DZ" was opened. A DZ-CLOUD-HANDOFF zip was uploaded
      - (R1) for Frobenius non-classical V with a large order sum and 𝔮_max<=S;
      - the constant 𝔉_D∩{F|h}∩{F²|a} and the D>=4 lanes with n<4D.
 
+13. **R24** (owner v1 → v2 → **v2.1 final**, `notes/HYP_M2_ROUND24_owner_v2_1.md`).
+   - Audit: **PASS-with-fixes**. Lemma 3.1, Thm 3.3, Prop 2.2 and Cor 2.5 all survived an adversarial check.
+   - Revision check: **PASS-with-fixes (cosmetic)**. It verified the new FIX-1 construction.
+   - Included in A306_draft.
+   - Results:
+     - **All of (R1) closed**: PROVED.
+     - **𝔇_16 excluded at n=256**: PROVED.
+     - G5 ⟺ FNAM2 ∧ (a_P,a_R)≢0: PROVED.
+   - OPEN: only (𝒦)∧F²|a at n>=512 (Q>=256). The prioritised list O1–O5 with next steps is in R24 v2.1 §9 (Handover).
+
+## HANDOVER TO THE LOCAL "Active HYP (2)" SESSION (cloud session stopped)
+1. **Verify.** Check the hashes below.
+2. **Copy.** Copy notes/, audits/ and reviews/ into the HYP project.
+3. **Deliver A306** (see A306_draft/README.md):
+   - poll PRIMARY/to_claude for files newer than 13:01:14Z;
+   - acknowledge them by hash (receipt.md, acks.txt);
+   - run build_A306.py;
+   - place the files with the MANIFEST last.
+   - A306 carries R18-T and R19–R24, all v2.1, each audited and revision-checked. It also asks PRIMARY about a global gate on ord_F det A (O1).
+4. **Continue the research** from R24 v2.1 §9 (O1 → O5). Keep the rule that every new claim gets a fresh-referee audit and revision check before it is sent.
+
 ## Statuses (R19 v2.1)
 - Prop 1.1, Prop 1.2 (F_E-subline), Lemma 1.4, Lemma 1.5 (with the cusp-tangent exception) and Example 1.6: PROVED.
 - Lemma 1.1: PROVED for m(w)<E; OPEN for m(w)>=E.
@@ -119,6 +140,9 @@ Not linked. No A306 has been delivered; the packet kit is in A306_draft/. The pe
 369e5251b4fde043e72c26f484f6be83264809873c198646470e3f3b5371560a  notes/HYP_M2_ROUND23_owner_v1.md
 c5d93cd3a145a6bfb86b2afcc1d5a82030dcbdf1b1ed98c1b544b14585dfd144  notes/HYP_M2_ROUND23_owner_v2.md
 5339f08868aac518211ef3edf6ef4ef44cfe855c2eef776bd6a643abe51255a0  notes/HYP_M2_ROUND23_owner_v2_1.md
+111cced0bfb120fdf8a01fec6f2f0bf1b46dabfee351a8074ae5801ad2df1edd  notes/HYP_M2_ROUND24_owner_v1.md
+2fe03398cd0412b070fb7e0947ee7d91bb3958b218d034426decc3f7e747e231  notes/HYP_M2_ROUND24_owner_v2.md
+c9a582a6c5724dde7e213584c628257a0a715f119c44f707bfd6b7913ec5a2ea  notes/HYP_M2_ROUND24_owner_v2_1.md
 419b99c61b7d1d4333aa3ee64b283ba22dc9e60c7a39f1fa88c5684a93bf201b  notes/R18T_TWIST_NOTE_v2.md
 65ba7f0bdffda18145365625e13d138c4e66b70015100fe0dbe0ff33e25b41ed  notes/R18T_TWIST_NOTE_v2_1.md
 215b9925a4e042c4b449a587e45e898613349a58d799a87b454991e31555c8cd  notes/R19_CORRESPONDENCE_ROUTE_v2.md
@@ -129,11 +153,13 @@ f8e352dae5922d1fe450b1724f6cb20b9cce661b3d0d2053b6377b0c1c1018c9  reviews/REVISI
 f3a950003b319013575e9706c30e42eca5d2c9e205b66cb9a2073ac794d6979c  reviews/REVISION_CHECK_HYP_M2_ROUND21_V2_20261007.md
 11338169dc289be11dc5ae7cc6faac11c55a6e04973846034c0ebbd6960022b7  reviews/REVISION_CHECK_HYP_M2_ROUND22_V2_20261007.md
 8bd158e7ff979c99022dd1cc1b5188f65574302be0799b28ea36ad507072d05e  reviews/REVISION_CHECK_HYP_M2_ROUND23_V2_20261007.md
+cd58c00916e59cce2c6cb374a28c2f55527a08198832ac6542728a17976eaa61  reviews/REVISION_CHECK_HYP_M2_ROUND24_V2_20261007.md
 f3013a20c4df2acc5f8972a29300e26a28832c262bd589814b7c3f515aa3e35c  audits/AUDIT_HYP_M2_ROUND19_20261007.md
 3c115c1b00bdad7be2bb11d476808f5e4184b22debfdc9434e129f2f02d9133d  audits/AUDIT_HYP_M2_ROUND20_20261007.md
 c141b4079879269f8ffd82ad3c902eca69de6284f92d5410c5fc65fa010daa23  audits/AUDIT_HYP_M2_ROUND21_20261007.md
 8a0406cfe622227041437d1e350f296ce3405aa9813f3b0ed197c5a7c71651c2  audits/AUDIT_HYP_M2_ROUND22_20261007.md
 d3bfddba42f37bc8a718a500a250bde320d75cb6f388e05189324ca09c2a8e7a  audits/AUDIT_HYP_M2_ROUND23_20261007.md
+a320f7afa0d833304b4168e2d2aa3f2721cebe5c38ed27747e722493768d8e81  audits/AUDIT_HYP_M2_ROUND24_20261007.md
 bb192fc85e963433ed4a24779770e96b674cf3bb6817b0daf51aa482bcf5d35a  A306_draft/src/M2_ROUND18T_AUDIT_OF_V1.md
 65ba7f0bdffda18145365625e13d138c4e66b70015100fe0dbe0ff33e25b41ed  A306_draft/src/M2_ROUND18T_NONCONSTANT_TWIST_REDUCED_COVER_KERNEL_ALIGNED_v2_1.md
 63ea9f4bb675a8d6c808ad9f7a2700dc6f4aa9dc6db8a1cab05577244e3c4fcf  A306_draft/src/M2_ROUND18T_REVISION_CHECK_OF_V2.md
@@ -152,6 +178,9 @@ f3a950003b319013575e9706c30e42eca5d2c9e205b66cb9a2073ac794d6979c  A306_draft/src
 d3bfddba42f37bc8a718a500a250bde320d75cb6f388e05189324ca09c2a8e7a  A306_draft/src/M2_ROUND23_AUDIT_OF_V1.md
 5339f08868aac518211ef3edf6ef4ef44cfe855c2eef776bd6a643abe51255a0  A306_draft/src/M2_ROUND23_KERNEL_ALIGNED_ORDER_BOOTSTRAP_R2_REDUCTION_v2_1.md
 8bd158e7ff979c99022dd1cc1b5188f65574302be0799b28ea36ad507072d05e  A306_draft/src/M2_ROUND23_REVISION_CHECK_OF_V2.md
-c4ac1abcf8a7be73d0c96cd17f24c1cc6bd143916f3355e86d2d04f1c62b5e86  A306_draft/src/message_template.md
-e865f62f2d637f394d7cbb26b454cf74c8c6ade8eb6d471e724332ebfe83b592  A306_draft/src/scripts_audit_checks.tar.xz
+a320f7afa0d833304b4168e2d2aa3f2721cebe5c38ed27747e722493768d8e81  A306_draft/src/M2_ROUND24_AUDIT_OF_V1.md
+c9a582a6c5724dde7e213584c628257a0a715f119c44f707bfd6b7913ec5a2ea  A306_draft/src/M2_ROUND24_R1_CLOSED_PARTIAL_WRONSKIAN_n256_CLOSED_v2_1.md
+cd58c00916e59cce2c6cb374a28c2f55527a08198832ac6542728a17976eaa61  A306_draft/src/M2_ROUND24_REVISION_CHECK_OF_V2.md
+537055ca4314874644fd33e86d63decd7773d15e8351233f0df79e39c165010f  A306_draft/src/message_template.md
+ade9429c9ff243f08776dc1b9750bb4547ea6fc78917c8d609b273b35cf76580  A306_draft/src/scripts_audit_checks.tar.xz
 8db929b026b651161c982efef1c1433afd06ebaf0a3cf2403074056544fc310f  A306_draft/build_A306.py
