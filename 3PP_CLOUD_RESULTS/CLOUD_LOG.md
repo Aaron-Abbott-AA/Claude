@@ -5,3 +5,4 @@
 - 2026-10-07T19:38:37Z PACK: 326 cloud shards done (lowest 16626), COUNTEREXAMPLES>0 in 0; 171 shards in the last hour; 4 workers.
 - 2026-10-07T21:35:37Z PACK: 709 cloud shards done (lowest 16243), COUNTEREXAMPLES>0 in 0; 198 shards in the last hour; 4 workers.
 - 2026-10-07T23:32:36Z PACK: 1099 cloud shards done (lowest 15853), COUNTEREXAMPLES>0 in 0; 194 shards in the last hour; 4 workers.
+- 2026-10-11T23:41:59Z container restarted (usage limit pause); 1419 shards complete; in-flight discarded; restarted run_cloud.sh 4 (self-test re-passed).
