@@ -661,3 +661,63 @@
 3. Codex questions.
 4. The resume message in the 23:03Z section still applies. Read the newest HANDBACK, now 20261007T2330Z.
 - **Zip:** `ca40f4d5644c696e507b29e449ff89df7ecdde63203f0b1127ef86a07ad8a573`  DZ-HANDBACK-20261007T2330Z.zip (348 files; contains PROGRESS.md as of this section)
+
+---
+## FINAL cloud section (12 Oct 2026, 00:05Z–00:08Z): KP audit → v2 → packet EN (PENDING DIFF-CHECK); FINAL HANDBACK
+- **Audit.** AUDIT-KP: **PASS-with-fixes** (FIX-1, FIX-2, m1–m6). The computations were verified.
+- **v2.** KP v2 applies all fixes.
+- **Packet EN_20261012T0006Z.** Prepared, with MANIFEST last. **PENDING DIFF-CHECK.**
+- **Packets EF–EM:** READY and unchanged.
+- **FINAL HANDBACK:** `claude_archive/HANDBACK-20261012T0007Z-FINAL.md`. It holds the state of every note, the packet statuses, the pending device steps, the open targets and the resume message.
+- **The goal is NOT complete.** GLS₀ for the arc family, the even-band question, G1″, G1 and the linear-gap conjecture are OPEN.
+
+| sha256 | File |
+|---|---|
+| b8a804145e3d21cafb3112a8f37d297b26cc3504452fa557718fa9e1073b6634 | claude_archive/KP-RX-ROOTSPACE-GALOIS-NOTE-20261007-v2.md |
+| 7639a0ae97b1cac86edbb1c847a295e9412db619d67089927f037168c3b4ee7b | claude_archive/AUDIT-KP-RX-ROOTSPACE-GALOIS-20261007.md |
+| e0e3e178ec0019be02ca154471f3a3fac543b621aec7267c8f0032aefe8e8276 | claude_archive/HANDBACK-20261012T0007Z-FINAL.md |
+| a0aad197384504659c5a1c7893f298024d4f524b7b497839a99fc863586d0c21 | claude_archive/CHECKPOINT-ADDENDUM-20261012T0007Z.md |
+| 953fec08a667196e4205494696c7aa590ce041241f96831e782005cae3eb5bde | claude_archive/audit_KP_checks/checks_SHA256SUMS.txt |
+| b7448fe16290ec5145866cb7a31a9e1ace43786f02cc019293b76cf51f73aadb | claude_archive/audit_KP_checks/kp_ref_deg1.log |
+| cf7752108b386c5667b5495dc1da853191c300ee254f2d436957354f9d6c150e | claude_archive/audit_KP_checks/kp_ref_deg1.py |
+| 73a1ed0857f8fdc31c15a84be0f8184d18f96555f8c2e486f9c67b138f5dd9f2 | claude_archive/audit_KP_checks/kp_ref_frob.log |
+| 7d6e41a5c0ab2fadf4e0537c42d14594f3a0a3fecb804ee39e239a1c4f5801d7 | claude_archive/audit_KP_checks/kp_ref_frob.py |
+| 5c27bc0125c4c8c26389109a3355ed1862d6fb8344b7934f22564861be06ab13 | claude_archive/audit_KP_checks/kp_ref_ownerlog_compare.log |
+| 0f93c8999c66e2028cc6bb93ec500fcba9af42505a7f1d3e344ce14fa42024a0 | claude_archive/audit_KP_checks/kp_ref_ownerlog_compare.py |
+| 8364d73c3bd75e5c49c7d378ba397188ee146136b71bd044fb6187a79425533e | claude_archive/audit_KP_checks/kp_ref_ownersamples.log |
+| e3b13f16bd4ec39a6cfc790a0c7e12434bfd4b2b107e542b24175be440a937a0 | claude_archive/audit_KP_checks/kp_ref_ownersamples.py |
+| 1029b4e5a3c2f42011b67340adc6ac56e3b817aa6b39917c27dc07bca11ce544 | claude_archive/audit_KP_checks/kp_ref_ownersamples_diag.log |
+| 37a50749c0c600ffabe4f5a88c624f4f140dd2009cee87add9e2479c43de0d1d | claude_archive/audit_KP_checks/kp_ref_ownersamples_diag.py |
+| a393cfb7f6069680efcdc273a0f2bf392fe591dbb2172767544950e75be40387 | claude_archive/audit_KP_checks/kp_ref_rat.log |
+| e182a67c0265164b83e75ebe5b33917d1ad5c65c47ab22f8c0378bcd9ce31190 | claude_archive/audit_KP_checks/kp_ref_rat.py |
+| da1d414674c73f557a1e503626df2773d918f7c7edb5aaac78f986df5ed0c003 | claude_archive/audit_KP_checks/kp_ref_roots.log |
+| e223bd887adbc7a1d4e8b53d290033f3076a18fce72eb127ec239f99c392cfe2 | claude_archive/audit_KP_checks/kp_ref_roots.py |
+| b4a8572599e20b456944f0a8560bb121f10c16fa9e8b9ab738d1e8d3a9841e1c | claude_archive/audit_KP_checks/kp_ref_selftest.log |
+| d12621cf7fee5afeb1617add6e9dac0f718bd43f5f4136dda4cd04ecc94dccce | claude_archive/audit_KP_checks/kp_ref_selftest.py |
+| b83758c393d192de4caf27ed8eaadd58de67ba02fb300f8396d1712db52f5f7e | claude_archive/audit_KP_checks/kpref_lib.py |
+| bb1eb2a4c77fae982df8f832d20ea585ce9e8ef4976796858109f509c96a9a60 | claude_archive/audit_KP_checks/owner_copy/kpcheck.py |
+| 7389380a0e6549b871472349572a98cc4122ff2be102090e457054586bebeead | claude_archive/audit_KP_checks/owner_copy/kpcheck_rerun_subset.log |
+| bde2936239b0fa5274a2969b1aaad92c6c56991877e6ab0dc81db53a653c4e5b | claude_archive/audit_KP_checks/owner_copy/kprat.py |
+| cc1344dfb38cec31fa146670bb381bf458d31f2257a57cb22aac92bff7627ee9 | claude_archive/audit_KP_checks/owner_copy/kprat_rerun.log |
+| 79ff1691bd737579a8704180398626032de22495a5a0b1c14330fa7eaedf4a17 | outbox_for_user_delivery/README-PENDING.md |
+| aaf7a1f8da4466b189a23047707d7e3877db49c2e142e8cbd8a8e25973724128 | outbox_for_user_delivery/to_codex/EN_20261012T0006Z.md |
+| b8a804145e3d21cafb3112a8f37d297b26cc3504452fa557718fa9e1073b6634 | outbox_for_user_delivery/to_codex/KP-RX-ROOTSPACE-GALOIS-NOTE-20261007-v2.md |
+| 7639a0ae97b1cac86edbb1c847a295e9412db619d67089927f037168c3b4ee7b | outbox_for_user_delivery/to_codex/AUDIT-KP-RX-ROOTSPACE-GALOIS-20261007.md |
+| bb1eb2a4c77fae982df8f832d20ea585ce9e8ef4976796858109f509c96a9a60 | outbox_for_user_delivery/to_codex/kpcheck.py.txt |
+| cb00f4b0991a4c8eb77f90bdfc0752bf82a3e218bb0ac84600c9be5271138d96 | outbox_for_user_delivery/to_codex/kpcheck.log |
+| bde2936239b0fa5274a2969b1aaad92c6c56991877e6ab0dc81db53a653c4e5b | outbox_for_user_delivery/to_codex/kprat.py.txt |
+| cc1344dfb38cec31fa146670bb381bf458d31f2257a57cb22aac92bff7627ee9 | outbox_for_user_delivery/to_codex/kprat.log |
+| f070794b8e9b04d34aea8b3f2733e5f055750f415ec560255c52479e70b6c9a6 | outbox_for_user_delivery/to_codex/MANIFEST_EN_20261012T0006Z.tsv |
+
+### FINAL resume message (paste into "(Active) DZ (2)"; supersedes all earlier ones)
+> The DZ cloud sessions (7–12 Oct 2026; never Mac-linked; no mailbox) wrote everything to `DZ_CLOUD_RESULTS/`, also bundled as `DZ-HANDBACK-20261012T0007Z-FINAL.zip`.
+>
+> 1. Read `claude_archive/HANDBACK-20261012T0007Z-FINAL.md` first. Verify the sha256 values against this PROGRESS.md, then copy `claude_archive/*` (with all `audit_*`/`revcheck_*` folders) to `CODEX_CLAUDE_EXCHANGE/DZ/claude_archive/`.
+> 2. Arrange the referee diff check of KP v2. If it passes, attach `DIFFCHECK-KP-v2-20261007.md` to EN, flip EN to READY, and regenerate `MANIFEST_EN_20261012T0006Z.tsv` last.
+> 3. Run `date -u`. Re-list `DZ/to_claude/` for files newer than 15:13:17Z on 7 Oct, read the new covers, and generate the receipt TSV on the device. Never execute incoming scripts.
+> 4. Fill in §1 (separate RECEIVED, READ and ADOPTED ACKs) of EF, EG, EH, EI, EJ, EK, EL, EM and EN. Regenerate the changed manifests last. Deliver them in that order to `DZ/to_codex/`, per README-PENDING.md. Never send anything in `superseded/`. Verify the sha256 values on the device.
+> 5. Re-read memo §216. Record the replies to EE and PRIMARY's G23O review.
+> 6. Research next, per FINAL HANDBACK §4: Codex's answers; GLS₀ = generic PTH (ii); the even-band question; B1/(I216′)/G2; the KB gate-failing cells; G1″.
+>
+> Do not claim G1, GLS₀ or the conjecture is complete.
+- **Final zip:** `811f710901899c8801dc19191c1cfec5e51e646123bdf6c9470133983fd793eb`  DZ-HANDBACK-20261012T0007Z-FINAL.zip (384 files; contains PROGRESS.md as of this section)

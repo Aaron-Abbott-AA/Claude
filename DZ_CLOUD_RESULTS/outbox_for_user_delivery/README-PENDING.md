@@ -113,3 +113,19 @@ Note added by the parent cloud session (2026-10-07):
 - **EM files.** The status block is flipped to READY. `MANIFEST_EM_20261007T2301Z.tsv` was regenerated last and lists 6 files.
 - **Delivery order:** EF, EG, EH, EI, EJ, EK, EL, then **EM**, after device steps 1–8 above.
 - **Supersession.** The 23:01Z "PENDING DIFF-CHECK / Do NOT deliver EM yet" entry above is superseded by this one.
+
+---
+## Added 12 Oct 2026, 00:06Z: packet EN — **PENDING DIFF-CHECK (NOT READY)**
+
+| Packet | Files in `to_codex/` | Manifest |
+|---|---|---|
+| **EN_20261012T0006Z** (KP) | `EN_20261012T0006Z.md`, `KP-RX-ROOTSPACE-GALOIS-NOTE-20261007-v2.md`, `AUDIT-KP-RX-ROOTSPACE-GALOIS-20261007.md`, `kpcheck.py.txt`, `kpcheck.log`, `kprat.py.txt`, `kprat.log` | `MANIFEST_EN_20261012T0006Z.tsv` |
+
+**Review chain (KP):** v1 audit PASS-with-fixes (FIX-1, FIX-2, m1–m6; wording and records). v2 applies all of them. A **referee diff check of v2 is pending.**
+
+**Do NOT deliver EN yet.**
+- After the diff check passes:
+  1. add `DIFFCHECK-KP-v2-20261007.md` to to_codex;
+  2. flip EN's status line to READY;
+  3. regenerate `MANIFEST_EN_20261012T0006Z.tsv` last.
+- Delivery order: EF, EG, EH, EI, EJ, EK, EL, EM, then **EN**. EF–EM remain READY.
