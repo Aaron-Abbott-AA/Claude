@@ -6,3 +6,4 @@
 - 2026-10-07T21:35:37Z PACK: 709 cloud shards done (lowest 16243), COUNTEREXAMPLES>0 in 0; 198 shards in the last hour; 4 workers.
 - 2026-10-07T23:32:36Z PACK: 1099 cloud shards done (lowest 15853), COUNTEREXAMPLES>0 in 0; 194 shards in the last hour; 4 workers.
 - 2026-10-11T23:41:59Z container restarted (usage limit pause); 1419 shards complete; in-flight discarded; restarted run_cloud.sh 4 (self-test re-passed).
+- 2026-10-12T00:10:22Z FINAL: cloud run stopped cleanly for handover to the local 3PP session. 1498 cloud shards done (15454..16950 contiguous, plus 17693), all COUNTEREXAMPLES=0. Remaining (not in done_linux/done_mac/cloud): 2726..9892 and 10102..15453 = 12519 shards (see REMAINING_SHARDS.txt), minus anything the Linux box did after the hand-off.
