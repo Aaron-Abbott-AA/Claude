@@ -1,0 +1,7 @@
+m=10 n=3: dim_F2(ker Pt_alpha cap F_q) distribution over 30 alpha in F_q minus F_Q: [(2, 21), (3, 9)] (claim >= n-1 = 2); direct count == FR nullity in all
+m=14 n=5: dim_F2(ker Pt_alpha cap F_q) distribution over 30 alpha in F_q minus F_Q: [(4, 30)] (claim >= n-1 = 4); direct count == FR nullity in all
+m=16 n=6: dim_F2(ker Pt_alpha cap F_q) distribution over 30 alpha in F_q minus F_Q: [(5, 29), (6, 1)] (claim >= n-1 = 5); direct count == FR nullity in all
+m=18 n=7: dim_F2(ker Pt_alpha cap F_q) distribution over 30 alpha in F_q minus F_Q: [(6, 30)] (claim >= n-1 = 6); direct count == FR nullity in all
+m=20 n=8: dim_F2(ker Pt_alpha cap F_q) distribution over 30 alpha in F_q minus F_Q: [(7, 30)] (claim >= n-1 = 7); direct count == FR nullity in all
+m=24 n=10: dim_F2(ker Pt_alpha cap F_q) distribution over 30 alpha in F_q minus F_Q: [(9, 30)] (claim >= n-1 = 9); direct count == FR nullity in all
+m=26 n=11: dim_F2(ker Pt_alpha cap F_q) distribution over 30 alpha in F_q minus F_Q: [(10, 30)] (claim >= n-1 = 10); direct count == FR nullity in all

@@ -1,0 +1,24 @@
+### kp_ref_rat.py 10 16
+m=10 Pt n=3 coef degrees=[150, 138, 114, 66]
+  #irreducible factors=19; max positive slope at finite places=1/2 (max INTEGER positive slope=0; root valuations in L are integers); slopes at inf=[Fraction(12, 1)]; degree bound=12; D=16
+  F_2-dim of roots in F_q[X]_(<= 16) (own modulus 0x4c5): 0
+### kp_ref_rat.py 10 16 control
+m=10 CONTROL (P) n=6 coef degrees=[160, 160, None, None, None, 130, 66]
+  #irreducible factors=23; max positive slope at finite places=1/16 (max INTEGER positive slope=0; root valuations in L are integers); slopes at inf=[Fraction(0, 1), Fraction(1, 1), Fraction(2, 1)]; degree bound=2; D=16
+  F_2-dim of roots in F_q[X]_(<= 16) (own modulus 0x4c5): 3
+### kp_ref_rat.py 14 16
+m=14 Pt n=5 coef degrees=[630, 618, 594, 546, 450, 258]
+  #irreducible factors=59; max positive slope at finite places=1/8 (max INTEGER positive slope=0; root valuations in L are integers); slopes at inf=[Fraction(12, 1)]; degree bound=12; D=16
+  F_2-dim of roots in F_q[X]_(<= 16) (own modulus 0x619f): 0
+### kp_ref_rat.py 14 16 control
+m=14 CONTROL (P) n=8 coef degrees=[640, 640, None, None, None, None, None, 514, 258]
+  #irreducible factors=65; max positive slope at finite places=1/64 (max INTEGER positive slope=0; root valuations in L are integers); slopes at inf=[Fraction(0, 1), Fraction(1, 1), Fraction(2, 1)]; degree bound=2; D=16
+  F_2-dim of roots in F_q[X]_(<= 16) (own modulus 0x619f): 3
+### kp_ref_rat.py 18 16
+m=18 Pt n=7 coef degrees=[2550, 2538, 2514, 2466, 2370, 2178, 1794, 1026]
+  #irreducible factors=163; max positive slope at finite places=1/32 (max INTEGER positive slope=0; root valuations in L are integers); slopes at inf=[Fraction(12, 1)]; degree bound=12; D=16
+  F_2-dim of roots in F_q[X]_(<= 16) (own modulus 0x77227): 0
+### kp_ref_rat.py 18 16 control
+m=18 CONTROL (P) n=10 coef degrees=[2560, 2560, None, None, None, None, None, None, None, 2050, 1026]
+  #irreducible factors=199; max positive slope at finite places=1/256 (max INTEGER positive slope=0; root valuations in L are integers); slopes at inf=[Fraction(0, 1), Fraction(1, 1), Fraction(2, 1)]; degree bound=2; D=16
+  F_2-dim of roots in F_q[X]_(<= 16) (own modulus 0x77227): 3
