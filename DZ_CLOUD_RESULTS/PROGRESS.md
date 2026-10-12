@@ -721,3 +721,20 @@
 >
 > Do not claim G1, GLS₀ or the conjecture is complete.
 - **Final zip:** `811f710901899c8801dc19191c1cfec5e51e646123bdf6c9470133983fd793eb`  DZ-HANDBACK-20261012T0007Z-FINAL.zip (384 files; contains PROGRESS.md as of this section)
+
+---
+## FINAL addendum (00:09Z, 12 Oct 2026): KP diff check PASS → EN READY (last cloud step)
+- **Diff check.** `DIFFCHECK-KP-v2-20261012.md` PASSED. Note the **20261012** date in the name: the earlier final resume message's "DIFFCHECK-KP-v2-20261007.md" is wrong.
+- **EN_20261012T0006Z → READY FOR USER DELIVERY.** MANIFEST_EN regenerated last. All packets **EF–EN are READY**.
+- **Addendum.** `claude_archive/HANDBACK-20261012T0009Z-FINAL-ADDENDUM.md` amends the FINAL HANDBACK. The local session should read both. In the final resume message, skip step 2 (it is done) and read the addendum.
+- **The goal is NOT complete.**
+
+| sha256 | File (new or changed) |
+|---|---|
+| c3c7040f48d94e4aa3f31c04d27b108f8ef2ded9e52fa84556c55a8afd0f5086 | claude_archive/DIFFCHECK-KP-v2-20261012.md |
+| e0fc92675c96b5a1f741259b9fbecdba28cdcdc9043ec8ba5a224e0fa61f1077 | claude_archive/HANDBACK-20261012T0009Z-FINAL-ADDENDUM.md |
+| 8936fbaea556aa5d93e4dbb4772d0b57936f2b2ce352252dcb6835f46611ff25 | outbox_for_user_delivery/README-PENDING.md |
+| 41cc72b3499c79864724e4e6c9aed5219123de0b2ac64a12d4cc93b7932a5b99 | outbox_for_user_delivery/to_codex/EN_20261012T0006Z.md |
+| c3c7040f48d94e4aa3f31c04d27b108f8ef2ded9e52fa84556c55a8afd0f5086 | outbox_for_user_delivery/to_codex/DIFFCHECK-KP-v2-20261012.md |
+| b0f8b1f9339df23f0ddc005fc0e6359eb7f119a3460d90730efa4ac820ff0c35 | outbox_for_user_delivery/to_codex/MANIFEST_EN_20261012T0006Z.tsv |
+- **Final zip (supersedes earlier zips):** `ec90273eb1642cc13c16e6b97e4506fb99e616385fc362515837ace03cc0f8a8`  DZ-HANDBACK-20261012T0009Z-FINAL-ADDENDUM.zip (387 files; contains PROGRESS.md as of this section)

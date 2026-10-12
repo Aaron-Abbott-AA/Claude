@@ -129,3 +129,11 @@ Note added by the parent cloud session (2026-10-07):
   2. flip EN's status line to READY;
   3. regenerate `MANIFEST_EN_20261012T0006Z.tsv` last.
 - Delivery order: EF, EG, EH, EI, EJ, EK, EL, EM, then **EN**. EF–EM remain READY.
+
+---
+## Update 12 Oct 2026, 00:09Z: packet EN is now **READY FOR USER DELIVERY**
+- **Diff check.** The referee diff check of KP v2 PASSED. Its actual file name is **`DIFFCHECK-KP-v2-20261012.md`** (sha256 c3c7040f…), attached to EN under that name.
+  - The 00:06Z entry above, EN's earlier text and HANDBACK-20261012T0007Z-FINAL all anticipated "DIFFCHECK-KP-v2-20261007.md". **That name does not exist**; use the 20261012 name.
+- **EN files.** The status block is flipped to READY. `MANIFEST_EN_20261012T0006Z.tsv` was regenerated last and lists 8 files.
+- **All packets EF–EN are READY.** Delivery order: EF, EG, EH, EI, EJ, EK, EL, EM, EN, after device steps 1–8 above.
+- **Supersession.** The 00:06Z "PENDING DIFF-CHECK / Do NOT deliver EN yet" entry is superseded by this one.
